@@ -1,0 +1,130 @@
+[
+  {
+    "definitions": [
+      {
+        "heading": "Data-Controller",
+        "explanation": "Data controllers are the entities responsible for making decisions about the collection and processing of personal data. Data controllers bear the primary responsibility for complying with the provisions in data governance frameworks. "
+      },
+      {
+        "heading": "Data-Processor",
+        "explanation": "Data processors process data on behalf of controllers, but do not make decisions about what data is collected or how it is used. Data processors are not counted as a separate entity in every framework, but when they are addressed, they always have reduced obligations for compliance compared to controllers due to their more indirect relationship to data subjects."
+      },
+      {
+        "heading": "Personal-Data",
+        "explanation": "Personal data is the umbrella term for all information collected about an individual that must be protected according to the provisions of the listed data protection frameworks. "
+      },
+      {
+        "heading": "Sensitive-Personal-Data",
+        "explanation": "Sensitive personal data is personal information whose disclosure carries a particularly high risk of abuse or discrimination for the data subject, and for this reason is often given enhanced protections under data protection frameworks. "
+      }
+    ],
+    "principles-consent": [
+      {
+        "heading": "Consent-Requirement",
+        "explanation": "Does the framework include a requirement that data controllers obtain consent from subjects before collecting and using their personal data?"
+      },
+      {
+        "heading": "Consent-Exceptions",
+        "explanation": "Under what circumstances may controllers collect and process personal data if the subject has not given their consent?"
+      },
+      {
+        "heading": "Conditions-for-Consent",
+        "explanation": "What standards must data controllers meet in order for consent by subjects to be considered legitimate?"
+      }
+    ],
+    "principles-individual-rights": [
+      {
+        "heading": "Conditions-for-Access",
+        "explanation": "Does the data protection framework mandate that controllers respond to requests by data subjects in a particular way?"
+      },
+      {
+        "heading": "Right-to-Information",
+        "explanation": "Do data subjects have a right to be provided information about the processing of their data upon request to a controller?"
+      },
+      {
+        "heading": "Right-to-Access",
+        "explanation": "Do data subjects have a right to access the personal information a controller has collected from/about them?"
+      },
+      {
+        "heading": "Right-to-Correction",
+        "explanation": "Do data subjects have a right to correct data of theirs held by a controller?"
+      },
+      {
+        "heading": "Right-to-Erasure",
+        "explanation": "Do data subjects have a right to request the erasure of their personal data held by a controller?"
+      },
+      {
+        "heading": "Right-to-Object-to-Processing",
+        "explanation": "Do data subjects have the right to object to the processing of their data?"
+      },
+      {
+        "heading": "Right-to-Withdraw-Consent",
+        "explanation": "Do data subjects have the right to withdraw consent to prevent the further processing of their personal data by a controller?"
+      },
+      {
+        "heading": "Right-to-Challenge-Denials",
+        "explanation": "Can data subjects challenge a denial by a data controller to honor a request by the data subject?"
+      },
+      {
+        "heading": "Portability",
+        "explanation": "Do data subjects have the right to access their personal data in a form that would allow it to be easily transferred to another controller?"
+      },
+      {
+        "heading": "Automated-Processing",
+        "explanation": "Are individuals subject to decisions made about them by automated systems with no human intervention?"
+      }
+    ],
+    "principles-legitimate-processing": [
+      {
+        "heading": "Lawful-and-Fair",
+        "explanation": "Do the data protection frameworks require processing to be conducted in a lawful and fair manner?"
+      },
+      {
+        "heading": "Disclosure-of-Purpose",
+        "explanation": "Does the data protection framework require controllers to disclose the specific purpose of processing to data subjects?"
+      },
+      {
+        "heading": "Use-Limitation",
+        "explanation": "Does the data protection framework put restrictions on how data can be used by controllers once it has been collected?"
+      },
+      {
+        "heading": "Minimization",
+        "explanation": "Does the data protection framework put restrictions on how much data can be collected by controllers?"
+      }
+    ],
+    "principles-obligations-data-controllers": [
+      {
+        "heading": "Transparency",
+        "explanation": "Does the data protection framework require the controller to provide contextual information to the subject before collection?"
+      },
+      {
+        "heading": "Data-Quality",
+        "explanation": "Does the data protection framework require data controllers to maintain collected data at a certain standard of accuracy and quality?"
+      },
+      {
+        "heading": "Security",
+        "explanation": "Does the data protection framework require controllers take measures to protect the personal data they posses against loss or unauthorized access?"
+      },
+      {
+        "heading": "Data-Breach-Notification",
+        "explanation": "Does the data protection framework require controllers to notify subjects or official authorities in the event of a data breach?"
+      },
+      {
+        "heading": "Retention",
+        "explanation": "Does the data protection framework place restrictions on how long a controller may retain personal data it has collected?"
+      },
+      {
+        "heading": "Cross-Border-Transfers",
+        "explanation": "Under what conditions does the data protection framework allow controllers to transfer personal data outside the jurisdiction of the territory covered by the framework?"
+      },
+      {
+        "heading": "Accountability",
+        "explanation": "Does the data protection framework hold controllers accountable for adherence to the principles?"
+      },
+      {
+        "heading": "Privacy-by-Design",
+        "explanation": "Does the data protection framework require controllers to implement privacy and protection by design in the construction and operation of their systems?"
+      }
+    ]
+  }
+]

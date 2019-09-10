@@ -665,9 +665,7 @@
           "Abbreviated-Language": "Right not to be subject to a decision based solely on automated processing",
           "Original-Language": "<p>(Article 14) </p><p><strong>A person shall not be subject to a decision</strong> which produces legal effects concerning him/her or significantly affects him/her to a substantial degree, and which is <strong>based solely on automated processing of data</strong> intended to evaluate certain personal aspects relating to him/her.</p>"
         },
-        "Cost--language": {
-          "Abbreviated-Language": "<p>Not specified</p>"
-        },
+        "Cost--language": { "Abbreviated-Language": "<p>Not specified</p>" },
         "Lawful-and-Fair": {
           "Abbreviated-Language": "Processing must be lawful and fair",
           "Original-Language": "<p>(Article 13 - Principle 2)</p><p>The collection, recording, processing, storage and transmission of personal data shall be undertaken <strong>lawfully, fairly and non-fraudulently</strong>.</p>"
@@ -1226,9 +1224,7 @@
           "Abbreviated-Language": "Not Specified",
           "Original-Language": "Not Specified"
         },
-        "Cost--language": {
-          "Abbreviated-Language": "<p>Not Specified</p>"
-        },
+        "Cost--language": { "Abbreviated-Language": "<p>Not Specified</p>" },
         "Lawful-and-Fair": {
           "Abbreviated-Language": "Processing must be lawful and fair",
           "Original-Language": "<p>(Principle 1)</p><p>The United Nations System Organizations should <strong>process personal data in a fair manner, in accordance with their mandates and governing instruments</strong> and on the basis of any of the following: </p><ol><li><p>the consent of the data subject; </p></li><li><p>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned; </p></li><li><p>the mandates and governing instruments of the United Nations System Organization concerned; or </p></li><li><p>any other legal basis specifically identified by the United Nations System Organization concerned.</p></li></ol>"

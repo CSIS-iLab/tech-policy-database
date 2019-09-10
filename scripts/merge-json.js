@@ -1,18 +1,10 @@
 const fs = require("fs");
 
-let frameworks;
 let definitions;
 let principlesConsent;
 let principlesIndividualRights;
 let principlesLegitmateProcessing;
 let principlesObligations;
-
-fs.readFile("../src/json/frameworks.json", "utf8", (err, data) => {
-  if (err) {
-    throw err;
-  }
-  frameworks = data;
-});
 
 fs.readFile("../src/json/definitions.json", "utf8", (err, data) => {
   if (err) {
@@ -131,14 +123,15 @@ function writeData() {
             } else if (Object.keys(categoryObj).includes(catKey)) {
               categoryObj[catKey]["Original-Language"] = frameworkData[k]
             }
+
+            categoryObj[catKey].has_data = true
           }
         }
         json[0][key]["Categories"] = categoryObj
       }
     }
 
-    let consentJson = JSON.parse(principlesConsent)
-    for (const frameworkData of consentJson) {
+    function helpWriteData(frameworkData) {
       let categoryObj = {}
       if (frameworkData.Framework === key) {
         for (const k of Object.keys(frameworkData)) {
@@ -153,60 +146,26 @@ function writeData() {
         }
         json[0][key]["Categories"] = { ...json[0][key]["Categories"], ...categoryObj }
       }
+    }
+
+    let consentJson = JSON.parse(principlesConsent)
+    for (const frameworkData of consentJson) {
+      helpWriteData(frameworkData)
     }
 
     let rightsJson = JSON.parse(principlesIndividualRights)
     for (const frameworkData of rightsJson) {
-      let categoryObj = {}
-      if (frameworkData.Framework === key) {
-        for (const k of Object.keys(frameworkData)) {
-          let catKey = k.split('--')[0]
-          if (k !== "Framework") {
-            if (!Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[k] = { "Abbreviated-Language": frameworkData[k] }
-            } else if (Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[catKey]["Original-Language"] = frameworkData[k]
-            }
-          }
-        }
-        json[0][key]["Categories"] = { ...json[0][key]["Categories"], ...categoryObj }
-      }
+      helpWriteData(frameworkData)
     }
 
     let processingJson = JSON.parse(principlesLegitmateProcessing)
     for (const frameworkData of processingJson) {
-      let categoryObj = {}
-      if (frameworkData.Framework === key) {
-        for (const k of Object.keys(frameworkData)) {
-          let catKey = k.split('--')[0]
-          if (k !== "Framework") {
-            if (!Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[k] = { "Abbreviated-Language": frameworkData[k] }
-            } else if (Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[catKey]["Original-Language"] = frameworkData[k]
-            }
-          }
-        }
-        json[0][key]["Categories"] = { ...json[0][key]["Categories"], ...categoryObj }
-      }
+      helpWriteData(frameworkData)
     }
 
     let obligationJson = JSON.parse(principlesObligations)
     for (const frameworkData of obligationJson) {
-      let categoryObj = {}
-      if (frameworkData.Framework === key) {
-        for (const k of Object.keys(frameworkData)) {
-          let catKey = k.split('--')[0]
-          if (k !== "Framework") {
-            if (!Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[k] = { "Abbreviated-Language": frameworkData[k] }
-            } else if (Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[catKey]["Original-Language"] = frameworkData[k]
-            }
-          }
-        }
-        json[0][key]["Categories"] = { ...json[0][key]["Categories"], ...categoryObj }
-      }
+      helpWriteData(frameworkData)
     }
 
   }
