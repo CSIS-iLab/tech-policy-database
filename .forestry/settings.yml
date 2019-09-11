@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/json/frameworks_reduced.json
   label: Frameworks Reduced
-  match: "**/*"
 - type: directory
   path: src/json
   label: test files
