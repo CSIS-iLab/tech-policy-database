@@ -9,7 +9,7 @@ sections:
   label: test files
   create: documents
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
   templates:
   - frameworks
 - type: document

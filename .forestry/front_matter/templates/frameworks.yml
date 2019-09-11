@@ -35,3 +35,5 @@ fields:
     max: 
     labelField: 
   label: frameworks
+pages:
+- src/json/test.json

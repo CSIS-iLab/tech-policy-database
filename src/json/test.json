@@ -1,0 +1,12 @@
+{
+  "frameworks": [
+    {
+      "name": "test framework",
+      "categories": [
+        {
+          "category": "src/json/explanations.json"
+        }
+      ]
+    }
+  ]
+}
