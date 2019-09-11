@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/json/frameworks_reduced.json
+  label: Frameworks Reduced
+  match: "**/*"
 - type: directory
   path: src/json
   label: test files
