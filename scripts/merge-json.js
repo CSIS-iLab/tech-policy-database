@@ -47,64 +47,64 @@ function writeData() {
   let json = [
     {
       "EU GDPR (2018)": {
-        "Title": "EU GDPR",
-        "Link": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679",
-        "Year": "2018",
-        "Categories": {}
+        "name": "EU GDPR",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679",
+        "year": "2018",
+        "categories": {}
       },
       "OECD Privacy Framework (2013)": {
-        "Title": "OECD Privacy Framework",
-        "Link": "https://www.oecd.org/internet/ieconomy/oecd_privacy_framework.pdf",
-        "Year": "2013",
-        "Categories": {}
+        "name": "OECD Privacy Framework",
+        "url": "https://www.oecd.org/internet/ieconomy/oecd_privacy_framework.pdf",
+        "year": "2013",
+        "categories": {}
       },
       "APEC Privacy Framework (2015)": {
-        "Title": "APEC Privacy Framework",
-        "Link": "https://www.apec.org/-/media/APEC/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
-        "Year": "2015",
-        "Categories": {}
+        "name": "APEC Privacy Framework",
+        "url": "https://www.apec.org/-/media/APEC/Publications/2005/12/APEC-Privacy-Framework/05_ecsg_privacyframewk.pdf",
+        "year": "2015",
+        "categories": {}
       },
       "AU Malabo Convention (2014)": {
-        "Title": "AU Malabo Convention",
-        "Link": "https://www.sbs.ox.ac.uk/cybersecurity-capacity/system/files/African%20Union%20Convention%20on%20CyberSecurity%20%26%20Personal%20Data%20Protection_0.pdf",
-        "Year": "2014",
-        "Categories": {}
+        "name": "AU Malabo Convention",
+        "url": "https://www.sbs.ox.ac.uk/cybersecurity-capacity/system/files/African%20Union%20Convention%20on%20CyberSecurity%20%26%20Personal%20Data%20Protection_0.pdf",
+        "year": "2014",
+        "categories": {}
       },
       "ASEAN Framework on Personal Data Protection (2016)": {
-        "Title": "ASEAN Framework on Personal Data Protection",
-        "Link": "https://asean.org/storage/2012/05/10-ASEAN-Framework-on-PDP.pdf",
-        "Year": "2016",
-        "Categories": {}
+        "name": "ASEAN Framework on Personal Data Protection",
+        "url": "https://asean.org/storage/2012/05/10-ASEAN-Framework-on-PDP.pdf",
+        "year": "2016",
+        "categories": {}
       },
       "OAS Principles on Privacy and Data Protection (2015)": {
-        "Title": "OAS Principles on Privacy and Data Protection",
-        "Link": "https://www.oas.org/en/sla/dil/docs/cji-doc_474-15_rev2.pdf",
-        "Year": "2015",
-        "Categories": {}
+        "name": "OAS Principles on Privacy and Data Protection",
+        "url": "https://www.oas.org/en/sla/dil/docs/cji-doc_474-15_rev2.pdf",
+        "year": "2015",
+        "categories": {}
       },
       "UN Personal Data Protection and Privacy Principles (2018)": {
-        "Title": "UN Personal Data Protection and Privacy Principles",
-        "Link": "https://www.unsceb.org/CEBPublicFiles/UN-Principles-on-Personal-Data-Protection-Privacy-2018.pdf",
-        "Year": "2018",
-        "Categories": {}
+        "name": "UN Personal Data Protection and Privacy Principles",
+        "url": "https://www.unsceb.org/CEBPublicFiles/UN-Principles-on-Personal-Data-Protection-Privacy-2018.pdf",
+        "year": "2018",
+        "categories": {}
       },
       "IAS": {
-        "Title": "RIPD Data Protection Standards of the Ibero-American States",
-        "Link": "https://iapp.org/media/pdf/resource_center/Ibero-Am_standards.pdf",
-        "Year": "-",
-        "Categories": {}
+        "name": "RIPD Data Protection Standards of the Ibero-American States",
+        "url": "https://iapp.org/media/pdf/resource_center/Ibero-Am_standards.pdf",
+        "year": "-",
+        "categories": {}
       },
       "Convention 108": {
-        "Title": "CoE Convention 108+",
-        "Link": "https://rm.coe.int/convention-108-convention-for-the-protection-of-individuals-with-regar/16808b36f1",
-        "Year": "-",
-        "Categories": {}
+        "name": "CoE Convention 108+",
+        "url": "https://rm.coe.int/convention-108-convention-for-the-protection-of-individuals-with-regar/16808b36f1",
+        "year": "-",
+        "categories": {}
       },
       "Madrid Resolution": {
-        "Title": "ICDPPC Madrid Resolution",
-        "Link": "https://icdppc.org/wp-content/uploads/2015/02/The-Madrid-Resolution.pdf",
-        "Year": "-",
-        "Categories": {}
+        "name": "ICDPPC Madrid Resolution",
+        "url": "https://icdppc.org/wp-content/uploads/2015/02/The-Madrid-Resolution.pdf",
+        "year": "-",
+        "categories": {}
       }
     }
   ];
@@ -119,15 +119,16 @@ function writeData() {
           let catKey = k.split('--')[0]
           if (k !== "Framework") {
             if (!Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[k] = { "Abbreviated-Language": frameworkData[k] }
+              categoryObj[k] = { "abbreviated_language": frameworkData[k] }
             } else if (Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[catKey]["Original-Language"] = frameworkData[k]
-            }
 
-            categoryObj[catKey].has_data = true
+              categoryObj[catKey]["original_language"] = frameworkData[k]
+
+              categoryObj[catKey]["has_data"] = true
+            }
           }
         }
-        json[0][key]["Categories"] = categoryObj
+        json[0][key]["categories"] = categoryObj
       }
     }
 
@@ -138,13 +139,13 @@ function writeData() {
           let catKey = k.split('--')[0]
           if (k !== "Framework") {
             if (!Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[k] = { "Abbreviated-Language": frameworkData[k] }
+              categoryObj[k] = { "abbreviated_language": frameworkData[k] }
             } else if (Object.keys(categoryObj).includes(catKey)) {
-              categoryObj[catKey]["Original-Language"] = frameworkData[k]
+              categoryObj[catKey]["original_language"] = frameworkData[k]
             }
           }
         }
-        json[0][key]["Categories"] = { ...json[0][key]["Categories"], ...categoryObj }
+        json[0][key]["categories"] = { ...json[0][key]["categories"], ...categoryObj }
       }
     }
 
