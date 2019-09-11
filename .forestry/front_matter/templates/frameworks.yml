@@ -1,4 +1,37 @@
 ---
 label: Frameworks
 hide_body: true
-fields: []
+fields:
+- name: frameworks
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: categories
+    type: field_group_list
+    fields:
+    - name: category
+      type: select
+      default: []
+      config:
+        required: false
+        options: []
+        source:
+          type: pages
+          section: categories
+          file: 
+          path: 
+      label: Category
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Categories
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: frameworks
