@@ -1,0 +1,5959 @@
+---
+label: Frameworks JSON
+hide_body: true
+fields:
+- type: field_group_list
+  name: Framework database
+  label: Framework database
+  fields:
+  - type: field_group
+    name: eu_gdpr
+    label: eu_gdpr
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data--language
+        label: sensitive_personal_data--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: oecd_privacy_framework
+    label: oecd_privacy_framework
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data--language
+        label: sensitive_personal_data--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: apec_privacy_framework
+    label: apec_privacy_framework
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data--language
+        label: sensitive_personal_data--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: au_malabo_convention
+    label: au_malabo_convention
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: asean_framework_on_personal_data_protection
+    label: asean_framework_on_personal_data_protection
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: oas_principles_on_privacy_and_data_protection
+    label: oas_principles_on_privacy_and_data_protection
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: un_personal_data_protection_and_privacy_principles
+    label: un_personal_data_protection_and_privacy_principles
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: ias
+    label: ias
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: convention_108
+    label: convention_108
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+  - type: field_group
+    name: madrid_resolution
+    label: madrid_resolution
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: year
+      label: year
+    - type: field_group
+      name: categories
+      label: categories
+      fields:
+      - type: field_group
+        name: data_controller
+        label: data_controller
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor
+        label: data_processor
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: Personal-Data
+        label: Personal-Data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data
+        label: sensitive_personal_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_controller_definition
+        label: data_controller_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_processor_definition
+        label: data_processor_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_definition
+        label: personal_data_definition
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_indirect_identifiers
+        label: personal_data_indirect_identifiers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: personal_data_enumeration
+        label: personal_data_enumeration
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_social_factors
+        label: sensitive_personal_data_social_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: sensitive_personal_data_physical_factors
+        label: sensitive_personal_data_physical_factors
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_requirement
+        label: consent_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_exceptions
+        label: consent_exceptions
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: consent_sensitive_data
+        label: consent_sensitive_data
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_consent
+        label: conditions_for_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: conditions_for_access
+        label: conditions_for_access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_information
+        label: right_to_information
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right-to-access
+        label: right-to-access
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_correction
+        label: right_to_correction
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_erasure
+        label: right_to_erasure
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_object_to_processing
+        label: right_to_object_to_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_withdraw_consent
+        label: right_to_withdraw_consent
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: right_to_challenge_denials
+        label: right_to_challenge_denials
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: portability
+        label: portability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: automated_processing
+        label: automated_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cost--language
+        label: cost--language
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: lawful_and_fair
+        label: lawful_and_fair
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: disclosure_of_purpose
+        label: disclosure_of_purpose
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation
+        label: use_limitation
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: minimization
+        label: minimization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: purpose_specification_timeline
+        label: purpose_specification_timeline
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        label: use_limitation_factors_for_judging_compatibility_of_additional_processing
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+      - type: field_group
+        name: transparency
+        label: transparency
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_quality
+        label: data_quality
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: textarea
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_requirement
+        label: security_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security_types_of_safeguards
+        label: security_types_of_safeguards
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification
+        label: data_breach_notification
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention
+        label: retention
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: cross_border_transfers
+        label: cross_border_transfers
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: accountability
+        label: accountability
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: privacy_by_design
+        label: privacy_by_design
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: security
+        label: security
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: data_breach_notification_data_subject
+        label: data_breach_notification_data_subject
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_requirement
+        label: retention_requirement
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: textarea
+          name: original_language
+          label: original_language
+      - type: field_group
+        name: retention_anonymization
+        label: retention_anonymization
+        fields:
+        - type: boolean
+          name: has_data
+          label: has_data
+        - type: text
+          name: abbreviated_language
+          label: abbreviated_language
+        - type: text
+          name: original_language
+          label: original_language
