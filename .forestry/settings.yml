@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: src/json
+  label: test files
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".json"
+  templates:
+  - frameworks
 - type: document
   path: src/json/explanations.json
   label: Categories
