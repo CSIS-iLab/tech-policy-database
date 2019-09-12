@@ -16,7 +16,7 @@ fields:
       format: html-blocks
   label: Abbreviated Language
   description: Text that displays in the table
-- name: original_language
+- name: original_lang
   type: textarea
   default: ''
   config:
