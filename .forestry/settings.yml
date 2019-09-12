@@ -5,14 +5,9 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/json/frameworks_reduced.json
-  label: Frameworks Reduced
-- type: directory
-  path: src/json
-  label: test files
-  create: documents
+  path: src/json/curated_categories.json
+  label: Curated Categories
   match: "**/*"
-  new_doc_ext: json
 - type: document
   path: src/json/explanations.json
   label: Categories
