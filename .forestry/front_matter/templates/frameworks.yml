@@ -7,8 +7,3 @@ fields:
   config: {}
   template: framework-category-info
   label: Framework
-- name: framework-cats
-  type: include
-  config: {}
-  template: framework-category-info
-  label: framework-cats
