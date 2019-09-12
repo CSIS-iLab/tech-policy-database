@@ -1,17 +1,17 @@
-[
-  {
+{
+  "conditions_for_legitimate_processing": {
     "conditions_for_legitimate_processing": "Condition for Legitimate Processing"
   },
-  {
+  "individual_rights": {
     "individual_rights": "Individual Rights"
   },
-  {
+  "principles_of_consent": {
     "principles_of_consent": "Principles of Consent"
   },
-  {
+  "obligations_of_data_controllers": {
     "obligations_of_data_controllers": "Obligations of Data Controllers"
   },
-  {
+  "definitions": {
     "definitions": "Definitions"
   }
-]
+}
