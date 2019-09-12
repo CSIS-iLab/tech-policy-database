@@ -6,7 +6,7 @@ fields:
   type: boolean
   label: Has Data
   default: true
-- name: abbreviated_language
+- name: abbreviated_lang
   type: textarea
   default: ''
   config:
