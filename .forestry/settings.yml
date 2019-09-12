@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: src/json/curated_categories.json
+  label: Curated Categories
+  match: "**/*"
+- type: document
   path: src/json/explanations.json
   label: Categories
 - type: document
