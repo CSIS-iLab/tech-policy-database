@@ -5,14 +5,15 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: src/json/framework_database.json
+  label: Frameworks
+  match: "**/*"
+- type: document
   path: src/json/curated_categories.json
   label: Curated Categories
 - type: document
   path: src/json/explanations.json
   label: Categories
-- type: document
-  path: src/json/framework_database.json
-  label: Frameworks
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
