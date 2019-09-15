@@ -2,11 +2,15 @@ import React from "react";
 import TableOptions from "./TableOptions";
 import Table from "./Table";
 
-const TableContainer = () => {
+const TableContainer = props => {
   return (
     <div>
       <TableOptions />
-      <Table />
+      <Table
+        tableData={props.tableData}
+        categories={props.categories}
+        curatedCategories={props.curatedCategories}
+      />
     </div>
   );
 };
