@@ -6,7 +6,7 @@ fields:
   type: boolean
   label: Has Data
   default: true
-- name: abbreviated_language
+- name: abbreviated_lang
   type: textarea
   default: ''
   config:
@@ -16,7 +16,7 @@ fields:
       format: html-blocks
   label: Abbreviated Language
   description: Text that displays in the table
-- name: original_language
+- name: original_lang
   type: textarea
   default: ''
   config:
