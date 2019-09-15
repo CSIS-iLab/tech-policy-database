@@ -453,5 +453,3 @@ fields:
       - type: text
         name: original_lang
         label: original_lang
-pages:
-- src/json/framework_database.json
