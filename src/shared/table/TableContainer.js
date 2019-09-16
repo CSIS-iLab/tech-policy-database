@@ -6,10 +6,7 @@ const TableContainer = props => {
   return (
     <div>
       <TableOptions />
-      <DataTable
-        headers={props.headers}
-        rows={props.rows}
-      />
+      <DataTable headers={props.headers} rows={props.rows} />
     </div>
   );
 };
