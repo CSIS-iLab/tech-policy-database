@@ -15,6 +15,18 @@ fields:
   - type: text
     name: category
     label: category
+  - name: category2
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: curated-categories
+        file: 
+        path: 
+    label: Category
 - type: field_group
   name: data_processor
   label: data_processor
