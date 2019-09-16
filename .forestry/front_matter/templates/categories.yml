@@ -1,0 +1,381 @@
+---
+label: Categories
+hide_body: true
+fields:
+- type: field_group
+  name: data_controller
+  label: data_controller
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: data_processor
+  label: data_processor
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: personal_data
+  label: personal_data
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: sensitive_personal_data
+  label: sensitive_personal_data
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: consent_requirement
+  label: consent_requirement
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: consent_exceptions
+  label: consent_exceptions
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: conditions_for_consent
+  label: conditions_for_consent
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: conditions_for_access
+  label: conditions_for_access
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_information
+  label: right_to_information
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_access
+  label: right_to_access
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_correction
+  label: right_to_correction
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_erasure
+  label: right_to_erasure
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_object_processing
+  label: right_to_object_processing
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_withdraw_consent
+  label: right_to_withdraw_consent
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: right_to_challenge_denials
+  label: right_to_challenge_denials
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: portability
+  label: portability
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: automated_processing
+  label: automated_processing
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: lawful_and_fair
+  label: lawful_and_fair
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: disclosure_of_purpose
+  label: disclosure_of_purpose
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: use_limitation
+  label: use_limitation
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: minimization
+  label: minimization
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: transparency
+  label: transparency
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: data_quality
+  label: data_quality
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: security
+  label: security
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: data_breach_notification
+  label: data_breach_notification
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: retention
+  label: retention
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: cross_border_transfers
+  label: cross_border_transfers
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: accountability
+  label: accountability
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
+- type: field_group
+  name: privacy_by_design
+  label: privacy_by_design
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: category
+    label: category
