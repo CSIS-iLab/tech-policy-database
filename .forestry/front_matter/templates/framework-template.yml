@@ -448,18 +448,18 @@ fields:
       - type: text
         name: original_lang
         label: original_lang
-- name: categories_list
-  type: field_group_list
-  fields:
-  - name: categories2
-    type: include
-    config: {}
-    template: framework-category-info
-    label: categories2
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: categories list
+  - name: asdfasfsadf
+    type: field_group_list
+    fields:
+    - name: asdfsafafs
+      type: include
+      config: {}
+      template: framework-category-info
+      label: asdfsafafs
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: asdfasfsadf
 pages:
 - src/json/framework_database.json
