@@ -118,11 +118,6 @@ fields:
         config: {}
         template: framework-category-info
         label: Category Template
-    - name: category_template
-      type: include
-      config: {}
-      template: framework-category-info
-      label: Category Template
     - type: field_group
       name: consent_requirement
       label: consent_requirement
@@ -453,5 +448,18 @@ fields:
       - type: text
         name: original_lang
         label: original_lang
+- name: categories_list
+  type: field_group_list
+  fields:
+  - name: categories2
+    type: include
+    config: {}
+    template: framework-category-info
+    label: categories2
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: categories list
 pages:
 - src/json/framework_database.json
