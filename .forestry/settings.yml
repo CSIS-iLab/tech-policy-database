@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/json/framework_database.json
   label: Frameworks
-  match: "**/*"
 - type: document
   path: src/json/curated_categories.json
   label: Curated Categories
