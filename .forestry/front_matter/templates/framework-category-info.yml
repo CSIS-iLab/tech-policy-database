@@ -27,8 +27,3 @@ fields:
   label: Original Language
   description: Original language from the framework document that appears in side
     panel.
-- name: name
-  type: text
-  config:
-    required: false
-  label: name
