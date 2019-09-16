@@ -448,18 +448,5 @@ fields:
       - type: text
         name: original_lang
         label: original_lang
-  - name: category2
-    type: field_group_list
-    fields:
-    - name: asdfsafafs
-      type: include
-      config: {}
-      template: framework-category-info
-      label: asdfsafafs
-    config:
-      min: 
-      max: 
-      labelField: name
-    label: category2
 pages:
 - src/json/framework_database.json
