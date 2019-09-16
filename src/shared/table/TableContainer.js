@@ -1,15 +1,14 @@
 import React from "react";
 import TableOptions from "./TableOptions";
-import Table from "./Table";
+import DataTable from "./DataTable";
 
 const TableContainer = props => {
   return (
     <div>
       <TableOptions />
-      <Table
-        tableData={props.tableData}
-        categories={props.categories}
-        curatedCategories={props.curatedCategories}
+      <DataTable
+        headers={props.headers}
+        rows={props.rows}
       />
     </div>
   );

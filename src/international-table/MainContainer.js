@@ -7,13 +7,41 @@ import categories from "../json/explanations.json";
 import curatedCategories from "../json/curated_categories.json";
 
 const MainContainer = () => {
+  const formatCategoryData = () => {
+    return Object.keys(categories).map(key => [key, categories[key]]);
+  };
+
+  const formatHeadings = () => {
+    return [{ "name": "Categories", "url": "", "year": "" }, ...tableData];
+  };
+
+  const formatRows = () => {
+    const rows = []
+    for (const i in categories) {
+      const rowData = []
+      for (const j of formatHeadings()) {
+        if (j.categories !== undefined) {
+          // console.log(j.name, j.categories[i])
+          rowData.push([j.name, j.categories[i]])
+        } else {
+          // console.log('----------', categories[i].title, categories[i].description)
+          rowData.push([categories[i].title, categories[i].description])
+        }
+      }
+      rows.push(rowData)
+    }
+    return rows
+  }
+
   return (
     <div>
       <Description />
       <TableContainer
-        tableData={tableData}
-        categories={categories}
-        curatedCategories={curatedCategories}
+        // tableData={tableData}
+        // categories={formatCategoryData()}
+        // curatedCategories={curatedCategories}
+        headers={formatHeadings()}
+        rows={formatRows()}
       />
       <ModalContainer />
     </div>
