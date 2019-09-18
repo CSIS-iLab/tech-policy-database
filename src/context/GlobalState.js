@@ -2,11 +2,23 @@ import React, { useState } from "react";
 import ShopContext from "./shop-context";
 
 const GlobalState = props => {
+  const [searchText, setSearchText] = useState('')
+  const [allRows, setAllRows] = useState([])
+  const [allHeaders, setAllHeaders] = useState([])
+  const [filteredRows, setFilteredRows] = useState([])
+
   return (
     <ShopContext.Provider
       value={
         {
-          // state goes here
+          allRows,
+          allHeaders,
+          filteredRows,
+          searchText,
+          setAllHeaders,
+          setAllRows,
+          setFilteredRows,
+          setSearchText,
         }
       }
     >
