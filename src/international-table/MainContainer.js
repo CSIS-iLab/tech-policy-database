@@ -16,6 +16,10 @@ const MainContainer = () => {
     return context.allRows.filter((row) => row[0][0].toLowerCase().includes(context.searchText.toLowerCase()))
   }
 
+  const filterHeaders = () => {
+    return context.allHeaders.filter((header) => header.name.toLowerCase().includes(context.searchText.toLowerCase()))
+  }
+
   return (
     <div>
       <Description />
