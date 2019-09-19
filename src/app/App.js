@@ -6,7 +6,6 @@ import RouteContainer from "./RouteContainer";
 import Footer from "./Footer";
 import tableData from "../json/framework_database.json";
 import categories from "../json/explanations.json";
-import curatedCategories from "../json/curated_categories.json";
 
 function App() {
   const context = useContext(shopContext)
@@ -17,13 +16,13 @@ function App() {
 
   const formatRows = () => {
     const rows = []
-    for (const i in categories) {
+    for (const cat in categories) {
       const rowData = []
-      for (const j of formatHeaders()) {
-        if (j.categories !== undefined) {
-          rowData.push([j.name, j.categories[i]])
+      for (const header of formatHeaders()) {
+        if (header.categories !== undefined) {
+          rowData.push([header.name, header.categories[cat]])
         } else {
-          rowData.push([categories[i].title, categories[i].description])
+          rowData.push([categories[cat].title, categories[cat].description])
         }
       }
       rows.push(rowData)
@@ -31,10 +30,20 @@ function App() {
     return rows
   }
 
+  const formatCuratedCategories = () => {
+    return Object.keys(categories).map(key => [key, categories[key]]).reduce((cats, catData) => {
+      let catKey = catData[1].category
+      let title = catData[1].title
+      cats[catKey] ? cats[catKey].push(title) : cats[catKey] = [title]
+      return cats
+    }, {})
+  }
+
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
     context.setFilteredRows(formatRows())
+    context.setCuratedCategories(formatCuratedCategories())
   }, [])
 
   return (

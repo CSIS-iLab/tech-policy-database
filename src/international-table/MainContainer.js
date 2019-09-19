@@ -1,32 +1,47 @@
 import React, { useContext } from "react";
-import shopContext from "../context/shop-context"
+import shopContext from "../context/shop-context";
 import Description from "./Description";
 import ModalContainer from "./modals/ModalContainer";
 import TableContainer from "../shared/table/TableContainer";
 
 const MainContainer = () => {
-  const context = useContext(shopContext)
+  const context = useContext(shopContext);
 
-  // const formatCategoryData = () => {
-  //   return Object.keys(categories).map(key => [key, categories[key]]);
-  // };
-
+  const filterLang = lang => {
+    return context.allRows.filter(row => {
+      return row
+        .slice(1)
+        .some(cat =>
+          cat[1][lang].toLowerCase().includes(context.searchText.toLowerCase())
+        );
+    });
+  };
 
   const filterRows = () => {
-    return context.allRows.filter((row) => row[0][0].toLowerCase().includes(context.searchText.toLowerCase()))
-  }
+    switch (context.filterSubject) {
+      case "categories":
+        return context.allRows.filter(row =>
+          row[0][0].toLowerCase().includes(context.searchText.toLowerCase())
+        );
+      case "abbreviated_lang":
+        return filterLang("abbreviated_lang");
+      case "original_lang":
+        return filterLang("original_lang");
+      default:
+        return [];
+    }
+  };
 
   const filterHeaders = () => {
-    return context.allHeaders.filter((header) => header.name.toLowerCase().includes(context.searchText.toLowerCase()))
-  }
+    return context.allHeaders.filter(header =>
+      header.name.toLowerCase().includes(context.searchText.toLowerCase())
+    );
+  };
 
   return (
     <div>
       <Description />
-      <TableContainer
-        headers={context.allHeaders}
-        rows={filterRows()}
-      />
+      <TableContainer headers={context.allHeaders} rows={filterRows()} />
       <ModalContainer />
     </div>
   );
