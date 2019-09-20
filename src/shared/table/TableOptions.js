@@ -1,14 +1,14 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import FilterBar from "./FilterBar";
-import TextResize from "./TextResize"
+import TableTextResize from "./TableTextResize"
 
 const TableOptions = () => {
   return (
     <div>
       <SearchBar />
       <FilterBar />
-      <TextResize />
+      <TableTextResize />
     </div>
   );
 };
