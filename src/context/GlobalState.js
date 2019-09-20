@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import ShopContext from "./shop-context";
+import React, { useState } from 'react'
+import ShopContext from './shop-context'
 
-const GlobalState = props => {
+const GlobalState = (props) => {
   const [searchText, setSearchText] = useState('')
   const [allRows, setAllRows] = useState([])
   const [allHeaders, setAllHeaders] = useState([])
@@ -11,26 +11,24 @@ const GlobalState = props => {
 
   return (
     <ShopContext.Provider
-      value={
-        {
-          allRows,
-          allHeaders,
-          curatedCategories,
-          filteredRows,
-          filterSubject,
-          searchText,
-          setAllHeaders,
-          setAllRows,
-          setCuratedCategories,
-          setFilteredRows,
-          setFilterSubject,
-          setSearchText,
-        }
-      }
+      value={{
+        allRows,
+        allHeaders,
+        curatedCategories,
+        filteredRows,
+        filterSubject,
+        searchText,
+        setAllHeaders,
+        setAllRows,
+        setCuratedCategories,
+        setFilteredRows,
+        setFilterSubject,
+        setSearchText
+      }}
     >
       {props.children}
     </ShopContext.Provider>
-  );
-};
+  )
+}
 
-export default GlobalState;
+export default GlobalState

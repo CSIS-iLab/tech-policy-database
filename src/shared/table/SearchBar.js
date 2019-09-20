@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
-import shopContext from "../../context/shop-context";
+import React, { useContext } from 'react'
+import shopContext from '../../context/shop-context'
 
 const Search = () => {
-  const context = useContext(shopContext);
+  const context = useContext(shopContext)
 
-  const handleSearchText = e => {
-    context.setSearchText(e.target.value);
-  };
+  const handleSearchText = (e) => {
+    context.setSearchText(e.target.value)
+  }
 
-  const handleFilterSubject = e => {
-    context.setFilterSubject(e.target.value);
-  };
+  const handleFilterSubject = (e) => {
+    context.setFilterSubject(e.target.value)
+  }
 
   return (
     <div>
@@ -25,7 +25,7 @@ const Search = () => {
         <option value="original_lang">Original Language</option>
       </select>
     </div>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

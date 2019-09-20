@@ -1,18 +1,18 @@
-import React from "react";
-import HeaderCell from "./HeaderCell";
-import TableCell from "./TableCell";
+import React from 'react'
+import HeaderCell from './HeaderCell'
+import TableCell from './TableCell'
 
-const DataTable = props => {
+const DataTable = (props) => {
   const renderHeadingRow = (cell, cellIndex) => {
-    const { headers } = props;
+    const { headers } = props
 
     return (
       <HeaderCell key={`heading-${cellIndex}`} content={headers[cellIndex]} />
-    );
-  };
+    )
+  }
 
   const renderRow = (row, rowIndex) => {
-    const { rows } = props;
+    const { rows } = props
 
     return (
       <tr key={`row-${rowIndex}`}>
@@ -22,13 +22,13 @@ const DataTable = props => {
               key={`${rowIndex}-${cellIndex}`}
               content={rows[rowIndex][cellIndex]}
             />
-          );
+          )
         })}
       </tr>
-    );
-  };
+    )
+  }
 
-  const { headers, rows } = props;
+  const { headers, rows } = props
 
   return (
     <table>
@@ -37,7 +37,7 @@ const DataTable = props => {
       </thead>
       <tbody>{rows.map(renderRow)}</tbody>
     </table>
-  );
-};
+  )
+}
 
-export default DataTable;
+export default DataTable

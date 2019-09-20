@@ -1,50 +1,52 @@
-import React, { useContext } from "react";
-import shopContext from "../context/shop-context";
-import Description from "./Description";
-import ModalContainer from "./modals/ModalContainer";
-import TableContainer from "../shared/table/TableContainer";
+import React, { useContext } from 'react'
+import shopContext from '../context/shop-context'
+import Description from './Description'
+import ModalContainer from './modals/ModalContainer'
+import TableContainer from '../shared/table/TableContainer'
+import Introspection from '../shared/table/Introspection'
 
 const MainContainer = () => {
-  const context = useContext(shopContext);
+  const context = useContext(shopContext)
 
-  const filterLang = lang => {
-    return context.allRows.filter(row => {
+  const filterLang = (lang) => {
+    return context.allRows.filter((row) => {
       return row
         .slice(1)
-        .some(cat =>
+        .some((cat) =>
           cat[1][lang].toLowerCase().includes(context.searchText.toLowerCase())
-        );
-    });
-  };
+        )
+    })
+  }
 
   const filterRows = () => {
     switch (context.filterSubject) {
-      case "categories":
-        return context.allRows.filter(row =>
+      case 'categories':
+        return context.allRows.filter((row) =>
           row[0][0].toLowerCase().includes(context.searchText.toLowerCase())
-        );
-      case "abbreviated_lang":
-        return filterLang("abbreviated_lang");
-      case "original_lang":
-        return filterLang("original_lang");
+        )
+      case 'abbreviated_lang':
+        return filterLang('abbreviated_lang')
+      case 'original_lang':
+        return filterLang('original_lang')
       default:
-        return [];
+        return []
     }
-  };
+  }
 
   const filterHeaders = () => {
-    return context.allHeaders.filter(header =>
+    return context.allHeaders.filter((header) =>
       header.name.toLowerCase().includes(context.searchText.toLowerCase())
-    );
-  };
+    )
+  }
 
   return (
     <div>
+      <Introspection />
       <Description />
       <TableContainer headers={context.allHeaders} rows={filterRows()} />
       <ModalContainer />
     </div>
-  );
-};
+  )
+}
 
-export default MainContainer;
+export default MainContainer

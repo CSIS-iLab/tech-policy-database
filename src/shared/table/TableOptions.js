@@ -1,7 +1,7 @@
-import React from "react";
-import SearchBar from "./SearchBar";
-import FilterBar from "./FilterBar";
-import TableTextResize from "./TableTextResize"
+import React from 'react'
+import SearchBar from './SearchBar'
+import FilterBar from './FilterBar'
+import TableTextResize from './TableTextResize'
 
 const TableOptions = () => {
   return (
@@ -10,7 +10,7 @@ const TableOptions = () => {
       <FilterBar />
       <TableTextResize />
     </div>
-  );
-};
+  )
+}
 
-export default TableOptions;
+export default TableOptions

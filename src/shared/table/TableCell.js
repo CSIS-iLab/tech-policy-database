@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-const TableCell = props => {
-  return typeof props.content[1] !== "object" ? (
+const TableCell = (props) => {
+  return typeof props.content[1] !== 'object' ? (
     <td>
       <div>{props.content[0]}</div>
     </td>
@@ -9,7 +9,7 @@ const TableCell = props => {
     <td>
       <div>{props.content[1].abbreviated_lang}</div>
     </td>
-  );
-};
+  )
+}
 
-export default TableCell;
+export default TableCell
