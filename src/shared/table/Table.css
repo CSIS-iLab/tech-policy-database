@@ -10,4 +10,39 @@ table {
 
   /* default table font-size */
   font-size: 16px;
+  border-collapse: collapse;
+  position: relative;
+}
+
+table,
+th,
+td {
+  border: 1px solid #c0c4ca;
+}
+
+td,
+th {
+  height: auto;
+  text-align: center;
+}
+
+.table-container {
+  overflow: scroll;
+  position: relative;
+  max-width: 600em;
+  max-height: 800em;
+}
+
+td:first-child,
+th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: grey;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }

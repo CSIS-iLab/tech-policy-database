@@ -31,12 +31,14 @@ const DataTable = (props) => {
   const { headers, rows } = props
 
   return (
-    <table>
-      <thead>
-        <tr>{headers.map(renderHeadingRow)}</tr>
-      </thead>
-      <tbody>{rows.map(renderRow)}</tbody>
-    </table>
+    <div className="table-container">
+      <table>
+        <thead>
+          <tr>{headers.map(renderHeadingRow)}</tr>
+        </thead>
+        <tbody>{rows.map(renderRow)}</tbody>
+      </table>
+    </div>
   )
 }
 
