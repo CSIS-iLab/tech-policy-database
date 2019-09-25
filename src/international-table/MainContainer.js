@@ -42,7 +42,7 @@ const MainContainer = () => {
     <div>
       <Description />
       <TableContainer headers={context.allHeaders} rows={filterRows()} />
-      <ModalContainer />
+      <ModalContainer headers={context.allHeaders} />
     </div>
   )
 }

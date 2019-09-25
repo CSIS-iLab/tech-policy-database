@@ -14,6 +14,12 @@ const LangModal = () => {
       <div className="modal-content">
         <div className="modal-title">Original Language</div>
         <div className="modal-body">{context.activeOriginalLang}</div>
+        <br />
+        <span className="modal-footer">
+          <a href={context.allHeaders.url} target="_blank">
+            Original Document
+          </a>
+        </span>
       </div>
     </div>
   ) : null
