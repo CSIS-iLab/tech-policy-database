@@ -22,8 +22,11 @@ td {
 
 td,
 th {
-  height: auto;
+  /* height: auto; */
   text-align: center;
+  width: 300px;
+  min-width: 300px;
+  min-height: 400px;
 }
 
 .table-container {
@@ -41,7 +44,7 @@ th:first-child {
   background-color: grey;
 }
 
-thead {
+thead > * {
   position: sticky;
   top: 0;
   z-index: 10;

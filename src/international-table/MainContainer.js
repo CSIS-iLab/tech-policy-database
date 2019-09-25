@@ -3,7 +3,6 @@ import shopContext from '../context/shop-context'
 import Description from './Description'
 import ModalContainer from './modals/ModalContainer'
 import TableContainer from '../shared/table/TableContainer'
-import Introspection from '../shared/table/Introspection'
 
 const MainContainer = () => {
   const context = useContext(shopContext)
@@ -41,7 +40,6 @@ const MainContainer = () => {
 
   return (
     <div>
-      <Introspection />
       <Description />
       <TableContainer headers={context.allHeaders} rows={filterRows()} />
       <ModalContainer />

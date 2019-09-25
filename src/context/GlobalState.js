@@ -8,6 +8,8 @@ const GlobalState = (props) => {
   const [filteredRows, setFilteredRows] = useState([])
   const [filterSubject, setFilterSubject] = useState('categories')
   const [curatedCategories, setCuratedCategories] = useState({})
+  const [activeOriginalLang, setActiveOriginalLang] = useState('Original Lang')
+  const [langModalStatus, setLangModalStatus] = useState(false)
 
   return (
     <ShopContext.Provider
@@ -15,14 +17,18 @@ const GlobalState = (props) => {
         allRows,
         allHeaders,
         curatedCategories,
+        activeOriginalLang,
         filteredRows,
         filterSubject,
+        langModalStatus,
         searchText,
         setAllHeaders,
         setAllRows,
         setCuratedCategories,
+        setActiveOriginalLang,
         setFilteredRows,
         setFilterSubject,
+        setLangModalStatus,
         setSearchText
       }}
     >
