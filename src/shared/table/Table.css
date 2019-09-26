@@ -11,7 +11,6 @@ table {
   /* default table font-size */
   font-size: 16px;
   border-collapse: collapse;
-  position: relative;
 }
 
 table,
@@ -29,11 +28,17 @@ th {
   min-height: 400px;
 }
 
+tbody {
+  /* display block for sticky header */
+  display: block;
+}
+
 .table-container {
   overflow: scroll;
   position: relative;
   max-width: 600em;
-  max-height: 800em;
+  /* height must be set for the header to be sticky */
+  height: 1763px;
 }
 
 td:first-child,
@@ -45,6 +50,9 @@ th:first-child {
 }
 
 thead > * {
+  background: white;
+  /* display block for sticky header */
+  display: block;
   position: sticky;
   top: 0;
   z-index: 10;
