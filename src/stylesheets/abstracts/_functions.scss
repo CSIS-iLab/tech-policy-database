@@ -11,8 +11,7 @@ $browser-context: 16px;
 @function return-map-value($map, $breakpoint) {
   @if not map-has-key($map, $breakpoint) {
     @warn "'#{$breakpoint}' is not a valid size";
-  }
-  @else {
+  } @else {
     @return map-get($map, $breakpoint);
-  } 
+  }
 }
