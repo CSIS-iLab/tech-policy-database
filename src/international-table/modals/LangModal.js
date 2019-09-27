@@ -16,7 +16,7 @@ const LangModal = () => {
         <div className="modal-body">{context.activeOriginalLang}</div>
         <br />
         <span className="modal-footer">
-          <a href={context.allHeaders.url} target="_blank">
+          <a href={context.allHeaders.url} target="_blank" rel="noopener noreferrer">
             Original Document
           </a>
         </span>
