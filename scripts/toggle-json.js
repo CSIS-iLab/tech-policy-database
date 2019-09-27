@@ -1,11 +1,26 @@
 const fs = require('fs')
 
-let data = fs.readFileSync('../src/json/framework_database.json', 'utf8')
-// console.log(data)
-
-for (const key of Object.keys(data)) {
-  if (data.hasOwnProperty('abbreviated_lang') && 'abbreviated_lang' === '') {
-    key[has_data] = false
+fs.readFile('../src/json/framework_database.json', 'utf8', (err, data) => {
+  if (err) {
+    throw err
   }
-  console.log('key:' + key + 'value:' + data)
-}
+
+  let jsonData = JSON.parse(data)
+  for (const key in jsonData) {
+    for (const catKey in jsonData[key]['categories']) {
+      if (jsonData[key]['categories'][catKey]['abbreviated_lang'] === '') {
+        jsonData[key]['categories'][catKey]['has_data'] = false
+      }
+    }
+  }
+
+  fs.writeFile(
+    '../src/json/framework_database.json',
+    JSON.stringify(jsonData),
+    function(err) {
+      if (err) {
+        return console.log(err)
+      }
+    }
+  )
+})

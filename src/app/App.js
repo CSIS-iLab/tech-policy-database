@@ -10,8 +10,9 @@ import categories from '../json/explanations.json'
 function App() {
   const context = useContext(shopContext)
 
+
   const formatHeaders = () => {
-    return [{ 'name': 'Categories', 'url': '', 'year': '' }, ...tableData]
+    return [{ 'name': 'Categories' }, ...tableData]
   }
 
   const formatRows = () => {
@@ -20,6 +21,7 @@ function App() {
       const rowData = []
       for (const header of formatHeaders()) {
         if (header.categories !== undefined) {
+          header.categories[cat]['default_lang'] = categories[cat]['default_lang']
           rowData.push([header.name, header.categories[cat]])
         } else {
           rowData.push([categories[cat].title, categories[cat].description])
@@ -41,11 +43,17 @@ function App() {
       }, {})
   }
 
+  const formatCatData = () => {
+    return Object.keys(categories)
+      .map((key) => [key, categories[key]])
+  }
+
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
     context.setFilteredRows(formatRows())
     context.setCuratedCategories(formatCuratedCategories())
+    context.setCatData(formatCatData())
   }, [])
 
   return (

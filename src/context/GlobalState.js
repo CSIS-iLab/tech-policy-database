@@ -10,12 +10,14 @@ const GlobalState = (props) => {
   const [curatedCategories, setCuratedCategories] = useState({})
   const [activeOriginalLang, setActiveOriginalLang] = useState('Original Lang')
   const [langModalStatus, setLangModalStatus] = useState(false)
+  const [catData, setCatData] = useState({})
 
   return (
     <ShopContext.Provider
       value={{
         allRows,
         allHeaders,
+        catData,
         curatedCategories,
         activeOriginalLang,
         filteredRows,
@@ -24,6 +26,7 @@ const GlobalState = (props) => {
         searchText,
         setAllHeaders,
         setAllRows,
+        setCatData,
         setCuratedCategories,
         setActiveOriginalLang,
         setFilteredRows,
