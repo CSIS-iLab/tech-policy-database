@@ -7,31 +7,6 @@ import TableContainer from '../shared/table/TableContainer'
 const MainContainer = () => {
   const context = useContext(GlobalContext)
 
-  const filterLang = (lang) => {
-    return context.allRows.filter((row) => {
-      return row
-        .slice(1)
-        .some((cat) =>
-          cat[1][lang].toLowerCase().includes(context.searchText.toLowerCase())
-        )
-    })
-  }
-
-  const filterRows = () => {
-    switch (context.filterSubject) {
-      case 'categories':
-        return context.allRows.filter((row) =>
-          row[0][0].toLowerCase().includes(context.searchText.toLowerCase())
-        )
-      case 'abbreviated_lang':
-        return filterLang('abbreviated_lang')
-      case 'original_lang':
-        return filterLang('original_lang')
-      default:
-        return []
-    }
-  }
-
   const filterHeaders = () => {
     return context.allHeaders.filter((header) =>
       header.name.toLowerCase().includes(context.searchText.toLowerCase())
@@ -41,7 +16,7 @@ const MainContainer = () => {
   return (
     <div className="international-container">
       <Description />
-      <TableContainer headers={context.allHeaders} rows={filterRows()} />
+      <TableContainer headers={context.allHeaders} rows={context.filteredRows} />
       <ModalContainer headers={context.allHeaders} />
     </div>
   )
