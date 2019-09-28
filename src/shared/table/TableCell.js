@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import shopContext from '../../context/shop-context'
+import { GlobalContext } from '../../context/GlobalContext'
 
 const TableCell = (props) => {
-  const context = useContext(shopContext)
+  const context = useContext(GlobalContext)
 
   const handleClick = () => {
     let link = context.allHeaders.find(h => h.name === props.content[0]).url

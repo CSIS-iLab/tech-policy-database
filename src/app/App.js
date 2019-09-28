@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import shopContext from '../context/shop-context'
+import { GlobalContext } from '../context/GlobalContext'
 import Background from './Background'
 import Header from './Header'
 import RouteContainer from './RouteContainer'
@@ -8,7 +8,7 @@ import tableData from '../json/framework_database.json'
 import categories from '../json/explanations.json'
 
 function App() {
-  const context = useContext(shopContext)
+  const context = useContext(GlobalContext)
 
 
   const formatHeaders = () => {

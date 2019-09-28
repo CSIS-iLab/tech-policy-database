@@ -1,15 +1,13 @@
-import React, { useContext } from 'react'
-import shopContext from '../../context/shop-context'
+import React from 'react'
 
-const Search = () => {
-  const context = useContext(shopContext)
+const Search = (props) => {
 
   const handleSearchText = (e) => {
-    context.setSearchText(e.target.value)
+    props.setSearchText(e.target.value)
   }
 
   const handleFilterSubject = (e) => {
-    context.setFilterSubject(e.target.value)
+    props.setFilterSubject(e.target.value)
   }
 
   return (

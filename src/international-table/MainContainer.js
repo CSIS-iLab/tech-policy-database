@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import shopContext from '../context/shop-context'
+import { GlobalContext } from '../context/GlobalContext'
 import Description from './Description'
 import ModalContainer from './modals/ModalContainer'
 import TableContainer from '../shared/table/TableContainer'
 
 const MainContainer = () => {
-  const context = useContext(shopContext)
+  const context = useContext(GlobalContext)
 
   const filterLang = (lang) => {
     return context.allRows.filter((row) => {

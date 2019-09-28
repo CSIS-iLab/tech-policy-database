@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import shopContext from '../../context/shop-context'
+import { GlobalContext } from '../../context/GlobalContext'
 import './Modal.css'
 
 const LangModal = () => {
-  const context = useContext(shopContext)
+  const context = useContext(GlobalContext)
 
   const handleClick = () => {
     context.setLangModalStatus(false)

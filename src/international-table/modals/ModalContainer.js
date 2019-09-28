@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import LangModal from './LangModal'
-import shopContext from '../../context/shop-context'
+import { GlobalContext } from '../../context/GlobalContext'
 
 const ModalContainer = () => {
-  const context = useContext(shopContext)
+  const context = useContext(GlobalContext)
 
   return (
     <React.Fragment>
