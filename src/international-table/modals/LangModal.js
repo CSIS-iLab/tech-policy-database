@@ -9,17 +9,31 @@ const LangModal = () => {
     context.setLangModalStatus(false)
   }
 
+  const createMarkup = (lang) => {
+    return { __html: lang }
+  }
+
   return context.langModalStatus ? (
-    <div className="modal-overlay" onClick={handleClick}>
-      <div className="modal-content">
-        <div className="modal-title">Original Language</div>
-        <div className="modal-body">{context.activeOriginalLang}</div>
-        <br />
-        <span className="modal-footer">
-          <a href={context.allHeaders.url} target="_blank" rel="noopener noreferrer">
-            Original Document
-          </a>
+    <div className="lang-modal">
+      <div className="lang-modal__header">
+        Original Language
+        <span className="lang-modal__close" onClick={handleClick}>
+          X
         </span>
+      </div>
+      <div
+        className="lang-modal__content"
+        dangerouslySetInnerHTML={createMarkup(context.activeOriginalLang)}
+      ></div>
+      <div className="lang-modal__footer">
+        <a
+          href={context.docLink}
+          alt="original document"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Original Document
+        </a>
       </div>
     </div>
   ) : null

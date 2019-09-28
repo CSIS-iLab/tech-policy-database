@@ -4,12 +4,12 @@ import MainContainer from '../international-table/MainContainer'
 
 const RouteContainer = () => {
   return (
-    <div>
+    <React.Fragment>
       <Switch>
         <Route exact path="/" component={MainContainer} />
         {/* Addition Table Route to be placed here */}
       </Switch>
-    </div>
+    </React.Fragment>
   )
 }
 

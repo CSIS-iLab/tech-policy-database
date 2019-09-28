@@ -6,10 +6,10 @@ const ModalContainer = () => {
   const context = useContext(shopContext)
 
   return (
-    <div>
+    <React.Fragment>
       <LangModal headers={context.allHeaders} />
       {/* <CustomFilterModal /> */}
-    </div>
+    </React.Fragment>
   )
 }
 

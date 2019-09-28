@@ -39,7 +39,7 @@ const MainContainer = () => {
   }
 
   return (
-    <div>
+    <div className="international-container">
       <Description />
       <TableContainer headers={context.allHeaders} rows={filterRows()} />
       <ModalContainer headers={context.allHeaders} />
