@@ -7,7 +7,7 @@ const FilterBar = () => {
   )
 
   return (
-    <div>
+    <div className="table__filter">
       <select>
         {names.map((name, i) => (
           <option key={i}>{name}</option>

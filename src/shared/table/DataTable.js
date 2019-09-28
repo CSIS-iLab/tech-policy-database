@@ -31,7 +31,7 @@ const DataTable = (props) => {
   const { headers, rows } = props
 
   return (
-    <div className="table-container">
+    <div className="table__wrapper">
       <table>
         <thead>
           <tr>{headers.map(renderHeadingRow)}</tr>

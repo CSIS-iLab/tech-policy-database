@@ -13,7 +13,7 @@ const Search = () => {
   }
 
   return (
-    <div>
+    <div className="table__search">
       <input
         type="text"
         onChange={handleSearchText}

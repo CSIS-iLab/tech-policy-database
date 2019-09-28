@@ -5,8 +5,11 @@ const TableCell = (props) => {
   const context = useContext(shopContext)
 
   const handleClick = () => {
+    let link = context.allHeaders.find(h => h.name === props.content[0]).url
+
     context.setLangModalStatus(true)
     context.setActiveOriginalLang(props.content[1].original_lang)
+    context.setDocLink(link)
   }
 
   const renderOriginalLang = () => {
