@@ -33,7 +33,7 @@ tbody {
   display: block;
 }
 
-.table-container {
+.table__wrapper {
   overflow: scroll;
   position: relative;
   max-width: 600em;

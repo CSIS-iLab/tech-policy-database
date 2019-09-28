@@ -5,7 +5,7 @@ import TableTextResize from './TableTextResize'
 
 const TableOptions = () => {
   return (
-    <div>
+    <div className="table__options">
       <SearchBar />
       <FilterBar />
       <TableTextResize />

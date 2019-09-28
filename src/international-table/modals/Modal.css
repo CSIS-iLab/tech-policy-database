@@ -1,24 +1,40 @@
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.modal-content {
-  position: absolute;
+.lang-modal {
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   width: 20%;
-  background-color: blueviolet;
+  z-index: 20;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 1s linear, left ease-in-out;
 }
 
-.modal-title {
-  height: 50px;
+.lang-modal__header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
-  height: 100%;
+.lang-modal__content {
+  flex: 10;
+  overflow-y: scroll;
+  padding: 5px 10px;
+}
+
+.lang-modal__footer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.lang-modal__close {
+  cursor: pointer;
 }

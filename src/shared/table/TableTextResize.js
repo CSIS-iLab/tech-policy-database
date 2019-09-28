@@ -8,7 +8,7 @@ const TableTextResize = () => {
   }
 
   return (
-    <div>
+    <div className="table__resize">
       <input
         type="image"
         src="/letter.png"
