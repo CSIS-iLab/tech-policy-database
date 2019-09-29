@@ -5,20 +5,21 @@ import FilterBar from './FilterBar'
 import TableTextResize from './TableTextResize'
 
 const TableOptions = () => {
-  const context = useContext(GlobalContext)
+  const { setFilteredRows, allRows } = useContext(GlobalContext)
+
 
   const filterByCategories = (text) => {
-    context.setFilteredRows(context.allRows.filter((row) =>
+    setFilteredRows(allRows.filter((row) =>
       row[0][0].toLowerCase().includes(text.toLowerCase())
     ))
   }
 
   const filterByLang = (text, subject) => {
-    context.setFilteredRows(context.allRows.filter((row) => {
+    setFilteredRows(allRows.filter((row) => {
       return row
         .slice(1)
         .some((cat) =>
-          cat[1][subject].toLowerCase().includes(text.toLowerCase())
+          cat[1][subject].toLowerCase().includes(text.toLowerCase()) || cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase())
         )
     }))
   }
@@ -36,12 +37,16 @@ const TableOptions = () => {
     }
   }
 
+  const filterByCurated = (curatedCat) => {
+    return setFilteredRows(allRows.filter((row) => {
+      return curatedCat.includes(row[0][0])
+    }))
+  }
+
   return (
     <div className="table__options">
-      <SearchBar
-        filterRows={filterRows}
-      />
-      <FilterBar />
+      <SearchBar filterRows={filterRows} />
+      <FilterBar filterByCurated={filterByCurated} />
       <TableTextResize />
     </div>
   )

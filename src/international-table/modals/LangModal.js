@@ -3,17 +3,17 @@ import { GlobalContext } from '../../context/GlobalContext'
 import './Modal.css'
 
 const LangModal = () => {
-  const context = useContext(GlobalContext)
+  const { setLangModalStatus, langModalStatus, activeOriginalLang, docLink } = useContext(GlobalContext)
 
   const handleClick = () => {
-    context.setLangModalStatus(false)
+    setLangModalStatus(false)
   }
 
   const createMarkup = (lang) => {
     return { __html: lang }
   }
 
-  return context.langModalStatus ? (
+  return langModalStatus ? (
     <div className="lang-modal">
       <div className="lang-modal__header">
         Original Language
@@ -23,11 +23,11 @@ const LangModal = () => {
       </div>
       <div
         className="lang-modal__content"
-        dangerouslySetInnerHTML={createMarkup(context.activeOriginalLang)}
+        dangerouslySetInnerHTML={createMarkup(activeOriginalLang)}
       ></div>
       <div className="lang-modal__footer">
         <a
-          href={context.docLink}
+          href={docLink}
           alt="original document"
           target="_blank"
           rel="noopener noreferrer"

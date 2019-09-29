@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 
 const SearchBar = (props) => {
   const [searchText, setSearchText] = useState('')
-  const [filterSubject, setFilterSubject] = useState('categories')
 
+  const [filterSubject, setFilterSubject] = useState('categories')
 
   const handleSearchText = (e) => {
     setSearchText(e.target.value)
-    props.filterRows(searchText, filterSubject)
+    props.filterRows(e.target.value, filterSubject)
   }
 
   const handleFilterSubject = (e) => {
     setFilterSubject(e.target.value)
-    props.filterRows(searchText, filterSubject)
+    props.filterRows(searchText, e.target.value)
   }
 
   return (

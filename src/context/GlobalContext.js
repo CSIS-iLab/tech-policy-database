@@ -6,18 +6,14 @@ export const GlobalContextProvider = (props) => {
   const [allRows, setAllRows] = useState([])
   const [allHeaders, setAllHeaders] = useState([])
   const [filteredRows, setFilteredRows] = useState([])
-  const [curatedCategories, setCuratedCategories] = useState({})
   const [activeOriginalLang, setActiveOriginalLang] = useState('Original Lang')
   const [langModalStatus, setLangModalStatus] = useState(false)
-  const [catData, setCatData] = useState({})
   const [docLink, setDocLink] = useState('')
 
   const contextValue = {
     activeOriginalLang, setActiveOriginalLang,
     allHeaders, setAllHeaders,
     allRows, setAllRows,
-    catData, setCatData,
-    curatedCategories, setCuratedCategories,
     docLink, setDocLink,
     filteredRows, setFilteredRows,
     langModalStatus, setLangModalStatus
