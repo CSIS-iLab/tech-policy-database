@@ -1,18 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const SearchBar = (props) => {
-  const [searchText, setSearchText] = useState('')
-
-  const [filterSubject, setFilterSubject] = useState('categories')
+  const {
+    handleFilter,
+    searchText,
+    setSearchText,
+    filterSubject,
+    setFilterSubject,
+    curatedCat
+  } = props
 
   const handleSearchText = (e) => {
     setSearchText(e.target.value)
-    props.filterRows(e.target.value, filterSubject)
+    handleFilter(e.target.value, filterSubject, curatedCat)
   }
 
   const handleFilterSubject = (e) => {
     setFilterSubject(e.target.value)
-    props.filterRows(searchText, e.target.value)
+    handleFilter(searchText, e.target.value, curatedCat)
   }
 
   return (
