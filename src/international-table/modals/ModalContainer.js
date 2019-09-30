@@ -1,13 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import LangModal from './LangModal'
-import shopContext from '../../context/shop-context'
 
 const ModalContainer = () => {
-  const context = useContext(shopContext)
 
   return (
     <React.Fragment>
-      <LangModal headers={context.allHeaders} />
+      <LangModal />
       {/* <CustomFilterModal /> */}
     </React.Fragment>
   )

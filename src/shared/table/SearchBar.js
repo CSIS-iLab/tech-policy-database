@@ -1,15 +1,23 @@
-import React, { useContext } from 'react'
-import shopContext from '../../context/shop-context'
+import React from 'react'
 
-const Search = () => {
-  const context = useContext(shopContext)
+const SearchBar = (props) => {
+  const {
+    handleFilter,
+    searchText,
+    setSearchText,
+    filterSubject,
+    setFilterSubject,
+    curatedCat
+  } = props
 
   const handleSearchText = (e) => {
-    context.setSearchText(e.target.value)
+    setSearchText(e.target.value)
+    handleFilter(e.target.value, filterSubject, curatedCat)
   }
 
   const handleFilterSubject = (e) => {
-    context.setFilterSubject(e.target.value)
+    setFilterSubject(e.target.value)
+    handleFilter(searchText, e.target.value, curatedCat)
   }
 
   return (
@@ -28,4 +36,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default SearchBar

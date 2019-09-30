@@ -2,175 +2,175 @@
   "data_controller": {
     "title": "Data Controller",
     "description": "Data controllers are the entities responsible for making decisions about the collection and processing of personal data. Data controllers bear the primary responsibility for complying with the provisions in data governance frameworks. ",
-    "category": "definitions",
+    "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "data_processor": {
     "title": "Data Processor",
     "description": "Data processors process data on behalf of controllers, but do not make decisions about what data is collected or how it is used. Data processors are not counted as a separate entity in every framework, but when they are addressed, they always have reduced obligations for compliance compared to controllers due to their more indirect relationship to data subjects.",
-    "category": "definitions",
+    "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "personal_data": {
     "title": "Personal Data",
     "description": "Personal data is the umbrella term for all information collected about an individual that must be protected according to the provisions of the listed data protection frameworks. ",
-    "category": "definitions",
+    "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "sensitive_personal_data": {
     "title": "Sensitive Personal Data",
     "description": "Sensitive personal data is personal information whose disclosure carries a particularly high risk of abuse or discrimination for the data subject, and for this reason is often given enhanced protections under data protection frameworks. ",
-    "category": "definitions",
+    "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "consent_requirement": {
     "title": "Consent Requirement",
     "description": "Does the framework include a requirement that data controllers obtain consent from subjects before collecting and using their personal data?",
-    "category": "principles consent",
+    "category": "Principles of Consent",
     "default_lang": "Not Specified"
   },
   "consent_exceptions": {
     "title": "Consent Exceptions",
     "description": "Under what circumstances may controllers collect and process personal data if the subject has not given their consent?",
-    "category": "principles consent",
+    "category": "Principles of Consent",
     "default_lang": "Not Specified"
   },
   "conditions_for_consent": {
     "title": "Conditions for Consent",
     "description": "What standards must data controllers meet in order for consent by subjects to be considered legitimate?",
-    "category": "principles consent",
+    "category": "Principles of Consent",
     "default_lang": "Not Specified"
   },
   "conditions_for_access": {
     "title": "Conditions for Access",
     "description": "Does the data protection framework mandate that controllers respond to requests by data subjects in a particular way?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_information": {
     "title": "Right to Information",
     "description": "Do data subjects have a right to be provided information about the processing of their data upon request to a controller?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_access": {
     "title": "Right to Access",
     "description": "Do data subjects have a right to access the personal information a controller has collected from/about them?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_correction": {
     "title": "Right to Correction",
     "description": "Do data subjects have a right to correct data of theirs held by a controller?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_erasure": {
     "title": "Right to Erasure",
     "description": "Do data subjects have a right to request the erasure of their personal data held by a controller?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_object_processing": {
     "title": "Right to Object Processing",
     "description": "Do data subjects have the right to object to the processing of their data?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_withdraw_consent": {
     "title": "Right to Withdraw Consent",
     "description": "Do data subjects have the right to withdraw consent to prevent the further processing of their personal data by a controller?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "right_to_challenge_denials": {
     "title": "Right to Challenge Denials",
     "description": "Can data subjects challenge a denial by a data controller to honor a request by the data subject?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "portability": {
     "title": "Portability",
     "description": "Do data subjects have the right to access their personal data in a form that would allow it to be easily transferred to another controller?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "automated_processing": {
     "title": "Automated Processing",
     "description": "Are individuals subject to decisions made about them by automated systems with no human intervention?",
-    "category": "principles individual rights",
+    "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
   "lawful_and_fair": {
     "title": "Lawful and Fair",
     "description": "Do the data protection frameworks require processing to be conducted in a lawful and fair manner?",
-    "category": "principles legitimate processing",
+    "category": "Condition for Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "disclosure_of_purpose": {
     "title": "Disclosure of Purpose",
     "description": "Does the data protection framework require controllers to disclose the specific purpose of processing to data subjects?",
-    "category": "principles legitimate processing",
+    "category": "Condition for Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "use_limitation": {
     "title": "Use Limitation",
     "description": "Does the data protection framework put restrictions on how data can be used by controllers once it has been collected?",
-    "category": "principles legitimate processing",
+    "category": "Condition for Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "minimization": {
     "title": "Minimization",
     "description": "Does the data protection framework put restrictions on how much data can be collected by controllers?",
-    "category": "principles legitimate processing",
+    "category": "Condition for Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "transparency": {
     "title": "Transparency",
     "description": "Does the data protection framework require the controller to provide contextual information to the subject before collection?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "data_quality": {
     "title": "Data Quality",
     "description": "Does the data protection framework require data controllers to maintain collected data at a certain standard of accuracy and quality?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "security": {
     "title": "Security",
     "description": "Does the data protection framework require controllers take measures to protect the personal data they posses against loss or unauthorized access?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "data_breach_notification": {
     "title": "Data Breach Notification",
     "description": "Does the data protection framework require controllers to notify subjects or official authorities in the event of a data breach?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "retention": {
     "title": "Retention",
     "description": "Does the data protection framework place restrictions on how long a controller may retain personal data it has collected?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "cross_border_transfers": {
     "title": "Cross Border Transfers",
     "description": "Under what conditions does the data protection framework allow controllers to transfer personal data outside the jurisdiction of the territory covered by the framework?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "accountability": {
     "title": "Accountability",
     "description": "Does the data protection framework hold controllers accountable for adherence to the principles?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   },
   "privacy_by_design": {
     "title": "Privacy by Design",
     "description": "Does the data protection framework require controllers to implement privacy and protection by design in the construction and operation of their systems?",
-    "category": "principles obligations of data controllers",
+    "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   }
 }
