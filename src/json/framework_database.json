@@ -6,18 +6,18 @@
     "categories": {
       "data_controller_definition": {
         "has_data": false,
-        "abbreviated_lang": "<p>Entities that determine the purposes and means of processing</p>",
-        "original_lang": "<p>(Article 4)</p><p>(7) ‘controller’ means the natural or legal person, public authority, agency or other body which, alone or jointly with others, <strong>determines the purposes and means of the processing of personal data</strong>; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law;</p>"
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "data_processor_definition": {
         "has_data": false,
-        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
-        "original_lang": "<p>(Article 4)</p><p>‘processor’ means a natural or legal person, public authority, agency or other body which <strong>processes personal data on behalf of the controller</strong>;</p>"
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_definition": {
         "has_data": false,
-        "abbreviated_lang": "<p>Data related to an identified or identifiable person;</p><p>Lists specific classes of personal data</p>",
-        "original_lang": "<p>(Article 4)</p><p>‘personal data’ means any <strong>information relating to an identified or identifiable natural person</strong> (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;</p>"
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -242,19 +242,19 @@
     "year": "2013",
     "categories": {
       "data_controller_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities competent to decide about the contents and use of personal data</p>",
-        "original_lang": "<p>(Paragraph 1)</p><p>“Data controller” means a party who, according to national law, is <strong>competent to decide about the contents and use of personal data </strong>regardless of whether or not such data are collected, stored, processed or disseminated by that party or by an agent on its behalf.</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "data_processor_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
-        "original_lang": "<p>The data controller may be a legal or natural person, public authority, agency or any other body. The definition excludes at least four categories which may be involved in the processing of data, viz.</p><p>...</p><ol start=\"2\"><li><p>data processing service <strong>bureaux which carry out data processing on behalf of others</strong>;</p></li></ol>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Data related to an identified or identifiable person</p>",
-        "original_lang": "<p>(Paragraph 1)</p><p>“Personal data” means any information <strong>relating to an identified or identifiable individual</strong> (data subject).</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -479,19 +479,19 @@
     "year": "2015",
     "categories": {
       "data_controller_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities that control the collection, holding, process, or use of personal data</p>",
-        "original_lang": "<p>(Paragraph 10)</p><p>Personal information controller means a person or organization who <strong>controls the collection, holding, processing or use of personal information</strong>. It includes a person or organization who instructs another person or organization to collect, hold, process, use, transfer or disclose personal information on his or her behalf, but excludes a person or organization who performs such functions as instructed by another person or organization. It also excludes an individual who collects, holds, processes or uses personal information in connection with the individual’s personal, family or household affairs.</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "data_processor_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
-        "original_lang": "<p>(Paragraph 10)</p><p>Personal information controller means a person or organization who controls the collection, holding, processing or use of personal information. It... excludes a <strong>person or organization who performs such functions as instructed by another person or organization</strong>.</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Data related to an identified or identifiable person</p>",
-        "original_lang": "<p>(Paragraph 9)</p><p>Personal information means any <strong>information about an identified or identifiable individual</strong>.</p><p>(Explanatory Text)</p><p>This Framework is intended to apply to information about natural living persons, not legal persons. The APEC Privacy Framework applies to personal information, which is information that can be used to identify an individual. It also includes information that would not meet this criteria alone, but when put together with other information would identify an individual.</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
