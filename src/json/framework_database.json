@@ -12,12 +12,12 @@
       "data_processor_definition": {
         "has_data": true,
         "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
-        "original_lang": "<p>(Article 2)</p><p>“Processing service provider” means any natural person or organization, other than the responsible person that <strong>carries out processing of personal data on behalf of such responsible person</strong>.</p>"
+        "original_lang": "<p>(Article 4)</p><p>‘processor’ means a natural or legal person, public authority, agency or other body which <strong>processes personal data on behalf of the controller</strong>;</p>"
       },
       "personal_data_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Data related to an identified or identifiable person;</p><p>Lists specific classes of personal data</p>",
+        "original_lang": "<p>(Article 4)</p><p>‘personal data’ means any <strong>information relating to an identified or identifiable natural person</strong> (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;</p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -252,9 +252,9 @@
         "original_lang": "<p>The data controller may be a legal or natural person, public authority, agency or any other body. The definition excludes at least four categories which may be involved in the processing of data, viz.</p><p>...</p><ol start=\"2\"><li><p>data processing service bureaux which carry out data processing on behalf of others;</p></li></ol>"
       },
       "personal_data_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Data related to an identified or identifiable person</p>",
+        "original_lang": "<p>(Paragraph 1)</p><p>“Personal data” means any <strong>information relating to an identified or identifiable individual</strong> (data subject).</p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -489,9 +489,9 @@
         "original_lang": ""
       },
       "personal_data_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Data related to an identified or identifiable person</p>",
+        "original_lang": "<p>(Paragraph 9)</p><p>Personal information means any <strong>information about an identified or identifiable individual</strong>.</p><p>(Explanatory Text)</p><p>This Framework is intended to apply to information about natural living persons, not legal persons. The APEC Privacy Framework applies to personal information, which is information that can be used to identify an individual. It also includes information that would not meet this criteria alone, but when put together with other information would identify an individual.</p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -746,9 +746,9 @@
         "original_lang": ""
       },
       "personal_data_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Data related to an identified or identifiable person;</p><p>Lists specific classes of personal data</p>",
+        "original_lang": "<p>(Article 1)</p><p>Personal data means any information relating to an <strong>identified or identifiable natural person</strong> by which this person can be identified, directly or indirectly in particular by reference to an identification number or to one or more factors specific to his/her physical, physiological, mental, economic, cultural or social identity;</p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -1215,9 +1215,9 @@
         "original_lang": "<p>(Preamble)</p><p>As used in this guide, the term “data controller” refers to the natural or legal person, private entity, public authority or other body or organization (alone or jointly with others) with <strong>responsibility for the storage, processing, use, protection and dissemination of the data in question</strong>. In general, it will include the natural or legal persons or authorities empowered under national law to decide the content, purpose and use of a data file or data base. In some circumstances, the term will also apply to entities which can be described as “data collectors” since in most situations the entity that stores, uses, and disseminates the personal data will also be responsible (directly or indirectly) for collecting that data</p>"
       },
       "data_processor_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Entities processing personal data on their own or on behalf of a controller</p>",
+        "original_lang": "<p>(Preamble)</p><p>The term “data processor” refers more specifically to the natural or legal person, private entity, public authority or other body or <strong>organization that (alone or jointly with others) processes the data in question</strong>. <strong>Typically, the data processor is separate from the data collector. </strong>In some situations, the data controller might also be the data processor, or the data controller may make arrangements for others to do the processing through a contractual relationship. The term “data processing” is used broadly, to include any operation or set of operations performed on personal data, such as collection, recording, storage, alteration, retrieval, disclosure, or transfer.</p>"
       },
       "personal_data_definition": {
         "has_data": false,
@@ -1689,9 +1689,9 @@
         "original_lang": "<p>(Section 2)</p><p>Person Responsible: individual or private legal entity, public authority, services or body that, alone or together with others, <strong>determines the purposes, means, scope and other matters related to the treatment of personal data</strong>.</p>"
       },
       "data_processor_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
+        "original_lang": "<p>(Section 2)</p><p>Person in Charge: Service provider, which in its capacity as individual, or legal entity, or public authority, <strong>outside the organization of the responsible person, treats personal data in the name and on behalf thereof</strong>.</p>"
       },
       "personal_data_definition": {
         "has_data": false,
@@ -1926,9 +1926,9 @@
         "original_lang": "<p>(Article 2)</p><p>“controller” means the natural or legal person, public authority, service, agency or any other body which, alone or jointly with others, has decision-making power with respect to data processing</p>"
       },
       "data_processor_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
+        "original_lang": "<p>(Article 2)</p><p>“processor” means a natural or legal person, public authority, service, agency or any other body which <strong>processes personal data on behalf of the controller</strong>.</p>"
       },
       "personal_data_definition": {
         "has_data": false,
@@ -2163,9 +2163,9 @@
         "original_lang": "<p>(Article 2)</p><p>“Responsible person” means any natural person or organization, public or private which, alone or jointly with others, <strong>decides on the processing</strong></p>"
       },
       "data_processor_definition": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
+        "original_lang": "<p>(Article 2)</p><p>“Processing service provider” means any natural person or organization, other than the responsible person that <strong>carries out processing of personal data on behalf of such responsible person</strong>.</p>"
       },
       "personal_data_definition": {
         "has_data": false,
