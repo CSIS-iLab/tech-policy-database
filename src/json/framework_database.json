@@ -61,8 +61,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Consent required for personal data processing",
-        "original_lang": "<p>(Article 6) </p><p>Processing shall be lawful only if and to the extent that at least one of the following applies:</p><ol><li><p>the <strong>data subject has given consent to the processing of his or her personal data</strong> for one or more specific purposes;</p></li><li><p>processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;</p></li><li><p>processing is necessary for compliance with a legal obligation to which the controller is subject;</p></li><li><p>processing is necessary in order to protect the vital interests of the data subject or of another natural person;</p></li><li><p>processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;</p></li><li><p>processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.</p></li></ol>"
+        "abbreviated_lang": "<p>Consent required</p>",
+        "original_lang": "<p>(Article 6)</p><p>Processing shall be lawful only if and to the extent that at least one of the following applies:</p><ol><li><p>the <strong>data subject has given consent to the processing of his or her personal data</strong> for one or more specific purposes;</p></li><li><p><em>processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;</em></p></li><li><p><em>processing is necessary for compliance with a legal obligation to which the controller is subject;</em></p></li><li><p><em>processing is necessary in order to protect the vital interests of the data subject or of another natural person;</em></p></li><li><p><em>processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;</em></p></li><li><p><em>processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.</em></p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -772,7 +772,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Consent required for personal data processing",
+        "abbreviated_lang": "<p>Consent required </p>",
         "original_lang": "<p>(Article 13, Principle 1) </p><p>Processing of personal data shall be deemed to be <strong>legitimate where the data subject has given his/her consent</strong>.</p>"
       },
       "consent_exceptions": {
@@ -1009,8 +1009,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Consent required for personal data processing",
-        "original_lang": "<p>(Paragraph 7) </p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p><strong>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data</strong>; or</p></li><li><p>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</p></li></ol>"
+        "abbreviated_lang": "<p>Consent required </p>",
+        "original_lang": "<p>(Paragraph 7)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p><strong>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data</strong>; or</p></li><li><p><em>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</em></p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -1206,8 +1206,8 @@
       },
       "sensitive_personal_data": {
         "has_data": true,
-        "abbreviated_lang": "Race, ethnicity, religion, data on sex life or sexual orientation",
-        "original_lang": "<p>(Ninth Principle) </p><p><strong>Data controllers should adopt privacy and security measures that are commensurate with the sensitivity of the data and its capacity to harm individual data subjects</strong>.</p><p>The term “sensitive personal data” refers to data affecting the most intimate aspects of individuals. Depending on the specific cultural, social or political context, it might include <strong>data related to an individual’s personal health or sexual preferences, religious beliefs, or racial or ethnic origins</strong>.</p><p>In certain circumstances, this data might be considered entitled to special protection because its improper handling or disclosure would intrude deeply upon the personal dignity and honor of the individual concerned and could trigger unlawful or arbitrary discrimination against the individual or result in risk of serious harm to the individual.</p><p>The nature of the sensitivity may vary from situation to situation. In certain settings and cultures, for example, it is entirely predictable that disclosure of certain types of personal data might result in harm to personal reputation, discrimination with respect to employment or freedom of movement, political persecution, or even physical violence, while by distinction disclosure of the same data in other circumstances would pose no difficulties at all.</p><p>Within the Member States of the OAS, a wide variety of cultural and legal settings exists, making it difficult to say, as a general matter, which specific types of data are categorically more likely to lead to especially serious encroachments on individual rights and interests.</p><p>Accordingly, appropriate guarantees should be established within the context of national law and rules, reflecting the circumstances within the relevant jurisdiction, to ensure that the privacy interests of individuals are sufficiently protected. <strong>Member States should identify clearly the categories of personal data which are considered especially “sensitive” and therefore require enhanced protection. Explicit consent of the individual concerned should be the governing rule for the collection, disclosure and use of sensitive personal data</strong>. The context in which a person provides such data should be taken into account when determining any applicable regulatory obligations.</p><p>The burden must be placed on data controllers to assess the material risks to data subjects as part of the overall process of risk management and privacy impact assessment. Holding data controllers accountable will result in more meaningful protection of data subjects from material harm across a wide range of cultural contexts.</p><p>(Second Principle - Commentary) </p><p><strong>Sensitive personal data may only be processed without the individual’s explicit consent</strong> where it is clearly in the substantial <strong>public interest </strong>(as authorized by law) or in the <strong>vital interests of the data subject</strong> (for instance, in a life-threatening emergency).</p>"
+        "abbreviated_lang": "<p>Data concerning:</p><ul><li><p>race or ethnicity</p></li><li><p>religious beliefs</p></li><li><p>health</p></li><li><p>sexual preferences</p></li><li><p>others as appropriate</p></li></ul>",
+        "original_lang": "<p>(Ninth Principle)</p><p>Data controllers should adopt privacy and security measures that are commensurate with the sensitivity of the data and its capacity to harm individual data subjects.</p><p>The term “sensitive personal data” refers to data affecting the most intimate aspects of individuals. Depending on the specific cultural, social or political context, it might include <strong>data related to an individual’s personal health or sexual preferences, religious beliefs, or racial or ethnic origins</strong>.</p><p>In certain circumstances, this data might be considered entitled to special protection because its improper handling or disclosure would intrude deeply upon the personal dignity and honor of the individual concerned and could trigger unlawful or arbitrary discrimination against the individual or result in risk of serious harm to the individual.</p><p><em>The nature of the sensitivity may vary from situation to situation. In certain settings and cultures, for example, it is entirely predictable that disclosure of certain types of personal data might result in harm to personal reputation, discrimination with respect to employment or freedom of movement, political persecution, or even physical violence, while by distinction disclosure of the same data in other circumstances would pose no difficulties at all.</em></p><p><em>Within the Member States of the OAS, a wide variety of cultural and legal settings exists, making it difficult to say, as a general matter, which specific types of data are categorically more likely to lead to especially serious encroachments on individual rights and interests.</em></p><p><em>Accordingly, appropriate guarantees should be established within the context of national law and rules, reflecting the circumstances within the relevant jurisdiction, to ensure that the privacy interests of individuals are sufficiently protected. </em><strong><em>Member States should identify clearly the categories of personal data which are considered especially “sensitive” and therefore require enhanced protection. Explicit consent of the individual concerned should be the governing rule for the collection, disclosure and use of sensitive personal data</em></strong><em>. The context in which a person provides such data should be taken into account when determining any applicable regulatory obligations.</em></p><p><em>The burden must be placed on data controllers to assess the material risks to data subjects as part of the overall process of risk management and privacy impact assessment. Holding data controllers accountable will result in more meaningful protection of data subjects from material harm across a wide range of cultural contexts.</em></p><p>(Second Principle - Commentary)</p><p><strong>Sensitive personal data may only be processed without the individual’s explicit consent</strong> where it is clearly in the substantial <strong>public interest </strong>(as authorized by law) or in the <strong>vital interests of the data subject</strong> (for instance, in a life-threatening emergency).</p>"
       },
       "data_controller_definition": {
         "has_data": false,
@@ -1235,8 +1235,8 @@
         "original_lang": ""
       },
       "sensitive_personal_data_social_factors": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Higher standard for processing data on: </p><p>race, ethnicity, religion, sexual preferences, health, others as appropriate</p>",
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
         "original_lang": ""
       },
       "sensitive_personal_data_physical_factors": {
@@ -1246,7 +1246,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required for personal data processing</p>",
+        "abbreviated_lang": "<p>Consent required </p>",
         "original_lang": "<p>(Second Principle) </p><p>As a general rule, <strong>personal data should only be collected with the consent of the individual</strong> concerned.</p>"
       },
       "consent_exceptions": {
@@ -1442,8 +1442,8 @@
         "original_lang": "<p>(Introduction) </p><p>These principles (the “Principles”) set out a basic framework for the processing of “personal data”, which is defined as <strong>information relating to an identified or identifiable natural person </strong>(“data subject”), by, or on behalf of, the United Nations System Organizations in carrying out their mandated activities</p>"
       },
       "sensitive_personal_data": {
-        "has_data": true,
-        "abbreviated_lang": "data pertaining to vulnerable or marginalized individuals and groups",
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
         "original_lang": ""
       },
       "data_controller_definition": {
@@ -1483,8 +1483,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Consent required for personal data processing",
-        "original_lang": "<p>(Principle 1) </p><p>The United Nations System Organizations should process personal data in a fair manner, in accordance with their mandates and governing instruments and on the basis of any of the following:</p><ol><li><p><strong>the consent of the data subject</strong>;</p></li><li><p>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned;</p></li><li><p>the mandates and governing instruments of the United Nations System Organization concerned; or</p></li><li><p>any other legal basis specifically identified by the United Nations System Organization concerned.</p></li></ol>"
+        "abbreviated_lang": "<p>Consent required </p>",
+        "original_lang": "<p>(Principle 1)</p><p>The United Nations System Organizations should process personal data in a fair manner, in accordance with their mandates and governing instruments and on the basis of any of the following:</p><ol><li><p><strong>the consent of the data subject</strong>;</p></li><li><p><em>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned;</em></p></li><li><p><em>the mandates and governing instruments of the United Nations System Organization concerned; or</em></p></li><li><p><em>any other legal basis specifically identified by the United Nations System Organization concerned.</em></p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -1680,8 +1680,8 @@
       },
       "sensitive_personal_data": {
         "has_data": true,
-        "abbreviated_lang": "Race, ethnicity, political opinions, religion, union membership, data on sex life or sexual orientation",
-        "original_lang": "<p>(Section 2) </p><p>Sensitive Personal Data: those that refer to the intimate sphere of their holder, or which undue use may originate discrimination or involve a serious risk thereto. In an illustrative way, personal data that may reveal aspects such as <strong>racial or ethnic origin; beliefs or religious, philosophical and moral convictions; union affiliation; political opinions; information regarding health, life, sexual preference or orientations, generic data or biometric data</strong> aimed at identifying the person in an unequivocal way.</p>"
+        "abbreviated_lang": "<p>Data concerning:</p><ul><li><p>race or ethnicity</p></li><li><p>political, religious, or philosophical beliefs</p></li><li><p>trade union membership</p></li><li><p>genetic or biometric data used for identification</p></li><li><p>health</p></li><li><p>sex life or sexual orientation</p></li></ul>",
+        "original_lang": "<p>(Section 2)</p><p>Sensitive Personal Data: those that refer to the intimate sphere of their holder, or which undue use may originate discrimination or involve a serious risk thereto. In an illustrative way, personal data that may reveal aspects such as <strong>racial or ethnic origin; beliefs or religious, philosophical and moral convictions; union affiliation; political opinions; information regarding health, life, sexual preference or orientations, genetic data or biometric data</strong> aimed at identifying the person in an unequivocal way.</p><p><em>(Section 9)</em></p><p><em>As a general rule, the person responsible may not treat sensitive personal data, except under the following assumptions: </em></p><ol><li><p><em>That they are strictly necessary for the exercise and compliance with the powers and obligations expressly provided in the rules that regulate their actions. </em></p></li><li><p><em>They comply with a legal mandate. </em></p></li><li><p><em>They have holder’s express written consent. </em></p></li><li><p><em>They are necessary for national security, public security, public order, public health reasons, or for the safekeeping of the rights and freedoms of third parties.</em></p></li></ol>"
       },
       "data_controller_definition": {
         "has_data": false,
@@ -1709,8 +1709,8 @@
         "original_lang": ""
       },
       "sensitive_personal_data_social_factors": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Higher standard for processing data on:</p><p>race; ethnicity; political opinions; religion; union membership; sexual orientation; health; biometrics; genetics</p><p></p>",
+        "has_data": false,
+        "abbreviated_lang": "<p></p><p></p>",
         "original_lang": ""
       },
       "sensitive_personal_data_physical_factors": {
@@ -1720,7 +1720,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Consent required for personal data processing",
+        "abbreviated_lang": "<p>Consent required</p>",
         "original_lang": "<p>(Principle 11) </p><p>As a general rule, the person responsible may only treat personal data, under the following assumptions:</p><ol><li><p><strong>Holder grants its consent</strong> for one or several specific purposes</p></li></ol>"
       },
       "consent_exceptions": {
@@ -1917,7 +1917,7 @@
       },
       "sensitive_personal_data": {
         "has_data": true,
-        "abbreviated_lang": "Race, political opinions, religion, data on sex life, data related to criminal convictions",
+        "abbreviated_lang": "<p>Data concerning:</p><ul><li><p>race or ethnicity</p></li><li><p>political or religious beliefs</p></li><li><p>trade union membership</p></li><li><p>biometric data used for identification</p></li><li><p>health or genetics</p></li><li><p>sex life or sexual orientation</p></li><li><p>criminal convictions and proceedings</p></li></ul>",
         "original_lang": "<p>(Article 6)</p><p>The processing of:</p><ul><li><p class=\"MsoNormal\"><strong>genetic data</strong>;</p></li><li><p class=\"MsoNormal\">personal data relating to <strong>offences, criminal proceedings and convictions</strong>, and related security measures;</p></li><li><p class=\"MsoNormal\"><strong>biometric data</strong> uniquely identifying a person;</p></li><li><p class=\"MsoNormal\">personal data for the information they reveal relating to <strong>racial or ethnic origin, political opinions, trade-union membership, religious or other beliefs, health or sexual life</strong>,</p></li></ul><p class=\"MsoNormal\">shall only be allowed where appropriate safeguards are enshrined in law, complementing those of this Convention.</p><p class=\"MsoNormal\">Such safeguards shall guard against the risks that the processing of sensitive data may present for the interests, rights and fundamental freedoms of the data subject, notably a risk of discrimination.</p>"
       },
       "data_controller_definition": {
@@ -1946,8 +1946,8 @@
         "original_lang": ""
       },
       "sensitive_personal_data_social_factors": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Higher standard for processing data on:</p><p>race; ethnicity; political opinions; religion; union membership; sex life; criminal offenses; health; biometrics; genetics</p>",
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
         "original_lang": ""
       },
       "sensitive_personal_data_physical_factors": {
@@ -1957,8 +1957,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required for personal data processing</p>",
-        "original_lang": "<p>(Article 5)</p><p>Each Party shall provide that <strong>data processing can be carried out on the basis of the free, specific, informed and unambiguous consent </strong>of the data subject or of some other legitimate basis laid down by law.</p>"
+        "abbreviated_lang": "<p>Consent required</p>",
+        "original_lang": "<p>(Article 5)</p><p>Each Party shall provide that data <strong>processing can be carried out on the basis of the free, specific, informed and unambiguous consent of the data subject</strong> or of some other legitimate basis laid down by law.</p>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -2154,8 +2154,8 @@
       },
       "sensitive_personal_data": {
         "has_data": true,
-        "abbreviated_lang": "Race, political opinions, religion, data on sex life, other data that may give rise to discrimination or serious risk",
-        "original_lang": "<p>(Article 13) </p><p>The following personal data shall be deemed to be sensitive:</p><ol><li><p>Data which affect the data subject’s most intimate sphere; or</p></li><li><p>Data likely to give rise, in case of misuse, to:</p><ol><li><p>Unlawful or arbitrary discrimination; or</p></li><li><p>A serious risk to the data subject.</p></li></ol></li></ol><p>In particular, those personal data which can reveal aspects such as <strong>racial or ethnic origin, political opinions, or religious or philosophical beliefs as well as those data relating to health or sex life,</strong> will be considered sensitive data. The applicable national legislation may lay down other categories of sensitive data where the conditions referred to in the previous paragraph are met</p>"
+        "abbreviated_lang": "<p>Data concerning:</p><ul><li><p>race or ethnicity</p></li><li><p>political, religious, or philosophical beliefs</p></li><li><p>health</p></li><li><p>sex life </p></li></ul>",
+        "original_lang": "<p>(Article 13)</p><p>The following personal data shall be deemed to be sensitive:</p><ol><li><p>Data which affect the data subject’s most intimate sphere; or</p></li><li><p>Data likely to give rise, in case of misuse, to:</p><ol><li><p>Unlawful or arbitrary discrimination; or</p></li><li><p>A serious risk to the data subject.</p></li></ol></li></ol><p>In particular, those personal data which can reveal aspects such as <strong>racial or ethnic origin, political opinions, or religious or philosophical beliefs as well as those data relating to health or sex life,</strong> will be considered sensitive data. The applicable national legislation may lay down other categories of sensitive data where the conditions referred to in the previous paragraph are met</p><p>Due guarantees shall be established to preserve the rights of the data subjects by applicable national legislation, which shall lay down additional conditions for processing sensitive personal data.</p>"
       },
       "data_controller_definition": {
         "has_data": false,
@@ -2194,7 +2194,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Consent required for personal data processing",
+        "abbreviated_lang": "<p>Consent required </p>",
         "original_lang": "<p>(Principle 12) </p><p>As a general rule, personal data may only be processed in one of the following situations:</p><ol><li><p>After obtaining the <strong>free, unambiguous and informed consent of the data subject</strong></p></li></ol>"
       },
       "consent_exceptions": {
