@@ -1447,9 +1447,9 @@
         "original_lang": ""
       },
       "data_controller_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>UN System Organizations</p>",
-        "original_lang": "<p>(Introduction)</p><p>These principles (the “Principles”) set out a basic framework for the processing of “personal data”, which is defined as information relating to an identified or identifiable natural person (“data subject”), by, or <strong>on behalf of, the United Nations System Organizations in carrying out their mandated activities</strong></p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "data_processor_definition": {
         "has_data": false,
@@ -1457,9 +1457,9 @@
         "original_lang": ""
       },
       "personal_data_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Data related to an identified or identifiable person</p>",
-        "original_lang": "<p>(Introduction)</p><p>These principles (the “Principles”) set out a basic framework for the processing of “personal data”, which is defined as <strong>information relating to an identified or identifiable natural person </strong>(“data subject”), by, or on behalf of, the United Nations System Organizations in carrying out their mandated activities</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
