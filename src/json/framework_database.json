@@ -736,9 +736,9 @@
         "original_lang": "<p>(Article 1) </p><p>Sensitive-data means all personal data relating to <strong>religious, philosophical, political and trade-union opinions and activities, as well as to sex life or race, health, social measures, legal proceedings and penal or administrative sanctions</strong>;</p><p>(Article 14) </p><p>State Parties shall undertake to prohibit any data collection and processing revealing racial, ethnic and regional origin, parental filiation, political opinions, religious or philosophical beliefs, trade union membership, sex life and genetic information or, more generally, data on the state of health of the data subject.</p><p>The prohibitions set forth in Article 14.1 shall not apply to the following categories where:</p><ol><li><p>Processing relates to data which are manifestly <strong>made public by the data subject</strong>;</p></li><li><p>The data subject has given his/her<strong> written consent</strong>, by any means, to the processing and in conformity with extant texts;</p></li><li><p>Processing is necessary to protect the <strong>vital interests of the data subject</strong> or of another person where the data subject is physically or legally incapable of giving his/her consent;</p></li><li><p>Processing, particularly of genetic data, is required for the establishment, <strong>exercise or defence of legal claims</strong>;</p></li><li><p>A <strong>judicial procedure or criminal investigation</strong> has been instituted;</p></li><li><p>Processing is necessary in the public interest, especially for <strong>historical, statistical or scientific purposes</strong>;</p></li><li><p>Processing is necessary for the <strong>performance of a contract </strong>to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;</p></li><li><p>Processing is necessary for compliance with a <strong>legal or regulatory obligation</strong> to which the controller is subject;</p></li><li><p>Processing is necessary for the performance of <strong>a task carried out in the public interest</strong> or in the exercise of official authority or assigned by a public authority vested in the controller or in a third party to whom data are disclosed;</p></li><li><p>Processing is carried out in the course of the <strong>legitimate activities of a foundation, association or any other non-profit making body</strong> with a political, philosophical, religious, cooperative or trade union aim, and on condition that the processing relates solely to the members of the body or to persons who have regular contact with it in connection with its purposes and that the data are not disclosed to a third party without the consent of the data subjects.</p></li></ol>"
       },
       "data_controller_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities that decide to collect and process personal data and determine the purposes of processing</p>",
-        "original_lang": "<p>(Article 1)</p><p>Data controller means any natural or legal person, public or private, any other organization or association which alone or jointly with others, <strong>decides to collect and process personal data and determines the purposes</strong>;</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "data_processor_definition": {
         "has_data": false,
@@ -746,9 +746,9 @@
         "original_lang": ""
       },
       "personal_data_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Data related to an identified or identifiable person;</p><p>Lists specific classes of personal data</p>",
-        "original_lang": "<p>(Article 1)</p><p>Personal data means any information relating to an <strong>identified or identifiable natural person</strong> by which this person can be identified, directly or indirectly in particular by reference to an identification number or to one or more factors specific to his/her physical, physiological, mental, economic, cultural or social identity;</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
@@ -1210,19 +1210,19 @@
         "original_lang": "<p>(Ninth Principle) </p><p><strong>Data controllers should adopt privacy and security measures that are commensurate with the sensitivity of the data and its capacity to harm individual data subjects</strong>.</p><p>The term “sensitive personal data” refers to data affecting the most intimate aspects of individuals. Depending on the specific cultural, social or political context, it might include <strong>data related to an individual’s personal health or sexual preferences, religious beliefs, or racial or ethnic origins</strong>.</p><p>In certain circumstances, this data might be considered entitled to special protection because its improper handling or disclosure would intrude deeply upon the personal dignity and honor of the individual concerned and could trigger unlawful or arbitrary discrimination against the individual or result in risk of serious harm to the individual.</p><p>The nature of the sensitivity may vary from situation to situation. In certain settings and cultures, for example, it is entirely predictable that disclosure of certain types of personal data might result in harm to personal reputation, discrimination with respect to employment or freedom of movement, political persecution, or even physical violence, while by distinction disclosure of the same data in other circumstances would pose no difficulties at all.</p><p>Within the Member States of the OAS, a wide variety of cultural and legal settings exists, making it difficult to say, as a general matter, which specific types of data are categorically more likely to lead to especially serious encroachments on individual rights and interests.</p><p>Accordingly, appropriate guarantees should be established within the context of national law and rules, reflecting the circumstances within the relevant jurisdiction, to ensure that the privacy interests of individuals are sufficiently protected. <strong>Member States should identify clearly the categories of personal data which are considered especially “sensitive” and therefore require enhanced protection. Explicit consent of the individual concerned should be the governing rule for the collection, disclosure and use of sensitive personal data</strong>. The context in which a person provides such data should be taken into account when determining any applicable regulatory obligations.</p><p>The burden must be placed on data controllers to assess the material risks to data subjects as part of the overall process of risk management and privacy impact assessment. Holding data controllers accountable will result in more meaningful protection of data subjects from material harm across a wide range of cultural contexts.</p><p>(Second Principle - Commentary) </p><p><strong>Sensitive personal data may only be processed without the individual’s explicit consent</strong> where it is clearly in the substantial <strong>public interest </strong>(as authorized by law) or in the <strong>vital interests of the data subject</strong> (for instance, in a life-threatening emergency).</p>"
       },
       "data_controller_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities with responsibility for the storage, processing, use, protection, or dissemination of personal data</p>",
-        "original_lang": "<p>(Preamble)</p><p>As used in this guide, the term “data controller” refers to the natural or legal person, private entity, public authority or other body or organization (alone or jointly with others) with <strong>responsibility for the storage, processing, use, protection and dissemination of the data in question</strong>. In general, it will include the natural or legal persons or authorities empowered under national law to decide the content, purpose and use of a data file or data base. In some circumstances, the term will also apply to entities which can be described as “data collectors” since in most situations the entity that stores, uses, and disseminates the personal data will also be responsible (directly or indirectly) for collecting that data</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "data_processor_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Entities processing personal data on their own or on behalf of a controller</p>",
-        "original_lang": "<p>(Preamble)</p><p>The term “data processor” refers more specifically to the natural or legal person, private entity, public authority or other body or <strong>organization that (alone or jointly with others) processes the data in question</strong>. <strong>Typically, the data processor is separate from the data collector. </strong>In some situations, the data controller might also be the data processor, or the data controller may make arrangements for others to do the processing through a contractual relationship. The term “data processing” is used broadly, to include any operation or set of operations performed on personal data, such as collection, recording, storage, alteration, retrieval, disclosure, or transfer.</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_definition": {
-        "has_data": true,
-        "abbreviated_lang": "<p>Data related to an identified or identifiable person;</p><p>Lists specific classes of personal data</p>",
-        "original_lang": "<p>(Preamble)</p><p>Personal-Data. As used in these Principles, the term “personal data” includes <strong>information that identifies, or can be reasonably be used to identify, a specific individual, whether directly or indirectly</strong>, in particular by reference to an identification number or to one or more factors specific to his or her physical, physiological, mental, economic, cultural or social identity. The term does not include information that does not identify (or cannot reasonably be used to identify) a particular individual.</p>"
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
       },
       "personal_data_indirect_identifiers": {
         "has_data": false,
