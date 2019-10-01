@@ -1,25 +1,25 @@
 {
   "data_controller": {
     "title": "Data Controller",
-    "description": "Data controllers are the entities responsible for making decisions about the collection and processing of personal data. Data controllers bear the primary responsibility for complying with the provisions in data governance frameworks. ",
+    "description": "How does the framework define the entities responsible for complying with its provisions?",
     "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "data_processor": {
     "title": "Data Processor",
-    "description": "Data processors process data on behalf of controllers, but do not make decisions about what data is collected or how it is used. Data processors are not counted as a separate entity in every framework, but when they are addressed, they always have reduced obligations for compliance compared to controllers due to their more indirect relationship to data subjects.",
+    "description": "Does the framework define a secondary category of entities with reduced legal obligations?",
     "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "personal_data": {
     "title": "Personal Data",
-    "description": "Personal data is the umbrella term for all information collected about an individual that must be protected according to the provisions of the listed data protection frameworks. ",
+    "description": "How does the framework define the data whose treatment is covered under its provisions?",
     "category": "Definitions",
     "default_lang": "Not Specified"
   },
   "sensitive_personal_data": {
     "title": "Sensitive Personal Data",
-    "description": "Sensitive personal data is personal information whose disclosure carries a particularly high risk of abuse or discrimination for the data subject, and for this reason is often given enhanced protections under data protection frameworks. ",
+    "description": "Does the framework define a set of sensitive data types subject to enhanced protections?",
     "category": "Definitions",
     "default_lang": "Not Specified"
   },
