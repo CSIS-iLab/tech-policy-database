@@ -27,16 +27,18 @@ const TableOptions = () => {
       return row
         .slice(1)
         .some(
-          (cat) =>
-            cat[1][subject].toLowerCase().includes(text.toLowerCase()) ||
-            cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase())
+          (cat) => {
+            return cat[1][subject].toLowerCase().includes(text.toLowerCase()) ||
+              (cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase()) && cat[1][subject] === '')
+          }
+
         )
     })
   }
 
   // Filters by search term and subject (i.e. abbreviated language)
   const filterBySearch = (rows, text, subject) => {
-    switch (filterSubject) {
+    switch (subject) {
       case 'categories':
         return filterByCategories(rows, text)
       case 'abbreviated_lang':
