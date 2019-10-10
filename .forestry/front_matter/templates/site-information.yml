@@ -45,3 +45,5 @@ fields:
     max: 
     labelField: 
   label: Site Information
+pages:
+- src/json/site_config.json
