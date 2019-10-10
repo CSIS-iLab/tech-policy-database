@@ -238,26 +238,7 @@
     "organization": "",
     "also_known_as": "",
     "members": {
-      "description": "fhdsgjdshg",
-      "list_one": [
-        "bhdfshudsfhdh ",
-        "gfdhf",
-        "jhfdhjdf",
-        "jdfjfj",
-        "aaa",
-        "hgfkfd gsdfjhg gdhjghds"
-      ],
-      "list_two": [
-        {
-          "name": "dghghgfj"
-        },
-        {
-          "name": "hjdfshjddf"
-        },
-        {
-          "name": "fdghfh"
-        }
-      ]
+      "description": "fhdsgjdshg"
     }
   },
   {
@@ -500,12 +481,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -748,12 +725,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -996,12 +969,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -1244,12 +1213,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -1492,12 +1457,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -1740,12 +1701,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -1988,12 +1945,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -2236,12 +2189,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   },
   {
@@ -2484,12 +2433,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [
-
-      ],
-      "list_two": [
-
-      ]
+      "list_one": [],
+      "list_two": []
     }
   }
 ]
