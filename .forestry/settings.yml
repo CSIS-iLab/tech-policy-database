@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/json/site_config.json
   label: Site Information
-  match: "**/*"
 - type: document
   path: src/json/framework_database.json
   label: Frameworks
