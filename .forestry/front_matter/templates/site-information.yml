@@ -2,48 +2,43 @@
 label: Site Information
 hide_body: true
 fields:
-- name: site_information
-  type: field_group_list
+- name: download_file
+  type: field_group
+  config: {}
   fields:
-  - name: social_media
-    type: field_group
-    config: {}
-    fields:
-    - name: facebook
-      type: text
-      config:
-        required: false
-      label: Facebook
-    - name: twitter
-      type: text
-      config:
-        required: false
-      label: Twitter
-    - name: linkedin
-      type: text
-      config:
-        required: false
-      label: LinkedIn
-    label: Social Media
-  - name: data_download
-    type: field_group
-    config: {}
-    fields:
-    - name: description
-      type: text
-      config:
-        required: false
-      label: Description
-    - name: url
-      type: text
-      config:
-        required: false
-      label: URL
-    label: Data Download
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Site Information
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+    description: Link to Google Sheet
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+    description: Any extra info you want to include, like noting if anything is missing
+      from the chart or when it was last updated
+  label: Download File
+- name: social_media
+  type: field_group
+  config: {}
+  fields:
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: Twitter
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: LinkedIn
+  label: Social Media
 pages:
 - src/json/site_config.json
