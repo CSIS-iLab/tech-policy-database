@@ -238,7 +238,8 @@
     "organization": "",
     "also_known_as": "",
     "members": {
-      "description": "fhdsgjdshg"
+      "description": "fhdsgjdshg",
+      "list": ""
     }
   },
   {
@@ -481,8 +482,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -725,8 +725,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -969,8 +968,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -1213,8 +1211,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -1457,8 +1454,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -1701,8 +1697,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -1945,8 +1940,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -2189,8 +2183,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   },
   {
@@ -2433,8 +2426,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list_one": [],
-      "list_two": []
+      "list": ""
     }
   }
 ]
