@@ -22,6 +22,16 @@ fields:
       format: html
   label: Methodology
   description: "(No more than 100 words)"
+- name: program_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: Program Description
+  description: "(No more than 30 words)"
 - name: download_file
   type: field_group
   config: {}
@@ -40,16 +50,6 @@ fields:
     description: Any extra info you want to include, like noting if anything is missing
       from the chart or when it was last updated
   label: Download File
-- name: program_description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html
-  label: Program Description
-  description: "(No more than 30 words)"
 - name: social_media
   type: field_group
   config: {}
