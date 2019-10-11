@@ -1,27 +1,14 @@
 {
-  "site_information": [
-    {
-      "social_media": {
-        "facebook": "",
-        "twitter": "",
-        "linkedin": ""
-      },
-      "data_download": {
-        "description": "",
-        "url": ""
-      }
-    }
-  ],
-  "intro_paragraph": "fghwert",
-  "methodology": "retgyretyt",
-  "program_description": "wretyretryt",
+  "intro_paragraph": "",
+  "methodology": "",
+  "program_description": "",
   "download_file": {
-    "url": "reryt",
-    "description": "retrytjy"
+    "url": "",
+    "description": ""
   },
   "social_media": {
-    "facebook": "retryt",
-    "twitter": "wretrt",
-    "linkedin": "wert"
+    "facebook": "",
+    "twitter": "",
+    "linkedin": ""
   }
 }
