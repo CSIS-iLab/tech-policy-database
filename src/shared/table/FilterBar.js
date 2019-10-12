@@ -1,5 +1,5 @@
 import React from 'react'
-import categoryNames from '../../json/curated_categories.json'
+import categoryNames from '../../json/tech-policy-int/curated_categories.json'
 
 const FilterBar = (props) => {
   const { setCuratedCat, handleFilter, searchText, filterSubject } = props

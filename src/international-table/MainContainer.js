@@ -3,8 +3,8 @@ import { GlobalContext } from '../context/GlobalContext'
 import Description from './Description'
 import ModalContainer from './modals/ModalContainer'
 import TableContainer from '../shared/table/TableContainer'
-import tableData from '../json/framework_database.json'
-import categories from '../json/explanations.json'
+import tableData from '../json/tech-policy-int/framework_database.json'
+import categories from '../json/tech-policy-int/explanations.json'
 
 const MainContainer = () => {
   const context = useContext(GlobalContext)
