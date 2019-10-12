@@ -13,7 +13,8 @@ const TableOptions = () => {
     filterSubject,
     setFilterSubject,
     curatedCat,
-    setCuratedCat
+    setCuratedCat,
+    collections
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -80,6 +81,7 @@ const TableOptions = () => {
         setCuratedCat={setCuratedCat}
         searchText={searchText}
         filterSubject={filterSubject}
+        collections={collections}
       />
       <TableTextResize />
     </div>

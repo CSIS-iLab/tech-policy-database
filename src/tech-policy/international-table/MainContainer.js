@@ -7,6 +7,7 @@ import Header from '../../shared/site-config/Header'
 import Footer from '../../shared/site-config/Footer'
 import tableData from '../../json/tech-policy-int/framework_database.json'
 import categories from '../../json/tech-policy-int/explanations.json'
+import collections from '../../json/tech-policy-int/curated_categories.json'
 
 const MainContainer = () => {
   const context = useContext(GlobalContext)
@@ -32,10 +33,17 @@ const MainContainer = () => {
     return rows
   }
 
+  // Formats Collection names to be displayed  
+  const getCollections = () => {
+    return Object.keys(collections)
+      .map((name) => collections[name][name])
+  }
+
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
     context.setFilteredRows(formatRows())
+    context.setCollections(getCollections())
     // eslint-disable-next-line 
   }, [])
 

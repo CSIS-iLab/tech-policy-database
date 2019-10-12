@@ -12,11 +12,13 @@ export const GlobalContextProvider = (props) => {
   const [searchText, setSearchText] = useState('')
   const [filterSubject, setFilterSubject] = useState('categories')
   const [curatedCat, setCuratedCat] = useState('')
+  const [collections, setCollections] = useState([])
 
   const contextValue = {
     activeOriginalLang, setActiveOriginalLang,
     allHeaders, setAllHeaders,
     allRows, setAllRows,
+    collections, setCollections,
     curatedCat, setCuratedCat,
     docLink, setDocLink,
     filteredRows, setFilteredRows,
