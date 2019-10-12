@@ -56,18 +56,15 @@ const TableOptions = () => {
     })
   }
 
+  // Sorts by collections and adds divider when at least one category is present
   const sortRows = (rows) => {
-    let newRows = []
-    for (const c of collections) {
-      if (rows.find((r) => r[1][1].category === c) !== undefined)
-        newRows.push([c])
-      for (const row of rows) {
-        if (row[1][1].category === c) {
-          newRows.push(row)
-        }
+    return collections.reduce((acc, collection) => {
+      if (rows.find((r) => r[1][1].category === collection) !== undefined) {
+        acc.push([collection])
       }
-    }
-    return newRows
+      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      return acc
+    }, [])
   }
 
   // Serves as the master filter that combines filterRows and filterByCurated

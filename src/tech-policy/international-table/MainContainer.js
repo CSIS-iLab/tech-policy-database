@@ -33,17 +33,13 @@ const MainContainer = () => {
     return rows
   }
 
+  // Sorts by collections and adds divider when at least one category is present
   const sortRows = (rows) => {
-    let newRows = []
-    for (const c of getCollections()) {
-      newRows.push([c])
-      for (const row of rows) {
-        if (row[1][1].category === c) {
-          newRows.push(row)
-        }
-      }
-    }
-    return newRows
+    return getCollections().reduce((acc, collection) => {
+      acc.push([collection])
+      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      return acc
+    }, [])
   }
 
   // Formats Collection names to be displayed  
