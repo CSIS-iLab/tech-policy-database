@@ -1,10 +1,12 @@
 import React, { useContext, useEffect } from 'react'
-import { GlobalContext } from '../context/GlobalContext'
-import Description from './Description'
-import ModalContainer from './modals/ModalContainer'
-import TableContainer from '../shared/table/TableContainer'
-import tableData from '../json/tech-policy-int/framework_database.json'
-import categories from '../json/tech-policy-int/explanations.json'
+import { GlobalContext } from '../../context/GlobalContext'
+import Description from '../../shared/site-config/Description'
+import ModalContainer from '../../shared/modals/ModalContainer'
+import TableContainer from '../../shared/table/TableContainer'
+import Header from '../../shared/site-config/Header'
+import Footer from '../../shared/site-config/Footer'
+import tableData from '../../json/tech-policy-int/framework_database.json'
+import categories from '../../json/tech-policy-int/explanations.json'
 
 const MainContainer = () => {
   const context = useContext(GlobalContext)
@@ -39,9 +41,11 @@ const MainContainer = () => {
 
   return (
     <div className="international-container">
+      <Header />
       <Description />
       <TableContainer headers={context.allHeaders} rows={context.filteredRows} />
       <ModalContainer />
+      <Footer />
     </div>
   )
 }
