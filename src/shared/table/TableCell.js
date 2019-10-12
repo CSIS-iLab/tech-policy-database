@@ -28,7 +28,10 @@ const TableCell = (props) => {
 
   // Conditionally renders cells based on position in the table and the presence of data
   const renderCell = () => {
-    if (typeof catObj !== 'object') {
+    if (typeof catObj === 'string' && catObj.length === 1) {
+      return <td><div className="divider">{props.content}</div></td>
+    }
+    else if (typeof catObj !== 'object') {
       let catDesc = allRows.find(r => r[0][0] === framework)[0][1]
       return (
         <td>

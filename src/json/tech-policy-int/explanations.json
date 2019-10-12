@@ -104,25 +104,25 @@
   "lawful_and_fair": {
     "title": "Lawful and Fair",
     "description": "Do the data protection frameworks require processing to be conducted in a lawful and fair manner?",
-    "category": "Condition for Legitimate Processing",
+    "category": "Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "disclosure_of_purpose": {
     "title": "Disclosure of Purpose",
     "description": "Does the data protection framework require controllers to disclose the specific purpose of processing to data subjects?",
-    "category": "Condition for Legitimate Processing",
+    "category": "Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "use_limitation": {
     "title": "Use Limitation",
     "description": "Does the data protection framework put restrictions on how data can be used by controllers once it has been collected?",
-    "category": "Condition for Legitimate Processing",
+    "category": "Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "minimization": {
     "title": "Minimization",
     "description": "Does the data protection framework put restrictions on how much data can be collected by controllers?",
-    "category": "Condition for Legitimate Processing",
+    "category": "Legitimate Processing",
     "default_lang": "Not Specified"
   },
   "transparency": {

@@ -25,15 +25,13 @@ const TableOptions = () => {
 
   const filterByLang = (rows, text, subject) => {
     return rows.filter((row) => {
-      return row
-        .slice(1)
-        .some(
-          (cat) => {
-            return cat[1][subject].toLowerCase().includes(text.toLowerCase()) ||
-              (cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase()) && cat[1][subject] === '')
-          }
-
+      return row.slice(1).some((cat) => {
+        return (
+          cat[1][subject].toLowerCase().includes(text.toLowerCase()) ||
+          (cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase()) &&
+            cat[1][subject] === '')
         )
+      })
     })
   }
 
@@ -58,10 +56,24 @@ const TableOptions = () => {
     })
   }
 
-  // Serves as the master filter that combines filterRows and filterByCurated 
+  const sortRows = (rows) => {
+    let newRows = []
+    for (const c of collections) {
+      if (rows.find((r) => r[1][1].category === c) !== undefined)
+        newRows.push([c])
+      for (const row of rows) {
+        if (row[1][1].category === c) {
+          newRows.push(row)
+        }
+      }
+    }
+    return newRows
+  }
+
+  // Serves as the master filter that combines filterRows and filterByCurated
   const handleFilter = (text, subject, curated) => {
     setFilteredRows(
-      filterByCurated(filterBySearch(allRows, text, subject), curated)
+      sortRows(filterByCurated(filterBySearch(allRows, text, subject), curated))
     )
   }
 

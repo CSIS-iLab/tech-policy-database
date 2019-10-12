@@ -33,16 +33,30 @@ const MainContainer = () => {
     return rows
   }
 
+  const sortRows = (rows) => {
+    let newRows = []
+    for (const c of getCollections()) {
+      newRows.push([c])
+      for (const row of rows) {
+        if (row[1][1].category === c) {
+          newRows.push(row)
+        }
+      }
+    }
+    return newRows
+  }
+
   // Formats Collection names to be displayed  
   const getCollections = () => {
     return Object.keys(collections)
       .map((name) => collections[name][name])
+      .sort((a, b) => a.localeCompare(b))
   }
 
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
-    context.setFilteredRows(formatRows())
+    context.setFilteredRows(sortRows(formatRows()))
     context.setCollections(getCollections())
     // eslint-disable-next-line 
   }, [])
