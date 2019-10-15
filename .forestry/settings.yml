@@ -5,9 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/json/tech-policy-int/site_config.json
+  path: src/json/tech-policy-int/site_info.json
   label: Site Information
-  match: "**/*"
 - type: document
   path: src/json/tech-policy-int/framework_database.json
   label: Frameworks
