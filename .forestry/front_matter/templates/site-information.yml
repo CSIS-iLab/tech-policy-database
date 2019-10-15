@@ -70,3 +70,5 @@ fields:
       required: false
     label: LinkedIn
   label: Social Media
+pages:
+- src/json/tech-policy-int/site_info.json
