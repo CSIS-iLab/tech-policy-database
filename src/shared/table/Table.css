@@ -19,6 +19,13 @@ td {
   border: 1px solid #c0c4ca;
 }
 
+.divider {
+  height: 50px;
+  background-color: grey;
+  width: 1100%;
+  text-align: left;
+}
+
 td,
 th {
   /* height: auto; */
@@ -46,7 +53,7 @@ th:first-child {
   position: sticky;
   left: 0;
   z-index: 1;
-  background-color: #3582b3;
+  background-color: white;
 }
 
 thead > * {
