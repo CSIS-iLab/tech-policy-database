@@ -1,10 +1,13 @@
 import React, { useContext, useEffect } from 'react'
-import { GlobalContext } from '../context/GlobalContext'
-import Description from './Description'
-import ModalContainer from './modals/ModalContainer'
-import TableContainer from '../shared/table/TableContainer'
-import tableData from '../json/framework_database.json'
-import categories from '../json/explanations.json'
+import { GlobalContext } from '../../context/GlobalContext'
+import Description from '../../shared/site-config/Description'
+import ModalContainer from '../../shared/modals/ModalContainer'
+import TableContainer from '../../shared/table/TableContainer'
+import Header from '../../shared/site-config/Header'
+import Footer from '../../shared/site-config/Footer'
+import tableData from '../../json/tech-policy-int/framework_database.json'
+import categories from '../../json/tech-policy-int/explanations.json'
+import collections from '../../json/tech-policy-int/curated_categories.json'
 
 const MainContainer = () => {
   const context = useContext(GlobalContext)
@@ -30,18 +33,37 @@ const MainContainer = () => {
     return rows
   }
 
+  // Sorts by collections and adds divider when at least one category is present
+  const sortRows = (rows) => {
+    return getCollections().reduce((acc, collection) => {
+      acc.push([collection])
+      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      return acc
+    }, [])
+  }
+
+  // Formats Collection names to be displayed  
+  const getCollections = () => {
+    return Object.keys(collections)
+      .map((name) => collections[name][name])
+      .sort((a, b) => a.localeCompare(b))
+  }
+
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
-    context.setFilteredRows(formatRows())
+    context.setFilteredRows(sortRows(formatRows()))
+    context.setCollections(getCollections())
     // eslint-disable-next-line 
   }, [])
 
   return (
     <div className="international-container">
+      <Header />
       <Description />
       <TableContainer headers={context.allHeaders} rows={context.filteredRows} />
       <ModalContainer />
+      <Footer />
     </div>
   )
 }

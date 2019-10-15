@@ -13,7 +13,8 @@ const TableOptions = () => {
     filterSubject,
     setFilterSubject,
     curatedCat,
-    setCuratedCat
+    setCuratedCat,
+    collections
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -24,15 +25,13 @@ const TableOptions = () => {
 
   const filterByLang = (rows, text, subject) => {
     return rows.filter((row) => {
-      return row
-        .slice(1)
-        .some(
-          (cat) => {
-            return cat[1][subject].toLowerCase().includes(text.toLowerCase()) ||
-              (cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase()) && cat[1][subject] === '')
-          }
-
+      return row.slice(1).some((cat) => {
+        return (
+          cat[1][subject].toLowerCase().includes(text.toLowerCase()) ||
+          (cat[1]['default_lang'].toLowerCase().includes(text.toLowerCase()) &&
+            cat[1][subject] === '')
         )
+      })
     })
   }
 
@@ -57,10 +56,21 @@ const TableOptions = () => {
     })
   }
 
-  // Serves as the master filter that combines filterRows and filterByCurated 
+  // Sorts by collections and adds divider when at least one category is present
+  const sortRows = (rows) => {
+    return collections.reduce((acc, collection) => {
+      if (rows.find((r) => r[1][1].category === collection) !== undefined) {
+        acc.push([collection])
+      }
+      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      return acc
+    }, [])
+  }
+
+  // Serves as the master filter that combines filterRows and filterByCurated
   const handleFilter = (text, subject, curated) => {
     setFilteredRows(
-      filterByCurated(filterBySearch(allRows, text, subject), curated)
+      sortRows(filterByCurated(filterBySearch(allRows, text, subject), curated))
     )
   }
 
@@ -80,6 +90,7 @@ const TableOptions = () => {
         setCuratedCat={setCuratedCat}
         searchText={searchText}
         filterSubject={filterSubject}
+        collections={collections}
       />
       <TableTextResize />
     </div>
