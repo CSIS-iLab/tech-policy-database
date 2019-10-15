@@ -5,16 +5,16 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/json/site_config.json
+  path: src/json/tech-policy-int/site_config.json
   label: Site Information
 - type: document
-  path: src/json/framework_database.json
+  path: src/json/tech-policy-int/framework_database.json
   label: Frameworks
 - type: document
-  path: src/json/curated_categories.json
+  path: src/json/tech-policy-int/curated_categories.json
   label: Curated Categories
 - type: document
-  path: src/json/explanations.json
+  path: src/json/tech-policy-int/explanations.json
   label: Categories
 upload_dir: uploads
 public_path: "/uploads"

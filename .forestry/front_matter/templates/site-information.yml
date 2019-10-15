@@ -70,5 +70,3 @@ fields:
       required: false
     label: LinkedIn
   label: Social Media
-pages:
-- src/json/site_config.json
