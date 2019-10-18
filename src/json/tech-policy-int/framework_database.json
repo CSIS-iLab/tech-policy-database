@@ -239,7 +239,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list": [ "Austria",
+      "list": [ 
+        "Austria",
         "Belgium",
         "Bulgaria",
         "Croatia",
