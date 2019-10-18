@@ -239,7 +239,8 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list": [ 
+      "list": [
+        "test",
         "Austria",
         "Belgium",
         "Bulgaria",
@@ -515,7 +516,7 @@
     "also_known_as": "",
     "members": {
       "description": "",
-      "list": [ 
+      "list": [
         "Australia",
         "Austria",
         "Belgium",
@@ -2184,9 +2185,11 @@
         "Spanish Agency for Data Protection",
         "Catalan Data Protection Authority",
         "Basque Agency for Data Protection",
-        "Mexican National Institute of Transparency"," Access to Information and Protection of Personal Data",
+        "Mexican National Institute of Transparency",
+        " Access to Information and Protection of Personal Data",
         "Mexican Institute of Access to Public Information and Protection of Personal Data of the Federal District",
-        "Institute of Transparency"," Access to Public Information and Protection of Personal Data of the State of Mexico and Municipalities",
+        "Institute of Transparency",
+        " Access to Public Information and Protection of Personal Data of the State of Mexico and Municipalities",
         "Perúvian National Authority for the Protection of Personal Data",
         "Portugese National Commission for Data Protection",
         "Uruguayan AGESIC Regulatory and Personal Data Control Unit"
@@ -2806,7 +2809,7 @@
         "Mauritius Data Protection Office of Mauritius ",
         "Mexican National Institute for Transparency, Access to Information and Personal Data Protection INAI",
         "Mexican Institute for Access to Public Information of the Federal District ",
-        "State of Mexico Transparency, Public Information Access and Personal Data Protection Institute of Estado de México and municipalities, INFOEM", 
+        "State of Mexico Transparency, Public Information Access and Personal Data Protection Institute of Estado de México and municipalities, INFOEM",
         "Moldavia National Center for Personal Data Protection ",
         "Monaco Supervisory Commission for Personal Information",
         "Montenegro Agency for Personal Data Protection and Free Access to Information ",
