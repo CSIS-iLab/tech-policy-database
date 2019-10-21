@@ -1,4 +1,4 @@
-.lang-modal {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 
-.lang-modal__header {
+.modal__header {
   flex: 1;
   display: flex;
   align-items: center;
@@ -19,13 +19,13 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.lang-modal__content {
+.modal__content {
   flex: 10;
   overflow-y: scroll;
   padding: 5px 10px;
 }
 
-.lang-modal__footer {
+.modal__footer {
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -34,6 +34,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.lang-modal__close {
+.modal__close {
   cursor: pointer;
 }

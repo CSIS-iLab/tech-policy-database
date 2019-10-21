@@ -1,5 +1,5 @@
 import React from 'react'
-import './Table.css'
+import '../table/Table.css'
 
 const TableTextResize = () => {
   const resize = (size) => {

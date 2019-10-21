@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchBar = (props) => {
+const SearchFilter = (props) => {
   const {
     handleFilter,
     searchText,
@@ -36,4 +36,4 @@ const SearchBar = (props) => {
   )
 }
 
-export default SearchBar
+export default SearchFilter

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FilterBar = (props) => {
+const CollectionFilter = (props) => {
   const { setCuratedCat, handleFilter, searchText, filterSubject, collections } = props
 
   const handleCuratedFilter = (e) => {
@@ -23,4 +23,4 @@ const FilterBar = (props) => {
   )
 }
 
-export default FilterBar
+export default CollectionFilter

@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
-import SearchBar from './SearchBar'
-import FilterBar from './FilterBar'
+import SearchFilter from './SearchFilter'
+import CollectionFilter from './CollectionFilter'
 import TableTextResize from './TableTextResize'
+import CustomFilter from './CustomFilter'
 
 const TableOptions = () => {
   const {
@@ -14,7 +15,8 @@ const TableOptions = () => {
     setFilterSubject,
     curatedCat,
     setCuratedCat,
-    collections
+    collections,
+    setFilterModalStatus
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -76,7 +78,7 @@ const TableOptions = () => {
 
   return (
     <div className="table__options">
-      <SearchBar
+      <SearchFilter
         handleFilter={handleFilter}
         searchText={searchText}
         setSearchText={setSearchText}
@@ -84,7 +86,7 @@ const TableOptions = () => {
         setFilterSubject={setFilterSubject}
         curatedCat={curatedCat}
       />
-      <FilterBar
+      <CollectionFilter
         handleFilter={handleFilter}
         curatedCat={curatedCat}
         setCuratedCat={setCuratedCat}
@@ -92,6 +94,7 @@ const TableOptions = () => {
         filterSubject={filterSubject}
         collections={collections}
       />
+      <CustomFilter setFilterModalStatus={setFilterModalStatus} />
       <TableTextResize />
     </div>
   )

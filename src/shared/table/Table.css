@@ -21,9 +21,12 @@ td {
 }
 
 .divider {
+  /* css variables */
+  --column-count: 11;
+
   height: 50px;
   background-color: grey;
-  width: 1100%;
+  width: calc(100% * var(--column-count));
   text-align: left;
 }
 
