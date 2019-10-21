@@ -1445,7 +1445,7 @@
       "right_to_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to obtain a copy of personal data</p>",
-        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data</p><p>(Eighth Principle -- Commentary)</p><p>Individuals must have the right to discover whether data controllers have personal data relating to those individuals, to have access to that data so that they may challenge the accuracy of that data, and to ask the data controller to amend, revise, correct or delete the data in question.</p><p>...</p><p>The right to access personal data held by a data controller should be simple to exercise. For example, the mechanisms for access should be part of the routine activities of the data controller and should not require any special measures or legal process (including, for instance, presenting a formal judicial claim). </p><p>Every individual should have the ability access his or her own data. In some situations, even third parties may also be entitled (for example, representatives on behalf of those suffering mental incapacity, or parents on behalf of minor children).</p>"
+        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data</p><p>Individuals must have the right to discover whether data controllers have personal data relating to those individuals, to have access to that data so that they may challenge the accuracy of that data, and to ask the data controller to amend, revise, correct or delete the data in question.</p><p>...</p><p>The right to access personal data held by a data controller should be simple to exercise. For example, the mechanisms for access should be part of the routine activities of the data controller and should not require any special measures or legal process (including, for instance, presenting a formal judicial claim).</p><p>Every individual should have the ability access his or her own data. In some situations, even third parties may also be entitled (for example, representatives on behalf of those suffering mental incapacity, or parents on behalf of minor children).</p>"
       },
       "right_to_correction": {
         "has_data": true,
@@ -1454,8 +1454,8 @@
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol><p>No right to erase data that is</p><ol><li><p>embarrassing</p></li><li><p>excessive</p></li><li><p>irrelevant</p></li></ol>",
-        "original_lang": "<p>(Eighth Principle) </p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data and to request that the data controller amend, correct or delete that data</p><p>The individual must be able to exercise the right to request the correction of (or an addition to) personal data about himself or herself that is incomplete, inaccurate, unnecessary or excessive. This is sometimes referred to as the right of “rectification.”</p><p>These Principles embrace the rights of access, challenge and correction. Because, at this point in time, a “right to erasure or deletion” remains contentious and subject to differing definitions and views, <strong>the Principles do not explicitly endorse a right to deletion of personal data which (while true or factually accurate) is considered personally embarrassing, excessive or merely irrelevant by the individual concerned</strong></p>"
+        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol>",
+        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data and to request that the data controller amend, correct or delete that data</p><p><strong>The individual must be able to exercise the right to request the correction of (or an addition to) personal data about himself or herself that is incomplete, inaccurate, unnecessary or excessive.</strong> This is sometimes referred to as the right of “rectification.”</p><p>These Principles embrace the rights of access, challenge and correction. Because, at this point in time, a “right to erasure or deletion” remains contentious and subject to differing definitions and views, the Principles do not explicitly endorse a right to deletion of personal data which (while true or factually accurate) is considered personally embarrassing, excessive or merely irrelevant by the individual concerned</p>"
       },
       "right_to_object_processing": {
         "has_data": false,
@@ -2027,12 +2027,12 @@
       },
       "right_to_access": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to obtain a copy of personal data</p>",
+        "abbreviated_lang": "<p>Right to request a copy of personal data</p>",
         "original_lang": "<p>(Principle 25) </p><p>Holder shall have the right to request access to its personal data in possession of the responsible person, as well as to know any information related to the general and specific conditions of their treatment</p>"
       },
       "right_to_correction": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>not updated</p></li></ol>",
+        "abbreviated_lang": "<p>Right to the correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>not updated</p></li></ol>",
         "original_lang": "<p>(Principle 26) </p><p>Holder shall have the right to obtain from the person responsible the correction of its personal data when they are inaccurate, incomplete or are not updated.</p>"
       },
       "right_to_erasure": {
@@ -2166,9 +2166,9 @@
         "original_lang": ""
       },
       "right_to_object_to_processing": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to object to processing</p>",
+        "original_lang": "<p>(Article 28)</p><p>Holder may oppose to the treatment of its personal data when:</p><ol><li><p>It has a legitimate reason resulting from its particular situation. </p></li><li><p>The purpose of the treatment of its personal data is direct marketing, including preparing profiles, to the extent that it is related to such activity.</p></li></ol><p>In the case of the previous item, when holder opposes treatment with direct marketing purposes, its personal data must stop being treated with such purposes</p>"
       }
     },
     "organization": "",
@@ -2287,22 +2287,22 @@
       "right_to_information": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to be provided, upon request:</p><ol><li><p>Confirmation of processing</p></li><li><p>Origin of data</p></li><li><p>preservation period</p></li><li><p>reasoning of processing</p></li></ol>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: </p><ol><li><p>to obtain, on request, at reasonable intervals and without excessive delay or expense, <strong>confirmation of the processing</strong> of personal data relating to him or her, the communication in an intelligible form of the data processed, all available <strong>information on their origin</strong>, on the <strong>preservation period</strong> as well as any other information that the controller is required to provide in order to ensure the transparency of processing</p></li><li><p>to obtain, on request, <strong>knowledge of the reasoning underlying data processing</strong> where the results of such processing are applied to him or her</p></li></ol>"
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right:</p><ol><li><p>to obtain, on request, at reasonable intervals and without excessive delay or expense, <strong>confirmation of the processing</strong> of personal data relating to him or her, the communication in an intelligible form of the data processed, all available <strong>information on their origin</strong>, on the <strong>preservation period</strong> as well as any other information that the controller is required to provide in order to ensure the transparency of processing</p></li><li><p>to obtain, on request, <strong>knowledge of the reasoning underlying data processing</strong> where the results of such processing are applied to him or her</p></li></ol><p>(Explanatory Report)</p><p>Data subjects should be entitled to know about the processing of their personal data. The right of access should, in principle, be free of charge. However, the wording of littera b. is intended to allow the controller in certain specific conditions to charge a reasonable fee where the requests are excessive and to cover various approaches that could be adopted by a Party for appropriate cases. Such a fee should be exceptional and in any case reasonable, and not prevent or dissuade data subjects from exercising their rights. The controller or processor could also refuse to respond to manifestly unfounded or excessive requests, in particular because of their repetitive character. The controller should in all cases justify such a refusal. To ensure a fair exercise of the right of access, the communication “in an intelligible form” applies to the content as well as to the form of a standardised digital communication. </p><p>Data subjects should be entitled to know the reasoning underlying the processing of data, including the consequences of such a reasoning, which led to any resulting conclusions, in particular in cases involving the use of algorithms for automateddecision making including profiling. For instance in the case of credit scoring, they should be entitled to know the logic underpinning the processing of their data and resulting in a “yes” or “no” decision, and not simply information on the decision itself. Having an understanding of these elements contributes to the effective exercise of other essential safeguards such as the right to object and the right to complain to a competent authority.</p>"
       },
       "right_to_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to obtain a copy of personal data</p>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, at reasonable intervals and without excessive delay or expense, confirmation of the processing of personal data relating to him or her,<strong> the communication in an intelligible form of the data processed</strong>, all available information on their origin, on the preservation period as well as any other information that the controller is required to provide in order to ensure the transparency of processing</p>"
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, at reasonable intervals and without excessive delay or expense, confirmation of the processing of personal data relating to him or her,<strong> the communication in an intelligible form of the data processed</strong>, all available information on their origin, on the preservation period as well as any other information that the controller is required to provide in order to ensure the transparency of processing</p><p>(Explanatory Report)</p><p>Data subjects should be entitled to know about the processing of their personal data. The right of access should, in principle, be free of charge. However, the wording of littera b. is intended to allow the controller in certain specific conditions to charge a reasonable fee where the requests are excessive and to cover various approaches that could be adopted by a Party for appropriate cases. Such a fee should be exceptional and in any case reasonable, and not prevent or dissuade data subjects from exercising their rights. The controller or processor could also refuse to respond to manifestly unfounded or excessive requests, in particular because of their repetitive character. The controller should in all cases justify such a refusal. To ensure a fair exercise of the right of access, the communication “in an intelligible form” applies to the content as well as to the form of a standardised digital communication.</p>"
       },
       "right_to_correction": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request correction of data </p><ul><li><p>processed contrary to the Convention</p></li></ul>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p>"
+        "abbreviated_lang": "<p>Right to request correction of data</p><ol><li><p>processed contrary to the Convention</p></li></ol>",
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request correction of data </p><ul><li><p>processed contrary to the Convention</p></li></ul>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p>"
+        "abbreviated_lang": "<p>Right to request erasure of data</p><ul><li><p>processed contrary to the Convention</p></li></ul>",
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
       },
       "right_to_object_processing": {
         "has_data": true,
@@ -2310,9 +2310,9 @@
         "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to object at any time, on grounds relating to his or her situation, to the processing of personal data concerning him or her unless the controller demonstrates legitimate grounds for the processing which override his or her interests or rights and fundamental freedoms;</p>"
       },
       "right_to_withdraw_consent": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to withdraw consent</p>",
+        "original_lang": "<p>(Explanatory Report)</p><p>The data subject has the right to withdraw the consent he or she gave at any time (which is to be distinguished from the separate right to object to processing). This will not affect the lawfulness of the data processing that occurred before the data controller has received his or her withdrawal of consent but does not allow continued processing of data, unless justified by some other legitimate basis laid down by law.</p>"
       },
       "right_to_challenge_denials": {
         "has_data": true,
@@ -2320,14 +2320,14 @@
         "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to have a remedy under Article 12 where his or her rights under this Convention have been violated;</p>"
       },
       "portability": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to data portability tools</p>",
+        "original_lang": "<p>(Explanatory Report)</p><p>There should also be easy-to-use tools to enable data subjects to take their data to another provider of their choice or keep the data themselves (data portability tools).</p>"
       },
       "automated_processing": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right not to be subject to a decision based solely on automated processing</p>",
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: not to be subject to a decision significantly affecting him or her based solely on an automated processing of data without having his or her views taken into consideration;</p>"
       },
       "cost": {
         "has_data": false,
@@ -2430,9 +2430,9 @@
         "original_lang": ""
       },
       "right_to_object_to_processing": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to object to processing</p>",
+        "original_lang": "<p>(Article 9)<br><br>Every individual shall have a right: to object at any time, on grounds relating to his or her situation, to the processing of personal data concerning him or her unless the controller demonstrates legitimate grounds for the processing which override his or her interests or rights and fundamental freedoms;<br><br>(Explanatory Report)<br><br>As regards the right to object, the controller may have a legitimate ground for data processing, which overrides the interests or rights and freedoms of the data subject. For example, the establishment, exercise or defence of legal claims or reasons of public safety could be considered as overriding legitimate grounds justifying the continuation of the processing. This will have to be demonstrated on a case-by-case basis and failure to demonstrate such compelling legitimate grounds while pursuing the processing could be considered as unlawful. The right to object operates in a distinct and separate manner from the right to obtain rectification or erasure (littera e.). </p><p>Objection to data processing for marketing purposes should lead to unconditional erasing or removing of the personal data covered by the objection. </p><p>The right to object may be limited by virtue of a law, for example, for the purpose of the investigation or prosecution of criminal offences. In this case, the data subject can, as the case may be, challenge the lawfulness of the processing on which it is based. When data processing is based on valid consent given by the data subject, the right to withdraw consent can be exercised instead of the right to object. A data subject may withdraw his or her consent and subsequently have to assume the consequences possibly deriving from other legal texts such as the obligation to compensate the controller. Likewise where data processing is based on a contract, the data subject can take the necessary steps to revoke the contract.</p>"
       }
     },
     "organization": "",
@@ -2592,9 +2592,9 @@
         "original_lang": "<p>(Principle 18) </p><p>The data subject may object to the processing of personal data where there is a legitimate reason related to his/her specific personal situation. </p><p>The exercise of this right to object is not justified where the processing is necessary for the performance of a duty imposed on the responsible person by the applicable national legislation.</p>"
       },
       "right_to_withdraw_consent": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to withdraw consent</p>",
+        "original_lang": "<p>(Principle 12) </p><p>The responsible person shall provide simple, fast and efficient procedures that allow data subjects to withdraw their consent at any time and that shall not entail undue delay or cost, nor any gain whatsoever for the responsible person.</p>"
       },
       "right_to_challenge_denials": {
         "has_data": false,
@@ -2712,9 +2712,9 @@
         "original_lang": ""
       },
       "right_to_object_to_processing": {
-        "has_data": false,
-        "abbreviated_lang": "",
-        "original_lang": ""
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to object to processing</p>",
+        "original_lang": "<p>(Principle 18) </p><p>The data subject may object to the processing of personal data where there is a legitimate reason related to his/her specific personal situation. </p><p>The exercise of this right to object is not justified where the processing is necessary for the performance of a duty imposed on the responsible person by the applicable national legislation.</p>"
       }
     },
     "organization": "",
