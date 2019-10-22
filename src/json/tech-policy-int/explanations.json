@@ -103,7 +103,7 @@
   },
   "lawful_and_fair": {
     "title": "Lawful and Fair",
-    "description": "Do the data protection frameworks require processing to be conducted in a lawful and fair manner?",
+    "description": "Does the data protection framework require processing to be conducted in a lawful and fair manner?",
     "category": "Legitimate Processing",
     "default_lang": "Not Specified"
   },
