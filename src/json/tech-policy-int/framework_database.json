@@ -462,23 +462,23 @@
       },
       "data_breach_notification": {
         "has_data": true,
-        "abbreviated_lang": "Notification when likely to adversely affect data subjects",
-        "original_lang": "(Paragraph 15) A data controller should: Provide notice, as appropriate, to privacy enforcement authorities or\nother relevant authorities where there has been a significant security\nbreach affecting personal data. Where the breach is likely to\nadversely affect data subjects, a data controller should notify\naffected data subjects."
+        "abbreviated_lang": "<p>Notify data protection authority for significant breaches</p><p>Notify data subject when adverse effects likely</p>",
+        "original_lang": "<p>(Paragraph 15)</p><p>A data controller should: Provide notice, as appropriate, to privacy enforcement authorities or other relevant authorities where there has been a significant security breach affecting personal data. Where the breach is likely to adversely affect data subjects, a data controller should notify affected data subjects.</p><p></p>"
       },
       "retention": {
         "has_data": true,
-        "abbreviated_lang": "Erasing data may be necessary once its purpose is fulfilled",
-        "original_lang": "(Explanatory Memorandum) when data no longer serve a purpose, and if it is\npracticable, it may be necessary to have them destroyed (erased) or given an\nanonymous form. The reason is that control over data may be lost when data\nare no longer of interest; this may lead to risks of theft, unauthorised\ncopying or the like."
+        "abbreviated_lang": "<p>Erasure may be necessary</p>",
+        "original_lang": "<p>(Explanatory Memorandum) </p><p>when data no longer serve a purpose, and if it is practicable, it may be necessary to have them destroyed (erased) or given an anonymous form. The reason is that control over data may be lost when data are no longer of interest; this may lead to risks of theft, unauthorised copying or the like.</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third countries/organizations with equivalent protections</p>",
+        "abbreviated_lang": "<p>Restrictions discouraged for third countries/organizations with equivalent protections</p>",
         "original_lang": "<p>(Paragraph 17)</p><p>A Member country should refrain from restricting transborder flows of personal data between itself and another country where</p><ol><li><p>the <strong>other country substantially observes these Guidelines</strong> or</p></li><li><p><strong>sufficient safeguards exist</strong>, including effective enforcement mechanisms and appropriate measures put in place by the data controller, <strong>to ensure a continuing level of protection</strong> consistent with these Guidelines.</p></li></ol>"
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers accountable for compliance</p>",
-        "original_lang": "<p>(Paragraph 14) </p><p>A data controller should be accountable for complying with measures which give effect to the principles stated above.</p>"
+        "abbreviated_lang": "Controllers accountable for compliance",
+        "original_lang": "(Paragraph 14)\n\nA data controller should be accountable for complying with measures which give effect to the principles stated above."
       },
       "privacy_by_design": {
         "has_data": false,
@@ -736,8 +736,8 @@
       },
       "security_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Requires risk-based safeguards to protect personal data",
-        "original_lang": "(Principle 7)  Personal information controllers\nshould protect personal information\nthat they hold with appropriate\nsafeguards against risks, such as loss\nor unauthorized access to personal\ninformation, or unauthorized\ndestruction, use, modification or\ndisclosure of information or other\nmisuses. Such safeguards should be\nproportional to the likelihood and\nseverity of the harm threatened, the\nsensitivity of the information and the\ncontext in which it is held, and should\nbe subject to periodic review and\nreassessment."
+        "abbreviated_lang": "<p>Requires risk-based safeguards</p>",
+        "original_lang": "<p>(Principle VII)</p><p>Personal information controllers should protect personal information that they hold with appropriate safeguards against risks, such as loss or unauthorized access to personal information, or unauthorized destruction, use, modification or disclosure of information or other misuses. Such safeguards should be proportional to the likelihood and severity of the harm threatened, the sensitivity of the information and the context in which it is held, and should be subject to periodic review and reassessment.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": false,
@@ -761,8 +761,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers accountable for compliance</p>",
-        "original_lang": "<p>(Principle IX) </p><p>A personal information controller should be accountable for complying with measures that give effect to the Principles stated above.</p>"
+        "abbreviated_lang": "Controllers accountable for compliance",
+        "original_lang": "(Principle IX)\n\nA personal information controller should be accountable for complying with measures that give effect to the Principles stated above."
       },
       "privacy_by_design": {
         "has_data": false,
@@ -1005,8 +1005,8 @@
       },
       "security_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Requires appropriate safeguards to protect personal data",
-        "original_lang": "(Article 21) The data controller must take all appropriate precautions, according to the nature of the\ndata, and in particular, to prevent such data from being altered or destroyed, or\naccessed by unauthorized third parties."
+        "abbreviated_lang": "<p>Requires appropriate safeguards</p>",
+        "original_lang": "<p>(Article 21) </p><p>The data controller must take all appropriate precautions, according to the nature of the data, and in particular, to prevent such data from being altered or destroyed, or accessed by unauthorized third parties.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": false,
@@ -1020,8 +1020,8 @@
       },
       "retention": {
         "has_data": true,
-        "abbreviated_lang": "Personal data shall be kept no longer than necessary",
-        "original_lang": "(Principle 3) Data shall be kept for no longer than is necessary for the purposes for which\nthe data were collected or further processed; Beyond the required period, data may be stored only for the specific needs\nof data processing undertaken for historical, statistical or research purposes\nunder the law"
+        "abbreviated_lang": "<p>Kept no longer than necessary</p>",
+        "original_lang": "<p>(Principle 3) </p><p>Data shall be kept for no longer than is necessary for the purposes for which the data were collected or further processed; Beyond the required period, data may be stored only for the specific needs of data processing undertaken for historical, statistical or research purposes under the law</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -1272,7 +1272,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "Requires appropriate safeguards to protect personal data",
-        "original_lang": "(Paragraph 6) The personal data should be appropriately protected against loss and\nunauthorised access, collection, use, disclosure, copying,\nmodification, destruction or similar risks."
+        "original_lang": "<p>(Paragraph 6) </p><p>The personal data should be appropriately protected against loss and unauthorised access, collection, use, disclosure, copying, modification, destruction or similar risks.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": false,
@@ -1287,7 +1287,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "Personal data shall be kept no longer than necessary",
-        "original_lang": "(Paragraph 6) An organisation should cease to retain documents containing\npersonal data, or remove the means by which the personal data can\nbe associated with particular individuals as soon as it is reasonable to\nassume that the retention is no longer necessary for legal or business\npurposes;"
+        "original_lang": "<p>(Paragraph 6) </p><p>An organisation should cease to retain documents containing personal data, or remove the means by which the personal data can be associated with particular individuals as soon as it is reasonable to assume that the retention is no longer necessary for legal or business purposes;</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -1296,8 +1296,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers accountable for compliance</p>",
-        "original_lang": "<p>(Paragraph 6) </p><p>An organisation should be accountable for complying with measures which give effect to the Principles</p>"
+        "abbreviated_lang": "Controllers accountable for compliance",
+        "original_lang": "(Paragraph 6)\n\nAn organisation should be accountable for complying with measures which give effect to the Principles"
       },
       "privacy_by_design": {
         "has_data": false,
