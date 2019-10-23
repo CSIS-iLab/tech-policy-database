@@ -6,22 +6,17 @@ const DataTable = (props) => {
   const renderHeadingRow = (cell, cellIndex) => {
     const { headers } = props
 
-    return (
-      <HeaderCell key={`heading-${cellIndex}`} content={headers[cellIndex]} />
-    )
+    return <HeaderCell key={cellIndex} content={headers[cellIndex]} />
   }
 
   const renderRow = (row, rowIndex) => {
     const { rows } = props
 
     return (
-      <tr key={`row-${rowIndex}`}>
+      <tr key={rowIndex}>
         {rows[rowIndex].map((cell, cellIndex) => {
           return (
-            <TableCell
-              key={`${rowIndex}-${cellIndex}`}
-              content={rows[rowIndex][cellIndex]}
-            />
+            <TableCell key={cellIndex} content={rows[rowIndex][cellIndex]} />
           )
         })}
       </tr>

@@ -52,6 +52,7 @@ const MainContainer = () => {
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
+    context.setFilteredHeaders(formatHeaders())
     context.setFilteredRows(sortRows(formatRows()))
     context.setCollections(getCollections())
     // eslint-disable-next-line 
@@ -61,7 +62,7 @@ const MainContainer = () => {
     <div className="international-container">
       <Header />
       <Description />
-      <TableContainer headers={context.allHeaders} rows={context.filteredRows} />
+      <TableContainer headers={context.filteredHeaders} rows={context.filteredRows} />
       <ModalContainer />
       <Footer />
     </div>

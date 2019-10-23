@@ -1,5 +1,5 @@
 import React from 'react'
-import TableOptions from './TableOptions'
+import TableOptions from '../table-options/TableOptions'
 import DataTable from './DataTable'
 
 const TableContainer = (props) => {
