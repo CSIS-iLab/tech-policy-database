@@ -27,22 +27,25 @@ const FilterModal = () => {
     setActiveFilterColumns(allHeaders.slice(1).map(header => header.name))
   }
 
+  useEffect(() => {
+    setActiveFilters()
+  }, [allRows, allHeaders])
+
   const handleApply = () => {
     setFilteredHeaders(allHeaders.filter(h => h.name === 'Categories' || activeFilterColumns.includes(h.name)))
     setFilteredRows(
-      // sortRows(
-      allRows
-        .filter((row) => activeFilterRows.includes(row[0][0]))
-        .map((row) =>
-          row.filter((r) =>
-            activeFilterColumns.includes(r[0]) || typeof r[1] === 'string'
+      sortRows(
+        allRows
+          .filter((row) => activeFilterRows.includes(row[0][0]))
+          .map((row) =>
+            row.filter((r) =>
+              activeFilterColumns.includes(r[0]) || typeof r[1] === 'string'
+            )
           )
-        )
-      // )
+      )
     )
-    let divider = document.getElementsByClassName('divider')[0]
-    console.log(divider)
-    divider.style.setProperty('--column-count', allHeaders.length)
+    // let divider = document.getElementsByClassName('divider')[0]
+    // divider.style.setProperty('--column-count', allHeaders.length)
   }
 
 
@@ -57,9 +60,10 @@ const FilterModal = () => {
     }, [])
   }
 
-  useEffect(() => {
-    setActiveFilters()
-  }, [allRows, allHeaders])
+  const handleResetFilters = () => {
+    setActiveFilterRows([])
+    setActiveFilterColumns([])
+  }
 
   return filterModalStatus ? (
     <div className="modal">
@@ -74,6 +78,10 @@ const FilterModal = () => {
           <div onClick={() => setActiveTab('Rows')}>Rows</div>
           <div onClick={() => setActiveTab('Columns')}>Columns</div>
         </div>
+        <div onClick={setActiveFilters}>
+          <span>[]</span>
+          <span>Select All</span>
+        </div>
         <FilterContent
           allRows={allRows}
           activeTab={activeTab}
@@ -84,9 +92,14 @@ const FilterModal = () => {
         />
       </div>
       <div className="modal__footer">
-        <div>Reset All Filters</div>
-        <button onClick={handleApply}>Apply</button>
+        <div onClick={handleResetFilters}>Reset all filters</div>
+        {(activeFilterRows.length > 0 && activeFilterColumns.length) > 0 ?
+          <button onClick={handleApply}>Apply</button>
+          :
+          <div>Apply</div>
+        }
       </div>
+
     </div>
   ) : null
 }
