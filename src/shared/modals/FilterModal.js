@@ -23,8 +23,8 @@ const FilterModal = () => {
   }
 
   const setActiveFilters = () => {
-    setActiveFilterRows(allRows.map(row => row[0][0]))
-    setActiveFilterColumns(allHeaders.slice(1).map(header => header.name))
+    setActiveFilterRows(allRows.map((row) => row[0][0]))
+    setActiveFilterColumns(allHeaders.slice(1).map((header) => header.name))
   }
 
   useEffect(() => {
@@ -32,14 +32,19 @@ const FilterModal = () => {
   }, [allRows, allHeaders])
 
   const handleApply = () => {
-    setFilteredHeaders(allHeaders.filter(h => h.name === 'Categories' || activeFilterColumns.includes(h.name)))
+    setFilteredHeaders(
+      allHeaders.filter(
+        (h) => h.name === 'Categories' || activeFilterColumns.includes(h.name)
+      )
+    )
     setFilteredRows(
       sortRows(
         allRows
           .filter((row) => activeFilterRows.includes(row[0][0]))
           .map((row) =>
-            row.filter((r) =>
-              activeFilterColumns.includes(r[0]) || typeof r[1] === 'string'
+            row.filter(
+              (r) =>
+                activeFilterColumns.includes(r[0]) || typeof r[1] === 'string'
             )
           )
       )
@@ -48,14 +53,13 @@ const FilterModal = () => {
     // divider.style.setProperty('--column-count', allHeaders.length)
   }
 
-
   // Sorts by collections and adds divider when at least one category is present
   const sortRows = (rows) => {
     return collections.reduce((acc, collection) => {
       if (rows.find((r) => r[1][1].category === collection) !== undefined) {
         acc.push([collection])
       }
-      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      acc = [...acc, ...rows.filter((row) => row[1][1].category === collection)]
       return acc
     }, [])
   }
@@ -93,13 +97,22 @@ const FilterModal = () => {
       </div>
       <div className="modal__footer">
         <div onClick={handleResetFilters}>Reset all filters</div>
-        {(activeFilterRows.length > 0 && activeFilterColumns.length) > 0 ?
+        {(activeFilterRows.length > 0 && activeFilterColumns.length) > 0 ? (
           <button onClick={handleApply}>Apply</button>
-          :
+        ) : (
           <div>Apply</div>
-        }
+        )}
+        {activeFilterRows.length === 0 && activeTab === 'Rows' ? (
+          <div>
+            <div>Please select at least one row</div>
+          </div>
+        ) : null}
+        {activeFilterColumns.length === 0 && activeTab === 'Columns' ? (
+          <div>
+            <div>Please select at least one column</div>
+          </div>
+        ) : null}
       </div>
-
     </div>
   ) : null
 }
