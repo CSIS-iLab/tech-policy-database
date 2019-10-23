@@ -1530,7 +1530,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "Requires risk-based safeguards to protect personal data",
-        "original_lang": "(Sixth Principle) Personal data should be protected by reasonable and appropriate security safeguards\nagainst unauthorized access, loss, destruction, use, modification or disclosure... The specific obligation is to provide “reasonable and appropriate security safeguards.” It is\nbased on achieving and maintaining a proper level of care in the context of the overall situation.\nThus, considerations of proportionality and necessity may be taken into account... Personal data should be protected, regardless of the format in which it is held, by safeguards\nthat are reasonably designed to prevent material harm to individuals from the unauthorized access\nto or loss or destruction of the data. The nature of the safeguards may vary depending on the\nsensitivity of the data in question."
+        "original_lang": "<p>(Sixth Principle) </p><p><strong>Personal data should be protected by reasonable and appropriate security safeguards</strong> against unauthorized access, loss, destruction, use, modification or disclosure.</p><p>Under this Principle, data controllers have a clear duty to take necessary practical and technical steps to protect personal data in their possession or custody (or for which they are responsible) and to ensure that such personal data is not accessed, lost, destroyed, used, modified or disclosed except in accordance with the individual's knowledge or consent or other lawful authority.</p><p><strong>The specific obligation is to provide “reasonable and appropriate security safeguards.” It is based on achieving and maintaining a proper level of care in the context of the overall situation</strong>. Thus, considerations of proportionality and necessity may be taken into account.</p><p>In the modern context, absolute privacy and complete protection of personal data is technically impossible to guarantee, and the effort to achieve it would impose undesirable barriers and unacceptable costs. Moreover, different contexts may require different solutions and levels of safeguards. Accordingly, this Principle requires an exercise of reasoned and informed judgment and is not necessarily violated any time a data controller experiences an unauthorized access, loss, destruction, use, modification or disclosure.</p><p>Personal data should be protected, regardless of the format in which it is held, by safeguards that are reasonably designed to prevent material harm to individuals from the unauthorized access to or loss or destruction of the data. The nature of the safeguards may vary depending on the sensitivity of the data in question.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": true,
@@ -1540,12 +1540,12 @@
       "data_breach_notification": {
         "has_data": true,
         "abbreviated_lang": "Notification may be necessary",
-        "original_lang": "(Sixth Principle) In many countries, including within the OAS, the law imposes reporting requirements in such\ninstances. Thus, in the event of a breach, data controllers may have a legal obligation to notify the\nindividuals whose data has been (or might have been) compromised."
+        "original_lang": "<p>(Sixth Principle) </p><p>In many countries, including within the OAS, the law imposes reporting requirements in such instances. Thus, in the event of a breach, data controllers may have a legal obligation to notify the individuals whose data has been (or might have been) compromised.</p>"
       },
       "retention": {
         "has_data": true,
         "abbreviated_lang": "Personal data shall be kept no longer than necessary",
-        "original_lang": "(Fourth Principle) Personal data should be kept and used only in a lawful manner not incompatible with the\npurpose(s) for which it was collected. It should not be kept for longer than necessary for that\npurpose or purposes and in accordance with relevant domestic law."
+        "original_lang": "<p>(Fourth Principle) </p><p>Personal data should be kept and used only in a lawful manner not incompatible with the purpose(s) for which it was collected.<strong> It should not be kept for longer than necessary</strong> for that purpose or purposes and in accordance with relevant domestic law.</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -1554,13 +1554,13 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers accountable for compliance</p>",
-        "original_lang": "<p>(Tenth Principle)</p><p>Data controllers should adopt and <strong>implement appropriate procedures to demonstrate their accountability</strong> for compliance with these Principles.</p>"
+        "abbreviated_lang": "Controllers accountable for compliance",
+        "original_lang": "(Tenth Principle)\n\nData controllers should adopt and implement appropriate procedures to demonstrate their accountability for compliance with these Principles."
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "<p>Data protection by design</p>",
-        "original_lang": "<p>(Tenth Principle) </p><p>One effective contemporary approach is to require data controllers to build privacy protection into the design and architecture of their information technology systems and business practices. <strong>Privacy and security considerations should be incorporated into every stage of product design. </strong></p>"
+        "abbreviated_lang": "Data protection by design",
+        "original_lang": "(Tenth Principle)\n\nOne effective contemporary approach is to require data controllers to build privacy protection into the design and architecture of their information technology systems and business practices. Privacy and security considerations should be incorporated into every stage of product design."
       },
       "security": {
         "has_data": true,
@@ -1813,7 +1813,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "Requires appropriate safeguards to protect personal data",
-        "original_lang": "(Principle 7) Appropriate organizational, administrative, physical and technical\nsafeguards and procedures should be implemented to protect the\nsecurity of personal data, including against or from unauthorized or\naccidental access, damage, loss or other risks presented by data\nprocessing."
+        "original_lang": "<p>(Principle 7) </p><p>Appropriate organizational, administrative, physical and technical safeguards and procedures should be implemented to protect the security of personal data, including against or from unauthorized or accidental access, damage, loss or other risks presented by data processing.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": true,
@@ -1828,7 +1828,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "Personal data shall be kept no longer than necessary",
-        "original_lang": "(Principle 4) Personal data should only be retained for the time that is necessary\nfor the specified purposes."
+        "original_lang": "<p>(Principle 4) </p><p>Personal data should only be retained for the time that is necessary for the specified purposes.</p>"
       },
       "cross_border_transfers": {
         "has_data": false,
@@ -1837,8 +1837,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers accountable for compliance</p>",
-        "original_lang": "<p>(Principle 10) </p><p>United Nations System Organizations should have adequate policies and mechanisms in place to adhere to these Principles.</p>"
+        "abbreviated_lang": "Controllers accountable for compliance",
+        "original_lang": "(Principle 10)\n\nUnited Nations System Organizations should have adequate policies and mechanisms in place to adhere to these Principles."
       },
       "privacy_by_design": {
         "has_data": false,
