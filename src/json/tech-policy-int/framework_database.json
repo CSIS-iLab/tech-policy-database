@@ -477,8 +477,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "Controllers accountable for compliance",
-        "original_lang": "(Paragraph 14)\n\nA data controller should be accountable for complying with measures which give effect to the principles stated above."
+        "abbreviated_lang": "Controllers accountable for compliance  Processors excluded from framework",
+        "original_lang": "(Paragraph 14)\n\nA data controller should be accountable for complying with measures which give effect to the principles stated above.\n\n(Explanatory Memorandum)\n\nThe definition [of data controller] excludes at least four categories which may be involved in the processing of data, viz.\n\n...\n\ndata processing service bureaux which carry out data processing on behalf of others;"
       },
       "privacy_by_design": {
         "has_data": false,
@@ -761,8 +761,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "Controllers accountable for compliance",
-        "original_lang": "(Principle IX)\n\nA personal information controller should be accountable for complying with measures that give effect to the Principles stated above."
+        "abbreviated_lang": "Controllers accountable for compliance  Processors excluded from framework",
+        "original_lang": "(Principle IX)\n\nA personal information controller should be accountable for complying with measures that give effect to the Principles stated above.\n\n(Paragraph 10)\n\nPersonal information controller means a person or organization who controls the collection, holding, processing or use of personal information. It... excludes a person or organization who performs such functions as instructed by another person or organization.\n\n(Paragraph 10 Commentary)\n\nAPEC economies agree that for the purposes of this Framework, where a person or organization instructs another person or organization to collect, hold, use, process, transfer or disclose personal information on its behalf, the instructing person or organization is the personal information controller and is responsible for ensuring compliance with the Principles."
       },
       "privacy_by_design": {
         "has_data": false,
@@ -2128,7 +2128,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "<p>Kept no longer than necessary</p>",
-        "original_lang": "<p>(Principle 19) </p><p>Personal data shall <strong>only be kept during the necessary term for complying with the purposes</strong> that justify its treatment or those related to legal demands applicable to the person responsible</p>"
+        "original_lang": "<p>(Principle 19)</p><p>Personal data shall <strong>only be kept during the necessary term for complying with the purposes</strong> that justify its treatment or those related to legal demands applicable to the person responsible</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -2137,8 +2137,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "Controllers accountable for compliance",
-        "original_lang": "(Principle 20)\n\nThe person responsible shall implement the necessary mechanisms to prove compliance with the principles and obligations established in these Standards, and shall also be accountable to holder and to the control authority for the treatment of personal data in its possession, for which it may use standards, best national or international practices, self-regulation schemes, certification systems, or any other mechanism it deems appropriate for such purposes. The foregoing shall apply when personal data is treated by a person in charge in the name and on behalf of the person responsible, as well as at the time of making transfers of personal data"
+        "abbreviated_lang": "Controllers accountable for compliance  Processors accountable to terms of contract",
+        "original_lang": "(Principle 20)\n\nThe person responsible shall implement the necessary mechanisms to prove compliance with the principles and obligations established in these Standards, and shall also be accountable to holder and to the control authority for the treatment of personal data in its possession, for which it may use standards, best national or international practices, self-regulation schemes, certification systems, or any other mechanism it deems appropriate for such purposes. The foregoing shall apply when personal data is treated by a person in charge in the name and on behalf of the person responsible, as well as at the time of making transfers of personal data\n\nThe foregoing shall apply when personal data is treated by a person in charge in the name and on behalf of the person responsible, as well as at the time of making transfers of personal data\n\n(Principle 34)\n\nThe provision of services between the person responsible and the person in charge shall be formalized by executing an agreement, or any other legal instrument, considered by the Ibero-American States in the national legislation applicable to the matter.\n\nThe agreement or legal instrument shall establish, at least, the subject, scope, contents, duration, nature and purpose of the treatment, type of personal data; holders’ categories, as well as the obligations and responsibilities of the person responsible and the person in charge. \n\nThe agreement or legal instrument shall establish at least, the following general clauses related to the services provided by the person in charge: \n\nTreat the personal data according to the instructions of the person responsible. \n\nRefrain from treating the personal data with purposes other than those instructed by the person responsible. \n\nImplement the safety measures in accordance with applicable legal instruments. \n\nInform the person responsible when a violation occurs to the personal data that it is treating per the instructions of the person responsible. \n\nMaintain the confidentiality regarding the treated personal data. \n\nSuppress, return or communicate to a new person in charge, appointed by the person responsible, the personal data subject to treatment, once the legal relation with the person responsible has been met, or per its instructions, except if a legal provision demands keeping the personal data, or the person responsible authorizes communicating them to another person in charge. \n\nRefrain from transferring the personal data, except in case that the person responsible determines so, or that the communication results from a sub-contract, or by express mandate from the control authority. \n\nAllow the person responsible or the control authority to make in situ inspections and verifications. \n\nGenerate, update and keep the necessary documentation that allows it to prove its obligations. \n\nCooperate with the person responsible in everything related to compliance with the national legislation of the Ibero-American State that is applicable to the matter.\n\nWhen the person in charge fails to comply with the instructions from the person responsible, and decides itself on the scope, contents, means and other matters of the treatment of personal data, it shall assume the responsibility according to the national legislation of the Ibero-American State that applies to the matter."
       },
       "privacy_by_design": {
         "has_data": true,
