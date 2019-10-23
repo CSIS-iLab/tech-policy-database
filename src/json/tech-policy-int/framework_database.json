@@ -47,7 +47,7 @@
       "data_processor": {
         "has_data": true,
         "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
-        "original_lang": "<p>(Article 4)</p><p>‘processor’ means a natural or legal person, public authority, agency or other body which <strong>processes personal data on behalf of the controller</strong>;</p><p>(Article 28)</p><p>Where processing is to be carried out on behalf of a controller, the controller shall <strong>use only processors providing sufficient guarantees to implement appropriate technical and organisational measures</strong> in such a manner that processing will meet the requirements of this Regulation and ensure the protection of the rights of the data subject.</p><p>...</p><p><strong>Processing by a processor shall be governed by a contract or other legal act under Union or Member State law</strong>, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor:</p><ol><li><p>processes the personal data only on documented instructions from the controller, including with regard to transfers of personal data to a third country or an international organisation, unless required to do so by Union or Member State law to which the processor is subject; in such a case, the processor shall inform the controller of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;</p></li><li><p>ensures that persons authorised to process the personal data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;</p></li><li><p>takes all measures required pursuant to <a href=\"https://gdpr-info.eu/art-32-gdpr/\">Article 32</a>; [Security of processing]</p></li><li><p>respects the conditions referred to in paragraphs 2 and 4 for engaging another processor;</p></li><li><p>taking into account the nature of the processing, assists the controller by appropriate technical and organisational measures, insofar as this is possible, for the fulfilment of the controller’s obligation to respond to requests for exercising the data subject’s rights laid down in <a href=\"https://gdpr-info.eu/chapter-3/\">Chapter III;</a></p></li><li><p>assists the controller in ensuring compliance with the obligations pursuant to <a href=\"https://gdpr-info.eu/art-32-gdpr/\">Articles 32</a> to <a href=\"https://gdpr-info.eu/art-36-gdpr/\">36</a> taking into account the nature of processing and the information available to the processor;</p></li><li><p>at the choice of the controller, deletes or returns all the personal data to the controller after the end of the provision of services relating to processing, and deletes existing copies unless Union or Member State law requires storage of the personal data;</p></li><li><p>makes available to the controller all information necessary to demonstrate compliance with the obligations laid down in this Article and allow for and contribute to audits, including inspections, conducted by the controller or another auditor mandated by the controller.</p></li></ol>"
+        "original_lang": "<p>(Article 4)</p><p>‘processor’ means a natural or legal person, public authority, agency or other body which <strong>processes personal data on behalf of the controller</strong>;</p>"
       },
       "personal_data": {
         "has_data": true,
@@ -1369,7 +1369,7 @@
       },
       "personal_data": {
         "has_data": true,
-        "abbreviated_lang": "<p>Data that identifies or can be used to identify an individual</p><p>(Lists categories of covered data)</p>",
+        "abbreviated_lang": "<p>Data that identifies or can reasonably be used to identify an individual</p><p>(Lists categories of covered data)</p>",
         "original_lang": "<p>(Preamble) </p><p>Personal-Data. As used in these Principles, the term “personal data” includes <strong>information that identifies, or can be reasonably be used to identify, a specific individual, whether directly or indirectly</strong>, in particular by reference to an identification number or to one or more factors specific to his or her physical, physiological, mental, economic, cultural or social identity. The term does not include information that does not identify (or cannot reasonably be used to identify) a particular individual.</p>"
       },
       "sensitive_personal_data": {
@@ -2401,7 +2401,7 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "Controllers and, where applicable, processors accountable for compliance",
+        "abbreviated_lang": "Controllers accountable for compliance  Processors accountable for compliance where applicable",
         "original_lang": "(Article 10)\n\nEach Party shall provide that controllers and, where applicable, processors, take all appropriate measures to comply with the obligations of this Convention and be able to demonstrate, subject to the domestic legislation adopted in accordance with Article 11, paragraph 3, in particular to the competent supervisory authority provided for in Article 15, that the data processing under their control is in compliance with the provisions of this Convention.\n\n(Explanatory Report)\n\nAccording to paragraph 1, the obligation on the controller to ensure adequate data protection is linked to the responsibility to verify and be in a position to demonstrate that data processing is in compliance with the applicable law. The data protection principles set out in the Convention, which are to be applied at all stages of processing, including the design phase, aim at protecting data subjects and are also a mechanism for enhancing their trust. Appropriate measures that the controller and processor may have to take to ensure compliance include: training employees; setting up appropriate notification procedures (for instance to indicate when data have to be deleted from the system); establishing specific contractual provisions where the processing is delegated in order to give effect to the Convention; as well as setting up internal procedures to enable the verification and demonstration of compliance."
       },
       "privacy_by_design": {
@@ -2674,7 +2674,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "<p>Kept no longer than necessary</p>",
-        "original_lang": "<p>(Principle 9)</p><p> The responsible person shall <strong>limit the period of retention of the processed personal data to the minimum necessary.</strong> Thus, when personal data are no longer necessary to fulfil the purposes which legitimized their processing they must be deleted or rendered anonymous</p>"
+        "original_lang": "<p>(Principle 9)</p><p>The responsible person shall <strong>limit the period of retention of the processed personal data to the minimum necessary.</strong> Thus, when personal data are no longer necessary to fulfil the purposes which legitimized their processing they must be deleted or rendered anonymous</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -2683,8 +2683,8 @@
       },
       "accountability": {
         "has_data": true,
-        "abbreviated_lang": "Controllers accountable for compliance",
-        "original_lang": "(Principle 11)\n\nThe responsible person shall: Take all the necessary measures to observe the principles and obligations set out in this Document and in the applicable national legislation, and have the necessary internal mechanisms in place for demonstrating such observance both to data subjects and to the supervisory authorities in the exercise of their powers, as established in section 23."
+        "abbreviated_lang": "Controllers accountable for compliance  Processors accountable to terms of contract",
+        "original_lang": "(Principle 11)\n\nThe responsible person shall: Take all the necessary measures to observe the principles and obligations set out in this Document and in the applicable national legislation, and have the necessary internal mechanisms in place for demonstrating such observance both to data subjects and to the supervisory authorities in the exercise of their powers, as established in section 23.\n\n(Principle 14)\n\nThe responsible person may carry out processing of personal data through one or more processing service providers, without considering it a disclosure of data to a third party, provided that: \n\nThe responsible person ensures that the processing service provider guarantees, at least, the level of protection contained in this Document and in the applicable national legislation; and \n\nThe legal relationship is established through a contract or legal instrument that allows proving its existence, scope and content, and that sets out the processing service provider’s obligation to comply with these guarantees and to ensure the personal data are processed in compliance with the instructions of the responsible person."
       },
       "privacy_by_design": {
         "has_data": true,
