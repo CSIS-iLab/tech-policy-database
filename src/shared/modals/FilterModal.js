@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
+import FilterSearch from './FilterSearch'
 import FilterContent from './FilterContent'
 import './Modal.css'
 
@@ -7,6 +8,7 @@ const FilterModal = () => {
   const [activeTab, setActiveTab] = useState('Rows')
   const [activeFilterRows, setActiveFilterRows] = useState([])
   const [activeFilterColumns, setActiveFilterColumns] = useState([])
+  const [filterText, setFilterText] = useState('')
 
   const {
     filterModalStatus,
@@ -82,6 +84,14 @@ const FilterModal = () => {
           <div onClick={() => setActiveTab('Rows')}>Rows</div>
           <div onClick={() => setActiveTab('Columns')}>Columns</div>
         </div>
+        <FilterSearch
+          setFilterText={setFilterText}
+          activeTab={activeTab}
+          activeFilterRows={activeFilterRows}
+          activeFilterColumns={activeFilterColumns}
+          maxRows={allRows.length}
+          maxColumns={allHeaders.slice(1).length}
+        />
         <div onClick={setActiveFilters}>
           <span>[]</span>
           <span>Select All</span>
@@ -89,6 +99,7 @@ const FilterModal = () => {
         <FilterContent
           allRows={allRows}
           activeTab={activeTab}
+          filterText={filterText}
           activeFilterRows={activeFilterRows}
           setActiveFilterRows={setActiveFilterRows}
           activeFilterColumns={activeFilterColumns}

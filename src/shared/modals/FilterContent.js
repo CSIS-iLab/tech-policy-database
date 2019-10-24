@@ -8,30 +8,40 @@ const FilterContent = (props) => {
     setActiveFilterColumns,
     activeFilterColumns,
     allRows,
-    activeTab
+    activeTab,
+    filterText
   } = props
 
   return activeTab === 'Rows' ? (
     <div>
-      {allRows.map((row, i) => (
-        <FilterItem
-          key={i}
-          name={row[0][0]}
-          setActiveFilterItems={setActiveFilterRows}
-          activeFilterItems={activeFilterRows}
-        />
-      ))}
+      {allRows
+        .filter((row) =>
+          row[0][0].toLowerCase().includes(filterText.toLowerCase())
+        )
+        .map((row, i) => (
+          <FilterItem
+            key={i}
+            name={row[0][0]}
+            setActiveFilterItems={setActiveFilterRows}
+            activeFilterItems={activeFilterRows}
+          />
+        ))}
     </div>
   ) : (
     <div>
-      {allRows[0].slice(1).map((data, i) => (
-        <FilterItem
-          key={i}
-          name={data[0]}
-          setActiveFilterItems={setActiveFilterColumns}
-          activeFilterItems={activeFilterColumns}
-        />
-      ))}
+      {allRows[0]
+        .slice(1)
+        .filter((data) =>
+          data[0].toLowerCase().includes(filterText.toLowerCase())
+        )
+        .map((data, i) => (
+          <FilterItem
+            key={i}
+            name={data[0]}
+            setActiveFilterItems={setActiveFilterColumns}
+            activeFilterItems={activeFilterColumns}
+          />
+        ))}
     </div>
   )
 }
