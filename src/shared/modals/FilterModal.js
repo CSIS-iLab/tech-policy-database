@@ -122,6 +122,7 @@ const FilterModal = () => {
           displayedColumns={displayedColumns}
           maxRows={allRows.length}
           maxColumns={allHeaders.slice(1).length}
+          collections={collections}
         />
         <div onClick={setCheckedFilters}>
           <span>[]</span>
