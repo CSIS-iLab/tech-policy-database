@@ -2,30 +2,30 @@ import React from 'react'
 
 const FilterSearch = (props) => {
   const {
-    setFilterText,
-    activeFilterRows,
-    activeFilterColumns,
+    handleSearchFilter,
+    displayedRows,
+    displayedColumns,
     activeTab,
     maxRows,
     maxColumns
   } = props
 
-  const handleSearchInput = (e) => {
-    setFilterText(e.target.value)
+  const handleInput = (e) => {
+    handleSearchFilter(e.target.value, activeTab)
   }
 
   return (
     <div>
-      <input onChange={handleSearchInput} />
+      <input id="search-input" onChange={handleInput} />
       <button>Light</button>
       {activeTab === 'Rows' ? (
         <div>
-          Showing {activeFilterRows.length} of {maxRows}
+          Showing {displayedRows.length} of {maxRows}
         </div>
       ) : null}
       {activeTab === 'Columns' ? (
         <div>
-          Showing {activeFilterColumns.length} of {maxColumns}
+          Showing {displayedColumns.length} of {maxColumns}
         </div>
       ) : null}
     </div>

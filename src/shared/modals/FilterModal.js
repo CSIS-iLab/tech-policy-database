@@ -6,8 +6,10 @@ import './Modal.css'
 
 const FilterModal = () => {
   const [activeTab, setActiveTab] = useState('Rows')
-  const [activeFilterRows, setActiveFilterRows] = useState([])
-  const [activeFilterColumns, setActiveFilterColumns] = useState([])
+  const [checkedRows, setCheckedRows] = useState([])
+  const [displayedRows, setDisplayedRows] = useState([])
+  const [checkedColumns, setCheckedColumns] = useState([])
+  const [displayedColumns, setDisplayedColumns] = useState([])
   const [filterText, setFilterText] = useState('')
 
   const {
@@ -24,29 +26,34 @@ const FilterModal = () => {
     setFilterModalStatus(false)
   }
 
-  const setActiveFilters = () => {
-    setActiveFilterRows(allRows.map((row) => row[0][0]))
-    setActiveFilterColumns(allHeaders.slice(1).map((header) => header.name))
+  const setCheckedFilters = () => {
+    setCheckedRows(allRows.map((row) => row[0][0]))
+    setCheckedColumns(allHeaders.slice(1).map((header) => header.name))
+  }
+
+  const setDisplayedFilters = () => {
+    setDisplayedRows(allRows.map((row) => row[0][0]))
+    setDisplayedColumns(allHeaders.slice(1).map((header) => header.name))
   }
 
   useEffect(() => {
-    setActiveFilters()
+    setCheckedFilters()
+    setDisplayedFilters()
   }, [allRows, allHeaders])
 
   const handleApply = () => {
     setFilteredHeaders(
       allHeaders.filter(
-        (h) => h.name === 'Categories' || activeFilterColumns.includes(h.name)
+        (h) => h.name === 'Categories' || checkedColumns.includes(h.name)
       )
     )
     setFilteredRows(
       sortRows(
         allRows
-          .filter((row) => activeFilterRows.includes(row[0][0]))
+          .filter((row) => checkedRows.includes(row[0][0]))
           .map((row) =>
             row.filter(
-              (r) =>
-                activeFilterColumns.includes(r[0]) || typeof r[1] === 'string'
+              (r) => checkedColumns.includes(r[0]) || typeof r[1] === 'string'
             )
           )
       )
@@ -67,8 +74,32 @@ const FilterModal = () => {
   }
 
   const handleResetFilters = () => {
-    setActiveFilterRows([])
-    setActiveFilterColumns([])
+    setCheckedRows([])
+    setCheckedColumns([])
+  }
+
+  const handleTabSwitch = (tab) => {
+    setActiveTab(tab)
+    handleSearchFilter(document.getElementById('search-input').value, tab)
+  }
+
+  const handleSearchFilter = (text, tab) => {
+    tab === 'Rows'
+      ? setDisplayedRows(
+          allRows
+            .filter((row) =>
+              row[0][0].toLowerCase().includes(text.toLowerCase())
+            )
+            .map((row) => row[0][0])
+        )
+      : setDisplayedColumns(
+          allHeaders
+            .slice(1)
+            .filter((header) =>
+              header.name.toLowerCase().includes(text.toLowerCase())
+            )
+            .map((header) => header.name)
+        )
   }
 
   return filterModalStatus ? (
@@ -81,44 +112,44 @@ const FilterModal = () => {
       </div>
       <div className="modal__content">
         <div>
-          <div onClick={() => setActiveTab('Rows')}>Rows</div>
-          <div onClick={() => setActiveTab('Columns')}>Columns</div>
+          <div onClick={() => handleTabSwitch('Rows')}>Rows</div>
+          <div onClick={() => handleTabSwitch('Columns')}>Columns</div>
         </div>
         <FilterSearch
-          setFilterText={setFilterText}
           activeTab={activeTab}
-          activeFilterRows={activeFilterRows}
-          activeFilterColumns={activeFilterColumns}
+          handleSearchFilter={handleSearchFilter}
+          displayedRows={displayedRows}
+          displayedColumns={displayedColumns}
           maxRows={allRows.length}
           maxColumns={allHeaders.slice(1).length}
         />
-        <div onClick={setActiveFilters}>
+        <div onClick={setCheckedFilters}>
           <span>[]</span>
           <span>Select All</span>
         </div>
         <FilterContent
-          allRows={allRows}
           activeTab={activeTab}
-          filterText={filterText}
-          activeFilterRows={activeFilterRows}
-          setActiveFilterRows={setActiveFilterRows}
-          activeFilterColumns={activeFilterColumns}
-          setActiveFilterColumns={setActiveFilterColumns}
+          checkedRows={checkedRows}
+          setCheckedRows={setCheckedRows}
+          displayedRows={displayedRows}
+          displayedColumns={displayedColumns}
+          checkedColumns={checkedColumns}
+          setCheckedColumns={setCheckedColumns}
         />
       </div>
       <div className="modal__footer">
         <div onClick={handleResetFilters}>Reset all filters</div>
-        {(activeFilterRows.length > 0 && activeFilterColumns.length) > 0 ? (
+        {(checkedRows.length > 0 && checkedColumns.length) > 0 ? (
           <button onClick={handleApply}>Apply</button>
         ) : (
           <div>Apply</div>
         )}
-        {activeFilterRows.length === 0 && activeTab === 'Rows' ? (
+        {checkedRows.length === 0 && activeTab === 'Rows' ? (
           <div>
             <div>Please select at least one row</div>
           </div>
         ) : null}
-        {activeFilterColumns.length === 0 && activeTab === 'Columns' ? (
+        {checkedColumns.length === 0 && activeTab === 'Columns' ? (
           <div>
             <div>Please select at least one column</div>
           </div>
