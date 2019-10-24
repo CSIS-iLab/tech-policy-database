@@ -33,7 +33,7 @@ td {
 td,
 th {
   /* height: auto; */
-  text-align: center;
+  /* text-align: center; */
   width: 300px;
   min-width: 300px;
   min-height: 400px;
