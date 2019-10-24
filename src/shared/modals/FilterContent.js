@@ -3,33 +3,34 @@ import FilterItem from './FilterItem'
 
 const FilterContent = (props) => {
   const {
-    setActiveFilterRows,
-    activeFilterRows,
-    setActiveFilterColumns,
-    activeFilterColumns,
-    allRows,
-    activeTab
+    setCheckedRows,
+    checkedRows,
+    setCheckedColumns,
+    checkedColumns,
+    activeTab,
+    displayedRows,
+    displayedColumns
   } = props
 
   return activeTab === 'Rows' ? (
     <div>
-      {allRows.map((row, i) => (
+      {displayedRows.map((row, i) => (
         <FilterItem
           key={i}
-          name={row[0][0]}
-          setActiveFilterItems={setActiveFilterRows}
-          activeFilterItems={activeFilterRows}
+          name={row}
+          setCheckedItems={setCheckedRows}
+          checkedItems={checkedRows}
         />
       ))}
     </div>
   ) : (
     <div>
-      {allRows[0].slice(1).map((data, i) => (
+      {displayedColumns.map((data, i) => (
         <FilterItem
           key={i}
-          name={data[0]}
-          setActiveFilterItems={setActiveFilterColumns}
-          activeFilterItems={activeFilterColumns}
+          name={data}
+          setCheckedItems={setCheckedColumns}
+          checkedItems={checkedColumns}
         />
       ))}
     </div>

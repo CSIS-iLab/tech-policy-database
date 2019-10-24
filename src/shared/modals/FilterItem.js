@@ -1,13 +1,13 @@
 import React from 'react'
 
 const FilterItem = (props) => {
-  const { setActiveFilterItems, activeFilterItems, name } = props
+  const { setCheckedItems, checkedItems, name } = props
 
   const handleClick = () => {
-    if (!activeFilterItems.includes(name)) {
-      setActiveFilterItems([...activeFilterItems, name])
+    if (!checkedItems.includes(name)) {
+      setCheckedItems([...checkedItems, name])
     } else {
-      setActiveFilterItems(activeFilterItems.filter((item) => item !== name))
+      setCheckedItems(checkedItems.filter((item) => item !== name))
     }
   }
 
@@ -15,7 +15,7 @@ const FilterItem = (props) => {
     <div>
       <input
         type="checkbox"
-        checked={activeFilterItems.includes(name)}
+        checked={checkedItems.includes(name)}
         onClick={handleClick}
         readOnly
       />
