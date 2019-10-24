@@ -4,6 +4,7 @@ import SearchFilter from './SearchFilter'
 import CollectionFilter from './CollectionFilter'
 import TableTextResize from './TableTextResize'
 import CustomFilter from './CustomFilter'
+import ScrollBar from './ScrollBar'
 
 const TableOptions = () => {
   const {
@@ -64,7 +65,7 @@ const TableOptions = () => {
       if (rows.find((r) => r[1][1].category === collection) !== undefined) {
         acc.push([collection])
       }
-      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      acc = [...acc, ...rows.filter((row) => row[1][1].category === collection)]
       return acc
     }, [])
   }
@@ -96,6 +97,7 @@ const TableOptions = () => {
       />
       <CustomFilter setFilterModalStatus={setFilterModalStatus} />
       <TableTextResize />
+      <ScrollBar />
     </div>
   )
 }
