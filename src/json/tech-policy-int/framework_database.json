@@ -82,7 +82,7 @@
       "conditions_for_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Free of charge;</p><p>Within one month;</p><p>In intelligible form</p>",
-        "original_lang": "(Article 12) Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided free of charge. 2Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either:\ncharge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or\nrefuse to act on the request.\n3The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request."
+        "original_lang": "<p>(Article 12) </p><p>The controller shall take appropriate measures to provide any information referred to in <a href=\"https://gdpr-info.eu/art-13-gdpr/\">Articles 13</a> and <a href=\"https://gdpr-info.eu/art-14-gdpr/\">14</a> and any communication under <a href=\"https://gdpr-info.eu/art-15-gdpr/\">Articles 15</a> to <a href=\"https://gdpr-info.eu/art-22-gdpr/\">22</a> and <a href=\"https://gdpr-info.eu/art-34-gdpr/\">34</a> relating to processing to the data subject in a <strong>concise, transparent, intelligible and easily accessible form</strong>, using clear and plain language, in particular for any information addressed specifically to a child.</p><p>...</p><p>The controller shall provide information on action taken on a request under <a href=\"https://gdpr-info.eu/art-15-gdpr/\">Articles 15</a> to <a href=\"https://gdpr-info.eu/art-22-gdpr/\">22 </a>to the data subject without undue delay and in any event <strong>within one month</strong> of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests.</p><p>...</p><p>Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided <strong>free of charge</strong>. Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either: charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or refuse to act on the request. The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.</p>"
       },
       "right_to_information": {
         "has_data": true,
@@ -2554,7 +2554,7 @@
       "consent_sensitive_data": {
         "has_data": true,
         "abbreviated_lang": "<p>Unspecified additional conditions for processing</p><p></p>",
-        "original_lang": "<p>(Principle 13) </p><p>Due guarantees shall be established to preserve the rights of the data subjects by applicable national legislation, which shall lay down additional conditions for processing sensitive personal data</p>"
+        "original_lang": "<p>(Principle 13)</p><p>Due guarantees shall be established to preserve the rights of the data subjects by applicable national legislation, which shall lay down <strong>additional conditions for processing sensitive personal data</strong></p>"
       },
       "conditions_for_consent": {
         "has_data": true,
