@@ -2568,8 +2568,8 @@
       },
       "right_to_information": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to be provided, upon request:</p><ol><li><p>Information on the data held</p></li><li><p>Source of data</p></li><li><p>purposes of processing</p></li><li><p>intended recipients</p></li></ol>",
-        "original_lang": "<p>(Principle 16) </p><p>The data subject has the right to obtain from the responsible person, upon request, information on the specific personal data subject to processing, as well as the source of such data, the purposes of processing and the recipients or categories of recipients to whom such data are or will be disclosed</p>"
+        "abbreviated_lang": "<p>Right to be provided, upon request:</p><ol><li><p>information on the data held</p></li><li><p>source of data</p></li><li><p>purposes of processing</p></li><li><p>intended recipients</p></li></ol>",
+        "original_lang": "<p>(Principle 16)</p><p>The data subject has the <strong>right to obtain</strong> from the responsible person, upon request, information on <strong>the specific personal data subject to processing</strong>, as well as <strong>the source of such data</strong>, <strong>the purposes of processing</strong> and <strong>the recipients</strong> or categories of recipients to whom such data are or will be disclosed</p>"
       },
       "right_to_access": {
         "has_data": true,
@@ -2579,12 +2579,12 @@
       "right_to_correction": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to request correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol><p>Controllers should notify third parties to whom data had been disclosed</p>",
-        "original_lang": "<p>(Principle 17) </p><p>The data subject has the right to request from the responsible person the deletion or rectification of personal data that might be incomplete, inaccurate, unnecessary or excessive. </p><p>Where justified, the responsible person should carry out the rectification or deletion requested. The responsible person should also notify this fact to third parties to whom personal data had been disclosed, where they are known.</p>"
+        "original_lang": "<p>(Principle 17)</p><p>The data subject has the <strong>right to request from the responsible person the deletion or rectification of personal data </strong>that might be incomplete, inaccurate, unnecessary or excessive.</p><p>Where justified, the responsible person should carry out the rectification or deletion requested. The responsible person should also notify this fact to third parties to whom personal data had been disclosed, where they are known.</p>"
       },
       "right_to_erasure": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol><p>Controllers should notify third parties to whom data had been disclosed</p>",
-        "original_lang": "<p>(Principle 17) </p><p>The data subject has the right to request from the responsible person the deletion or rectification of personal data that might be incomplete, inaccurate, unnecessary or excessive. </p><p>Where justified, the responsible person should carry out the rectification or deletion requested. The responsible person should also notify this fact to third parties to whom personal data had been disclosed, where they are known.</p><p>Deletion of personal data is not justified where personal data must be retained for the performance of an obligation imposed on the responsible person by the applicable national legislation, or possibly by the contractual relations between the responsible person and the data subject.</p>"
+        "original_lang": "<p>(Principle 17)</p><p>The data subject has the <strong>right to request from the responsible person the deletion or rectification of personal data</strong> that might be incomplete, inaccurate, unnecessary or excessive.</p><p>Where justified, the responsible person should carry out the rectification or deletion requested. The responsible person should also notify this fact to third parties to whom personal data had been disclosed, where they are known.</p><p>Deletion of personal data is not justified where personal data must be retained for the performance of an obligation imposed on the responsible person by the applicable national legislation, or possibly by the contractual relations between the responsible person and the data subject.</p>"
       },
       "right_to_object_processing": {
         "has_data": true,
@@ -2594,7 +2594,7 @@
       "right_to_withdraw_consent": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to withdraw consent</p>",
-        "original_lang": "<p>(Principle 12) </p><p>The responsible person shall provide simple, fast and efficient procedures that allow data subjects to withdraw their consent at any time and that shall not entail undue delay or cost, nor any gain whatsoever for the responsible person.</p>"
+        "original_lang": "<p>(Principle 12)</p><p>The responsible person shall provide simple, fast and efficient procedures that <strong>allow data subjects to withdraw their consent at any time </strong>and that shall not entail undue delay or cost, nor any gain whatsoever for the responsible person.</p>"
       },
       "right_to_challenge_denials": {
         "has_data": false,
@@ -2609,7 +2609,7 @@
       "automated_processing": {
         "has_data": true,
         "abbreviated_lang": "Right to object to decisions based solely on automated processing",
-        "original_lang": "<p>(Principle 18) </p><p>Any data subject may also object to those decisions which produce legal effects based solely on automated processing of personal data, except when the decision had been specifically requested by the data subject or when it is necessary for the establishment, the maintenance or the performance of a legal relation between the responsible person and the data subject. In the latter case, the data subject must be able to put his/her point of view in order to defend his/her right or interest.</p>"
+        "original_lang": "<p>(Principle 18)</p><p><strong>Any data subject may also object to those decisions which produce legal effects based solely on automated processing of personal data</strong>, except when the decision had been specifically requested by the data subject or when it is necessary for the establishment, the maintenance or the performance of a legal relation between the responsible person and the data subject. In the latter case, the data subject must be able to put his/her point of view in order to defend his/her right or interest.</p>"
       },
       "cost": {
         "has_data": false,
@@ -2659,7 +2659,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "Requires risk-based safeguards to protect personal data",
-        "original_lang": "<p>(Principle 20) </p><p>Both the responsible person and any processing service provider must protect the personal data subject to processing with the appropriate technical and organizational measures to ensure, at each time, their integrity, confidentiality and availability. These measures depend on the existing risk, the possible consequences to data subjects, the sensitive nature of the personal data, the state of the art, the context in which the processing is carried out, and where appropriate the obligations contained in the applicable national legislation.</p>"
+        "original_lang": "<p>(Principle 20)</p><p>Both the responsible person and any processing service provider must <strong>protect the personal data subject to processing with the appropriate technical and organizational measures</strong> to ensure, at each time, their integrity, confidentiality and availability. <strong>These measures depend on the existing risk</strong>, the possible consequences to data subjects, the sensitive nature of the personal data, the state of the art, the context in which the processing is carried out, and where appropriate the obligations contained in the applicable national legislation.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": true,
@@ -2669,7 +2669,7 @@
       "data_breach_notification": {
         "has_data": true,
         "abbreviated_lang": "<p>Notification to data subject in good time if breach carries risk</p>",
-        "original_lang": "<p>(Principle 20) </p><p>Data subjects should be informed by those involved in any stage of the processing of any security breach that could significantly affect their pecuniary or non-pecuniary rights, as well as the measures taken for its resolution. This information should be provided in good time, in order to enable data subjects to seek the protection of their rights.</p>"
+        "original_lang": "<p>(Principle 20)</p><p><strong>Data subjects should be informed by those involved in any stage of the processing of any security breach that could significantly affect their pecuniary or non-pecuniary rights</strong>, as well as the measures taken for its resolution. This information should be provided in good time, in order to enable data subjects to seek the protection of their rights.</p>"
       },
       "retention": {
         "has_data": true,
@@ -2714,7 +2714,7 @@
       "right_to_object_to_processing": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to object to processing</p>",
-        "original_lang": "<p>(Principle 18) </p><p>The data subject may object to the processing of personal data where there is a legitimate reason related to his/her specific personal situation. </p><p>The exercise of this right to object is not justified where the processing is necessary for the performance of a duty imposed on the responsible person by the applicable national legislation.</p>"
+        "original_lang": "<p>(Principle 18)</p><p><strong>The data subject may object to the processing of personal data where there is a legitimate reason </strong>related to his/her specific personal situation.</p><p>The exercise of this right to object is not justified where the processing is necessary for the performance of a duty imposed on the responsible person by the applicable national legislation.</p>"
       }
     },
     "organization": "",
