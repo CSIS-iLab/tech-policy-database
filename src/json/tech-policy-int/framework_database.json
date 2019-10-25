@@ -177,22 +177,22 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "<p>Requires risk-based safeguards</p>",
-        "original_lang": "<p>(Article 5)</p><p>Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’)</p><p>(Article 24)</p><p>Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation.</p><p>(Article 32)</p><p>Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the pseudonymisation and encryption of personal data; the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident; a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.</p><p>(Recital 78) </p><p>The protection of the rights and freedoms of natural persons with regard to the processing of personal data require that appropriate technical and organisational measures be taken to ensure that the requirements of this Regulation are met. In order to be able to demonstrate compliance with this Regulation, the controller should adopt internal policies and implement measures which meet in particular the principles of data protection by design and data protection by default. Such measures could consist, inter alia, of minimising the processing of personal data, pseudonymising personal data as soon as possible, transparency with regard to the functions and processing of personal data, enabling the data subject to monitor the data processing, enabling the controller to create and improve security features. When developing, designing, selecting and using applications, services and products that are based on the processing of personal data or process personal data to fulfil their task, producers of the products, services and applications should be encouraged to take into account the right to data protection when developing and designing such products, services and applications and, with due regard to the state of the art, to make sure that controllers and processors are able to fulfil their data protection obligations. The principles of data protection by design and by default should also be taken into consideration in the context of public tenders.</p>"
+        "original_lang": "<p>(Article 5)</p><p><strong>Personal data shall be: processed in a manner that ensures appropriate security of the personal data</strong>, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’)</p><p>(Article 24)</p><p><strong>Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures</strong> to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation.</p><p>(Article 32)</p><p>Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the pseudonymisation and encryption of personal data; the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident; a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.</p><p>(Recital 78)</p><p>The protection of the rights and freedoms of natural persons with regard to the processing of personal data require that appropriate technical and organisational measures be taken to ensure that the requirements of this Regulation are met. In order to be able to demonstrate compliance with this Regulation, the controller should adopt internal policies and implement measures which meet in particular the principles of data protection by design and data protection by default. Such measures could consist, inter alia, of minimising the processing of personal data, pseudonymising personal data as soon as possible, transparency with regard to the functions and processing of personal data, enabling the data subject to monitor the data processing, enabling the controller to create and improve security features. When developing, designing, selecting and using applications, services and products that are based on the processing of personal data or process personal data to fulfil their task, producers of the products, services and applications should be encouraged to take into account the right to data protection when developing and designing such products, services and applications and, with due regard to the state of the art, to make sure that controllers and processors are able to fulfil their data protection obligations. The principles of data protection by design and by default should also be taken into consideration in the context of public tenders.</p>"
       },
       "security_types_of_safeguards": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "Technical measures;\nOrganizational measures",
         "original_lang": "(Article 5) Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’)\n\n(Article 24) Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation.\n\n(Article 32) Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:\nthe pseudonymisation and encryption of personal data;\nthe ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;\nthe ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;\na process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.\n\n(Recital 78) The protection of the rights and freedoms of natural persons with regard to the processing of personal data require that appropriate technical and organisational measures be taken to ensure that the requirements of this Regulation are met. 2In order to be able to demonstrate compliance with this Regulation, the controller should adopt internal policies and implement measures which meet in particular the principles of data protection by design and data protection by default. 3Such measures could consist, inter alia, of minimising the processing of personal data, pseudonymising personal data as soon as possible, transparency with regard to the functions and processing of personal data, enabling the data subject to monitor the data processing, enabling the controller to create and improve security features. 4When developing, designing, selecting and using applications, services and products that are based on the processing of personal data or process personal data to fulfil their task, producers of the products, services and applications should be encouraged to take into account the right to data protection when developing and designing such products, services and applications and, with due regard to the state of the art, to make sure that controllers and processors are able to fulfil their data protection obligations. 5The principles of data protection by design and by default should also be taken into consideration in the context of public tenders."
       },
       "data_breach_notification": {
         "has_data": true,
         "abbreviated_lang": "<p>Notify data protection authority within 72 hours if breach carries risk</p><p>Notification to data subject without undue delay if breach carries risk</p>",
-        "original_lang": "<p>(Article 33)</p><p>In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with <a href=\"https://gdpr-info.eu/art-55-gdpr/\">Article 55</a>, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.</p><p>(Article 34)</p><p><strong>When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay.</strong></p><p>The communication to the data subject referred to in paragraph 1 of this Article shall describe in clear and plain language the nature of the personal data breach and contain at least the information and measures referred to in points (b), (c) and (d) of <a href=\"https://gdpr-info.eu/art-33-gdpr/\">Article 33</a>(3).</p><p>The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met:</p><ol><li><p>the controller has implemented appropriate technical and organisational protection measures, and those measures were applied to the personal data affected by the personal data breach, in particular those that render the personal data unintelligible to any person who is not authorised to access it, such as encryption;</p></li><li><p>the controller has taken subsequent measures which ensure that the high risk to the rights and freedoms of data subjects referred to in paragraph 1 is no longer likely to materialise;</p></li><li><p>it would involve disproportionate effort. In such a case, there shall instead be a public communication or similar measure whereby the data subjects are informed in an equally effective manner.</p></li></ol><p>If the controller has not already communicated the personal data breach to the data subject, the supervisory authority, having considered the likelihood of the personal data breach resulting in a high risk, may require it to do so or may decide that any of the conditions referred to in paragraph 3 are met.</p>"
+        "original_lang": "<p>(Article 33)</p><p>In the case of a personal data breach, <strong>the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority</strong> competent in accordance with <a href=\"https://gdpr-info.eu/art-55-gdpr/\">Article 55</a>, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.</p><p>(Article 34)</p><p><strong>When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay.</strong></p><p>The communication to the data subject referred to in paragraph 1 of this Article shall describe in clear and plain language the nature of the personal data breach and contain at least the information and measures referred to in points (b), (c) and (d) of <a href=\"https://gdpr-info.eu/art-33-gdpr/\">Article 33</a>(3).</p><p>The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met:</p><ol><li><p>the controller has implemented appropriate technical and organisational protection measures, and those measures were applied to the personal data affected by the personal data breach, in particular those that render the personal data unintelligible to any person who is not authorised to access it, such as encryption;</p></li><li><p>the controller has taken subsequent measures which ensure that the high risk to the rights and freedoms of data subjects referred to in paragraph 1 is no longer likely to materialise;</p></li><li><p>it would involve disproportionate effort. In such a case, there shall instead be a public communication or similar measure whereby the data subjects are informed in an equally effective manner.</p></li></ol><p>If the controller has not already communicated the personal data breach to the data subject, the supervisory authority, having considered the likelihood of the personal data breach resulting in a high risk, may require it to do so or may decide that any of the conditions referred to in paragraph 3 are met.</p>"
       },
       "retention": {
         "has_data": true,
         "abbreviated_lang": "<p>Kept no longer than necessary</p>",
-        "original_lang": "<p>(Article 5) </p><p>Personal data shall be: kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject (‘storage limitation’);</p>"
+        "original_lang": "<p>(Article 5)</p><p>Personal data shall be: kept in a form which permits identification of data subjects for <strong>no longer than is necessary</strong> for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject (‘storage limitation’);</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -210,17 +210,17 @@
         "original_lang": "(Article 25)\n\nTaking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects. \n\nThe controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual’s intervention to an indefinite number of natural persons.</p>"
       },
       "security": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "<p>Requires risk-based safeguards;</p><p>Must ensure confidentiality</p>",
         "original_lang": "<p>(Article 5) </p><p>Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’).</p><p>(Article 34)</p><p><strong>Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures</strong> to ensure a level of security appropriate to the risk, including inter alia as appropriate:</p><ol><li><p>the pseudonymisation and encryption of personal data;</p></li><li><p>the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;</p></li><li><p>the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;</p></li><li><p>a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.</p></li></ol>"
       },
       "data_breach_notification_data_subject": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "Notify data protection authority within 72 hours if breach carries risk\nNotification to data subject without undue delay if breach carries risk",
         "original_lang": "<p>(Article 33) </p><p>In the case of a personal data breach, the controller shall without undue delay and, where feasible, <strong>not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority</strong> competent in accordance with <a href=\"https://gdpr-info.eu/art-55-gdpr/\">Article 55</a>, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons.</p><p>(Article 34)</p><p>When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, <strong>the controller shall communicate the personal data breach to the data subject without undue delay</strong>.</p>"
       },
       "retention_requirement": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "<p>Data kept no longer than necessary</p>",
         "original_lang": "<p>(Article 5)</p><p>Personal data shall be: <strong>kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed</strong>; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89(</a>1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject (‘storage limitation’);</p>"
       },
@@ -232,7 +232,7 @@
       "right_to_object_to_processing": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to object to processing based on the interests of the public or the controller</p>",
-        "original_lang": "<p>(Article 21)</p><p>The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of <a href=\"https://gdpr-info.eu/art-6-gdpr/\">Article 6(</a>1), [processing necessary for the public interest or for the legitimate interests of the controller] including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.</p><p>Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.</p><p>Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.</p><p>At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.</p><p>In the context of the use of information society services, and notwithstanding <a href=\"http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058\">Directive 2002/58/EC</a>, the data subject may exercise his or her right to object by automated means using technical specifications.</p><p>Where personal data are processed for scientific or historical research purposes or statistical purposes pursuant to <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89(</a>1), the data subject, on grounds relating to his or her particular situation, shall have the right to object to processing of personal data concerning him or her, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>"
+        "original_lang": "<p>(Article 21)</p><p>The data subject shall have <strong>the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of </strong><a href=\"https://gdpr-info.eu/art-6-gdpr/\"><strong>Article 6(</strong></a><strong>1)</strong>, [processing necessary for the public interest or for the legitimate interests of the controller] including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.</p><p>Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.</p><p>Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.</p><p>At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.</p><p>In the context of the use of information society services, and notwithstanding <a href=\"http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058\">Directive 2002/58/EC</a>, the data subject may exercise his or her right to object by automated means using technical specifications.</p><p>Where personal data are processed for scientific or historical research purposes or statistical purposes pursuant to <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89(</a>1), the data subject, on grounds relating to his or her particular situation, shall have the right to object to processing of personal data concerning him or her, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>"
       }
     },
     "organization": "European Union",
@@ -358,7 +358,7 @@
       "conditions_for_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Not excessive charge;</p><p>Reasonable time;</p><p>In intelligible form</p>",
-        "original_lang": "<p>(Paragraph 13) </p><p>Individuals should have the right: ... to have communicated to them, data relating to them i. <strong>within a reasonable time</strong>; ii. at <strong>a charge, if any, that is not excessive</strong>; iii. in a reasonable manner; and iv. in a <strong>form that is readily intelligible</strong> to them;</p>"
+        "original_lang": "<p>(Paragraph 13)</p><p>Individuals should have the right: ... to have communicated to them, data relating to them </p><ol><li><p><strong>within a reasonable time</strong>; </p></li><li><p>at <strong>a charge, if any, that is not excessive</strong>; </p></li><li><p>in a reasonable manner; and </p></li><li><p>in a <strong>form that is readily intelligible</strong> to them;</p></li></ol>"
       },
       "right_to_information": {
         "has_data": true,
@@ -453,22 +453,22 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "<p>Requires risk-based safeguards</p>",
-        "original_lang": "<p>(Paragraph 11) </p><p>Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data. </p><p>(Paragraph 15)</p><p>A data controller should: a) Have in place a privacy management programme that: ... provides for appropriate safeguards based on privacy risk assessment;</p><p>(Explanatory Memorandum) </p><p>Security and privacy issues are not identical. However, limitations on data use and disclosure should be reinforced by security safeguards. Such safeguards include physical measures (locked doors and identification cards, for instance), organisational measures (such as authority levels with regard to access to data) and, particularly in computer systems, informational measures (such as enciphering and threat monitoring of unusual activities and responses to them). It should be emphasised that the category of organisational measures includes obligations for data processing personnel to maintain confidentiality. Paragraph 11 has a broad coverage. The cases mentioned in the provision are to some extent overlapping (e.g. access/ disclosure). “Loss” of data encompasses such cases as accidental erasure of data, destruction of data storage media (and thus destruction of data) and theft of data storage media. “Modified” should be construed to cover unauthorised input of data, and “use” to cover unauthorised copying.</p><p></p>"
+        "original_lang": "<p>(Paragraph 11)</p><p>Personal data should be <strong>protected by reasonable security safeguards</strong> against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.</p><p>(Paragraph 15)</p><p>A data controller should: a) Have in place a privacy management programme that: ... provides for <strong>appropriate safeguards based on privacy risk assessment</strong>;</p><p>(Explanatory Memorandum)</p><p>Security and privacy issues are not identical. However, limitations on data use and disclosure should be reinforced by security safeguards. Such safeguards include physical measures (locked doors and identification cards, for instance), organisational measures (such as authority levels with regard to access to data) and, particularly in computer systems, informational measures (such as enciphering and threat monitoring of unusual activities and responses to them). It should be emphasised that the category of organisational measures includes obligations for data processing personnel to maintain confidentiality. Paragraph 11 has a broad coverage. The cases mentioned in the provision are to some extent overlapping (e.g. access/ disclosure). “Loss” of data encompasses such cases as accidental erasure of data, destruction of data storage media (and thus destruction of data) and theft of data storage media. “Modified” should be construed to cover unauthorised input of data, and “use” to cover unauthorised copying.</p><p></p>"
       },
       "security_types_of_safeguards": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "Technical measures;\nPhysical measures;\nOrganizational measures",
         "original_lang": "(Paragraph 11) Personal data should be protected by reasonable security safeguards\nagainst such risks as loss or unauthorised access, destruction, use,\nmodification or disclosure of data. \n\n(Explanatory Memorandum) Security and privacy issues are not identical. However, limitations on\ndata use and disclosure should be reinforced by security safeguards. Such\nsafeguards include physical measures (locked doors and identification cards,\nfor instance), organisational measures (such as authority levels with regard\nto access to data) and, particularly in computer systems, informational\nmeasures (such as enciphering and threat monitoring of unusual activities\nand responses to them). It should be emphasised that the category of\norganisational measures includes obligations for data processing personnel\nto maintain confidentiality. Paragraph 11 has a broad coverage. The cases\nmentioned in the provision are to some extent overlapping (e.g. access/\ndisclosure). “Loss” of data encompasses such cases as accidental erasure of\ndata, destruction of data storage media (and thus destruction of data) and\ntheft of data storage media. “Modified” should be construed to cover\nunauthorised input of data, and “use” to cover unauthorised copying."
       },
       "data_breach_notification": {
         "has_data": true,
         "abbreviated_lang": "<p>Notify data protection authority for significant breaches</p><p>Notify data subject when adverse effects likely</p>",
-        "original_lang": "<p>(Paragraph 15)</p><p>A data controller should: Provide notice, as appropriate, to privacy enforcement authorities or other relevant authorities where there has been a significant security breach affecting personal data. Where the breach is likely to adversely affect data subjects, a data controller should notify affected data subjects.</p><p></p>"
+        "original_lang": "<p>(Paragraph 15)</p><p>A data controller should: Provide notice, as appropriate, <strong>to privacy enforcement authorities or other relevant authorities where there has been a significant security breach</strong> affecting personal data. <strong>Where the breach is likely to adversely affect data subjects, a data controller should notify affected data subjects</strong>.</p>"
       },
       "retention": {
         "has_data": true,
         "abbreviated_lang": "<p>Erasure may be necessary</p>",
-        "original_lang": "<p>(Explanatory Memorandum) </p><p>when data no longer serve a purpose, and if it is practicable, it may be necessary to have them destroyed (erased) or given an anonymous form. The reason is that control over data may be lost when data are no longer of interest; this may lead to risks of theft, unauthorised copying or the like.</p>"
+        "original_lang": "<p>(Explanatory Memorandum)</p><p><strong>when data no longer serve a purpose, and if it is practicable, it may be necessary to have them destroyed (erased) or given an anonymous form</strong>. The reason is that control over data may be lost when data are no longer of interest; this may lead to risks of theft, unauthorised copying or the like.</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -486,17 +486,17 @@
         "original_lang": ""
       },
       "security": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "<p>Requires risk-based safeguards;</p><p>Must ensure confidentiality</p>",
         "original_lang": "<p>(Paragraph 11)</p><p>Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.</p><p>(Paragraph 15)</p><p>A data controller should have in place a privacy management programme that: </p><ol><li><p>gives effect to these Guidelines for all personal data under its control;</p></li><li><p>is tailored to the structure, scale, volume and sensitivity of its operations; </p></li><li><p><strong>provides for appropriate safeguards based on privacy risk assessment; </strong></p></li><li><p>is integrated into its governance structure and establishes internal oversight mechanisms; </p></li><li><p>includes plans for responding to inquiries and incidents; </p></li><li><p>is updated in light of ongoing monitoring and periodic assessment;</p></li></ol><p>(Explanatory Memorandum)</p><p>Security and privacy issues are not identical. However, limitations on data use and disclosure should be reinforced by security safeguards. Such safeguards include physical measures (locked doors and identification cards, for instance), organisational measures (such as authority levels with regard to access to data) and, particularly in computer systems, informational measures (such as enciphering and threat monitoring of unusual activities and responses to them). <strong>It should be emphasised that the category of organisational measures includes obligations for data processing personnel to maintain confidentiality</strong>.</p>"
       },
       "data_breach_notification_data_subject": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "<p>Notify data protection authority for significant breaches</p><p>Notify data subject when adverse effects likely</p>",
         "original_lang": "<p>(Paragraph 11)</p><p>A data controller should provide notice, as appropriate, to privacy enforcement authorities or other relevant authorities where there has been a significant security breach affecting personal data. Where the breach is likely to adversely affect data subjects, a data controller should notify affected data subjects.</p>"
       },
       "retention_requirement": {
-        "has_data": true,
+        "has_data": false,
         "abbreviated_lang": "<p>Erasure may be necessary</p>",
         "original_lang": "<p>(Explanatory Memorandum)</p><p>when data no longer serve a purpose, and if it is practicable, <strong>it may be necessary to have them destroyed (erased) or given an anonymous form</strong>. The reason is that control over data may be lost when data are no longer of interest; this may lead to risks of theft, unauthorised copying or the like.</p>"
       },
@@ -712,7 +712,7 @@
       "minimization": {
         "has_data": true,
         "abbreviated_lang": "<p>Data must be</p><ol><li><p>relevant</p></li><li><p>proportional </p></li></ol>",
-        "original_lang": "<p>(Principle III)</p><p>The collection of personal information should be limited to information that is relevant to the purposes of collection</p><p>(Principle III Commentary) </p><p>This Principle limits collection of information by reference to the purposes for which it is collected. The collection of the information should be relevant to such purposes, and proportionality to the fulfillment of such purposes may be a factor in determining what is relevant.</p>"
+        "original_lang": "<p>(Principle III)</p><p>The collection of personal information should be <strong>limited to information that is relevant to the purposes of collection</strong></p><p>(Principle III Commentary)</p><p>This Principle limits collection of information by reference to the purposes for which it is collected. The collection of the information should be<strong> relevant to such purposes, and proportionality to the fulfillment of such purposes may be a factor in determining what is relevant</strong>.</p>"
       },
       "purpose_specification_timeline": {
         "has_data": false,
@@ -737,7 +737,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "<p>Requires risk-based safeguards</p>",
-        "original_lang": "<p>(Principle VII)</p><p>Personal information controllers should protect personal information that they hold with appropriate safeguards against risks, such as loss or unauthorized access to personal information, or unauthorized destruction, use, modification or disclosure of information or other misuses. Such safeguards should be proportional to the likelihood and severity of the harm threatened, the sensitivity of the information and the context in which it is held, and should be subject to periodic review and reassessment.</p>"
+        "original_lang": "<p>(Principle VII)</p><p>Personal information controllers should <strong>protect personal information that they hold with appropriate safeguards </strong>against risks, such as loss or unauthorized access to personal information, or unauthorized destruction, use, modification or disclosure of information or other misuses. <strong>Such safeguards should be proportional to the likelihood and severity of the harm threatened</strong>, the sensitivity of the information and the context in which it is held, and should be subject to periodic review and reassessment.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": false,
@@ -916,7 +916,7 @@
       "right_to_information": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to be provided, upon request: </p><ol><li><p>information allowing the subject to evaluate and object to processing; </p></li><li><p>confirmation of processing; </p></li><li><p>purposes of data processing; </p></li><li><p>categories of data</p></li><li><p>possible recipients of data</p></li></ol>",
-        "original_lang": "<p>(Article 17)</p><p>Any natural person whose personal data are to be processed may request from the controller, in the form of questions, the following:</p><ol><li><p>Such information as would enable him/her to evaluate and object to the processing;</p></li><li><p>Confirmation as to w<strong>hether or not data relating to him/her are being processed</strong>;</p></li><li><p>Communication to him/her of the personal data undergoing processing and any available information as to their source;</p></li><li><p>Information as to the <strong>purpose of the processing</strong>, the <strong>categories of personal data</strong> concerned, and the <strong>recipients or categories of recipients</strong> to whom the data are disclosed.</p></li></ol>"
+        "original_lang": "<p>(Article 17)</p><p>Any natural person whose personal data are to be processed may request from the controller, in the form of questions, the following:</p><ol><li><p>Such information as would enable him/her to evaluate and object to the processing;</p></li><li><p>Confirmation as to <strong>whether or not data relating to him/her are being processed</strong>;</p></li><li><p>Communication to him/her of the personal data undergoing processing and any available information as to their source;</p></li><li><p>Information as to the <strong>purpose of the processing</strong>, the <strong>categories of personal data</strong> concerned, and the <strong>recipients or categories of recipients</strong> to whom the data are disclosed.</p></li></ol>"
       },
       "right_to_access": {
         "has_data": true,
@@ -1006,7 +1006,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "<p>Requires appropriate safeguards</p>",
-        "original_lang": "<p>(Article 21) </p><p>The data controller must take all appropriate precautions, according to the nature of the data, and in particular, to prevent such data from being altered or destroyed, or accessed by unauthorized third parties.</p>"
+        "original_lang": "<p>(Article 21)</p><p>The data controller must take <strong>all appropriate precautions</strong>, according to the nature of the data, and in particular, <strong>to prevent such data from being altered or destroyed, or accessed by unauthorized third parties</strong>.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": false,
@@ -1021,7 +1021,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "<p>Kept no longer than necessary</p>",
-        "original_lang": "<p>(Principle 3) </p><p>Data shall be kept for no longer than is necessary for the purposes for which the data were collected or further processed; Beyond the required period, data may be stored only for the specific needs of data processing undertaken for historical, statistical or research purposes under the law</p>"
+        "original_lang": "<p>(Principle 3)</p><p>Data shall be <strong>kept for no longer than is necessary</strong> for the purposes for which the data were collected or further processed; Beyond the required period, data may be stored only for the specific needs of data processing undertaken for historical, statistical or research purposes under the law</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -1061,7 +1061,7 @@
       "right_to_object_to_processing": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to object to processing</p>",
-        "original_lang": "<p>(Article 18)</p><p>Any natural person has the right to object, on legitimate grounds, to the processing of the data relating to him/her.</p><p>He/she shall have the right to be informed before personal data relating to him/her are disclosed for the first time to third parties or used on their behalf for the purposes of marketing, and to be expressly offered the right to object, free of charge, to such disclosures or uses.</p>"
+        "original_lang": "<p>(Article 18)</p><p>Any natural person has <strong>the right to object, on legitimate grounds, to the processing of the data relating to him/her</strong>.</p><p>He/she shall have the right to be informed before personal data relating to him/her are disclosed for the first time to third parties or used on their behalf for the purposes of marketing, and to be expressly offered the right to object, free of charge, to such disclosures or uses.</p>"
       }
     },
     "organization": "African Union",
@@ -1176,8 +1176,8 @@
       },
       "conditions_for_access": {
         "has_data": true,
-        "abbreviated_lang": "<p>Reasonable time</p>",
-        "original_lang": ""
+        "abbreviated_lang": "<ul><li><p>Reasonable time</p></li></ul>",
+        "original_lang": "<p>(Paragraph 6)</p><p>Upon request by an individual, an organisation should: (i) provide the individual access to his/her personal data which is in the possession or under the control of the organisation <strong>within a reasonable period of time</strong></p>"
       },
       "right_to_information": {
         "has_data": false,
@@ -1242,7 +1242,7 @@
       "use_limitation": {
         "has_data": true,
         "abbreviated_lang": "<p>Processing must be compatible with original purpose or authorized by law</p>",
-        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should not collect, use or disclose personal data about an individual unless: </p><ol><li><p>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data; or </p></li><li><p>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations. </p></li></ol><p>An organisation may collect, use or disclose personal data about an individual only for purposes that a reasonable person would consider appropriate in the circumstances.</p>"
+        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p>the <strong>individual has been notified of and given consent</strong> to the purpose(s) of the collection, use or disclosure of his/her personal data; or</p></li><li><p>the collection, use or disclosure without notification or consent is <strong>authorised or required under domestic laws and regulations</strong>.</p></li></ol><p>An organisation may collect, use or disclose personal data about an individual only for purposes that a reasonable person would consider appropriate in the circumstances.</p>"
       },
       "minimization": {
         "has_data": false,
@@ -1272,7 +1272,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "Requires appropriate safeguards to protect personal data",
-        "original_lang": "<p>(Paragraph 6) </p><p>The personal data should be appropriately protected against loss and unauthorised access, collection, use, disclosure, copying, modification, destruction or similar risks.</p>"
+        "original_lang": "<p>(Paragraph 6)</p><p>The personal data should be <strong>appropriately protected </strong>against loss and unauthorised access, collection, use, disclosure, copying, modification, destruction or similar risks.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": false,
@@ -1287,7 +1287,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "Personal data shall be kept no longer than necessary",
-        "original_lang": "<p>(Paragraph 6) </p><p>An organisation should cease to retain documents containing personal data, or remove the means by which the personal data can be associated with particular individuals as soon as it is reasonable to assume that the retention is no longer necessary for legal or business purposes;</p>"
+        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should <strong>cease to retain documents</strong> containing personal data, or remove the means by which the personal data can be associated with particular individuals <strong>as soon as it is reasonable to assume that the retention is no longer necessary</strong> for legal or business purposes;</p>"
       },
       "cross_border_transfers": {
         "has_data": true,
@@ -1435,22 +1435,22 @@
       "conditions_for_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Reasonable charge;</p><p class=\"MsoNormal\">Reasonable time;</p><p class=\"MsoNormal\">In intelligible form</p>",
-        "original_lang": "(Eighth Principle) The essential elements are the individual’s ability to obtain data relating to him or her within\na reasonable time, at a reasonable charge, and in a reasonable and intelligible manner"
+        "original_lang": "<p>(Eighth Principle) </p><p>The essential elements are the individual’s ability to obtain data relating to him or her within a <strong>reasonable time</strong>, at a <strong>reasonable charge</strong>, and in a <strong>reasonable and intelligible manner</strong></p>"
       },
       "right_to_information": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to confirmation of processing</p>",
-        "original_lang": "<p>(Eighth Principle) </p><p>Individuals must have the right to discover whether data controllers have personal data relating to those individuals</p>"
+        "original_lang": "<p>(Eighth Principle)</p><p>Individuals must have the <strong>right to discover whether data controllers have personal data</strong> relating to those individuals</p>"
       },
       "right_to_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to obtain a copy of personal data</p>",
-        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data</p><p>Individuals must have the right to discover whether data controllers have personal data relating to those individuals, to have access to that data so that they may challenge the accuracy of that data, and to ask the data controller to amend, revise, correct or delete the data in question.</p><p>...</p><p>The right to access personal data held by a data controller should be simple to exercise. For example, the mechanisms for access should be part of the routine activities of the data controller and should not require any special measures or legal process (including, for instance, presenting a formal judicial claim).</p><p>Every individual should have the ability access his or her own data. In some situations, even third parties may also be entitled (for example, representatives on behalf of those suffering mental incapacity, or parents on behalf of minor children).</p>"
+        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data</p><p><strong>Individuals must have the right to discover whether data controllers have personal data relating to those individuals, to have access to that data</strong> so that they may challenge the accuracy of that data, and to ask the data controller to amend, revise, correct or delete the data in question.</p><p>...</p><p>The right to access personal data held by a data controller should be simple to exercise. For example, the mechanisms for access should be part of the routine activities of the data controller and should not require any special measures or legal process (including, for instance, presenting a formal judicial claim).</p><p>Every individual should have the ability access his or her own data. In some situations, even third parties may also be entitled (for example, representatives on behalf of those suffering mental incapacity, or parents on behalf of minor children).</p>"
       },
       "right_to_correction": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to request correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol>",
-        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data and to request that the data controller amend, correct or delete that data</p><p>The individual must be able to exercise the right to request the correction of (or an addition to) personal data about himself or herself that is incomplete, inaccurate, unnecessary or excessive. This is sometimes referred to as the right of “rectification.”</p>"
+        "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data and to request that the data controller amend, correct or delete that data</p><p>The individual must be able to exercise <strong>the right to request the correction of (or an addition to) personal data</strong> about himself or herself that is incomplete, inaccurate, unnecessary or excessive. This is sometimes referred to as the right of “rectification.”</p>"
       },
       "right_to_erasure": {
         "has_data": true,
@@ -1465,7 +1465,7 @@
       "right_to_withdraw_consent": {
         "has_data": true,
         "abbreviated_lang": "Right to withdraw consent",
-        "original_lang": "<p>(Second Principle) </p><p>An individual is entitled to withdraw consent depending on the nature of the consent given and the purposes for which the data is collected. In general, withdrawal of consent does not affect the validity of anything already done on the basis of the consent.</p>"
+        "original_lang": "<p>(Second Principle)</p><p><strong>An individual is entitled to withdraw consent </strong>depending on the nature of the consent given and the purposes for which the data is collected. In general, withdrawal of consent does not affect the validity of anything already done on the basis of the consent.</p>"
       },
       "right_to_challenge_denials": {
         "has_data": true,
@@ -1540,7 +1540,7 @@
       "data_breach_notification": {
         "has_data": true,
         "abbreviated_lang": "Notification may be necessary",
-        "original_lang": "<p>(Sixth Principle) </p><p>In many countries, including within the OAS, the law imposes reporting requirements in such instances. Thus, in the event of a breach, data controllers may have a legal obligation to notify the individuals whose data has been (or might have been) compromised.</p>"
+        "original_lang": "<p>(Sixth Principle)</p><p>In many countries, including within the OAS, the law imposes reporting requirements in such instances. Thus, <strong>in the event of a breach, data controllers may have a legal obligation to notify the individuals</strong> whose data has been (or might have been) compromised.</p>"
       },
       "retention": {
         "has_data": true,
@@ -1813,7 +1813,7 @@
       "security_requirement": {
         "has_data": true,
         "abbreviated_lang": "Requires appropriate safeguards to protect personal data",
-        "original_lang": "<p>(Principle 7) </p><p>Appropriate organizational, administrative, physical and technical safeguards and procedures should be implemented to protect the security of personal data, including against or from unauthorized or accidental access, damage, loss or other risks presented by data processing.</p>"
+        "original_lang": "<p>(Principle 7)</p><p><strong>Appropriate organizational, administrative, physical and technical safeguards and procedures should be implemented</strong> to protect the security of personal data, including against or from unauthorized or accidental access, damage, loss or other risks presented by data processing.</p>"
       },
       "security_types_of_safeguards": {
         "has_data": true,
@@ -1828,7 +1828,7 @@
       "retention": {
         "has_data": true,
         "abbreviated_lang": "Personal data shall be kept no longer than necessary",
-        "original_lang": "<p>(Principle 4) </p><p>Personal data should only be retained for the time that is necessary for the specified purposes.</p>"
+        "original_lang": "<p>(Principle 4)</p><p>Personal data should only be <strong>retained for the time that is necessary</strong> for the specified purposes.</p>"
       },
       "cross_border_transfers": {
         "has_data": false,
@@ -2018,22 +2018,22 @@
       "conditions_for_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Free;</p><p class=\"MsoNormal\">Expeditious;</p><p class=\"MsoNormal\">accessible</p>",
-        "original_lang": ""
+        "original_lang": "<p>(Principle 32)</p><p>The person responsible shall establish <strong>simple, expeditious, accessible and free procedures </strong>that allow holder to exercise its rights to access, correction, cancellation, opposition and portability</p>"
       },
       "right_to_information": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to confirmation of processing</p>",
-        "original_lang": "<p>(Principle 25) </p><p>Holder shall have the right to request access to its personal data in possession of the responsible person, as well as to know any information related to the general and specific conditions of their treatment</p>"
+        "original_lang": "<p>(Principle 25)</p><p>Holder shall have the right to request access to its personal data in possession of the responsible person, as well as <strong>to know any information related to the general and specific conditions of their treatment</strong></p>"
       },
       "right_to_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to request a copy of personal data</p>",
-        "original_lang": "<p>(Principle 25) </p><p>Holder shall have the right to request access to its personal data in possession of the responsible person, as well as to know any information related to the general and specific conditions of their treatment</p>"
+        "original_lang": "<p>(Principle 25)</p><p>Holder shall have <strong>the right to request access to its personal data</strong> in possession of the responsible person, as well as to know any information related to the general and specific conditions of their treatment</p>"
       },
       "right_to_correction": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to the correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>not updated</p></li></ol>",
-        "original_lang": "<p>(Principle 26) </p><p>Holder shall have the right to obtain from the person responsible the correction of its personal data when they are inaccurate, incomplete or are not updated.</p>"
+        "original_lang": "<p>(Principle 26)</p><p>Holder shall have the <strong>right to obtain from the person responsible the correction of its personal data</strong> when they are inaccurate, incomplete or are not updated.</p>"
       },
       "right_to_erasure": {
         "has_data": true,
@@ -2048,7 +2048,7 @@
       "right_to_withdraw_consent": {
         "has_data": true,
         "abbreviated_lang": "Right to withdraw consent",
-        "original_lang": "<p>(Principle 12) </p><p>Whenever consent is required for the treatment of personal data, holder may revoke it at any time, for which the person responsible shall establish simple, agile, efficient and free mechanisms.</p>"
+        "original_lang": "<p>(Principle 12)</p><p><strong>Whenever consent is required for the treatment of personal data, holder may revoke it at any time</strong>, for which the person responsible shall establish simple, agile, efficient and free mechanisms.</p>"
       },
       "right_to_challenge_denials": {
         "has_data": true,
@@ -2168,7 +2168,7 @@
       "right_to_object_to_processing": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to object to processing</p>",
-        "original_lang": "<p>(Article 28)</p><p>Holder may oppose to the treatment of its personal data when:</p><ol><li><p>It has a legitimate reason resulting from its particular situation. </p></li><li><p>The purpose of the treatment of its personal data is direct marketing, including preparing profiles, to the extent that it is related to such activity.</p></li></ol><p>In the case of the previous item, when holder opposes treatment with direct marketing purposes, its personal data must stop being treated with such purposes</p>"
+        "original_lang": "<p>(Article 28)</p><p><strong>Holder may oppose to the treatment of its personal data</strong> when:</p><ol><li><p>It has a legitimate reason resulting from its particular situation.</p></li><li><p>The purpose of the treatment of its personal data is direct marketing, including preparing profiles, to the extent that it is related to such activity.</p></li></ol><p>In the case of the previous item, when holder opposes treatment with direct marketing purposes, its personal data must stop being treated with such purposes</p>"
       }
     },
     "organization": "",
@@ -2272,7 +2272,7 @@
       "consent_sensitive_data": {
         "has_data": true,
         "abbreviated_lang": "<ul><li><p>explicit consent</p></li><li><p>presence of laws covering intended purpose</p></li><li><p>presence of professional secrecy obligation</p></li><li><p>presence of security measures</p></li></ul>",
-        "original_lang": "<p>(Article 6)</p><p>The processing of:</p><ol><li><p class=\"MsoNormal\">genetic data;</p></li><li><p class=\"MsoNormal\">personal data relating to offences, criminal proceedings and convictions, and related security measures;</p></li><li><p class=\"MsoNormal\">biometric data uniquely identifying a person;</p></li><li><p class=\"MsoNormal\">personal data for the information they reveal relating to racial or ethnic origin, political opinions, trade-union membership, religious or other beliefs, health or sexual life,</p></li></ol><p class=\"MsoNormal\">shall only be allowed where appropriate safeguards are enshrined in law, complementing those of this Convention.</p><p class=\"MsoNormal\">Such safeguards shall guard against the risks that the processing of sensitive data may present for the interests, rights and fundamental freedoms of the data subject, notably a risk of discrimination.</p><p>(Explanatory Report)</p><p>In order to prevent adverse effects for the data subject, processing of sensitive data for legitimate purposes needs to be accompanied by appropriate safeguards (which are adapted to the risks at stake and the interests, rights and freedoms to be protected), such as for instance, alone or cumulatively; <strong>the data subject’s explicit consent</strong>; a <strong>law covering the intended purpose</strong> and means of the processing or indicating the exceptional cases where processing such data would be permitted; a <strong>professional secrecy obligation</strong>; <strong>measures following a risk analysis</strong>; a <strong>particular and qualified organisational or technical security measure</strong> (data encryption, for example).</p>"
+        "original_lang": "<p>(Explanatory Report)</p><p>In order to prevent adverse effects for the data subject, processing of sensitive data for legitimate purposes needs to be accompanied by appropriate safeguards (which are adapted to the risks at stake and the interests, rights and freedoms to be protected), such as for instance, alone or cumulatively; <strong>the data subject’s explicit consent</strong>; a <strong>law covering the intended purpose</strong> and means of the processing or indicating the exceptional cases where processing such data would be permitted; a <strong>professional secrecy obligation</strong>; <strong>measures following a risk analysis</strong>; a <strong>particular and qualified organisational or technical security measure</strong> (data encryption, for example).</p>"
       },
       "conditions_for_consent": {
         "has_data": true,
@@ -2281,8 +2281,8 @@
       },
       "conditions_for_access": {
         "has_data": true,
-        "abbreviated_lang": "<p>Without excessive expense;</p><p class=\"MsoNormal\">Without excessive delay;</p>",
-        "original_lang": "(Article 8) Any person shall be enabled: to obtain at reasonable intervals and without excessive delay or expense confirmation of whether personal data relating to him are stored in the automated data file as well as communication to him of such data in an intelligible form;"
+        "abbreviated_lang": "<p>Without excessive expense;</p><p class=\"MsoNormal\">Without excessive delay;</p><p>In an intelligible form</p>",
+        "original_lang": "<p>(Article 9) </p><p>Every individual shall have a right: to obtain, on request, at reasonable intervals and <strong>without excessive delay or expense</strong>, confirmation of the processing of personal data relating to him or her, the communication <strong>in an intelligible form</strong> of the data processed, all available information on their origin, on the preservation period as well as any other information that the controller is required to provide in order to ensure the transparency of processing</p>"
       },
       "right_to_information": {
         "has_data": true,
@@ -2297,12 +2297,12 @@
       "right_to_correction": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to request correction of data</p><ol><li><p>processed contrary to the Convention</p></li></ol>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have <strong>a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure</strong>, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
       },
       "right_to_erasure": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to request erasure of data</p><ul><li><p>processed contrary to the Convention</p></li></ul>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have <strong>a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure</strong>, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
       },
       "right_to_object_processing": {
         "has_data": true,
@@ -2312,22 +2312,22 @@
       "right_to_withdraw_consent": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to withdraw consent</p>",
-        "original_lang": "<p>(Explanatory Report)</p><p>The data subject has the right to withdraw the consent he or she gave at any time (which is to be distinguished from the separate right to object to processing). This will not affect the lawfulness of the data processing that occurred before the data controller has received his or her withdrawal of consent but does not allow continued processing of data, unless justified by some other legitimate basis laid down by law.</p>"
+        "original_lang": "<p>(Explanatory Report)</p><p>The data subject has <strong>the right to withdraw the consent he or she gave at any time </strong>(which is to be distinguished from the separate right to object to processing). This will not affect the lawfulness of the data processing that occurred before the data controller has received his or her withdrawal of consent but does not allow continued processing of data, unless justified by some other legitimate basis laid down by law.</p>"
       },
       "right_to_challenge_denials": {
         "has_data": true,
-        "abbreviated_lang": "Right to challenge denials",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: to have a remedy under Article 12 where his or her rights under this Convention have been violated;</p>"
+        "abbreviated_lang": "<p>Right to a remedy for violations</p>",
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have <strong>a right: to have a remedy</strong> <strong>under Article 12 </strong>where his or her rights under this Convention have been violated;</p><p>(Article 12)</p><p class=\"MsoNormal\">Each Party undertakes to establish appropriate judicial and non-judicial sanctions and remedies for violations of the provisions of this Convention.</p>"
       },
       "portability": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to data portability tools</p>",
-        "original_lang": "<p>(Explanatory Report)</p><p>There should also be easy-to-use tools to enable data subjects to take their data to another provider of their choice or keep the data themselves (data portability tools).</p>"
+        "original_lang": "<p>(Explanatory Report)</p><p><strong>There should also be easy-to-use tools to enable data subjects to take their data to another provider</strong> of their choice or keep the data themselves (data portability tools).</p>"
       },
       "automated_processing": {
         "has_data": true,
         "abbreviated_lang": "<p>Right not to be subject to a decision based solely on automated processing</p>",
-        "original_lang": "<p>(Article 9)</p><p>Every individual shall have a right: not to be subject to a decision significantly affecting him or her based solely on an automated processing of data without having his or her views taken into consideration;</p>"
+        "original_lang": "<p>(Article 9)</p><p>Every individual shall have <strong>a right: not to be subject to a decision significantly affecting him or her based solely on an automated processing</strong> of data without having his or her views taken into consideration;</p>"
       },
       "cost": {
         "has_data": false,
@@ -2352,7 +2352,7 @@
       "minimization": {
         "has_data": true,
         "abbreviated_lang": "<p>Data must be </p><ol><li><p>adequate</p></li><li><p>relevant</p></li><li><p>limited to the minimum necessary</p></li></ol>",
-        "original_lang": "<p>(Article 5)</p><p>Personal data undergoing processing shall be: ... adequate, relevant and not excessive in relation to the purposes for which they are processed;</p>"
+        "original_lang": "<p>(Article 5)</p><p>Personal data undergoing processing shall be: ...<strong> adequate, relevant and not excessive</strong> in relation to the purposes for which they are processed;</p>"
       },
       "purpose_specification_timeline": {
         "has_data": false,
@@ -2432,7 +2432,7 @@
       "right_to_object_to_processing": {
         "has_data": true,
         "abbreviated_lang": "<p>Right to object to processing</p>",
-        "original_lang": "<p>(Article 9)<br><br>Every individual shall have a right: to object at any time, on grounds relating to his or her situation, to the processing of personal data concerning him or her unless the controller demonstrates legitimate grounds for the processing which override his or her interests or rights and fundamental freedoms;<br><br>(Explanatory Report)<br><br>As regards the right to object, the controller may have a legitimate ground for data processing, which overrides the interests or rights and freedoms of the data subject. For example, the establishment, exercise or defence of legal claims or reasons of public safety could be considered as overriding legitimate grounds justifying the continuation of the processing. This will have to be demonstrated on a case-by-case basis and failure to demonstrate such compelling legitimate grounds while pursuing the processing could be considered as unlawful. The right to object operates in a distinct and separate manner from the right to obtain rectification or erasure (littera e.). </p><p>Objection to data processing for marketing purposes should lead to unconditional erasing or removing of the personal data covered by the objection. </p><p>The right to object may be limited by virtue of a law, for example, for the purpose of the investigation or prosecution of criminal offences. In this case, the data subject can, as the case may be, challenge the lawfulness of the processing on which it is based. When data processing is based on valid consent given by the data subject, the right to withdraw consent can be exercised instead of the right to object. A data subject may withdraw his or her consent and subsequently have to assume the consequences possibly deriving from other legal texts such as the obligation to compensate the controller. Likewise where data processing is based on a contract, the data subject can take the necessary steps to revoke the contract.</p>"
+        "original_lang": "<p>(Article 9)<br><br>Every individual shall have <strong>a right: to object at any time, on grounds relating to his or her situation, to the processing of personal data concerning him or her </strong>unless the controller demonstrates legitimate grounds for the processing which override his or her interests or rights and fundamental freedoms;<br><br>(Explanatory Report)<br><br>As regards the right to object, the controller may have a legitimate ground for data processing, which overrides the interests or rights and freedoms of the data subject. For example, the establishment, exercise or defence of legal claims or reasons of public safety could be considered as overriding legitimate grounds justifying the continuation of the processing. This will have to be demonstrated on a case-by-case basis and failure to demonstrate such compelling legitimate grounds while pursuing the processing could be considered as unlawful. The right to object operates in a distinct and separate manner from the right to obtain rectification or erasure (littera e.).</p><p>Objection to data processing for marketing purposes should lead to unconditional erasing or removing of the personal data covered by the objection.</p><p>The right to object may be limited by virtue of a law, for example, for the purpose of the investigation or prosecution of criminal offences. In this case, the data subject can, as the case may be, challenge the lawfulness of the processing on which it is based. When data processing is based on valid consent given by the data subject, the right to withdraw consent can be exercised instead of the right to object. A data subject may withdraw his or her consent and subsequently have to assume the consequences possibly deriving from other legal texts such as the obligation to compensate the controller. Likewise where data processing is based on a contract, the data subject can take the necessary steps to revoke the contract.</p>"
       }
     },
     "organization": "Council of Europe",
@@ -2563,8 +2563,8 @@
       },
       "conditions_for_access": {
         "has_data": true,
-        "abbreviated_lang": "<p>Without undue cost;</p><p>Without undue delay;</p><p>In intelligible form</p>",
-        "original_lang": "(Principle 19) The responsible person must implement procedures to enable data subjects to exercise the\nrights provided for in sections 16 to 18 of this Document in a simple, fast and efficient way, which\ndo not entail undue delay or cost nor any gain\nwhatsoever for the responsible person"
+        "abbreviated_lang": "<p>Without undue cost;</p><p>Without undue delay</p>",
+        "original_lang": "<p>(Principle 19) </p><p>The responsible person must implement procedures to enable data subjects to exercise the rights provided for in sections 16 to 18 of this Document in a simple, fast and efficient way, <strong>which do not entail undue delay or cost </strong>nor any gain whatsoever for the responsible person</p>"
       },
       "right_to_information": {
         "has_data": true,
