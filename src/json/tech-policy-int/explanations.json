@@ -42,7 +42,7 @@
     "default_lang": "Not Specified"
   },
   "conditions_for_access": {
-    "title": "Conditions for Access",
+    "title": "Fulfillment of Requests",
     "description": "Does the data protection framework mandate that controllers respond to requests by data subjects in a particular way?",
     "category": "Individual Rights",
     "default_lang": "Not Specified"
