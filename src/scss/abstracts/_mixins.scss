@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'sass:map';
+
 // Breakpoints
 // $break: Breakpoint to use
 // $dir: 'min-width' or 'max-width'
