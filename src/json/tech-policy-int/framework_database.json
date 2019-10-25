@@ -358,7 +358,7 @@
       "conditions_for_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Not excessive charge;</p><p>Reasonable time;</p><p>In intelligible form</p>",
-        "original_lang": "(Paragraph 13) Individuals should have the right:\n... to have communicated to them, data relating to them\ni. within a reasonable time;\nii. at a charge, if any, that is not excessive;\niii. in a reasonable manner; and\niv. in a form that is readily intelligible to them;"
+        "original_lang": "<p>(Paragraph 13) </p><p>Individuals should have the right: ... to have communicated to them, data relating to them i. <strong>within a reasonable time</strong>; ii. at <strong>a charge, if any, that is not excessive</strong>; iii. in a reasonable manner; and iv. in a <strong>form that is readily intelligible</strong> to them;</p>"
       },
       "right_to_information": {
         "has_data": true,
@@ -642,7 +642,7 @@
       "conditions_for_access": {
         "has_data": true,
         "abbreviated_lang": "<p>Not excessive charge;</p><p class=\"MsoNormal\">Reasonable time;</p><p class=\"MsoNormal\">In intelligible form</p>",
-        "original_lang": "(Principle 8) Individuals should be able to: ... have communicated to them, after\nhaving provided sufficient proof of\ntheir identity, personal information\nabout them;\ni. within a reasonable time;\nii. at a charge, if any, that is not\nexcessive;\niii. in a reasonable manner;\niv. in a form that is generally\nunderstandable"
+        "original_lang": "<p>(Principle 8)</p><p>Individuals should be able to: ... have communicated to them, after having provided sufficient proof of their identity, personal information about them; </p><ol><li><p><strong>within a reasonable time</strong>; </p></li><li><p>at a charge, if any, that is <strong>not excessive</strong>; </p></li><li><p>in a reasonable manner; </p></li><li><p>in a <strong>form that is generally understandable</strong></p></li></ol>"
       },
       "right_to_information": {
         "has_data": true,
