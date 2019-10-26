@@ -4,6 +4,7 @@ import FilterSearch from './FilterSearch'
 import FilterContent from './FilterContent'
 import FilterSelect from './FilterSelect'
 import './Modal.css'
+import Icon from '../site-config/Icon'
 
 const FilterModal = () => {
   const [activeTab, setActiveTab] = useState('Rows')
@@ -118,14 +119,18 @@ const FilterModal = () => {
     <div className="modal">
       <div className="modal__header">
         Filter
-        <span className="modal__close" onClick={handleClick}>
-          X
-        </span>
+        <Icon onClick={handleClick} icon={'close'}></Icon>
       </div>
       <div className="modal__content">
         <div>
-          <div onClick={() => handleTabSwitch('Rows')}>Rows</div>
-          <div onClick={() => handleTabSwitch('Columns')}>Columns</div>
+          <div onClick={() => handleTabSwitch('Columns')}>
+            <Icon onClick={null} icon={'columns'}></Icon>
+            <span>Columns</span>
+          </div>
+          <div onClick={() => handleTabSwitch('Rows')}>
+            <Icon onClick={null} icon={'rows'}></Icon>
+            <span>Rows</span>
+          </div>
         </div>
         <FilterSearch
           activeTab={activeTab}
@@ -158,7 +163,10 @@ const FilterModal = () => {
         />
       </div>
       <div className="modal__footer">
-        <div onClick={handleResetFilters}>Reset all filters</div>
+        <div onClick={handleResetFilters}>
+          <Icon onClick={null} icon={'reset'}></Icon>
+          <span>Reset all filters</span>
+        </div>
         {(checkedRows.length > 0 && checkedColumns.length) > 0 ? (
           <button onClick={handleApply}>Apply</button>
         ) : (
