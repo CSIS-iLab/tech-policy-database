@@ -10,7 +10,6 @@ const FilterModal = () => {
   const [displayedRows, setDisplayedRows] = useState([])
   const [checkedColumns, setCheckedColumns] = useState([])
   const [displayedColumns, setDisplayedColumns] = useState([])
-  const [filterText, setFilterText] = useState('')
 
   const {
     filterModalStatus,
