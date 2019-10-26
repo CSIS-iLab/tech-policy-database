@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 import FilterSearch from './FilterSearch'
 import FilterContent from './FilterContent'
+import FilterSelect from './FilterSelect'
 import './Modal.css'
 
 const FilterModal = () => {
@@ -10,6 +11,7 @@ const FilterModal = () => {
   const [displayedRows, setDisplayedRows] = useState([])
   const [checkedColumns, setCheckedColumns] = useState([])
   const [displayedColumns, setDisplayedColumns] = useState([])
+  const [checkedCollections, setCheckedCollections] = useState([])
 
   const {
     filterModalStatus,
@@ -48,13 +50,16 @@ const FilterModal = () => {
     )
     setFilteredRows(
       sortRows(
-        allRows
-          .filter((row) => checkedRows.includes(row[0][0]))
-          .map((row) =>
-            row.filter(
-              (r) => checkedColumns.includes(r[0]) || typeof r[1] === 'string'
-            )
+        [
+          ...allRows.filter((row) => checkedRows.includes(row[0][0])),
+          ...allRows.filter((row) =>
+            checkedCollections.includes(row[1][1].category)
           )
+        ].map((row) => {
+          return row.filter(
+            (r) => checkedColumns.includes(r[0]) || typeof r[1] === 'string'
+          )
+        })
       )
     )
     // let divider = document.getElementsByClassName('divider')[0]
@@ -101,6 +106,14 @@ const FilterModal = () => {
         )
   }
 
+  const deselectAll = () => {
+    if (activeTab === 'Rows') {
+      setCheckedRows([])
+    } else if (activeTab === 'Columns') {
+      setCheckedColumns([])
+    }
+  }
+
   return filterModalStatus ? (
     <div className="modal">
       <div className="modal__header">
@@ -122,11 +135,18 @@ const FilterModal = () => {
           maxRows={allRows.length}
           maxColumns={allHeaders.slice(1).length}
           collections={collections}
+          checkedCollections={checkedCollections}
+          setCheckedCollections={setCheckedCollections}
+          allRows={allRows}
         />
-        <div onClick={setCheckedFilters}>
-          <span>[]</span>
-          <span>Select All</span>
-        </div>
+        <FilterSelect
+          setCheckedFilters={setCheckedFilters}
+          checkedRows={checkedRows}
+          checkedColumns={checkedColumns}
+          activeTab={activeTab}
+          deselectAll={deselectAll}
+        />
+
         <FilterContent
           activeTab={activeTab}
           checkedRows={checkedRows}
@@ -144,12 +164,12 @@ const FilterModal = () => {
         ) : (
           <div>Apply</div>
         )}
-        {checkedRows.length === 0 && activeTab === 'Rows' ? (
+        {checkedRows.length === 0 ? (
           <div>
             <div>Please select at least one row</div>
           </div>
         ) : null}
-        {checkedColumns.length === 0 && activeTab === 'Columns' ? (
+        {checkedColumns.length === 0 ? (
           <div>
             <div>Please select at least one column</div>
           </div>

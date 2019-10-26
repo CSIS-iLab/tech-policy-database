@@ -7,7 +7,7 @@ const Icon = (props) => {
 
   return (
     <svg
-      className="icon"
+      className={`icon ${icon.title}`}
       onClick={props.onClick}
       title={icon.title}
       width={icon.width}

@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
+import CollectionsItem from './CollectionsItem'
+import Icon from '../site-config/Icon'
 
 const FilterSearch = (props) => {
   const [collectionsMenu, setCollectionsMenu] = useState(false)
 
   const {
+    allRows,
     handleSearchFilter,
     displayedRows,
     displayedColumns,
     activeTab,
     maxRows,
     maxColumns,
-    collections
+    collections,
+    checkedCollections,
+    setCheckedCollections
   } = props
 
   const handleInput = (e) => {
@@ -23,12 +28,32 @@ const FilterSearch = (props) => {
 
   return (
     <div>
-      <input id="search-input" onChange={handleInput} />
-      <button onClick={handleClick}>Light</button>
+      <span>
+        <Icon onClick={null} icon={'search'}></Icon>
+      </span>
+      <input
+        id="search-input"
+        placeholder="Search"
+        onChange={handleInput}
+      ></input>
+      <button onClick={handleClick}>
+        <Icon onClick={null} icon={'filter2'}></Icon>
+        <Icon onClick={null} icon={'arrow_dropdown'}></Icon>
+      </button>
+
+      <div className="collection-count">{checkedCollections.length}</div>
+
       {collectionsMenu ? (
         <div>
+          <div>FILTER BY COLLECTION</div>
           {collections.map((c, i) => (
-            <div key={i}>{c}</div>
+            <CollectionsItem
+              allRows={allRows}
+              setCheckedCollections={setCheckedCollections}
+              checkedCollections={checkedCollections}
+              key={i}
+              name={c}
+            ></CollectionsItem>
           ))}
         </div>
       ) : null}
