@@ -9,6 +9,8 @@ export const GlobalContextProvider = (props) => {
   const [filteredHeaders, setFilteredHeaders] = useState([])
   const [activeOriginalLang, setActiveOriginalLang] = useState('Original Lang')
   const [langModalStatus, setLangModalStatus] = useState(false)
+  const [frameModalStatus, setFrameModalStatus] = useState(false)
+  const [activeFramework, setActiveFramework] = useState('')
   const [docLink, setDocLink] = useState('')
   const [searchText, setSearchText] = useState('')
   const [filterSubject, setFilterSubject] = useState('categories')
@@ -52,7 +54,11 @@ export const GlobalContextProvider = (props) => {
     langModalStatus,
     setLangModalStatus,
     searchText,
-    setSearchText
+    setSearchText,
+    frameModalStatus,
+    setFrameModalStatus,
+    activeFramework,
+    setActiveFramework
   }
 
   return (

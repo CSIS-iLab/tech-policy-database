@@ -1,20 +1,35 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Icon from '../site-config/Icon'
+import { GlobalContext } from '../../context/GlobalContext'
 
 const HeaderCell = (props) => {
-  const { name, url, year } = props.content
-  return (
-    name === 'Categories' ?
-      <td>Categories</td>
-      :
-      <td>
-        <div>{name}</div>
-        <div>{year}</div>
+  const { setFrameModalStatus, setActiveFramework } = useContext(GlobalContext)
+
+  const { name, url, organization } = props.content
+
+  const handleClick = () => {
+    setActiveFramework(props.content)
+    setFrameModalStatus(true)
+  }
+
+  return name === 'Categories' ? (
+    <td>Categories</td>
+  ) : (
+    <td>
+      <div onClick={handleClick}>
+        <span>{name}</span>
         <span>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            Original Document
-          </a>
+          <Icon handleClick={null} icon={'info'} />
         </span>
-      </td>
+      </div>
+      <div>{organization}</div>
+      <span>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <Icon onClick={null} icon={'external_link'} />
+          Original Document
+        </a>
+      </span>
+    </td>
   )
 }
 
