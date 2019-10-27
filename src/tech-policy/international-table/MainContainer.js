@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
-import Description from '../../shared/site-config/Description'
 import ModalContainer from '../../shared/modals/ModalContainer'
 import TableContainer from '../../shared/table/TableContainer'
 import Header from '../../shared/site-config/Header'
@@ -8,6 +7,7 @@ import Footer from '../../shared/site-config/Footer'
 import tableData from '../../json/tech-policy-int/framework_database.json'
 import categories from '../../json/tech-policy-int/explanations.json'
 import collections from '../../json/tech-policy-int/curated_categories.json'
+import info from '../../json/tech-policy-int/site_info.json'
 
 const MainContainer = () => {
   const context = useContext(GlobalContext)
@@ -52,19 +52,25 @@ const MainContainer = () => {
       .sort((a, b) => a.localeCompare(b))
   }
 
+  const formatSiteInfo = () => {
+    info['program_name'] = 'TECH POLICY PROGRAM'
+    info['subject'] = 'Data Governance'
+    return info
+  }
+
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
     context.setFilteredHeaders(formatHeaders())
     context.setFilteredRows(sortRows(formatRows()))
     context.setCollections(getCollections())
+    context.setSiteInfo(formatSiteInfo())
     // eslint-disable-next-line
   }, [])
 
   return (
     <div className="international-container">
       <Header />
-      <Description />
       <TableContainer
         headers={context.filteredHeaders}
         rows={context.filteredRows}

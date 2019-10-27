@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 import SearchFilter from './SearchFilter'
-import CollectionFilter from './CollectionFilter'
 import TableTextResize from './TableTextResize'
 import CustomFilter from './CustomFilter'
 import ScrollBar from './ScrollBar'
@@ -14,9 +13,6 @@ const TableOptions = () => {
     setSearchText,
     filterSubject,
     setFilterSubject,
-    curatedCat,
-    setCuratedCat,
-    collections,
     setFilterModalStatus,
     sortRows
   } = useContext(GlobalContext)
@@ -53,18 +49,9 @@ const TableOptions = () => {
     }
   }
 
-  // Filters categories by their selected curated groupings
-  const filterByCurated = (rows, curated) => {
-    return rows.filter((row) => {
-      return curated === row[1][1].category || curated === ''
-    })
-  }
-
   // Serves as the master filter that combines filterRows and filterByCurated
-  const handleFilter = (text, subject, curated) => {
-    setFilteredRows(
-      sortRows(filterByCurated(filterBySearch(allRows, text, subject), curated))
-    )
+  const handleFilter = (text, subject) => {
+    setFilteredRows(sortRows(filterBySearch(allRows, text, subject)))
   }
 
   return (
@@ -75,15 +62,6 @@ const TableOptions = () => {
         setSearchText={setSearchText}
         filterSubject={filterSubject}
         setFilterSubject={setFilterSubject}
-        curatedCat={curatedCat}
-      />
-      <CollectionFilter
-        handleFilter={handleFilter}
-        curatedCat={curatedCat}
-        setCuratedCat={setCuratedCat}
-        searchText={searchText}
-        filterSubject={filterSubject}
-        collections={collections}
       />
       <CustomFilter setFilterModalStatus={setFilterModalStatus} />
       <TableTextResize />
