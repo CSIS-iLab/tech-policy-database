@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { ReactComponent as Logo } from '../../assets/csis_logo_white_long.svg'
 import { GlobalContext } from '../../context/GlobalContext'
-import Icon from './Icon'
 
 const Footer = () => {
   const { siteInfo } = useContext(GlobalContext)
@@ -36,7 +35,14 @@ const Footer = () => {
             />
           </a>
           <div>All content © {renderDate()}. All rights reserved.</div>
-          <a href="#">Privacy Policy</a>
+          <a
+            href="https://www.csis.org/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Privacy Policy"
+          >
+            Privacy Policy
+          </a>
         </div>
         <div>
           This is a product of the&nbsp;
@@ -63,7 +69,7 @@ const Footer = () => {
           <div>1616 Rhode Island Avenue, NW Washington, DC 20036</div>
         </div>
       </div>
-      <a name="methodology"></a>Footer
+      <a name="Methodology" href="#" alt="Methodology redirect"></a>Footer
     </div>
   )
 }

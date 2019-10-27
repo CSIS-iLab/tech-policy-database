@@ -41,8 +41,10 @@ const Header = () => {
       <div>
         <div>{intro_paragraph}</div>
         <div>
-          <a href="#methodology">Methodology</a>
-          <Icon onClick={null} icon={'arrow'} />
+          <a href="#Methodology">
+            Methodology
+            <Icon onClick={null} icon={'arrow'} />
+          </a>
 
           <span>Download the data</span>
           <Icon onClick={null} icon={'download'} />
