@@ -12,10 +12,13 @@ const FilterSelect = (props) => {
     handleSelectAll
   } = props
 
+  // Helper f(n) that returns checked rows or columns based on activeTab
   const selectTab = () => {
     return activeTab === 'Rows' ? checkedRows : checkedColumns
   }
 
+  // Returns one of three icons based on status of checked rows or checked columns based on activeTab
+  // When checked items is empty, all are selected; Otherwise all items are deselected.
   const renderIcon = () => {
     if (selectTab().length === 0) {
       return <Icon onClick={handleSelectAll} icon={'check_empty'} />

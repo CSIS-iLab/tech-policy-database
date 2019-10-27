@@ -4,6 +4,7 @@ import Icon from '../../site-config/Icon'
 const CollectionsItem = (props) => {
   const { name, checkedCollections, setCheckedCollections, allRows } = props
 
+  // Toggles collection item's checked status on user input
   const handleClick = () => {
     if (!checkedCollections.includes(name)) {
       setCheckedCollections([...checkedCollections, name])

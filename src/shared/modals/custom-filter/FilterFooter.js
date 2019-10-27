@@ -2,11 +2,17 @@ import React from 'react'
 import Icon from '../../site-config/Icon'
 
 const FilterFooter = (props) => {
-  const { checkedRows, checkedColumns, handleResetFilters, handleApply } = props
+  const {
+    checkedRows,
+    checkedColumns,
+    handleResetFilters,
+    applyFilters
+  } = props
 
+  // Apply button only clickable when at least one row and column are checked
   const renderApply = () => {
     return (checkedRows.length > 0 && checkedColumns.length) > 0 ? (
-      <button onClick={handleApply}>Apply</button>
+      <button onClick={applyFilters}>Apply</button>
     ) : (
       <div>Apply</div>
     )

@@ -4,6 +4,7 @@ import Icon from '../../site-config/Icon'
 const FilterItem = (props) => {
   const { setCheckedItems, checkedItems, name } = props
 
+  // Toggles checked status of item (row or column based on tab)
   const handleClick = () => {
     if (!checkedItems.includes(name)) {
       setCheckedItems([...checkedItems, name])

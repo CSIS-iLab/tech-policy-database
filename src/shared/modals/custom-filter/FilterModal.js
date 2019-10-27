@@ -30,7 +30,7 @@ const FilterModal = () => {
 
   useEffect(() => {
     setCheckedFilters()
-    setDisplayedFilters()
+    setDisplayedRowsAndColumns()
   }, [allRows, allHeaders])
 
   const onClose = () => {
@@ -38,7 +38,7 @@ const FilterModal = () => {
   }
 
   // Filters display of columns or rows based on search input
-  //Argument of tab is passed in place of activeTab to avoid aysnc issues on tab switch
+  // Argument of tab is passed in place of activeTab to avoid aysnc issues on tab switch
   const handleSearchFilter = (text, tab) => {
     tab === 'Rows'
       ? setDisplayedRows(
@@ -58,15 +58,21 @@ const FilterModal = () => {
         )
   }
 
-  const setDisplayedFilters = () => {
+  // Sets all rows and columns as displayed
+  // Displayed determines whether the row/column is visible on the modal
+  const setDisplayedRowsAndColumns = () => {
     setDisplayedRows(allRows.map((row) => row[0][0]))
     setDisplayedColumns(allHeaders.slice(1).map((header) => header.name))
   }
 
+  // Sets all rows as checked
+  // Checked determines whether the row is to be filtered out by the custom-filter
   const checkAllRows = () => {
     setCheckedRows(allRows.map((row) => row[0][0]))
   }
 
+  // Sets all columns as checked
+  // Checked determines whether the column is to be filtered out by the custom-filter
   const checkAllColumns = () => {
     setCheckedColumns(allHeaders.slice(1).map((header) => header.name))
   }
@@ -76,6 +82,7 @@ const FilterModal = () => {
     checkAllColumns()
   }
 
+  // Sets all rows or columns to unchecked depending on which tab the user is on
   const handleDeselectAll = () => {
     if (activeTab === 'Rows') {
       setCheckedRows([])
@@ -84,6 +91,7 @@ const FilterModal = () => {
     }
   }
 
+  // Sets all rows or columns to checked depending on which tab the user is on
   const handleSelectAll = () => {
     if (activeTab === 'Rows') {
       checkAllRows()
@@ -92,7 +100,8 @@ const FilterModal = () => {
     }
   }
 
-  const handleApply = () => {
+  // Helper f(n) for applyFilters()
+  const applyHeaderFilters = () => {
     setFilteredHeaders(
       allHeaders.filter(
         (h) =>
@@ -100,6 +109,10 @@ const FilterModal = () => {
           (checkedColumns.includes(h.name) && displayedColumns.includes(h.name))
       )
     )
+  }
+
+  // Helper f(n) for applyFilters()
+  const applyRowFilters = () => {
     setFilteredRows(
       sortRows(
         uniq([
@@ -121,8 +134,17 @@ const FilterModal = () => {
         })
       )
     )
-    // let divider = document.getElementsByClassName('divider')[0]
-    // divider.style.setProperty('--column-count', allHeaders.length)
+  }
+
+  // Filters based on all checked rows, columns, and collections
+  // setFilteredHeaders modifies the table to only display columns (eg. frameworks) checked in the custom-filter
+  // The first column is always present and cannot be filtered
+  // setFilteredRows modifies the table to display rows that are either checked or part of a checked collection (dropdown filter)
+  // Filters the result of user input, to remove unused cell data (based on checked colums)
+  // Sorts by collections and adds divider when at least one category is present
+  const applyFilters = () => {
+    applyHeaderFilters()
+    applyRowFilters()
   }
 
   const handleResetFilters = () => {
@@ -173,7 +195,7 @@ const FilterModal = () => {
         checkedRows={checkedRows}
         checkedColumns={checkedColumns}
         handleResetFilters={handleResetFilters}
-        handleApply={handleApply}
+        applyFilters={applyFilters}
       />
     </div>
   ) : null

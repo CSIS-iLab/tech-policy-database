@@ -4,6 +4,7 @@ import Icon from '../../site-config/Icon'
 const FilterTabs = (props) => {
   const { setActiveTab, handleSearchFilter } = props
 
+  // Switches the activeTab and calls the searchFilter based on current search term
   const handleTabSwitch = (tab) => {
     setActiveTab(tab)
     handleSearchFilter(document.getElementById('search-input').value, tab)
