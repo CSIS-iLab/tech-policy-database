@@ -14,16 +14,19 @@ const MainContainer = () => {
 
   // Adding key-value pair of Categories to tableData JSON to create top-left cell
   const formatHeaders = () => {
-    return [{ 'name': 'Categories' }, ...tableData]
+    return [{ name: 'Categories' }, ...tableData]
   }
 
   // Combines JSON objects to format data to create datatable
   const formatRows = () => {
-    let rows = Object.keys(categories).map(catName => {
-      return formatHeaders().map(header => {
+    let rows = Object.keys(categories).map((catName) => {
+      return formatHeaders().map((header) => {
         if (header.categories !== undefined) {
-          header.categories[catName]['default_lang'] = categories[catName]['default_lang']
-          header.categories[catName]['category'] = categories[catName]['category']
+          header.categories[catName]['default_lang'] =
+            categories[catName]['default_lang']
+          header.categories[catName]['category'] =
+            categories[catName]['category']
+          header.categories[catName]['row_title'] = categories[catName]['title']
           return [header.name, header.categories[catName]]
         } else {
           return [categories[catName].title, categories[catName].description]
@@ -37,12 +40,12 @@ const MainContainer = () => {
   const sortRows = (rows) => {
     return getCollections().reduce((acc, collection) => {
       acc.push([collection])
-      acc = [...acc, ...rows.filter(row => row[1][1].category === collection)]
+      acc = [...acc, ...rows.filter((row) => row[1][1].category === collection)]
       return acc
     }, [])
   }
 
-  // Formats Collection names to be displayed  
+  // Formats Collection names to be displayed
   const getCollections = () => {
     return Object.keys(collections)
       .map((name) => collections[name][name])
@@ -55,14 +58,17 @@ const MainContainer = () => {
     context.setFilteredHeaders(formatHeaders())
     context.setFilteredRows(sortRows(formatRows()))
     context.setCollections(getCollections())
-    // eslint-disable-next-line 
+    // eslint-disable-next-line
   }, [])
 
   return (
     <div className="international-container">
       <Header />
       <Description />
-      <TableContainer headers={context.filteredHeaders} rows={context.filteredRows} />
+      <TableContainer
+        headers={context.filteredHeaders}
+        rows={context.filteredRows}
+      />
       <ModalContainer />
       <Footer />
     </div>

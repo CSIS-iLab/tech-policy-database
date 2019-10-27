@@ -1,11 +1,17 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 import './Modal.css'
+import ModalHeader from './ModalHeader'
+import ModalFooter from './ModalFooter'
 
 const LangModal = () => {
-  const { setLangModalStatus, langModalStatus, activeOriginalLang, docLink } = useContext(GlobalContext)
+  const { setLangModalStatus, langModalStatus, langModalData } = useContext(
+    GlobalContext
+  )
 
-  const handleClick = () => {
+  const { link, original_lang, framework, category } = langModalData
+
+  const onClose = () => {
     setLangModalStatus(false)
   }
 
@@ -15,26 +21,16 @@ const LangModal = () => {
 
   return langModalStatus ? (
     <div className="modal">
-      <div className="modal__header">
-        Original Language
-        <span className="modal__close" onClick={handleClick}>
-          X
-        </span>
+      <ModalHeader title={'Original Language'} onClose={onClose} />
+      <div className="modal__content">
+        <div>FRAMEWORK</div>
+        <div>{framework}</div>
+        <div>CATEGORY</div>
+        <div>{category}</div>
+        <div className="divider2" />
+        <div dangerouslySetInnerHTML={createMarkup(original_lang)} />
       </div>
-      <div
-        className="modal__content"
-        dangerouslySetInnerHTML={createMarkup(activeOriginalLang)}
-      ></div>
-      <div className="modal__footer">
-        <a
-          href={docLink}
-          alt="original document"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Original Document
-        </a>
-      </div>
+      <ModalFooter link={link} />
     </div>
   ) : null
 }
