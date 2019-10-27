@@ -1,11 +1,11 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../../context/GlobalContext'
+import { uniq } from 'lodash'
 import ModalHeader from '../ModalHeader'
-import FilterSearch from './FilterSearch'
+import FilterPanel from './FilterPanel'
 import FilterContent from './FilterContent'
 import FilterSelect from './FilterSelect'
 import '../Modal.css'
-import Icon from '../../site-config/Icon'
 import FilterTabs from './FilterTabs'
 import FilterFooter from './FilterFooter'
 
@@ -65,7 +65,7 @@ const FilterModal = () => {
     )
     setFilteredRows(
       sortRows(
-        [
+        uniq([
           ...allRows.filter(
             (row) =>
               checkedRows.includes(row[0][0]) &&
@@ -74,7 +74,7 @@ const FilterModal = () => {
           ...allRows.filter((row) =>
             checkedCollections.includes(row[1][1].category)
           )
-        ].map((row) => {
+        ]).map((row) => {
           return row.filter(
             (r) =>
               (checkedColumns.includes(r[0]) &&
@@ -147,7 +147,7 @@ const FilterModal = () => {
           setActiveTab={setActiveTab}
           handleSearchFilter={handleSearchFilter}
         />
-        <FilterSearch
+        <FilterPanel
           handleSearchFilter={handleSearchFilter}
           maxColumns={allHeaders.slice(1).length}
           collections={collections}
