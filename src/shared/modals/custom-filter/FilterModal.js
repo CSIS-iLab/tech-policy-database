@@ -24,12 +24,42 @@ const FilterModal = () => {
     setFilteredRows,
     allHeaders,
     setFilteredHeaders,
-    collections
+    collections,
+    sortRows
   } = useContext(GlobalContext)
+
+  useEffect(() => {
+    setCheckedFilters()
+    setDisplayedFilters()
+  }, [allRows, allHeaders])
 
   // Exits custom filter modal
   const onClose = () => {
     setFilterModalStatus(false)
+  }
+
+  const handleSearchFilter = (text, tab) => {
+    tab === 'Rows'
+      ? setDisplayedRows(
+          allRows
+            .filter((row) =>
+              row[0][0].toLowerCase().includes(text.toLowerCase())
+            )
+            .map((row) => row[0][0])
+        )
+      : setDisplayedColumns(
+          allHeaders
+            .slice(1)
+            .filter((header) =>
+              header.name.toLowerCase().includes(text.toLowerCase())
+            )
+            .map((header) => header.name)
+        )
+  }
+
+  const setDisplayedFilters = () => {
+    setDisplayedRows(allRows.map((row) => row[0][0]))
+    setDisplayedColumns(allHeaders.slice(1).map((header) => header.name))
   }
 
   const checkAllRows = () => {
@@ -45,15 +75,21 @@ const FilterModal = () => {
     checkAllColumns()
   }
 
-  const setDisplayedFilters = () => {
-    setDisplayedRows(allRows.map((row) => row[0][0]))
-    setDisplayedColumns(allHeaders.slice(1).map((header) => header.name))
+  const handleDeselectAll = () => {
+    if (activeTab === 'Rows') {
+      setCheckedRows([])
+    } else if (activeTab === 'Columns') {
+      setCheckedColumns([])
+    }
   }
 
-  useEffect(() => {
-    setCheckedFilters()
-    setDisplayedFilters()
-  }, [allRows, allHeaders])
+  const handleSelectAll = () => {
+    if (activeTab === 'Rows') {
+      checkAllRows()
+    } else if (activeTab === 'Columns') {
+      checkAllColumns()
+    }
+  }
 
   const handleApply = () => {
     setFilteredHeaders(
@@ -88,55 +124,9 @@ const FilterModal = () => {
     // divider.style.setProperty('--column-count', allHeaders.length)
   }
 
-  // Sorts by collections and adds divider when at least one category is present
-  const sortRows = (rows) => {
-    return collections.reduce((acc, collection) => {
-      if (rows.find((r) => r[1][1].category === collection) !== undefined) {
-        acc.push([collection])
-      }
-      acc = [...acc, ...rows.filter((row) => row[1][1].category === collection)]
-      return acc
-    }, [])
-  }
-
   const handleResetFilters = () => {
     setCheckedRows([])
     setCheckedColumns([])
-  }
-
-  const handleSearchFilter = (text, tab) => {
-    tab === 'Rows'
-      ? setDisplayedRows(
-          allRows
-            .filter((row) =>
-              row[0][0].toLowerCase().includes(text.toLowerCase())
-            )
-            .map((row) => row[0][0])
-        )
-      : setDisplayedColumns(
-          allHeaders
-            .slice(1)
-            .filter((header) =>
-              header.name.toLowerCase().includes(text.toLowerCase())
-            )
-            .map((header) => header.name)
-        )
-  }
-
-  const handleDeselectAll = () => {
-    if (activeTab === 'Rows') {
-      setCheckedRows([])
-    } else if (activeTab === 'Columns') {
-      setCheckedColumns([])
-    }
-  }
-
-  const handleSelectAll = () => {
-    if (activeTab === 'Rows') {
-      checkAllRows()
-    } else if (activeTab === 'Columns') {
-      checkAllColumns()
-    }
   }
 
   return filterModalStatus ? (

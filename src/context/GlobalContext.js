@@ -16,22 +16,48 @@ export const GlobalContextProvider = (props) => {
   const [collections, setCollections] = useState([])
   const [filterModalStatus, setFilterModalStatus] = useState(false)
 
-  const contextValue = {
-    activeOriginalLang, setActiveOriginalLang,
-    allHeaders, setAllHeaders,
-    allRows, setAllRows,
-    collections, setCollections,
-    curatedCat, setCuratedCat,
-    docLink, setDocLink,
-    filteredHeaders, setFilteredHeaders,
-    filteredRows, setFilteredRows,
-    filterModalStatus, setFilterModalStatus,
-    filterSubject, setFilterSubject,
-    langModalStatus, setLangModalStatus,
-    searchText, setSearchText
+  // Sorts by collections and adds divider when at least one category is present
+  const sortRows = (rows) => {
+    return collections.reduce((acc, collection) => {
+      if (rows.find((r) => r[1][1].category === collection) !== undefined) {
+        acc.push([collection])
+      }
+      acc = [...acc, ...rows.filter((row) => row[1][1].category === collection)]
+      return acc
+    }, [])
   }
 
-  return <GlobalContext.Provider value={contextValue}>{props.children}</GlobalContext.Provider>
+  const contextValue = {
+    sortRows,
+    activeOriginalLang,
+    setActiveOriginalLang,
+    allHeaders,
+    setAllHeaders,
+    allRows,
+    setAllRows,
+    collections,
+    setCollections,
+    curatedCat,
+    setCuratedCat,
+    docLink,
+    setDocLink,
+    filteredHeaders,
+    setFilteredHeaders,
+    filteredRows,
+    setFilteredRows,
+    filterModalStatus,
+    setFilterModalStatus,
+    filterSubject,
+    setFilterSubject,
+    langModalStatus,
+    setLangModalStatus,
+    searchText,
+    setSearchText
+  }
 
+  return (
+    <GlobalContext.Provider value={contextValue}>
+      {props.children}
+    </GlobalContext.Provider>
+  )
 }
-

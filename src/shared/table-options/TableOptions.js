@@ -17,7 +17,8 @@ const TableOptions = () => {
     curatedCat,
     setCuratedCat,
     collections,
-    setFilterModalStatus
+    setFilterModalStatus,
+    sortRows
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -57,17 +58,6 @@ const TableOptions = () => {
     return rows.filter((row) => {
       return curated === row[1][1].category || curated === ''
     })
-  }
-
-  // Sorts by collections and adds divider when at least one category is present
-  const sortRows = (rows) => {
-    return collections.reduce((acc, collection) => {
-      if (rows.find((r) => r[1][1].category === collection) !== undefined) {
-        acc.push([collection])
-      }
-      acc = [...acc, ...rows.filter((row) => row[1][1].category === collection)]
-      return acc
-    }, [])
   }
 
   // Serves as the master filter that combines filterRows and filterByCurated
