@@ -33,11 +33,12 @@ const FilterModal = () => {
     setDisplayedFilters()
   }, [allRows, allHeaders])
 
-  // Exits custom filter modal
   const onClose = () => {
     setFilterModalStatus(false)
   }
 
+  // Filters display of columns or rows based on search input
+  //Argument of tab is passed in place of activeTab to avoid aysnc issues on tab switch
   const handleSearchFilter = (text, tab) => {
     tab === 'Rows'
       ? setDisplayedRows(
