@@ -1,9 +1,8 @@
 import React from 'react'
 import LangModal from './LangModal'
-import FilterModal from './FilterModal'
+import FilterModal from './custom-filter/FilterModal'
 
 const ModalContainer = () => {
-
   return (
     <React.Fragment>
       <LangModal />

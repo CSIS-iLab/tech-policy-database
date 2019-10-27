@@ -1,6 +1,7 @@
 import React from 'react'
+import Icon from '../../site-config/Icon'
 
-const FilterFooter = () => {
+const FilterFooter = (props) => {
   const { checkedRows, checkedColumns, handleResetFilters, handleApply } = props
 
   const renderApply = () => {

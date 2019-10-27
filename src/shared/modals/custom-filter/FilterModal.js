@@ -32,9 +32,17 @@ const FilterModal = () => {
     setFilterModalStatus(false)
   }
 
-  const setCheckedFilters = () => {
+  const checkAllRows = () => {
     setCheckedRows(allRows.map((row) => row[0][0]))
+  }
+
+  const checkAllColumns = () => {
     setCheckedColumns(allHeaders.slice(1).map((header) => header.name))
+  }
+
+  const setCheckedFilters = () => {
+    checkAllRows()
+    checkAllColumns()
   }
 
   const setDisplayedFilters = () => {
@@ -50,19 +58,28 @@ const FilterModal = () => {
   const handleApply = () => {
     setFilteredHeaders(
       allHeaders.filter(
-        (h) => h.name === 'Categories' || checkedColumns.includes(h.name)
+        (h) =>
+          h.name === 'Categories' ||
+          (checkedColumns.includes(h.name) && displayedColumns.includes(h.name))
       )
     )
     setFilteredRows(
       sortRows(
         [
-          ...allRows.filter((row) => checkedRows.includes(row[0][0])),
+          ...allRows.filter(
+            (row) =>
+              checkedRows.includes(row[0][0]) &&
+              displayedRows.includes(row[0][0])
+          ),
           ...allRows.filter((row) =>
             checkedCollections.includes(row[1][1].category)
           )
         ].map((row) => {
           return row.filter(
-            (r) => checkedColumns.includes(r[0]) || typeof r[1] === 'string'
+            (r) =>
+              (checkedColumns.includes(r[0]) &&
+                displayedColumns.includes(r[0])) ||
+              typeof r[1] === 'string'
           )
         })
       )
@@ -106,6 +123,22 @@ const FilterModal = () => {
         )
   }
 
+  const handleDeselectAll = () => {
+    if (activeTab === 'Rows') {
+      setCheckedRows([])
+    } else if (activeTab === 'Columns') {
+      setCheckedColumns([])
+    }
+  }
+
+  const handleSelectAll = () => {
+    if (activeTab === 'Rows') {
+      checkAllRows()
+    } else if (activeTab === 'Columns') {
+      checkAllColumns()
+    }
+  }
+
   return filterModalStatus ? (
     <div className="modal">
       <ModalHeader title={'Filter'} onClose={onClose} />
@@ -122,14 +155,17 @@ const FilterModal = () => {
           activeTab={activeTab}
           displayedColumns={displayedColumns}
           displayedRows={displayedRows}
-          checkedCollections={checkedColumns}
+          checkedCollections={checkedCollections}
           setCheckedCollections={setCheckedCollections}
         />
         <FilterSelect
-          setCheckedFilters={setCheckedFilters}
           checkedRows={checkedRows}
           checkedColumns={checkedColumns}
           activeTab={activeTab}
+          handleSelectAll={handleSelectAll}
+          handleDeselectAll={handleDeselectAll}
+          maxRows={allRows.length}
+          maxColumns={allHeaders.slice(1).length}
         />
 
         <FilterContent
