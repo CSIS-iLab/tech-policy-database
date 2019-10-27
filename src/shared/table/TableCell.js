@@ -6,7 +6,6 @@ const TableCell = (props) => {
     allHeaders,
     allRows,
     setLangModalStatus,
-    setActiveOriginalLang,
     setLangModalData
   } = useContext(GlobalContext)
 
