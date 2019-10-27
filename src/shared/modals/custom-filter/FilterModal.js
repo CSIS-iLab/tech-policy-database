@@ -1,10 +1,13 @@
 import React, { useState, useContext, useEffect } from 'react'
-import { GlobalContext } from '../../context/GlobalContext'
+import { GlobalContext } from '../../../context/GlobalContext'
+import ModalHeader from '../ModalHeader'
 import FilterSearch from './FilterSearch'
 import FilterContent from './FilterContent'
 import FilterSelect from './FilterSelect'
-import './Modal.css'
-import Icon from '../site-config/Icon'
+import '../Modal.css'
+import Icon from '../../site-config/Icon'
+import FilterTabs from './FilterTabs'
+import FilterFooter from './FilterFooter'
 
 const FilterModal = () => {
   const [activeTab, setActiveTab] = useState('Rows')
@@ -24,21 +27,14 @@ const FilterModal = () => {
     collections
   } = useContext(GlobalContext)
 
-  const handleClick = () => {
+  // Exits custom filter modal
+  const onClose = () => {
     setFilterModalStatus(false)
   }
 
-  const checkAllRows = () => {
-    setCheckedRows(allRows.map((row) => row[0][0]))
-  }
-
-  const checkAllColumns = () => {
-    setCheckedColumns(allHeaders.slice(1).map((header) => header.name))
-  }
-
   const setCheckedFilters = () => {
-    checkAllRows()
-    checkAllColumns()
+    setCheckedRows(allRows.map((row) => row[0][0]))
+    setCheckedColumns(allHeaders.slice(1).map((header) => header.name))
   }
 
   const setDisplayedFilters = () => {
@@ -54,28 +50,19 @@ const FilterModal = () => {
   const handleApply = () => {
     setFilteredHeaders(
       allHeaders.filter(
-        (h) =>
-          h.name === 'Categories' ||
-          (checkedColumns.includes(h.name) && displayedColumns.includes(h.name))
+        (h) => h.name === 'Categories' || checkedColumns.includes(h.name)
       )
     )
     setFilteredRows(
       sortRows(
         [
-          ...allRows.filter(
-            (row) =>
-              checkedRows.includes(row[0][0]) &&
-              displayedRows.includes(row[0][0])
-          ),
+          ...allRows.filter((row) => checkedRows.includes(row[0][0])),
           ...allRows.filter((row) =>
             checkedCollections.includes(row[1][1].category)
           )
         ].map((row) => {
           return row.filter(
-            (r) =>
-              (checkedColumns.includes(r[0]) &&
-                displayedColumns.includes(r[0])) ||
-              typeof r[1] === 'string'
+            (r) => checkedColumns.includes(r[0]) || typeof r[1] === 'string'
           )
         })
       )
@@ -100,11 +87,6 @@ const FilterModal = () => {
     setCheckedColumns([])
   }
 
-  const handleTabSwitch = (tab) => {
-    setActiveTab(tab)
-    handleSearchFilter(document.getElementById('search-input').value, tab)
-  }
-
   const handleSearchFilter = (text, tab) => {
     tab === 'Rows'
       ? setDisplayedRows(
@@ -124,57 +106,30 @@ const FilterModal = () => {
         )
   }
 
-  const handleDeselectAll = () => {
-    if (activeTab === 'Rows') {
-      setCheckedRows([])
-    } else if (activeTab === 'Columns') {
-      setCheckedColumns([])
-    }
-  }
-
-  const handleSelectAll = () => {
-    if (activeTab === 'Rows') {
-      checkAllRows()
-    } else if (activeTab === 'Columns') {
-      checkAllColumns()
-    }
-  }
-
   return filterModalStatus ? (
     <div className="modal">
-      <div className="modal__header">
-        Filter
-        <Icon onClick={handleClick} icon={'close'}></Icon>
-      </div>
+      <ModalHeader title={'Filter'} onClose={onClose} />
       <div className="modal__content">
-        <div>
-          <div onClick={() => handleTabSwitch('Columns')}>
-            <Icon onClick={null} icon={'columns'}></Icon>
-            <span>Columns</span>
-          </div>
-          <div onClick={() => handleTabSwitch('Rows')}>
-            <Icon onClick={null} icon={'rows'}></Icon>
-            <span>Rows</span>
-          </div>
-        </div>
-        <FilterSearch
-          activeTab={activeTab}
+        <FilterTabs
+          setActiveTab={setActiveTab}
           handleSearchFilter={handleSearchFilter}
-          displayedRows={displayedRows}
-          displayedColumns={displayedColumns}
-          maxRows={allRows.length}
+        />
+        <FilterSearch
+          handleSearchFilter={handleSearchFilter}
           maxColumns={allHeaders.slice(1).length}
           collections={collections}
-          checkedCollections={checkedCollections}
-          setCheckedCollections={setCheckedCollections}
           allRows={allRows}
+          activeTab={activeTab}
+          displayedColumns={displayedColumns}
+          displayedRows={displayedRows}
+          checkedCollections={checkedColumns}
+          setCheckedCollections={setCheckedCollections}
         />
         <FilterSelect
-          handleSelectAll={handleSelectAll}
+          setCheckedFilters={setCheckedFilters}
           checkedRows={checkedRows}
           checkedColumns={checkedColumns}
           activeTab={activeTab}
-          handleDeselectAll={handleDeselectAll}
         />
 
         <FilterContent
@@ -187,27 +142,12 @@ const FilterModal = () => {
           setCheckedColumns={setCheckedColumns}
         />
       </div>
-      <div className="modal__footer">
-        <div onClick={handleResetFilters}>
-          <Icon onClick={null} icon={'reset'}></Icon>
-          <span>Reset all filters</span>
-        </div>
-        {(checkedRows.length > 0 && checkedColumns.length) > 0 ? (
-          <button onClick={handleApply}>Apply</button>
-        ) : (
-          <div>Apply</div>
-        )}
-        {checkedRows.length === 0 ? (
-          <div>
-            <div>Please select at least one row</div>
-          </div>
-        ) : null}
-        {checkedColumns.length === 0 ? (
-          <div>
-            <div>Please select at least one column</div>
-          </div>
-        ) : null}
-      </div>
+      <FilterFooter
+        checkedRows={checkedRows}
+        checkedColumns={checkedColumns}
+        handleResetFilters={handleResetFilters}
+        handleApply={handleApply}
+      />
     </div>
   ) : null
 }

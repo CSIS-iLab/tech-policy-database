@@ -1,13 +1,13 @@
 import React from 'react'
-import Icon from '../site-config/Icon'
+import Icon from '../../site-config/Icon'
 
 const FilterSelect = (props) => {
   const {
+    setCheckedFilters,
     checkedRows,
     checkedColumns,
     activeTab,
-    handleDeselectAll,
-    handleSelectAll
+    deselectAll
   } = props
 
   const selectTab = () => {
@@ -16,14 +16,14 @@ const FilterSelect = (props) => {
 
   const renderIcon = () => {
     if (selectTab().length === 0) {
-      return <Icon onClick={handleSelectAll} icon={'check_empty'} />
+      return <Icon onClick={setCheckedFilters} icon={'check_empty'} />
     } else if (
       (selectTab().length === 29 && activeTab === 'Rows') ||
       (selectTab().length === 10 && activeTab === 'Columns')
     ) {
-      return <Icon onClick={handleDeselectAll} icon={'check_filled'} />
+      return <Icon onClick={deselectAll} icon={'check_filled'} />
     } else {
-      return <Icon onClick={handleDeselectAll} icon={'check_dash'} />
+      return <Icon onClick={deselectAll} icon={'check_dash'} />
     }
   }
 
