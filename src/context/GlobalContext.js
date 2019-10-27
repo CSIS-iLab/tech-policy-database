@@ -7,16 +7,15 @@ export const GlobalContextProvider = (props) => {
   const [allHeaders, setAllHeaders] = useState([])
   const [filteredRows, setFilteredRows] = useState([])
   const [filteredHeaders, setFilteredHeaders] = useState([])
-  const [activeOriginalLang, setActiveOriginalLang] = useState('Original Lang')
   const [langModalStatus, setLangModalStatus] = useState(false)
   const [frameModalStatus, setFrameModalStatus] = useState(false)
   const [activeFramework, setActiveFramework] = useState('')
-  const [docLink, setDocLink] = useState('')
   const [searchText, setSearchText] = useState('')
   const [filterSubject, setFilterSubject] = useState('categories')
   const [curatedCat, setCuratedCat] = useState('')
   const [collections, setCollections] = useState([])
   const [filterModalStatus, setFilterModalStatus] = useState(false)
+  const [langModalData, setLangModalData] = useState({})
 
   // Sorts by collections and adds divider when at least one category is present
   const sortRows = (rows) => {
@@ -31,8 +30,6 @@ export const GlobalContextProvider = (props) => {
 
   const contextValue = {
     sortRows,
-    activeOriginalLang,
-    setActiveOriginalLang,
     allHeaders,
     setAllHeaders,
     allRows,
@@ -41,8 +38,6 @@ export const GlobalContextProvider = (props) => {
     setCollections,
     curatedCat,
     setCuratedCat,
-    docLink,
-    setDocLink,
     filteredHeaders,
     setFilteredHeaders,
     filteredRows,
@@ -58,7 +53,9 @@ export const GlobalContextProvider = (props) => {
     frameModalStatus,
     setFrameModalStatus,
     activeFramework,
-    setActiveFramework
+    setActiveFramework,
+    langModalData,
+    setLangModalData
   }
 
   return (

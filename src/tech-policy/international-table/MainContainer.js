@@ -26,6 +26,7 @@ const MainContainer = () => {
             categories[catName]['default_lang']
           header.categories[catName]['category'] =
             categories[catName]['category']
+          header.categories[catName]['row_title'] = categories[catName]['title']
           return [header.name, header.categories[catName]]
         } else {
           return [categories[catName].title, categories[catName].description]
