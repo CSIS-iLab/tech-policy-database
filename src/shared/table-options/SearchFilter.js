@@ -6,18 +6,17 @@ const SearchFilter = (props) => {
     searchText,
     setSearchText,
     filterSubject,
-    setFilterSubject,
-    curatedCat
+    setFilterSubject
   } = props
 
   const handleSearchText = (e) => {
     setSearchText(e.target.value)
-    handleFilter(e.target.value, filterSubject, curatedCat)
+    handleFilter(e.target.value, filterSubject)
   }
 
   const handleFilterSubject = (e) => {
     setFilterSubject(e.target.value)
-    handleFilter(searchText, e.target.value, curatedCat)
+    handleFilter(searchText, e.target.value)
   }
 
   return (
