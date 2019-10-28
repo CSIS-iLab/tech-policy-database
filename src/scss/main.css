@@ -1,6 +1,4 @@
 /* Import Styles */
-@use 'normalize';
-@use 'table';
-@use 'footer';
-@use 'header';
+@use "components/table";
+@use 'vendors/normalize';
 /*# sourceMappingURL=main.css.map */

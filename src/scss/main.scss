@@ -1,7 +1,6 @@
-@charset "utf-8";
+// @charset "utf-8";
 
 /* Import Styles */
-@use 'normalize';
-@use 'table';
-@use 'footer';
-@use 'header';
+// @use 'normalize';
+@use "components/table";
+@use 'vendors/normalize';
