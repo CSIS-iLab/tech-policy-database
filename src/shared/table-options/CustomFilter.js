@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from '../site-config/Icon'
 
 const CustomFilter = (props) => {
   const handleClick = () => {
@@ -7,7 +8,7 @@ const CustomFilter = (props) => {
 
   return (
     <div>
-      <button onClick={handleClick}>Filter</button>
+      <button onClick={handleClick}><Icon onClick={null} icon={'filter2'}/>Filter</button>
     </div>
   )
 }
