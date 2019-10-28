@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from '../site-config/Icon'
 
 const SearchFilter = (props) => {
   const {
@@ -21,11 +22,12 @@ const SearchFilter = (props) => {
 
   return (
     <div className="table__search">
+      <Icon onClick={null} icon={'search'}/>
       <input
         type="text"
         onChange={handleSearchText}
         placeholder="Search"
-      ></input>
+      />
       <select onChange={handleFilterSubject}>
         <option value="categories">Categories</option>
         <option value="abbreviated_lang">Abbreviated Language</option>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Icon from '../site-config/Icon'
 
 const ScrollBar = () => {
   const [scrollPos, setScrollPos] = useState(0)
@@ -32,8 +33,8 @@ const ScrollBar = () => {
 
   return (
     <div>
-      <button onClick={scrollLeft}>{'<'}</button>
-      <button onClick={scrollRight}>{'>'}</button>
+      <button onClick={scrollLeft}><Icon onClick={null} icon={'arrow_chev_left'}/></button>
+      <button onClick={scrollRight}><Icon onClick={null} icon={'arrow_chev_right'}/></button>
     </div>
   )
 }
