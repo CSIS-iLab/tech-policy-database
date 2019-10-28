@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ReactComponent as Logo } from '../../assets/csis_logo_white_long.svg'
 import { GlobalContext } from '../../context/GlobalContext'
+import Icon from '../site-config/Icon'
 
 const Footer = () => {
   const { siteInfo } = useContext(GlobalContext)
@@ -69,7 +70,14 @@ const Footer = () => {
           <div>1616 Rhode Island Avenue, NW Washington, DC 20036</div>
         </div>
       </div>
-      <a name="Methodology" href="#" alt="Methodology redirect"></a>Footer
+      <a name="Methodology" href="#" alt="Methodology redirect"></a>
+      <button
+            aria-label="back to top"
+            className="back-to-top sticky"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <Icon onClick={null} icon={'arrow_up'}/>
+      </button>
     </div>
   )
 }
