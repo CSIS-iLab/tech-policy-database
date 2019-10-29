@@ -1,26 +1,38 @@
-@use 'variables';
-@use 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 /*====================================
 =            Placeholders            =
 ====================================*/
 
-%header__title {
-  font-family: $font__expo;
-  font-weight: 600;
-  line-height: 1.04;
-  text-align: center;
-  color: $color__white;
-  @include font-size(54px);
-}
 
-%header__subtitle {
-  font-family: $font__expo;
-  font-weight: 600;
-  line-height: 1;
-  color: $color__white;
-  @include font-size(34px);
-}
+
+// if unique (header__title) then delete from placeholder and implement in components under a class. For example cell__na {code here}. 
+
+// Make a body component under layouts and inside of it define global styles especially font-family: $font__roboto
+
+// go through and check body__text-l , -m, -s and see if they apply to different styles or if they appy to the same block of text just at different sizes. 
+
+// if they apply to the same element, then delete the others and create a media query to handle other styles
+
+// button-secondary and caption are the same so combine them and give a better name
+
+// %header__title {
+//   font-family: $font__expo;
+//   font-weight: 600;
+//   line-height: 1.04;
+//   text-align: center;
+//   color: $color__white;
+//   @include font-size(54px);
+// }
+
+// %header__subtitle {
+//   font-family: $font__expo;
+//   font-weight: 600;
+//   line-height: 1;
+//   color: $color__white;
+//   @include font-size(34px);
+// }
 
 // will create media query to resize font for mobile 22px
 %modal__text {
@@ -62,12 +74,12 @@
   @include font-size(18px);
 }
 
-%body__text-na {
-  font-family: $font__roboto;
-  font-style: italic;
-  line-height: 1.41;
-  @include font-size(16px);
-}
+// %body__text-na {
+//   font-family: $font__roboto;
+//   font-style: italic;
+//   line-height: 1.41;
+//   @include font-size(16px);
+// }
 
 %input {
   font-family: $font__roboto;
@@ -100,10 +112,6 @@
 
 %caption {
   font-family: $font__roboto;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
-  letter-spacing: normal;
   @include font-size(13px);
 }
