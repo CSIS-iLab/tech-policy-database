@@ -1,6 +1,10 @@
 @use 'variables' as *;
 @use 'sass:map';
 
+/*=================================
+=            Mixins            =
+=================================*/
+
 // Breakpoints
 // $break: Breakpoint to use
 // $dir: 'min-width' or 'max-width'
@@ -35,4 +39,10 @@
       @content;
     }
   }
+}
+
+// Rem output with px fallback
+@mixin font-size($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculate-rem($size);
 }
