@@ -1,2 +1,109 @@
 @use 'variables';
 @use 'mixins';
+
+/*====================================
+=            Placeholders            =
+====================================*/
+
+%header__title {
+  font-family: $font__expo;
+  font-weight: 600;
+  line-height: 1.04;
+  text-align: center;
+  color: $color__white;
+  @include font-size(54px);
+}
+
+%header__subtitle {
+  font-family: $font__expo;
+  font-weight: 600;
+  line-height: 1;
+  color: $color__white;
+  @include font-size(34px);
+}
+
+// will create media query to resize font for mobile 22px
+%modal__text {
+  font-family: $font__roboto;
+  font-weight: 500;
+  line-height: 1;
+  color: $color__gray;
+  @include font-size(24px);
+}
+
+%table__header {
+  font-family: $font__roboto;
+  font-weight: 500;
+  line-height: 1.2;
+  @include font-size(18px);
+}
+
+%body__text-l {
+  font-family: $font__roboto;
+  line-height: 1.53;
+  @include font-size(18px);
+}
+
+%body__text-m {
+  font-family: $font__roboto;
+  line-height: 1.41;
+  @include font-size(16px);
+}
+
+%body__text-s {
+  font-family: $font__roboto;
+  line-height: 1.41;
+  @include font-size(14px);
+}
+
+%body__text-list {
+  font-family: $font__roboto;
+  line-height: 1.33;
+  @include font-size(18px);
+}
+
+%body__text-na {
+  font-family: $font__roboto;
+  font-style: italic;
+  line-height: 1.41;
+  @include font-size(16px);
+}
+
+%input {
+  font-family: $font__roboto;
+  line-height: 1.25;
+  @include font-size(16px);
+}
+
+%subtitle {
+  font-family: $font__roboto;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  @include font-size(14px);
+}
+
+%button-primary {
+  font-family: $font__roboto;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: 0.2px;
+  text-align: center;
+  @include font-size(14px);
+}
+
+%button-secondary {
+  font-family: $font__roboto;
+  line-height: 1.2;
+  @include font-size(13px);
+}
+
+%caption {
+  font-family: $font__roboto;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  @include font-size(13px);
+}

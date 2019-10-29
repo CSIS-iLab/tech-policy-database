@@ -1,7 +1,4 @@
 /* Import Styles */
 @use 'components/table';
 @use 'vendors/normalize';
-table {
-  font-size: 30px;
-}
 /*# sourceMappingURL=main.css.map */
