@@ -5,35 +5,6 @@
 =            Placeholders            =
 ====================================*/
 
-
-
-// if unique (header__title) then delete from placeholder and implement in components under a class. For example cell__na {code here}. 
-
-// Make a body component under layouts and inside of it define global styles especially font-family: $font__roboto
-
-// go through and check body__text-l , -m, -s and see if they apply to different styles or if they appy to the same block of text just at different sizes. 
-
-// if they apply to the same element, then delete the others and create a media query to handle other styles
-
-// button-secondary and caption are the same so combine them and give a better name
-
-// %header__title {
-//   font-family: $font__expo;
-//   font-weight: 600;
-//   line-height: 1.04;
-//   text-align: center;
-//   color: $color__white;
-//   @include font-size(54px);
-// }
-
-// %header__subtitle {
-//   font-family: $font__expo;
-//   font-weight: 600;
-//   line-height: 1;
-//   color: $color__white;
-//   @include font-size(34px);
-// }
-
 // will create media query to resize font for mobile 22px
 %modal__text {
   font-family: $font__roboto;
@@ -68,18 +39,18 @@
   @include font-size(14px);
 }
 
+%body__text-xs {
+  font-family: $font__roboto;
+  line-height: 1.2;
+  @include font-size(13px);
+}
+
+// Potentially unused
 %body__text-list {
   font-family: $font__roboto;
   line-height: 1.33;
   @include font-size(18px);
 }
-
-// %body__text-na {
-//   font-family: $font__roboto;
-//   font-style: italic;
-//   line-height: 1.41;
-//   @include font-size(16px);
-// }
 
 %input {
   font-family: $font__roboto;
@@ -95,23 +66,11 @@
   @include font-size(14px);
 }
 
-%button-primary {
+%button {
   font-family: $font__roboto;
   font-weight: 500;
   line-height: 1.37;
   letter-spacing: 0.2px;
   text-align: center;
   @include font-size(14px);
-}
-
-%button-secondary {
-  font-family: $font__roboto;
-  line-height: 1.2;
-  @include font-size(13px);
-}
-
-%caption {
-  font-family: $font__roboto;
-  line-height: 1.2;
-  @include font-size(13px);
 }
