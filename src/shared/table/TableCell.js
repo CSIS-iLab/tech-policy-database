@@ -46,14 +46,14 @@ const TableCell = (props) => {
     } else if (typeof catObj !== 'object') {
       let catDesc = allRows.find((r) => r[0][0] === framework)[0][1]
       return (
-        <td className="table__row-header-cell">
+        <td className="table__cell--first">
           <div className="row-header-cell__category">{framework}</div>
           <div className="row-header-cell__desc">{catDesc}</div>
         </td>
       )
     } else if (catObj.has_data) {
       return (
-        <td className="table__body-cell">
+        <td className="table__cell">
           <div
             className="body-cell__abbrev-lang"
             dangerouslySetInnerHTML={createMarkup(catObj.abbreviated_lang)}
@@ -63,7 +63,7 @@ const TableCell = (props) => {
       )
     } else if (!catObj.has_data) {
       return (
-        <td className="table__body-cell">
+        <td className="table__cell">
           <div className="body-cell__default-lang">{catObj.default_lang}</div>
           {renderOriginalLang()}
         </td>
