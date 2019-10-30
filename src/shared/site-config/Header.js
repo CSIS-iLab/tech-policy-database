@@ -19,37 +19,41 @@ const Header = () => {
 
   return (
     <div className="site-header">
-      <div>
-        <a
-          href="https://www.csis.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          alt="CSIS website"
-        >
-          <Logo
-            className="csis-link__logo"
-            alt="Center for Strategic and International Studies"
-            title="Center for Strategic and International Studies"
-          />
-        </a>
+      <div className="site-header__nav" role="navigation">
+        <div className="site-logo">
+          <a
+            href="https://www.csis.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="CSIS website"
+          >
+            <Logo
+              className="csis-link__logo"
+              alt="Center for Strategic and International Studies"
+              title="Center for Strategic and International Studies"
+            />
+          </a>
+        </div>
         <SocialShare />
       </div>
-      <div>
-        <div>{program_name}</div>
-        <div>{subject}</div>
+      <div className="site-header__info">
+        <div className="info-program">{program_name}</div>
+        <div className="info-subject">{subject}</div>
       </div>
-      <div>
-        <div>{intro_paragraph}</div>
-        <div>
-          <a href="#Methodology">
+      <div className="site-header__intro">
+        <div className="intro-paragraph">{intro_paragraph}</div>
+        <div className="intro-links">
+          <a href="#Methodology" className="intro-links__methodology">
             Methodology
             <Icon onClick={null} icon={'arrow'} />
           </a>
-
-          <span>Download the data</span>
-          <Icon onClick={null} icon={'download'} />
-          <div>{renderDownloadFile().url}</div>
-          <div>{renderDownloadFile().description}</div>
+          <a href={renderDownloadFile().url} className="intro-links__download">
+            Download the data
+            <Icon onClick={null} icon={'download'} />
+          </a>
+          <div className="intro-links__description">
+            {renderDownloadFile().description}
+          </div>
         </div>
       </div>
     </div>

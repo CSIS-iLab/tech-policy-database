@@ -7,59 +7,50 @@
 
 // will create media query to resize font for mobile 22px
 %modal__text {
-  font-family: $font__roboto;
   font-weight: 500;
   line-height: 1;
-  color: $color__gray;
+  color: $color__gray-100;
   @include font-size(24px);
 }
 
 %table__header {
-  font-family: $font__roboto;
   font-weight: 500;
   line-height: 1.2;
   @include font-size(18px);
 }
 
 %body__text-l {
-  font-family: $font__roboto;
   line-height: 1.53;
   @include font-size(18px);
 }
 
 %body__text-m {
-  font-family: $font__roboto;
   line-height: 1.41;
   @include font-size(16px);
 }
 
 %body__text-s {
-  font-family: $font__roboto;
   line-height: 1.41;
   @include font-size(14px);
 }
 
 %body__text-xs {
-  font-family: $font__roboto;
   line-height: 1.2;
   @include font-size(13px);
 }
 
 // Potentially unused
 %body__text-list {
-  font-family: $font__roboto;
   line-height: 1.33;
   @include font-size(18px);
 }
 
 %input {
-  font-family: $font__roboto;
   line-height: 1.25;
   @include font-size(16px);
 }
 
 %subtitle {
-  font-family: $font__roboto;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.5px;
@@ -67,7 +58,6 @@
 }
 
 %button {
-  font-family: $font__roboto;
   font-weight: 500;
   line-height: 1.37;
   letter-spacing: 0.2px;

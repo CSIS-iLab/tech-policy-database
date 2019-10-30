@@ -69,7 +69,7 @@ const MainContainer = () => {
   }, [])
 
   return (
-    <div className="international-container">
+    <div className="site-content">
       <Header />
       <TableContainer
         headers={context.filteredHeaders}
