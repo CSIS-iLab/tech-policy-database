@@ -1,11 +1,19 @@
 @use 'abstracts' as *;
 
 table {
-  background-color: lightblue;
+  // background-color: lightblue;
 }
 
 .table__col-header-cell {
   width: 1400px;
   height: 146px;
   background-color: $color__blue-300;
+}
+
+.table__body-cell {
+  background-color: $color__white;
+}
+
+.table__row-header-cell {
+  background-color: $color__white;
 }
