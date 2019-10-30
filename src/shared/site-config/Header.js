@@ -18,9 +18,9 @@ const Header = () => {
   }
 
   return (
-    <div className="site-header">
-      <div className="site-header__nav" role="navigation">
-        <div className="site-logo">
+    <header className="site-header">
+      <section className="site-header__banner">
+        <div className="site-header__logo">
           <a
             href="https://www.csis.org"
             target="_blank"
@@ -34,29 +34,33 @@ const Header = () => {
             />
           </a>
         </div>
-        <SocialShare />
-      </div>
-      <div className="site-header__info">
-        <div className="info-program">{program_name}</div>
-        <div className="info-subject">{subject}</div>
-      </div>
-      <div className="site-header__intro">
-        <div className="intro-paragraph">{intro_paragraph}</div>
-        <div className="intro-links">
-          <a href="#Methodology" className="intro-links__methodology">
+        <div className="site-header__nav" role="navigation">
+          <SocialShare />
+        </div>
+      </section>
+      <section className="site-header__title">
+        <div className="site-header__program">{program_name}</div>
+        <div className="site-header__subject">{subject}</div>
+      </section>
+      <section className="site-header__info">
+        <div className="site-header__intro">
+          <p>{intro_paragraph}</p>
+        </div>
+        <section className="site-header__actions">
+          <a className="site-header__methodology" href="#Methodology">
             Methodology
             <Icon onClick={null} icon={'arrow'} />
           </a>
-          <a href={renderDownloadFile().url} className="intro-links__download">
+          <a className="site-header__download" href={renderDownloadFile().url}>
             Download the data
             <Icon onClick={null} icon={'download'} />
           </a>
-          <div className="intro-links__description">
+          <p className="site-header__download-desc">
             {renderDownloadFile().description}
-          </div>
-        </div>
-      </div>
-    </div>
+          </p>
+        </section>
+      </section>
+    </header>
   )
 }
 
