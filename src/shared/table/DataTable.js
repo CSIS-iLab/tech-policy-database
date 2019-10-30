@@ -13,7 +13,7 @@ const DataTable = (props) => {
     const { rows } = props
 
     return (
-      <tr key={rowIndex}>
+      <tr key={rowIndex} className="table__row">
         {rows[rowIndex].map((cell, cellIndex) => {
           return (
             <TableCell key={cellIndex} content={rows[rowIndex][cellIndex]} />
@@ -29,7 +29,7 @@ const DataTable = (props) => {
     <div className="table__wrapper">
       <table>
         <thead>
-          <tr>{headers.map(renderHeadingRow)}</tr>
+          <tr className="table__header-row">{headers.map(renderHeadingRow)}</tr>
         </thead>
         <tbody>{rows.map(renderRow)}</tbody>
       </table>
