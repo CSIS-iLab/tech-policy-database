@@ -1,5 +1,45 @@
 @use 'abstracts' as *;
 
 table {
-  background-color: lightblue;
+  font-size: 16px;
+  border-collapse: collapse;
+  margin-right: 35px;
+
+  // background-color: lightblue;
+}
+
+.table {
+
+  &__header-cell {
+    background-color: $color__blue-300;
+    
+    &:first-child {
+      box-shadow: 3px 0px 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
+      border-right: solid 1px #2a72a3;
+    }
+  }
+
+  &__cell {
+    background-color: $color__white;
+
+    &:first-child {
+      box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
+      border-right: solid 1px #dfe3e8;
+      background-color: $color__white;
+    }
+  }
+
+  &__row {
+    border-bottom: solid 1px $color__gray-200;
+  }
+}
+
+.header-cell {
+  &__framework {
+    color: $color__white;
+  }
+
+  &__icon {
+    color: $color__white-175;
+  }
 }

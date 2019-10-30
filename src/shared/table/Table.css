@@ -9,16 +9,16 @@ table {
   --font-size-3: 20px;
 
   /* default table font-size */
-  font-size: 16px;
+  /* font-size: 16px;
   border-collapse: collapse;
-  margin-right: 35px;
+  margin-right: 35px; */
 }
 
-table,
+/* table,
 th,
 td {
   border: 1px solid #c0c4ca;
-}
+} */
 
 .divider {
   /* css variables */
@@ -67,11 +67,11 @@ th:first-child {
   position: sticky;
   left: 0;
   z-index: 1;
-  background-color: white;
+  /* background-color: white; */
 }
 
 thead > * {
-  background: white;
+  /* background: white; */
   /* display block for sticky header */
   display: block;
   position: sticky;
