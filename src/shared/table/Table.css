@@ -14,11 +14,11 @@ table {
   margin-right: 35px;
 }
 
-table,
+/* table,
 th,
 td {
-  /* border: 1px solid #c0c4ca; */
-}
+  border: 1px solid #c0c4ca;
+} */
 
 .divider {
   /* css variables */

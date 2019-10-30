@@ -1,41 +1,43 @@
 @use 'abstracts' as *;
 
-table {
-  // background-color: lightblue;
-}
+// table {
+//   background-color: lightblue;
+// }
 
-.table__header-row {
-  width: 1400px;
-  height: 146px;
-}
+.table {
 
-.table__col-header-cell {
-  width: 1400px;
-  height: 146px;
-  background-color: $color__blue-300;
+  &__header-row {
+    width: 1400px;
+    height: 146px;
+  }
 
-  &:first-child {
+  &__col-header-cell {
+    // width: 1400px;
+    background-color: $color__blue-300;
+
+    &:first-child {
       width: 0;
       height: 146px;
       box-shadow: 3px 0px 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
       border-right: solid 1px #2a72a3;
+    }
   }
-}
 
-.table__body-cell {
-  background-color: $color__white;
-}
-
-.table__row {
-  border-bottom: solid 1px #c0c4ca;
-
-  &-header-cell {
-    box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
-    border: solid 1px #dfe3e8;
+  &__body-cell {
     background-color: $color__white;
   }
-  
-  .divider {
-    background-color: #d2d8db;
+
+  &__row {
+    border-bottom: solid 1px #c0c4ca;
+
+    &-header-cell {
+      box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
+      border-right: solid 1px #dfe3e8;
+      background-color: $color__white;
+    }
+    
+    .divider {
+      background-color: #d2d8db;
+    }
   }
 }
