@@ -3,3 +3,9 @@
 table {
   background-color: lightblue;
 }
+
+.table__col-header-cell {
+  width: 1400px;
+  height: 146px;
+  background-color: $color__blue-300;
+}

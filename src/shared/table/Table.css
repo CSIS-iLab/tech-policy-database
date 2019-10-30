@@ -67,7 +67,7 @@ th:first-child {
   position: sticky;
   left: 0;
   z-index: 1;
-  background-color: white;
+  /* background-color: white; */
 }
 
 thead > * {
