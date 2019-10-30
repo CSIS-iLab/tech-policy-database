@@ -25,7 +25,9 @@ const TableCell = (props) => {
 
   const renderOriginalLang = () => {
     return catObj.original_lang !== '' ? (
-      <div onClick={handleClick}>View Original Language</div>
+      <div className="body-cell__orig-lang" onClick={handleClick}>
+        View Original Language
+      </div>
     ) : null
   }
 
@@ -44,16 +46,16 @@ const TableCell = (props) => {
     } else if (typeof catObj !== 'object') {
       let catDesc = allRows.find((r) => r[0][0] === framework)[0][1]
       return (
-        <td>
-          <div>{framework}</div>
-          <div>{catDesc}</div>
+        <td className="table__row-header-cell">
+          <div className="row-header-cell__category">{framework}</div>
+          <div className="row-header-cell__desc">{catDesc}</div>
         </td>
       )
     } else if (catObj.has_data) {
       return (
-        <td>
+        <td className="table__body-cell">
           <div
-            className="abbrev-cell"
+            className="body-cell__abbrev-lang"
             dangerouslySetInnerHTML={createMarkup(catObj.abbreviated_lang)}
           />
           {renderOriginalLang()}
@@ -61,8 +63,8 @@ const TableCell = (props) => {
       )
     } else if (!catObj.has_data) {
       return (
-        <td>
-          <div className="default-lang-cell">{catObj.default_lang}</div>
+        <td className="table__body-cell">
+          <div className="body-cell__default-lang">{catObj.default_lang}</div>
           {renderOriginalLang()}
         </td>
       )

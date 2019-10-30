@@ -4,35 +4,35 @@
 
 /*----------  Colors  ----------*/
 
-$color__dkblue-light: #00528a;
-$color__dkblue-dark: #003f6c;
-$color__gray-60: rgba(32, 44, 54, 0.6);
-$color__blue-dark: #0065a4;
-$color__blue-light: #3385bd;
-$color__ltblue-dark: #66a5d2;
-$color__ltblue-light: #b4d3e9;
-$color__white-30: rgba(255, 255, 255, 0.3);
-$color__gray-20: rgba(32, 44, 54, 0.2);
 $color__white: #ffffff;
-$color__white-25: rgba(255, 255, 255, 0.25);
-$color__white-90: rgba(255, 255, 255, 0.9);
-$color__gray-87: rgba(32, 44, 54, 0.87);
-$color__black: #000000;
-$color__gray: #242c32;
-$color__white-60: rgba(255, 255, 255, 0.6);
-$color__dkgray-light: #131f2a;
-$color__dkgray-dark: #08121a;
-$color__dark-30: rgba(32, 44, 54, 0.3);
 $color__highlight-cell: #e6ebef;
-$color__groupbg: #d2d8db;
-$color__gray-0: rgba(66, 73, 75, 0);
-$color__dkgray-lighter: #202c36;
 $color__highlight-row: rgba(232, 238, 242, 0.6);
+$color__white-100: rgba(255, 255, 255, 0.25);
+$color__white-200: rgba(255, 255, 255, 0.3);
+$color__white-300: rgba(255, 255, 255, 0.6);
+$color__white-400: rgba(255, 255, 255, 0.9);
+
+$color__gray-100: #242c32;
+$color__gray-200: #202c36;
+$color__gray-300: rgba(32, 44, 54, 0.2);
+$color__gray-400: rgba(32, 44, 54, 0.3);
+$color__gray-500: rgba(32, 44, 54, 0.6);
+$color__gray-600: rgba(32, 44, 54, 0.87);
+$color__gray-700: #131f2a;
+$color__gray-800: #08121a;
+$color__black: #000000;
+
+$color__blue-100: #b4d3e9;
+$color__blue-200: #66a5d2;
+$color__blue-300: #3385bd;
+$color__blue-400: #0065a4;
+$color__blue-500: #003f6c;
+$color__blue-600: #00528a;
 
 /*----------  Typography  ----------*/
 
-$font__roboto: Roboto;
-$font__expo: ExpoSerifPro;
+$font__roboto: Roboto, sans-serif;
+$font__expo: ExpoSerifPro, serif;
 
 /*----------  Structure  ----------*/
 

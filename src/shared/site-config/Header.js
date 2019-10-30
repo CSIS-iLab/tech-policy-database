@@ -18,41 +18,49 @@ const Header = () => {
   }
 
   return (
-    <div className="site-header">
-      <div>
-        <a
-          href="https://www.csis.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          alt="CSIS website"
-        >
-          <Logo
-            className="csis-link__logo"
-            alt="Center for Strategic and International Studies"
-            title="Center for Strategic and International Studies"
-          />
-        </a>
-        <SocialShare />
-      </div>
-      <div>
-        <div>{program_name}</div>
-        <div>{subject}</div>
-      </div>
-      <div>
-        <div>{intro_paragraph}</div>
-        <div>
-          <a href="#Methodology">
+    <header className="site-header">
+      <section className="site-header__banner">
+        <div className="site-header__logo">
+          <a
+            href="https://www.csis.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="CSIS website"
+          >
+            <Logo
+              className="csis-link__logo"
+              alt="Center for Strategic and International Studies"
+              title="Center for Strategic and International Studies"
+            />
+          </a>
+        </div>
+        <div className="site-header__nav" role="navigation">
+          <SocialShare />
+        </div>
+      </section>
+      <section className="site-header__title">
+        <div className="site-header__program">{program_name}</div>
+        <div className="site-header__subject">{subject}</div>
+      </section>
+      <section className="site-header__info">
+        <div className="site-header__intro">
+          <p>{intro_paragraph}</p>
+        </div>
+        <section className="site-header__actions">
+          <a className="site-header__methodology" href="#Methodology">
             Methodology
             <Icon onClick={null} icon={'arrow'} />
           </a>
-
-          <span>Download the data</span>
-          <Icon onClick={null} icon={'download'} />
-          <div>{renderDownloadFile().url}</div>
-          <div>{renderDownloadFile().description}</div>
-        </div>
-      </div>
-    </div>
+          <a className="site-header__download" href={renderDownloadFile().url}>
+            Download the data
+            <Icon onClick={null} icon={'download'} />
+          </a>
+          <p className="site-header__download-desc">
+            {renderDownloadFile().description}
+          </p>
+        </section>
+      </section>
+    </header>
   )
 }
 
