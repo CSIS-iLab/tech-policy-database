@@ -10,15 +10,36 @@ table {
 
 .table {
 
-  &__header-cell {
+  &__header {
     background-color: $color__blue-300;
+    @extend %table__header;
     
     &:first-child {
       box-shadow: 3px 0px 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
       border-right: solid 1px #2a72a3;
+      color: $color__white-175;
+    }
+    &-framework {
+      color: $color__white;
+    }
+  
+    &-icon {
+      color: $color__white-175;
+      height: 17px;
+      width: 17px;
+    }
+  
+    &-org, &-doc-link {
+      @extend %body__text-xs;
+      color: $color__white-175;
+    }
+  
+    &-doc-link {
+      text-decoration: none;
     }
   }
 
+  
   &__cell {
     background-color: $color__white;
 
@@ -31,15 +52,5 @@ table {
 
   &__row {
     border-bottom: solid 1px $color__gray-200;
-  }
-}
-
-.header-cell {
-  &__framework {
-    color: $color__white;
-  }
-
-  &__icon {
-    color: $color__white-175;
   }
 }
