@@ -13,9 +13,9 @@ const HeaderCell = (props) => {
   }
 
   return name === 'Categories' ? (
-    <td className="table__header-cell">Categories</td>
+    <th className="table__header-cell">Categories</th>
   ) : (
-      <td className="table__header-cell">
+      <th className="table__header-cell">
         <div className="header-cell__title" onClick={handleClick}>
           <span className="header-cell__framework">{name}</span>
           <span className="header-cell__icon">
@@ -34,7 +34,7 @@ const HeaderCell = (props) => {
             Original Document
         </a>
         </div>
-      </td>
+      </th>
     )
 }
 
