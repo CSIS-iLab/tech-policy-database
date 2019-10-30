@@ -24,21 +24,16 @@ table {
 
   &__cell {
     background-color: $color__white;
+
+    &:first-child {
+      box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
+      border-right: solid 1px #dfe3e8;
+      background-color: $color__white;
+    }
   }
 
   &__row {
     border-bottom: solid 1px $color__gray-200;
-
-  &__row-header-cell {
-    box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
-    border-right: solid 1px #dfe3e8;
-    background-color: $color__white;
-  }
-    
-    // .divider {
-    //   background-color: #d2d8db;
-    //   border: 0;
-    // }
   }
 }
 
