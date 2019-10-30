@@ -17,7 +17,7 @@ table {
 table,
 th,
 td {
-  border: 1px solid #c0c4ca;
+  /* border: 1px solid #c0c4ca; */
 }
 
 .divider {
@@ -71,7 +71,7 @@ th:first-child {
 }
 
 thead > * {
-  background: white;
+  /* background: white; */
   /* display block for sticky header */
   display: block;
   position: sticky;
