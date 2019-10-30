@@ -14,9 +14,6 @@ table {
     background-color: $color__blue-300;
     
     &:first-child {
-      // background-color: $color__blue-300;
-      width: 0;
-      height: 146px;
       box-shadow: 3px 0px 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
       border-right: solid 1px #2a72a3;
     }
