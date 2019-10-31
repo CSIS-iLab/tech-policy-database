@@ -16,24 +16,15 @@ const HeaderCell = (props) => {
     <th className="table__header-cell">Categories</th>
   ) : (
     <th className="table__header-cell">
-      <div className="header-cell__title" onClick={handleClick}>
-        <span className="header-cell__framework">{name}</span>
-        <span className="header-cell__icon">
-          <Icon handleClick={null} icon={'info'} />
-        </span>
-      </div>
+      <button className="header-cell__title" onClick={handleClick}>
+        {name}
+        <Icon handleClick={null} icon={'info'} />
+      </button>
       <p className="header-cell__org">{organization}</p>
-      <div className="header-cell__doc">
-        <a
-          className="header-cell__doc-link"
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon onClick={null} icon={'external_link'} />
-          Original Document
-        </a>
-      </div>
+      <a className="header-cell__doc-link" href={url}>
+        <Icon onClick={null} icon={'external_link'} />
+        Original Document
+      </a>
     </th>
   )
 }

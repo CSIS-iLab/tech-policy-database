@@ -7,7 +7,9 @@ const ModalHeader = (props) => {
   return (
     <header className="modal__header">
       <h2 className="modal__title">{title}</h2>
-      <Icon onClick={onClose} icon={'close'} />
+      <button onClick={onClose}>
+        <Icon icon={'close'} />
+      </button>
     </header>
   )
 }

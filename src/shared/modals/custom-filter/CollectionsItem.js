@@ -18,7 +18,7 @@ const CollectionsItem = (props) => {
   }
 
   return (
-    <li className="col-item">
+    <div className="checkbox__container">
       {checkedCollections.includes(name) ? (
         <Icon onClick={handleClick} icon={'check_filled'} />
       ) : (
@@ -28,7 +28,7 @@ const CollectionsItem = (props) => {
       <span className="modal__col-count-item">
         {collectionCount(name)}&nbsp;items
       </span>
-    </li>
+    </div>
   )
 }
 

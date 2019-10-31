@@ -7,8 +7,6 @@ const SocialShare = () => {
       <li className="share-item">
         <a
           href={`https://www.facebook.com/sharer.php?u=${window.location.href}`}
-          rel="noopener noreferrer"
-          target="_blank"
         >
           <Icon onClick={null} icon={'facebook'} />
         </a>
@@ -16,8 +14,6 @@ const SocialShare = () => {
       <li className="share-item">
         <a
           href={`https://twitter.com/intent/tweet?url=${window.location.href}&amp;via=CSIS&amp;related=CSIS`}
-          rel="noopener noreferrer"
-          target="_blank"
         >
           <Icon onClick={null} icon={'twitter'} />
         </a>
@@ -25,8 +21,6 @@ const SocialShare = () => {
       <li className="share-item">
         <a
           href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&source=CSIS`}
-          rel="noopener noreferrer"
-          target="_blank"
         >
           <Icon onClick={null} icon={'linkedin'} />
         </a>

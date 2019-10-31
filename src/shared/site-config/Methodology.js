@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../../context/GlobalContext'
+import Icon from '../site-config/Icon'
 
-const Methodology = (props) => {
-  const { methodology, program_description } = props
+const Methodology = () => {
+  const { siteInfo } = useContext(GlobalContext)
+
+  const { methodology, program_description } = siteInfo
 
   return (
     <section id="methodology" className="site-footer__explanation">

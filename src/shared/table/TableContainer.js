@@ -4,10 +4,10 @@ import DataTable from './DataTable'
 
 const TableContainer = (props) => {
   return (
-    <main className="table">
+    <section className="table">
       <TableOptions />
       <DataTable headers={props.headers} rows={props.rows} />
-    </main>
+    </section>
   )
 }
 

@@ -23,14 +23,15 @@ const LangModal = () => {
     <aside className="modal">
       <ModalHeader title={'Original Language'} onClose={onClose} />
       <section className="modal__content">
-        <dt className="modal__subtitle">framework</dt>
-        <dd className="modal__element">{framework}</dd>
-        <dt className="modal__subtitle">category</dt>
-        <dd className="modal__element">{category}</dd>
-        <div
-          className="modal__orig-lang"
+        <dl>
+          <dt className="modal__subtitle">Framework</dt>
+          <dd className="modal__element">{framework}</dd>
+          <dt className="modal__subtitle">Category</dt>
+          <dd className="modal__element">{category}</dd>
+        </dl>
+        <dl className="modal__orig-lang">
           dangerouslySetInnerHTML={createMarkup(original_lang)}
-        />
+        </dl>
       </section>
       <ModalFooter link={link} />
     </aside>

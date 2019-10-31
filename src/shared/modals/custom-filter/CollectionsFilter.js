@@ -21,20 +21,18 @@ const CollectionsFilter = (props) => {
       <div className="modal__col-count">{checkedCollections.length}</div>
 
       {collectionsMenu ? (
-        <div className="modal__dropdown">
-          <h5 className="modal__subtitle">FILTER BY COLLECTION</h5>
-          <ul className="modal__col-list">
-            {collections.map((c, i) => (
-              <CollectionsItem
-                allRows={allRows}
-                setCheckedCollections={setCheckedCollections}
-                checkedCollections={checkedCollections}
-                key={i}
-                name={c}
-              ></CollectionsItem>
-            ))}
-          </ul>
-        </div>
+        <fieldset>
+          <legend>Filter by Collection</legend>
+          {collections.map((c, i) => (
+            <CollectionsItem
+              allRows={allRows}
+              setCheckedCollections={setCheckedCollections}
+              checkedCollections={checkedCollections}
+              key={i}
+              name={c}
+            ></CollectionsItem>
+          ))}
+        </fieldset>
       ) : null}
     </React.Fragment>
   )

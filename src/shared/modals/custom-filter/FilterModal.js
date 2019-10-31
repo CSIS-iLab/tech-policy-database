@@ -153,7 +153,7 @@ const FilterModal = () => {
   }
 
   return filterModalStatus ? (
-    <section className="modal">
+    <aside className="modal">
       <ModalHeader title={'Filter'} onClose={onClose} />
       <section className="modal__content">
         <FilterTabs
@@ -197,7 +197,7 @@ const FilterModal = () => {
         handleResetFilters={handleResetFilters}
         applyFilters={applyFilters}
       />
-    </section>
+    </aside>
   ) : null
 }
 

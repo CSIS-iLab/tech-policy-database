@@ -33,34 +33,35 @@ const FrameworkModal = () => {
       <ModalHeader title={name} onClose={onClose} />
       <section className="modal__content">
         <dl>
-          <dt className="modal__subtitle">organization</dt>
-          <dd className="modal__element">{organization}</dd>
-          <a
-            className="modal__org-link"
-            href={website.url}
-            alt="organization link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {website.name} &nbsp;
-            <Icon onClick={null} icon={'external_link'} />
-          </a>
-          <dt className="modal__subtitle">year</dt>
+          <dt className="modal__subtitle">Organization</dt>
+          <dd className="modal__element">
+            {organization}
+            <a
+              className="modal__org-link"
+              href={website.url}
+              title="Visit this organization's website"
+            >
+              {website.name} &nbsp;
+              <Icon onClick={null} icon={'external_link'} />
+            </a>
+          </dd>
+          <dt className="modal__subtitle">Year</dt>
           <dd className="modal__element">{year}</dd>
-          <dt className="modal__subtitle">also known as</dt>
-          <div
-            className="modal__aka"
+          <dt className="modal__subtitle">Also Known As</dt>
+          <dd className="modal__aka">
             dangerouslySetInnerHTML={createMarkup(also_known_as)}
-          />
-          <dt className="modal__subtitle">members</dt>
+          </dd>
+          <dt className="modal__subtitle">Members</dt>
           <dd className="modal__element">{members.description}</dd>
-          <ul className="modal__mem-list">
-            {members.list.map((member, i) => (
-              <li className="mem-list-item" key={i}>
-                {member}
-              </li>
-            ))}
-          </ul>
+          <dd>
+            <ul className="modal__mem-list">
+              {members.list.map((member, i) => (
+                <li className="mem-list-item" key={i}>
+                  {member}
+                </li>
+              ))}
+            </ul>
+          </dd>
         </dl>
       </section>
       <ModalFooter link={url} />

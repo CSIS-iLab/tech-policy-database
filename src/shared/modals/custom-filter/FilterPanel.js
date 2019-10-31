@@ -27,21 +27,17 @@ const FilterPanel = (props) => {
 
   const renderRowsCount = () => {
     return activeTab === 'Rows' ? (
-      <div className="modal__panel-caption">
-        <p>
-          Showing {displayedRows.length} of {allRows.length}
-        </p>
-      </div>
+      <p>
+        Showing {displayedRows.length} of {allRows.length} results
+      </p>
     ) : null
   }
 
   const renderColumnsCount = () => {
     return activeTab === 'Columns' ? (
-      <div className="modal__panel-caption">
-        <p>
-          Showing {displayedColumns.length} of {maxColumns}
-        </p>
-      </div>
+      <p>
+        Showing {displayedColumns.length} of {maxColumns} results
+      </p>
     ) : null
   }
 

@@ -33,8 +33,6 @@ const Introduction = () => {
               Download the data
               <Icon onClick={null} icon={'download'} />
             </a>
-          </li>
-          <li>
             <p className="intro__download-desc">
               {renderDownloadFile().description}
             </p>
