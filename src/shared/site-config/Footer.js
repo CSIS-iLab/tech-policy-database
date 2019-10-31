@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { ReactComponent as Logo } from '../../assets/csis_logo_white_long.svg'
 import { GlobalContext } from '../../context/GlobalContext'
 import Icon from '../site-config/Icon'
+import Methodology from './Methodology'
 
 const Footer = () => {
   const { siteInfo } = useContext(GlobalContext)
@@ -14,13 +15,10 @@ const Footer = () => {
 
   return (
     <footer className="site-footer">
-      <section id="methodology" className="site-footer__explanation">
-        <h2 className="site-footer__title">Methodology</h2>
-        <div className="site-footer__info">
-          <p className="site-footer__methodology">{methodology}</p>
-          <p className="site-footer__prog-desc">{program_description}</p>
-        </div>
-      </section>
+      <Methodology
+        methodology={methodology}
+        program_description={program_description}
+      />
       <section className="site-footer__about">
         <section className="site-footer__content">
           <div className="site-footer__logo">
