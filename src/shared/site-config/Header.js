@@ -34,9 +34,7 @@ const Header = () => {
             />
           </a>
         </div>
-        <div className="site-header__nav" role="navigation">
-          <SocialShare />
-        </div>
+        <SocialShare />
       </section>
       <section className="site-header__title">
         <div className="site-header__program">{program_name}</div>
