@@ -29,7 +29,7 @@ const FrameworkModal = () => {
   }
 
   return frameModalStatus ? (
-    <div className="modal">
+    <aside className="modal">
       <ModalHeader title={name} onClose={onClose} />
       <div className="modal__content">
         <div>ORGANIZATION</div>
@@ -55,7 +55,7 @@ const FrameworkModal = () => {
         ))}
       </div>
       <ModalFooter link={url} />
-    </div>
+    </aside>
   ) : null
 }
 

@@ -20,7 +20,7 @@ const LangModal = () => {
   }
 
   return langModalStatus ? (
-    <div className="modal">
+    <aside className="modal">
       <ModalHeader title={'Original Language'} onClose={onClose} />
       <div className="modal__content">
         <div>FRAMEWORK</div>
@@ -31,7 +31,7 @@ const LangModal = () => {
         <div dangerouslySetInnerHTML={createMarkup(original_lang)} />
       </div>
       <ModalFooter link={link} />
-    </div>
+    </aside>
   ) : null
 }
 
