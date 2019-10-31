@@ -37,9 +37,9 @@ const SocialShare = () => {
         </a>
       </li>
       <li className="share-item">
-        <div onClick={() => window.print()}>
+        <button onClick={() => window.print()}>
           <Icon onClick={null} icon={'print'} />
-        </div>
+        </button>
       </li>
     </ul>
   )
