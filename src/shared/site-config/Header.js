@@ -45,7 +45,7 @@ const Header = () => {
           <p>{intro_paragraph}</p>
         </div>
         <section className="site-header__actions">
-          <a className="site-header__methodology" href="#Methodology">
+          <a className="site-header__methodology" href="#methodology">
             Methodology
             <Icon onClick={null} icon={'arrow'} />
           </a>

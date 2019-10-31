@@ -14,8 +14,8 @@ const Footer = () => {
 
   return (
     <footer className="site-footer">
-      <section className="site-footer__explanation">
-        <div className="site-footer__title">Methodology</div>
+      <section id="methodology" className="site-footer__explanation">
+        <h2 className="site-footer__title">Methodology</h2>
         <div className="site-footer__info">
           <p className="site-footer__methodology">{methodology}</p>
           <p className="site-footer__prog-desc">{program_description}</p>
@@ -80,7 +80,6 @@ const Footer = () => {
             1616 Rhode Island Avenue, NW Washington, DC 20036
           </address>
         </div>
-        <a name="Methodology" href="#" alt="Methodology redirect"></a>
         <button
           aria-label="back to top"
           className="back-to-top sticky"
