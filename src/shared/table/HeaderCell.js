@@ -13,19 +13,19 @@ const HeaderCell = (props) => {
   }
 
   return name === 'Categories' ? (
-    <th className="table__header-cell">Categories</th>
+    <th className="table__header">Categories</th>
   ) : (
-      <th className="table__header-cell">
-        <div className="header-cell__title" onClick={handleClick}>
-          <span className="header-cell__framework">{name}</span>
-          <span className="header-cell__icon">
+      <th className="table__header">
+        <div className="table__header-title" onClick={handleClick}>
+          <span className="table__header-framework">{name}</span>
+          <span className="table__header-icon">
             <Icon handleClick={null} icon={'info'} />
           </span>
         </div>
-        <div className="header-cell__org">{organization}</div>
-        <div className="header-cell__doc">
+        <div className="table__header-org">{organization}</div>
+        <div className="table__header-doc">
           <a
-            className="header-cell__doc-link"
+            className="table__header-doc-link"
             href={url}
             target="_blank"
             rel="noopener noreferrer"

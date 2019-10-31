@@ -1,28 +1,71 @@
 @use 'abstracts' as *;
 
-table {
-  margin-right: 35px;
-  font-size: 16px;
+.table {
   border-collapse: collapse;
 
-  // background-color: lightblue;
-}
-
-.table {
-  &__header-cell {
+  &__header {
+    min-width: 250px;
+    padding: calculate-rem(24px);
+    @extend %table__header;
+    text-align: left;
+    vertical-align: top;
     background-color: $color__blue-300;
-    
-    &:first-child {
+
+    &:first-of-type {
+      min-width: 300px;
+      padding-left: calculate-rem(40px);
+      color: $color__white-175;
       border-right: solid 1px #2a72a3;
+    }
+
+    &:last-of-type {
+      padding-right: calculate-rem(40px);
+    }
+
+    &-title {
+      margin-bottom: 4px;
+    }
+
+    &-framework {
+      color: $color__white;
+      @extend %table__header;
+    }
+
+    &-icon {
+      width: 17px;
+      height: 17px;
+      color: $color__white-175;
+    }
+
+    &-org,
+    &-doc-link {
+      @extend %body__text-xs;
+      color: $color__white-175;
+    }
+
+    &-org {
+      margin-bottom: calculate-rem(8px);
+    }
+
+    &-doc-link {
+      text-decoration: none;
       box-shadow: 3px 0 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
     }
   }
 
   &__cell {
+    min-width: 250px;
+    padding: calculate-rem(24px);
+    vertical-align: top;
     background-color: $color__white;
 
-    &:first-child {
-      background-color: $color__white;
+    &:first-of-type {
+      min-width: 300px;
+      padding-left: calculate-rem(40px);
+    }
+
+    &:last-of-type {
+      padding-right: calculate-rem(40px);
       border-right: solid 1px #dfe3e8;
       box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
     }
@@ -30,15 +73,5 @@ table {
 
   &__row {
     border-bottom: solid 1px $color__gray-200;
-  }
-}
-
-.header-cell {
-  &__framework {
-    color: $color__white;
-  }
-
-  &__icon {
-    color: $color__white-175;
   }
 }
