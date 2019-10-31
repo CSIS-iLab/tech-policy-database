@@ -15,27 +15,18 @@ const HeaderCell = (props) => {
   return name === 'Categories' ? (
     <th className="table__header">Categories</th>
   ) : (
-      <th className="table__header">
-        <div className="table__header-title" onClick={handleClick}>
-          <span className="table__header-framework">{name}</span>
-          <span className="table__header-icon">
-            <Icon handleClick={null} icon={'info'} />
-          </span>
-        </div>
-        <div className="table__header-org">{organization}</div>
-        <div className="table__header-doc">
-          <a
-            className="table__header-doc-link"
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon onClick={null} icon={'external_link'} />
-            Original Document
-        </a>
-        </div>
-      </th>
-    )
+    <th className="table__header-cell">
+      <button className="header-cell__title" onClick={handleClick}>
+        {name}
+        <Icon handleClick={null} icon={'info'} />
+      </button>
+      <p className="header-cell__org">{organization}</p>
+      <a className="header-cell__doc-link" href={url}>
+        <Icon onClick={null} icon={'external_link'} />
+        Original Document
+      </a>
+    </th>
+  )
 }
 
 export default HeaderCell

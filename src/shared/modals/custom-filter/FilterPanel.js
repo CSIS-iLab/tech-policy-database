@@ -27,26 +27,31 @@ const FilterPanel = (props) => {
 
   const renderRowsCount = () => {
     return activeTab === 'Rows' ? (
-      <div>
-        Showing {displayedRows.length} of {allRows.length}
-      </div>
+      <p>
+        Showing {displayedRows.length} of {allRows.length} results
+      </p>
     ) : null
   }
 
   const renderColumnsCount = () => {
     return activeTab === 'Columns' ? (
-      <div>
-        Showing {displayedColumns.length} of {maxColumns}
-      </div>
+      <p>
+        Showing {displayedColumns.length} of {maxColumns} results
+      </p>
     ) : null
   }
 
   return (
-    <div>
-      <span>
+    <section className="modal__panel">
+      <div className="modal__search">
         <Icon onClick={null} icon={'search'} />
-      </span>
-      <input id="search-input" placeholder="Search" onChange={handleInput} />
+        <input
+          className="modal__input"
+          id="search-input"
+          placeholder="Search"
+          onChange={handleInput}
+        />
+      </div>
 
       <CollectionsFilter
         allRows={allRows}
@@ -59,7 +64,7 @@ const FilterPanel = (props) => {
 
       {renderColumnsCount()}
       {renderRowsCount()}
-    </div>
+    </section>
   )
 }
 

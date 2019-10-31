@@ -14,13 +14,13 @@ const FilterItem = (props) => {
   }
 
   return (
-    <div>
+    <div className="option-item">
       {checkedItems.includes(name) ? (
         <Icon onClick={handleClick} icon={'check_filled'} />
       ) : (
         <Icon onClick={handleClick} icon={'check_empty'} />
       )}
-      <span>{name}</span>
+      <span className="modal__option">{name}</span>
     </div>
   )
 }

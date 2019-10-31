@@ -55,7 +55,7 @@ const TableOptions = () => {
   }
 
   return (
-    <div className="table__options">
+    <section className="table__options">
       <SearchFilter
         handleFilter={handleFilter}
         searchText={searchText}
@@ -66,7 +66,7 @@ const TableOptions = () => {
       <CustomFilter setFilterModalStatus={setFilterModalStatus} />
       <TableTextResize />
       <ScrollBar />
-    </div>
+    </section>
   )
 }
 

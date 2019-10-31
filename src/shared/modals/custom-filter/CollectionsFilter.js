@@ -14,15 +14,17 @@ const CollectionsFilter = (props) => {
 
   return (
     <React.Fragment>
-      <button onClick={handleClick}>
+      <button className="modal__collections-btn" onClick={handleClick}>
         <Icon onClick={null} icon={'filter2'} />
         <Icon onClick={null} icon={'arrow_dropdown'} />
       </button>
-      <div className="collection-count">{checkedCollections.length}</div>
+      <div className="modal__collections-count">
+        {checkedCollections.length}
+      </div>
 
       {collectionsMenu ? (
-        <div>
-          <div>FILTER BY COLLECTION</div>
+        <fieldset>
+          <legend>Filter by Collection</legend>
           {collections.map((c, i) => (
             <CollectionsItem
               allRows={allRows}
@@ -32,7 +34,7 @@ const CollectionsFilter = (props) => {
               name={c}
             ></CollectionsItem>
           ))}
-        </div>
+        </fieldset>
       ) : null}
     </React.Fragment>
   )

@@ -29,33 +29,44 @@ const FrameworkModal = () => {
   }
 
   return frameModalStatus ? (
-    <div className="modal">
+    <aside className="modal">
       <ModalHeader title={name} onClose={onClose} />
-      <div className="modal__content">
-        <div>ORGANIZATION</div>
-        <div>{organization}</div>
-        <a
-          href={website.url}
-          alt="organization link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {website.name} &nbsp;
-          <Icon onClick={null} icon={'external_link'} />
-        </a>
-        <div>YEAR</div>
-        <div>{year}</div>
-        <div>ALSO KNOWN AS</div>
-        <div dangerouslySetInnerHTML={createMarkup(also_known_as)} />
-        <div className="divider2" />
-        <div>MEMBERS</div>
-        <div>{members.description}</div>
-        {members.list.map((member, i) => (
-          <div key={i}>{member}</div>
-        ))}
-      </div>
+      <section className="modal__content">
+        <dl>
+          <dt className="modal__subtitle">Organization</dt>
+          <dd className="modal__element">
+            {organization}
+            <a
+              className="modal__org-link"
+              href={website.url}
+              title="Visit this organization's website"
+            >
+              {website.name} &nbsp;
+              <Icon onClick={null} icon={'external_link'} />
+            </a>
+          </dd>
+          <dt className="modal__subtitle">Year</dt>
+          <dd className="modal__element">{year}</dd>
+          <dt className="modal__subtitle">Also Known As</dt>
+          <dd className="modal__aka">
+            dangerouslySetInnerHTML={createMarkup(also_known_as)}
+          </dd>
+          <dt className="modal__subtitle">Members</dt>
+          <dd className="modal__element">
+            {members.description}
+
+            <ul className="modal__mem-list">
+              {members.list.map((member, i) => (
+                <li className="mem-list-item" key={i}>
+                  {member}
+                </li>
+              ))}
+            </ul>
+          </dd>
+        </dl>
+      </section>
       <ModalFooter link={url} />
-    </div>
+    </aside>
   ) : null
 }
 

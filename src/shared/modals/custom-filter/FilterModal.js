@@ -153,9 +153,9 @@ const FilterModal = () => {
   }
 
   return filterModalStatus ? (
-    <div className="modal">
+    <aside className="modal">
       <ModalHeader title={'Filter'} onClose={onClose} />
-      <div className="modal__content">
+      <section className="modal__content">
         <FilterTabs
           setActiveTab={setActiveTab}
           handleSearchFilter={handleSearchFilter}
@@ -190,14 +190,14 @@ const FilterModal = () => {
           checkedColumns={checkedColumns}
           setCheckedColumns={setCheckedColumns}
         />
-      </div>
+      </section>
       <FilterFooter
         checkedRows={checkedRows}
         checkedColumns={checkedColumns}
         handleResetFilters={handleResetFilters}
         applyFilters={applyFilters}
       />
-    </div>
+    </aside>
   ) : null
 }
 
