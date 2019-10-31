@@ -25,9 +25,9 @@ const TableCell = (props) => {
 
   const renderOriginalLang = () => {
     return catObj.original_lang !== '' ? (
-      <div className="cell__orig-lang" onClick={handleClick}>
+      <button className="cell__orig-lang" onClick={handleClick}>
         View Original Language
-      </div>
+      </button>
     ) : null
   }
 
