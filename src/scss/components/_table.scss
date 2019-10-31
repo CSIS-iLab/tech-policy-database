@@ -3,7 +3,7 @@
 .table {
   border-collapse: collapse;
 
-  &__header {
+  &__header-cell {
     min-width: 250px;
     padding: calculate-rem(24px);
     @extend %table__header;

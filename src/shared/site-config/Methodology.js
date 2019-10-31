@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
-import Icon from '../site-config/Icon'
 
 const Methodology = () => {
   const { siteInfo } = useContext(GlobalContext)

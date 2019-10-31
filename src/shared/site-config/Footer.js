@@ -1,8 +1,6 @@
 import React from 'react'
 import { ReactComponent as Logo } from '../../assets/csis_logo_white_long.svg'
 
-import Methodology from './Methodology'
-
 const Footer = () => {
   const renderDate = () => {
     return new Date().getFullYear()
@@ -10,10 +8,6 @@ const Footer = () => {
 
   return (
     <footer className="site-footer">
-      <Methodology
-        methodology={methodology}
-        program_description={program_description}
-      />
       <section className="site-footer__about">
         <section className="site-footer__content">
           <div className="site-footer__logo">

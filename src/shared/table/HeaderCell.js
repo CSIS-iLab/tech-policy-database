@@ -13,7 +13,7 @@ const HeaderCell = (props) => {
   }
 
   return name === 'Categories' ? (
-    <th className="table__header">Categories</th>
+    <th className="table__header-cell">Categories</th>
   ) : (
     <th className="table__header-cell">
       <button className="header-cell__title" onClick={handleClick}>
