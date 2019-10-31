@@ -5,10 +5,10 @@ const ModalHeader = (props) => {
   const { title, onClose } = props
 
   return (
-    <div className="modal__header">
-      <span>{title}</span>
+    <section className="modal__header">
+      <span className="modal__title">{title}</span>
       <Icon onClick={onClose} icon={'close'} />
-    </div>
+    </section>
   )
 }
 

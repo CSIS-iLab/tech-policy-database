@@ -11,14 +11,14 @@ const FilterTabs = (props) => {
   }
 
   return (
-    <div>
-      <div onClick={() => handleTabSwitch('Columns')}>
+    <div className="modal__tab-menu">
+      <div className="modal__tab" onClick={() => handleTabSwitch('Columns')}>
         <Icon onClick={null} icon={'columns'} />
-        <span>Columns</span>
+        <span className="modal__tab-text">Columns</span>
       </div>
-      <div onClick={() => handleTabSwitch('Rows')}>
+      <div className="modal__tab" onClick={() => handleTabSwitch('Rows')}>
         <Icon onClick={null} icon={'rows'} />
-        <span>Rows</span>
+        <span className="modal__tab-text">Rows</span>
       </div>
     </div>
   )

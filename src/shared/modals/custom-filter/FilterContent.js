@@ -13,7 +13,7 @@ const FilterContent = (props) => {
   } = props
 
   return activeTab === 'Rows' ? (
-    <div>
+    <ul className="modal__option-list">
       {displayedRows.map((row, i) => (
         <FilterItem
           key={i}
@@ -22,9 +22,9 @@ const FilterContent = (props) => {
           checkedItems={checkedRows}
         />
       ))}
-    </div>
+    </ul>
   ) : (
-    <div>
+    <ul className="modal__option-list">
       {displayedColumns.map((data, i) => (
         <FilterItem
           key={i}
@@ -33,7 +33,7 @@ const FilterContent = (props) => {
           checkedItems={checkedColumns}
         />
       ))}
-    </div>
+    </ul>
   )
 }
 

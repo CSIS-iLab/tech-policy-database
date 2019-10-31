@@ -26,7 +26,7 @@ const TableCell = (props) => {
   const renderOriginalLang = () => {
     return catObj.original_lang !== '' ? (
       <div className="cell__orig-lang" onClick={handleClick}>
-        View Original Language
+        <p>View Original Language</p>
       </div>
     ) : null
   }
@@ -47,8 +47,8 @@ const TableCell = (props) => {
       let catDesc = allRows.find((r) => r[0][0] === framework)[0][1]
       return (
         <td className="table__cell">
-          <div className="cell__category">{framework}</div>
-          <div className="cell__desc">{catDesc}</div>
+          <h4 className="cell__category">{framework}</h4>
+          <p className="cell__desc">{catDesc}</p>
         </td>
       )
     } else if (catObj.has_data) {

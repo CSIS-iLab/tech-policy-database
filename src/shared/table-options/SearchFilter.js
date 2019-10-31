@@ -22,16 +22,23 @@ const SearchFilter = (props) => {
 
   return (
     <div className="table__search">
-      <Icon onClick={null} icon={'search'}/>
+      <Icon onClick={null} icon={'search'} />
       <input
+        className="search-input"
         type="text"
         onChange={handleSearchText}
         placeholder="Search"
       />
-      <select onChange={handleFilterSubject}>
-        <option value="categories">Categories</option>
-        <option value="abbreviated_lang">Abbreviated Language</option>
-        <option value="original_lang">Original Language</option>
+      <select className="search-dropdown" onChange={handleFilterSubject}>
+        <option className="dropdown-item" value="categories">
+          Categories
+        </option>
+        <option className="dropdown-item" value="abbreviated_lang">
+          Abbreviated Language
+        </option>
+        <option className="dropdown-item" value="original_lang">
+          Original Language
+        </option>
       </select>
     </div>
   )

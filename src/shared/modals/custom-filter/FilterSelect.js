@@ -34,14 +34,14 @@ const FilterSelect = (props) => {
 
   const renderText = () => {
     if (selectTab().length === 0) {
-      return <span>Select All</span>
+      return <span className="modal__select-text">Select All</span>
     } else if (selectTab().length > 0) {
-      return <span>Deselect All</span>
+      return <span className="modal__select-text">Deselect All</span>
     }
   }
 
   return (
-    <div>
+    <div className="modal__select">
       {renderIcon()}
       {renderText()}
     </div>

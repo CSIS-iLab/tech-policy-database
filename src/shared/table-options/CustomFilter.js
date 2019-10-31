@@ -7,8 +7,11 @@ const CustomFilter = (props) => {
   }
 
   return (
-    <div>
-      <button onClick={handleClick}><Icon onClick={null} icon={'filter2'}/>Filter</button>
+    <div className="table__filter">
+      <button className="filter-btn" onClick={handleClick}>
+        <Icon onClick={null} icon={'filter2'} />
+        Filter
+      </button>
     </div>
   )
 }

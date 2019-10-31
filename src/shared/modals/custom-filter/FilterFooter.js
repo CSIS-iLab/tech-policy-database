@@ -12,34 +12,36 @@ const FilterFooter = (props) => {
   // Apply button only clickable when at least one row and column are checked
   const renderApply = () => {
     return (checkedRows.length > 0 && checkedColumns.length) > 0 ? (
-      <button onClick={applyFilters}>Apply</button>
+      <button className="modal__apply" onClick={applyFilters}>
+        Apply
+      </button>
     ) : (
-      <div>Apply</div>
+      <button className="modal__apply--disabled">Apply</button>
     )
   }
 
   const renderRowWarning = () => {
     return checkedRows.length === 0 ? (
-      <div>Please select at least one row</div>
+      <p className="modal__warning">Please select at least one row</p>
     ) : null
   }
 
   const renderColumnWarning = () => {
     return checkedColumns.length === 0 ? (
-      <div>Please select at least one column</div>
+      <p className="modal__warning">Please select at least one column</p>
     ) : null
   }
 
   return (
-    <div className="modal__footer">
-      <div onClick={handleResetFilters}>
+    <section className="modal__footer">
+      <div className="modal__reset" onClick={handleResetFilters}>
         <Icon onClick={null} icon={'reset'} />
-        <span>Reset all filters</span>
+        <span className="modal__reset-text">Reset all filters</span>
       </div>
       {renderApply()}
       {renderRowWarning()}
       {renderColumnWarning()}
-    </div>
+    </section>
   )
 }
 

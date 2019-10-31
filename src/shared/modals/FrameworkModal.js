@@ -29,12 +29,13 @@ const FrameworkModal = () => {
   }
 
   return frameModalStatus ? (
-    <div className="modal">
+    <section className="modal">
       <ModalHeader title={name} onClose={onClose} />
-      <div className="modal__content">
-        <div>ORGANIZATION</div>
-        <div>{organization}</div>
+      <section className="modal__content">
+        <h5 className="modal__subtitle">ORGANIZATION</h5>
+        <p className="modal__element">{organization}</p>
         <a
+          className="modal__org-link"
           href={website.url}
           alt="organization link"
           target="_blank"
@@ -43,19 +44,26 @@ const FrameworkModal = () => {
           {website.name} &nbsp;
           <Icon onClick={null} icon={'external_link'} />
         </a>
-        <div>YEAR</div>
-        <div>{year}</div>
-        <div>ALSO KNOWN AS</div>
-        <div dangerouslySetInnerHTML={createMarkup(also_known_as)} />
-        <div className="divider2" />
-        <div>MEMBERS</div>
-        <div>{members.description}</div>
-        {members.list.map((member, i) => (
-          <div key={i}>{member}</div>
-        ))}
-      </div>
+        <h5 className="modal__subtitle">YEAR</h5>
+        <p className="modal__element">{year}</p>
+        <h5 className="modal__subtitle">ALSO KNOWN AS</h5>
+        <div
+          className="modal__aka"
+          dangerouslySetInnerHTML={createMarkup(also_known_as)}
+        />
+        <div className="modal__divider" />
+        <h5 className="modal__subtitle">MEMBERS</h5>
+        <p className="modal__element">{members.description}</p>
+        <ul className="modal__mem-list">
+          {members.list.map((member, i) => (
+            <li className="mem-list-item" key={i}>
+              {member}
+            </li>
+          ))}
+        </ul>
+      </section>
       <ModalFooter link={url} />
-    </div>
+    </section>
   ) : null
 }
 
