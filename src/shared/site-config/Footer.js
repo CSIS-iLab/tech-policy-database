@@ -78,13 +78,6 @@ const Footer = () => {
             1616 Rhode Island Avenue, NW Washington, DC 20036
           </address>
         </div>
-        <button
-          aria-label="back to top"
-          className="back-to-top sticky"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        >
-          <Icon onClick={null} icon={'arrow_up'} />
-        </button>
       </section>
     </footer>
   )

@@ -4,6 +4,7 @@ import ModalContainer from '../../shared/modals/ModalContainer'
 import TableContainer from '../../shared/table/TableContainer'
 import Header from '../../shared/site-config/Header'
 import Footer from '../../shared/site-config/Footer'
+import BackToTop from '../../shared/site-config/BackToTop'
 import tableData from '../../json/tech-policy-int/framework_database.json'
 import categories from '../../json/tech-policy-int/explanations.json'
 import collections from '../../json/tech-policy-int/curated_categories.json'
@@ -77,6 +78,7 @@ const MainContainer = () => {
       />
       <ModalContainer />
       <Footer />
+      <BackToTop />
     </div>
   )
 }
