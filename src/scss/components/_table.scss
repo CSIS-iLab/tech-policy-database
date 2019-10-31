@@ -1,6 +1,15 @@
 @use 'abstracts' as *;
 
 .table {
+  /* css variables */
+  --font-size-1: 14px;
+  --font-size-2: 16px;
+  --font-size-3: 20px;
+
+  flex: 1 0 auto;
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
   border-collapse: collapse;
 
   &__header-cell {
@@ -8,70 +17,120 @@
     padding: rem(24px);
     @extend %table__header;
     text-align: left;
-    vertical-align: top;
-    background-color: $color__blue-300;
 
-    &:first-of-type {
-      min-width: 300px;
-      padding-left: rem(40px);
-      color: $color__white-175;
-      border-right: solid 1px #2a72a3;
+    &__container {
+      position: relative;
+      display: flex;
+      max-width: 100%;
+      /* height must be set for the header to be sticky */
+      height: 100vh;
+      overflow: scroll;
+
+      &::after {
+        content: '';
+        display: block;
+        flex: 1 0 auto;
+        width: 2rem;
+        height: 100%;
+      }
     }
 
-    &:last-of-type {
-      padding-right: rem(40px);
+    &__cell {
+      width: 250px;
+      padding: calculate-rem(24px);
+      vertical-align: top;
+
+      &:first-child {
+        position: sticky;
+        left: 0;
+        width: 300px;
+        padding-left: rem(40px);
+      }
+
+      &:last-child {
+        padding-right: rem(40px);
+      }
+
+      &--header {
+        position: sticky;
+        top: 0;
+        @extend %table__header;
+        background-color: $color__blue-300;
+
+        &:first-child {
+          z-index: 10;
+          color: $color__white-175;
+          border-right: solid 1px #2a72a3;
+          box-shadow: 0 6px 17px -1px rgba(7, 23, 35, 0.64);
+        }
+      }
+
+      &--body {
+        background-color: $color__white;
+
+        &:first-child {
+          border-right: solid 1px $color__gray-200;
+          box-shadow: 0 6px 8px 0 rgba(164, 164, 164, 0.5);
+        }
+      }
     }
 
-    &-title {
-      margin-bottom: 4px;
+    &__header-row {
+      background: $color__blue-300;
     }
 
-    &-framework {
-      color: $color__white;
-      @extend %table__header;
+    &__row {
+      border-bottom: solid 1px $color__gray-200;
     }
 
-    &-icon {
-      width: 17px;
-      height: 17px;
-      color: $color__white-175;
+    .header-cell {
+      &__title {
+        margin-bottom: 4px;
+      }
+
+      &__framework {
+        color: $color__white;
+        @extend %table__header;
+      }
+
+      &__icon {
+        width: 17px;
+        height: 17px;
+        color: $color__white-175;
+      }
+
+      &__org,
+      &__doc-link {
+        @extend %body__text-xs;
+        color: $color__white-175;
+      }
+
+      &-org {
+        margin-bottom: rem(8px);
+      }
+
+      &__doc-link {
+        text-decoration: none;
+        box-shadow: 3px 0 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
+      }
     }
 
-    &-org,
-    &-doc-link {
-      @extend %body__text-xs;
-      color: $color__white-175;
+    &__cell {
+      min-width: 250px;
+      padding: rem(24px);
+      vertical-align: top;
+      background-color: $color__white;
+
+      &:first-of-type {
+        min-width: 300px;
+        padding-left: rem(40px);
+      }
+
+      &:last-of-type {
+        padding-right: rem(40px);
+        border-right: solid 1px #dfe3e8;
+        box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
+      }
     }
-
-    &-org {
-      margin-bottom: rem(8px);
-    }
-
-    &-doc-link {
-      text-decoration: none;
-      box-shadow: 3px 0 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
-    }
-  }
-
-  &__cell {
-    min-width: 250px;
-    padding: rem(24px);
-    vertical-align: top;
-    background-color: $color__white;
-
-    &:first-of-type {
-      min-width: 300px;
-      padding-left: rem(40px);
-    }
-
-    &:last-of-type {
-      padding-right: rem(40px);
-      border-right: solid 1px #dfe3e8;
-      box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
-    }
-  }
-
-  &__row {
-    border-bottom: solid 1px $color__gray-200;
   }
 }
