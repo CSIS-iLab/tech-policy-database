@@ -14,11 +14,13 @@ const CollectionsFilter = (props) => {
 
   return (
     <React.Fragment>
-      <button className="modal__col-btn" onClick={handleClick}>
+      <button className="modal__collections-btn" onClick={handleClick}>
         <Icon onClick={null} icon={'filter2'} />
         <Icon onClick={null} icon={'arrow_dropdown'} />
       </button>
-      <div className="modal__col-count">{checkedCollections.length}</div>
+      <div className="modal__collections-count">
+        {checkedCollections.length}
+      </div>
 
       {collectionsMenu ? (
         <fieldset>

@@ -29,9 +29,10 @@ const LangModal = () => {
           <dt className="modal__subtitle">Category</dt>
           <dd className="modal__element">{category}</dd>
         </dl>
-        <dl className="modal__orig-lang">
+        <div
+          className="modal__orig-lang"
           dangerouslySetInnerHTML={createMarkup(original_lang)}
-        </dl>
+        />
       </section>
       <ModalFooter link={link} />
     </aside>

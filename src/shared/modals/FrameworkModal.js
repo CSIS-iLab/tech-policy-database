@@ -52,8 +52,9 @@ const FrameworkModal = () => {
             dangerouslySetInnerHTML={createMarkup(also_known_as)}
           </dd>
           <dt className="modal__subtitle">Members</dt>
-          <dd className="modal__element">{members.description}</dd>
-          <dd>
+          <dd className="modal__element">
+            {members.description}
+
             <ul className="modal__mem-list">
               {members.list.map((member, i) => (
                 <li className="mem-list-item" key={i}>
