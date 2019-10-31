@@ -31,10 +31,10 @@ const FrameworkModal = () => {
   return frameModalStatus ? (
     <aside className="modal">
       <ModalHeader title={name} onClose={onClose} />
-      <div className="modal__content">
-        <section>
-          <h5 className="modal__subtitle">organization</h5>
-          <p className="modal__element">{organization}</p>
+      <section className="modal__content">
+        <dl>
+          <dt className="modal__subtitle">organization</dt>
+          <dd className="modal__element">{organization}</dd>
           <a
             className="modal__org-link"
             href={website.url}
@@ -45,18 +45,15 @@ const FrameworkModal = () => {
             {website.name} &nbsp;
             <Icon onClick={null} icon={'external_link'} />
           </a>
-          <h5 className="modal__subtitle">year</h5>
-          <p className="modal__element">{year}</p>
-          <h5 className="modal__subtitle">also known as</h5>
+          <dt className="modal__subtitle">year</dt>
+          <dd className="modal__element">{year}</dd>
+          <dt className="modal__subtitle">also known as</dt>
           <div
             className="modal__aka"
             dangerouslySetInnerHTML={createMarkup(also_known_as)}
           />
-        </section>
-        <div className="modal__divider" />
-        <section>
-          <h5 className="modal__subtitle">members</h5>
-          <p className="modal__element">{members.description}</p>
+          <dt className="modal__subtitle">members</dt>
+          <dd className="modal__element">{members.description}</dd>
           <ul className="modal__mem-list">
             {members.list.map((member, i) => (
               <li className="mem-list-item" key={i}>
@@ -64,8 +61,8 @@ const FrameworkModal = () => {
               </li>
             ))}
           </ul>
-        </section>
-      </div>
+        </dl>
+      </section>
       <ModalFooter link={url} />
     </aside>
   ) : null

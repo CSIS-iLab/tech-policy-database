@@ -3,6 +3,7 @@ import { GlobalContext } from '../../context/GlobalContext'
 import ModalContainer from '../../shared/modals/ModalContainer'
 import TableContainer from '../../shared/table/TableContainer'
 import Header from '../../shared/site-config/Header'
+import Introduction from '../../shared/site-config/Introduction'
 import Footer from '../../shared/site-config/Footer'
 import BackToTop from '../../shared/site-config/BackToTop'
 import tableData from '../../json/tech-policy-int/framework_database.json'
@@ -72,6 +73,7 @@ const MainContainer = () => {
   return (
     <div className="site-content">
       <Header />
+      <Introduction />
       <TableContainer
         headers={context.filteredHeaders}
         rows={context.filteredRows}

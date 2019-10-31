@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from '../site-config/Icon'
 
 const BackToTop = () => {
   return (
