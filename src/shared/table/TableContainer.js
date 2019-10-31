@@ -4,7 +4,7 @@ import DataTable from './DataTable'
 
 const TableContainer = (props) => {
   return (
-    <section className="table">
+    <section>
       <TableOptions />
       <DataTable headers={props.headers} rows={props.rows} />
     </section>

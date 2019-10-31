@@ -7,6 +7,7 @@ hr,
 input {
   overflow: visible;
 }
+
 progress,
 sub,
 sup {
@@ -24,6 +25,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }
@@ -45,6 +47,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
+
 a {
   background-color: transparent;
 }
@@ -54,10 +57,12 @@ abbr[title] {
   text-decoration: underline dotted;
   border-bottom: none;
 }
+
 b,
 strong {
   font-weight: bolder;
 }
+
 small {
   font-size: 80%;
 }
@@ -68,12 +73,15 @@ sup {
   font-size: 75%;
   line-height: 0;
 }
+
 sub {
   bottom: -0.25em;
 }
+
 sup {
   top: -0.5em;
 }
+
 img {
   border-style: none;
 }
@@ -88,10 +96,12 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
 }
+
 button,
 select {
   text-transform: none;
 }
+
 [type='button'],
 [type='reset'],
 [type='submit'],
@@ -106,12 +116,14 @@ button::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
+
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: ButtonText dotted 1px;
 }
+
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -122,9 +134,11 @@ legend {
   color: inherit;
   white-space: normal;
 }
+
 textarea {
   overflow: auto;
 }
+
 [type='number']::-webkit-inner-spin-button,
 [type='number']::-webkit-outer-spin-button {
   height: auto;
@@ -134,6 +148,7 @@ textarea {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
+
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -142,12 +157,15 @@ textarea {
   font: inherit;
   -webkit-appearance: button;
 }
+
 details {
   display: block;
 }
+
 summary {
   display: list-item;
 }
+
 [hidden],
 template {
   display: none;
