@@ -7,9 +7,9 @@
 
 // will create media query to resize font for mobile 22px
 %modal__text {
+  color: $color__gray-100;
   font-weight: 500;
   line-height: 1;
-  color: $color__gray-100;
   @include font-size(24px);
 }
 
