@@ -22,7 +22,7 @@ const SearchFilter = (props) => {
 
   return (
     <div className="table__search">
-      <Icon onClick={null} icon={'search'} />
+      <Icon icon={'search'} />
       <input
         className="search-input"
         type="text"

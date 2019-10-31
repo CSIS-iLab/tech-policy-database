@@ -42,7 +42,7 @@ const FrameworkModal = () => {
               title="Visit this organization's website"
             >
               {website.name} &nbsp;
-              <Icon onClick={null} icon={'external_link'} />
+              <Icon icon={'external_link'} />
             </a>
           </dd>
           <dt className="modal__subtitle">Year</dt>

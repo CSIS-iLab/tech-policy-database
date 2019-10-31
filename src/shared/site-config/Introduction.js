@@ -25,13 +25,13 @@ const Introduction = () => {
           <li>
             <a className="intro__methodology" href="#methodology">
               Methodology
-              <Icon onClick={null} icon={'arrow'} />
+              <Icon icon={'arrow'} />
             </a>
           </li>
           <li>
             <a className="intro__download" href={renderDownloadFile().url}>
               Download the data
-              <Icon onClick={null} icon={'download'} />
+              <Icon icon={'download'} />
             </a>
             <p className="intro__download-desc">
               {renderDownloadFile().description}

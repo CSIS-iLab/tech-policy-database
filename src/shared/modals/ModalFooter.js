@@ -12,7 +12,7 @@ const ModalFooter = (props) => {
         title="View the original document."
       >
         Original Framework Document
-        <Icon onClick={null} icon={'external_link'} />
+        <Icon icon={'external_link'} />
       </a>
     </footer>
   )

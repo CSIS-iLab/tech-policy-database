@@ -44,7 +44,7 @@ const FilterPanel = (props) => {
   return (
     <section className="modal__panel">
       <div className="modal__search">
-        <Icon onClick={null} icon={'search'} />
+        <Icon icon={'search'} />
         <input
           className="modal__input"
           id="search-input"

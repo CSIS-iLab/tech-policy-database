@@ -15,21 +15,21 @@ const TableTextResize = () => {
         alt="font size small"
         onClick={() => resize('var(--font-size-1)')}
       >
-        <Icon onClick={null} icon={'font_size'} />
+        <Icon icon={'font_size'} />
       </button>
       <button
         className="resize-btn"
         alt="font size medium"
         onClick={() => resize('var(--font-size-2)')}
       >
-        <Icon onClick={null} icon={'font_size'} />
+        <Icon icon={'font_size'} />
       </button>
       <button
         className="resize-btn"
         alt="font size large"
         onClick={() => resize('var(--font-size-3)')}
       >
-        <Icon onClick={null} icon={'font_size'} />
+        <Icon icon={'font_size'} />
       </button>
     </div>
   )

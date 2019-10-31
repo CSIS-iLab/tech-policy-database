@@ -35,7 +35,7 @@ const FilterFooter = (props) => {
   return (
     <footer className="modal__footer">
       <div className="modal__reset" onClick={handleResetFilters}>
-        <Icon onClick={null} icon={'reset'} />
+        <Icon icon={'reset'} />
         <span className="modal__reset-text">Reset all filters</span>
       </div>
       {renderApply()}
