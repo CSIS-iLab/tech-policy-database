@@ -3,8 +3,8 @@ import Icon from './Icon'
 
 const SocialShare = () => {
   return (
-    <ul className="site-header__nav-menu">
-      <li className="menu-item">
+    <ul className="share">
+      <li className="share-item">
         <a
           href={`https://www.facebook.com/sharer.php?u=${window.location.href}`}
           rel="noopener noreferrer"
@@ -13,7 +13,7 @@ const SocialShare = () => {
           <Icon onClick={null} icon={'facebook'} />
         </a>
       </li>
-      <li className="menu-item">
+      <li className="share-item">
         <a
           href={`https://twitter.com/intent/tweet?url=${window.location.href}&amp;via=CSIS&amp;related=CSIS`}
           rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const SocialShare = () => {
           <Icon onClick={null} icon={'twitter'} />
         </a>
       </li>
-      <li className="menu-item">
+      <li className="share-item">
         <a
           href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&source=CSIS`}
           rel="noopener noreferrer"
@@ -31,12 +31,12 @@ const SocialShare = () => {
           <Icon onClick={null} icon={'linkedin'} />
         </a>
       </li>
-      <li className="menu-item">
+      <li className="share-item">
         <a href={`mailto:techpolicy@csis.org?subject=${document.title}`}>
           <Icon onClick={null} icon={'email'} />
         </a>
       </li>
-      <li className="menu-item">
+      <li className="share-item">
         <div onClick={() => window.print()}>
           <Icon onClick={null} icon={'print'} />
         </div>
