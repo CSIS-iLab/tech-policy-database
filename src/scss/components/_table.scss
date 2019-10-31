@@ -4,23 +4,32 @@ table {
   font-size: 16px;
   border-collapse: collapse;
   margin-right: 35px;
-
-  // background-color: lightblue;
 }
 
 .table {
 
   &__header {
     background-color: $color__blue-300;
+    padding: 24px;
     @extend %table__header;
+    text-align: left;
+    height: 82px;
     
     &:first-child {
       box-shadow: 3px 0px 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
       border-right: solid 1px #2a72a3;
+      padding-left: 40px;
       color: $color__white-175;
+    }
+    &:last-child {
+      padding-right: 40px;
+    }
+    &-title {
+      margin-bottom: 4px;
     }
     &-framework {
       color: $color__white;
+      @extend %table__header;
     }
   
     &-icon {
@@ -34,6 +43,10 @@ table {
       color: $color__white-175;
     }
   
+    &-org {
+      margin-bottom: 8px;
+    }
+
     &-doc-link {
       text-decoration: none;
     }
@@ -42,11 +55,17 @@ table {
   
   &__cell {
     background-color: $color__white;
+    padding: 24px;
 
     &:first-child {
       box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
       border-right: solid 1px #dfe3e8;
       background-color: $color__white;
+      padding-left: 40px;
+    }
+
+    &:last-child {
+      padding-right:40px;
     }
   }
 
