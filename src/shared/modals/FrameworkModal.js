@@ -29,41 +29,45 @@ const FrameworkModal = () => {
   }
 
   return frameModalStatus ? (
-    <section className="modal">
+    <aside className="modal">
       <ModalHeader title={name} onClose={onClose} />
-      <section className="modal__content">
-        <h5 className="modal__subtitle">ORGANIZATION</h5>
-        <p className="modal__element">{organization}</p>
-        <a
-          className="modal__org-link"
-          href={website.url}
-          alt="organization link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {website.name} &nbsp;
-          <Icon onClick={null} icon={'external_link'} />
-        </a>
-        <h5 className="modal__subtitle">YEAR</h5>
-        <p className="modal__element">{year}</p>
-        <h5 className="modal__subtitle">ALSO KNOWN AS</h5>
-        <div
-          className="modal__aka"
-          dangerouslySetInnerHTML={createMarkup(also_known_as)}
-        />
+      <div className="modal__content">
+        <section>
+          <h5 className="modal__subtitle">organization</h5>
+          <p className="modal__element">{organization}</p>
+          <a
+            className="modal__org-link"
+            href={website.url}
+            alt="organization link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {website.name} &nbsp;
+            <Icon onClick={null} icon={'external_link'} />
+          </a>
+          <h5 className="modal__subtitle">year</h5>
+          <p className="modal__element">{year}</p>
+          <h5 className="modal__subtitle">also known as</h5>
+          <div
+            className="modal__aka"
+            dangerouslySetInnerHTML={createMarkup(also_known_as)}
+          />
+        </section>
         <div className="modal__divider" />
-        <h5 className="modal__subtitle">MEMBERS</h5>
-        <p className="modal__element">{members.description}</p>
-        <ul className="modal__mem-list">
-          {members.list.map((member, i) => (
-            <li className="mem-list-item" key={i}>
-              {member}
-            </li>
-          ))}
-        </ul>
-      </section>
+        <section>
+          <h5 className="modal__subtitle">members</h5>
+          <p className="modal__element">{members.description}</p>
+          <ul className="modal__mem-list">
+            {members.list.map((member, i) => (
+              <li className="mem-list-item" key={i}>
+                {member}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
       <ModalFooter link={url} />
-    </section>
+    </aside>
   ) : null
 }
 

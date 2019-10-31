@@ -20,21 +20,25 @@ const LangModal = () => {
   }
 
   return langModalStatus ? (
-    <section className="modal">
+    <aside className="modal">
       <ModalHeader title={'Original Language'} onClose={onClose} />
-      <section className="modal__content">
-        <h5 className="modal__subtitle">FRAMEWORK</h5>
-        <p className="modal__element">{framework}</p>
-        <h5 className="modal__subtitle">CATEGORY</h5>
-        <p className="modal__element">{category}</p>
-        <div className="modal__divider" />
-        <div
-          className="modal__orig-lang"
-          dangerouslySetInnerHTML={createMarkup(original_lang)}
-        />
-      </section>
+      <div className="modal__content">
+        <section>
+          <h5 className="modal__subtitle">framework</h5>
+          <p className="modal__element">{framework}</p>
+          <h5 className="modal__subtitle">category</h5>
+          <p className="modal__element">{category}</p>
+        </section>
+        <section>
+          <div className="modal__divider" />
+          <div
+            className="modal__orig-lang"
+            dangerouslySetInnerHTML={createMarkup(original_lang)}
+          />
+        </section>
+      </div>
       <ModalFooter link={link} />
-    </section>
+    </aside>
   ) : null
 }
 

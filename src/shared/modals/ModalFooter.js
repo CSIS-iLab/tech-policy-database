@@ -5,7 +5,7 @@ const ModalFooter = (props) => {
   const { link } = props
 
   return (
-    <section className="modal__footer">
+    <footer className="modal__footer">
       <a
         className="modal__doc-link"
         href={link}
@@ -16,7 +16,7 @@ const ModalFooter = (props) => {
         Original Framework Document
         <Icon onClick={null} icon={'external_link'} />
       </a>
-    </section>
+    </footer>
   )
 }
 
