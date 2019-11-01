@@ -1,0 +1,22 @@
+@use 'abstracts' as *;
+
+.methodology {
+  display: grid;
+  grid-column-gap: 72px;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 40px;
+
+
+  &__title {
+    grid-column: 1 / span 2;
+  }
+  
+  &__desc {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  &__program-desc {
+    padding-left: rem(24px);
+  }
+}
