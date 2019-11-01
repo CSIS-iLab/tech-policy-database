@@ -43,7 +43,9 @@
   
   &:checked {
     + label::after {
-      background: $color__blue-600;
+      background-color: red;
+      background-image: url("../../assets/symbol-defs.svg#icon-check-filled");
+     
     }
   }
   
