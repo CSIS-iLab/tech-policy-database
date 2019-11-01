@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon from '../../site-config/Icon'
 
 const FilterItem = (props) => {
   const { setCheckedItems, checkedItems, name } = props
@@ -17,15 +16,8 @@ const FilterItem = (props) => {
 
   return (
     <div className="checkbox__container">   
-      {/* {checkedItems.includes(name) ? (
-        <Icon onClick={handleClick} icon={'check-filled'} />
-      ) : (
-        <Icon onClick={handleClick} icon={'check-empty'} />
-      )} */}
       <input type="checkbox" value={name} name="categories" id={name} onChange={handleChange} />
       <label className="checkbox__items" htmlFor={name} >{name}</label>
-
-      {/* <span >{name}</span> */}
     </div>
   )
 }

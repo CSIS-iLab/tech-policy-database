@@ -106,9 +106,9 @@
 </symbol>
 </defs>
 
-    <view id="icon-checked-filled-view" viewBox="0 0 35 35" />
+    <view id="icon-check-filled-view" viewBox="0 0 35 35" />
     <view id="shape-admin-view" viewBox="0 36 35 35" />
 
-	<use xlink:href="#icon-checked-filled" width="35" height="35" x="0" y="0" id="apis"></use>
+	<use xlink:href="#icon-check-filled" width="35" height="35" x="0" y="0" id="apis"></use>
 	<use xlink:href="#shape-admin" width="35" height="35" x="0" y="36" id="admin"></use>
 </svg>

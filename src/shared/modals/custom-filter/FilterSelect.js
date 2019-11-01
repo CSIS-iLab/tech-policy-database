@@ -17,21 +17,6 @@ const FilterSelect = (props) => {
     return activeTab === 'Rows' ? checkedRows : checkedColumns
   }
 
-  // Returns one of three icons based on status of checked rows or checked columns based on activeTab
-  // When checked items is empty, all are selected; Otherwise all items are deselected.
-  // const renderIcon = () => {
-  //   if (selectTab().length === 0) {
-  //     return <Icon onClick={handleSelectAll} icon={'check-empty'} />
-  //   } else if (
-  //     (selectTab().length === maxRows && activeTab === 'Rows') ||
-  //     (selectTab().length === maxColumns && activeTab === 'Columns')
-  //   ) {
-  //     return <Icon onClick={handleDeselectAll} icon={'check-filled'} />
-  //   } else {
-  //     return <Icon onClick={handleDeselectAll} icon={'check-dash'} />
-  //   }
-  // }
-
   const renderText = () => {
     if (selectTab().length === 0) {
       return <span className="modal__select-text">Select All</span>
@@ -40,20 +25,18 @@ const FilterSelect = (props) => {
     }
   }
 
-
-    const renderSelect = () => {
-      if (selectTab().length === 0) {
-        return handleSelectAll 
-      } else if (
-        (selectTab().length === maxRows && activeTab === 'Rows') ||
-        (selectTab().length === maxColumns && activeTab === 'Columns')
-      ) {
-        return handleDeselectAll 
-      } else {
-        return handleDeselectAll 
-      }
+  const renderSelect = () => {
+    if (selectTab().length === 0) {
+      return handleSelectAll 
+    } else if (
+      (selectTab().length === maxRows && activeTab === 'Rows') ||
+      (selectTab().length === maxColumns && activeTab === 'Columns')
+    ) {
+      return handleDeselectAll 
+    } else {
+      return handleDeselectAll 
     }
-
+  }
 
   return (
     <div className="checkbox__container">
