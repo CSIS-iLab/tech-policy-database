@@ -15,7 +15,7 @@ const HeaderCell = (props) => {
   return name === 'Categories' ? (
     <th className="table__cell table__cell--header">Categories</th>
   ) : (
-    <th className="table__cell table__cell--header">
+    <th className="table__cell table__cell--header" scope="col">
       <button className="header-cell__title" onClick={handleClick}>
         {name}
         <Icon handleClick={null} icon={'info'} />

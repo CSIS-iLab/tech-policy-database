@@ -46,7 +46,7 @@ const TableCell = (props) => {
     } else if (typeof catObj !== 'object') {
       let catDesc = allRows.find((r) => r[0][0] === framework)[0][1]
       return (
-        <th className="table__cell table__cell--body">
+        <th className="table__cell table__cell--body" scope="row">
           <div className="cell__category">{framework}</div>
           <p className="cell__desc">{catDesc}</p>
         </th>
