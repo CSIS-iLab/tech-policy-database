@@ -39,8 +39,8 @@ const TableCell = (props) => {
   const renderCell = () => {
     if (typeof catObj === 'string' && catObj.length === 1) {
       return (
-        <td>
-          <div className="divider">{props.content}</div>
+        <td className="table__cell--collection" colSpan={allHeaders.length}>
+          {props.content}
         </td>
       )
     } else if (typeof catObj !== 'object') {
