@@ -1,5 +1,4 @@
 import React from 'react'
-import '../table/Table.css'
 import Icon from '../site-config/Icon'
 
 const TableTextResize = () => {
