@@ -9,8 +9,8 @@ const Methodology = () => {
   return (
     <section id="methodology" className="methodology container--inner">
       <h2 className="methodology__title">Methodology</h2>
-      <p className="methodology__desc">{methodology} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p className="methodology__program-desc">{program_description} The <a href="#" className="methodology__program-desc-link">CSIS Technology Policy Program</a>  conducts research on the social, economic, and security challenges created by disruptive technologies to inform effective policy.</p>
+      <p className="methodology__desc">{methodology}</p>
+      <p className="methodology__program-desc">{program_description}</p>
     </section>
   )
 }

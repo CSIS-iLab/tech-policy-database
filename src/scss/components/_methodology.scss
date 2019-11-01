@@ -5,7 +5,7 @@
   display: grid;
   grid-column-gap: 72px;
   grid-template-columns: 2fr 1fr;
-  padding-top: 40px;
+  padding-top: 32px;
 
   &::before {
     content: '';
@@ -24,8 +24,11 @@
     color: $color__white;
     font-family: $font__expo;
     font-weight: 600;
+    font-style: normal;
     @include font-size(34px);
+    font-stretch: normal;
     line-height: 1;
+    letter-spacing: normal;
   }
   
   &__desc {
@@ -33,7 +36,6 @@
     grid-row: 2 / span 1;
     color: $color__white-190;
     @extend %body__text-l;
-    font-weight: normal;
   }
   
   &__program-desc {
