@@ -16,7 +16,7 @@ const Introduction = () => {
   }
 
   return (
-    <section className="intro">
+    <section className="intro container--inner">
       <div className="intro__program">{program_name}</div>
       <h1 className="intro__subject">{subject}</h1>
       <div>{intro_paragraph}</div>
