@@ -9,14 +9,34 @@
 
   &__title {
     grid-column: 1 / span 2;
+    color: $color__white;
+    font-family: $font__expo;
+    font-weight: 600;
+    @include font-size(34px);
+    line-height: 1;
   }
   
   &__desc {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    color: $color__white-190;
+    @extend %body__text-l;
+    font-weight: normal;
   }
   
   &__program-desc {
     padding-left: rem(24px);
+    color: $color__white-190;
+    @extend %body__text-m;
+
+    &-link {
+      color: $color__blue-200;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: #89b9dc;
+        text-decoration: none;
+      }
+    }
   }
 }
