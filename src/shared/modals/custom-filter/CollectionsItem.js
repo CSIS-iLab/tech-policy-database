@@ -5,7 +5,7 @@ const CollectionsItem = (props) => {
   const { name, checkedCollections, setCheckedCollections, allRows } = props
 
   // Toggles collection item's checked status on user input
-  const handleClick = () => {
+  const handleChange = () => {
     if (!checkedCollections.includes(name)) {
       setCheckedCollections([...checkedCollections, name])
     } else {
@@ -19,12 +19,15 @@ const CollectionsItem = (props) => {
 
   return (
     <div className="checkbox__container">
-      {checkedCollections.includes(name) ? (
+      {/* {checkedCollections.includes(name) ? (
         <Icon onClick={handleClick} icon={'check_filled'} />
       ) : (
-        <Icon onClick={handleClick} icon={'check_empty'} />
-      )}
-      <span className="modal__option">{name}</span>
+        <Icon onClick={handleClick} icon={'check_empty'} /> */}
+      
+
+      <input type="checkbox" value={name} name="collections" id={name} onChange={handleChange} />
+      <label className="checkbox__items" htmlFor={name}>{name}</label>
+
       <span className="modal__col-count-item">
         {collectionCount(name)}&nbsp;items
       </span>

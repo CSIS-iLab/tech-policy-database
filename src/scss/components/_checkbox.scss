@@ -1,0 +1,57 @@
+@use 'abstracts' as *;
+
+.modal {
+
+  fieldset {
+    border: none;
+}
+
+  .checkbox__container {
+    margin: 0.5rem 0;
+}
+
+  input[type="checkbox"] {
+    opacity: 0;
+    // position: absolute;
+    visibility: hidden;
+  
+  + label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -24px;
+      border: 1px solid #6F686A;
+      width: 18px;
+      height: 18px;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: -22px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  &:checked {
+    + label::after {
+      background: $color__blue-600;
+    }
+  }
+  
+  &:focus {
+    + label::before {
+      box-shadow: 0 0px 8px $color__blue-300;
+
+    }
+  }
+}
+}

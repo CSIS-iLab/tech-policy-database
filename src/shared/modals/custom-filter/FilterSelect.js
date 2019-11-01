@@ -19,18 +19,18 @@ const FilterSelect = (props) => {
 
   // Returns one of three icons based on status of checked rows or checked columns based on activeTab
   // When checked items is empty, all are selected; Otherwise all items are deselected.
-  const renderIcon = () => {
-    if (selectTab().length === 0) {
-      return <Icon onClick={handleSelectAll} icon={'check_empty'} />
-    } else if (
-      (selectTab().length === maxRows && activeTab === 'Rows') ||
-      (selectTab().length === maxColumns && activeTab === 'Columns')
-    ) {
-      return <Icon onClick={handleDeselectAll} icon={'check_filled'} />
-    } else {
-      return <Icon onClick={handleDeselectAll} icon={'check_dash'} />
-    }
-  }
+  // const renderIcon = () => {
+  //   if (selectTab().length === 0) {
+  //     return <Icon onClick={handleSelectAll} icon={'check-empty'} />
+  //   } else if (
+  //     (selectTab().length === maxRows && activeTab === 'Rows') ||
+  //     (selectTab().length === maxColumns && activeTab === 'Columns')
+  //   ) {
+  //     return <Icon onClick={handleDeselectAll} icon={'check-filled'} />
+  //   } else {
+  //     return <Icon onClick={handleDeselectAll} icon={'check-dash'} />
+  //   }
+  // }
 
   const renderText = () => {
     if (selectTab().length === 0) {
@@ -40,10 +40,25 @@ const FilterSelect = (props) => {
     }
   }
 
+
+    const renderSelect = () => {
+      if (selectTab().length === 0) {
+        return handleSelectAll 
+      } else if (
+        (selectTab().length === maxRows && activeTab === 'Rows') ||
+        (selectTab().length === maxColumns && activeTab === 'Columns')
+      ) {
+        return handleDeselectAll 
+      } else {
+        return handleDeselectAll 
+      }
+    }
+
+
   return (
-    <div className="modal__select">
-      {renderIcon()}
-      {renderText()}
+    <div className="checkbox__container">
+      <input type="checkbox" value={renderText()} name="collections" id={renderText()} onChange={renderSelect()} />
+      <label className="checkbox__items" htmlFor={renderText()}>{renderText()}</label>
     </div>
   )
 }
