@@ -13,44 +13,38 @@
   border-collapse: collapse;
   border-spacing: 0;
 
-  &__header-cell {
-    min-width: 250px;
+  &__container {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    /* height must be set for the header to be sticky */
+    height: 100vh;
+    overflow: scroll;
+
+    &::after {
+      content: '';
+      display: block;
+      flex: 1 0 auto;
+      width: 2rem;
+      height: 100%;
+    }
+  }
+
+  &__cell {
+    width: 250px;
     padding: rem(24px);
-    @extend %table__header;
-    text-align: left;
+    vertical-align: top;
 
-    &__container {
-      position: relative;
-      display: flex;
-      max-width: 100%;
-      /* height must be set for the header to be sticky */
-      height: 100vh;
-      overflow: scroll;
-
-      &::after {
-        content: '';
-        display: block;
-        flex: 1 0 auto;
-        width: 2rem;
-        height: 100%;
-      }
+    &:first-child {
+      position: sticky;
+      left: 0;
+      width: 300px;
+      padding-left: rem(40px);
     }
 
-    &__cell {
-      width: 250px;
-      padding: calculate-rem(24px);
-      vertical-align: top;
-
-      &:first-child {
-        position: sticky;
-        left: 0;
-        width: 300px;
-        padding-left: rem(40px);
-      }
-
-      &:last-child {
-        padding-right: rem(40px);
-      }
+    &:last-child {
+      padding-right: rem(40px);
+    }
 
     &--header {
       position: sticky;
@@ -84,42 +78,39 @@
     }
   }
 
-    .header-cell {
-      &__title {
-        margin-bottom: 4px;
-      }
+  &__header-row {
+    background: $color__blue-300;
+  }
 
-      &__framework {
-        color: $color__white;
-        @extend %table__header;
-      }
+  &__row {
+    border-bottom: solid 1px $color__gray-200;
+  }
 
   .header-cell {
     &__title {
       margin-bottom: rem(4px);
     }
 
-      &__org,
-      &__doc-link {
-        @extend %body__text-xs;
-        color: $color__white-175;
-      }
-
-      &-org {
-        margin-bottom: rem(8px);
-      }
-
-      &__doc-link {
-        text-decoration: none;
-        box-shadow: 3px 0 17px -1px rgba(7, 23, 35, 0.64); //This is different than the mock, please review
-      }
+    &__framework {
+      color: $color__white;
+      @extend %table__header;
     }
 
-    &__cell {
-      min-width: 250px;
-      padding: rem(24px);
-      vertical-align: top;
-      background-color: $color__white;
+    &__icon {
+      width: 17px;
+      height: 17px;
+      color: $color__white-175;
+    }
+
+    &__org,
+    &__doc-link {
+      @extend %body__text-xs;
+      color: $color__white-175;
+    }
+
+    &__org {
+      margin-bottom: rem(8px);
+    }
 
     &__doc-link {
       text-decoration: none;
