@@ -2,16 +2,15 @@
 
 .share {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
-
+  
   &-item {
     display: flex;
-    justify-content: center;
     width: 37px;
     height: 37px;
-    
   }
 
   &-link {
@@ -30,7 +29,7 @@
 
     &-print {
       background: none;
-      border: transparent;
+      border: 0;
       cursor: pointer;
     }
   }
