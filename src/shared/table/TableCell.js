@@ -39,31 +39,31 @@ const TableCell = (props) => {
   const renderCell = () => {
     if (typeof catObj === 'string' && catObj.length === 1) {
       return (
-        <td>
-          <div className="divider">{props.content}</div>
+        <td className="table__cell--collection" colSpan={allHeaders.length}>
+          {props.content}
         </td>
       )
     } else if (typeof catObj !== 'object') {
       let catDesc = allRows.find((r) => r[0][0] === framework)[0][1]
       return (
-        <td className="table__cell">
+        <th className="table__cell table__cell--body" scope="row">
           <div className="cell__category">{framework}</div>
           <p className="cell__desc">{catDesc}</p>
-        </td>
+        </th>
       )
     } else if (catObj.has_data) {
       return (
-        <th className="table__cell">
+        <td className="table__cell table__cell--body">
           <div
             className="cell__abbrev-lang"
             dangerouslySetInnerHTML={createMarkup(catObj.abbreviated_lang)}
           />
           {renderOriginalLang()}
-        </th>
+        </td>
       )
     } else if (!catObj.has_data) {
       return (
-        <td className="table__cell">
+        <td className="table__cell table__cell--body">
           <div className="cell__default-lang">{catObj.default_lang}</div>
           {renderOriginalLang()}
         </td>
