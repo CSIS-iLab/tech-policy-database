@@ -11,22 +11,22 @@
     justify-content: center;
     width: 37px;
     height: 37px;
+    
+    a,
+    button {
+      @include font-size(20px);
+      padding: rem(8px);
+      color: $color__white-160;
+      transition: color 0.5s ease;
+      
+      &:hover {
+        color: $color__white;
+      }   
+    }
   }
 
-  .icon {
-    width: 20px;
-    height: 20px;
-    padding: rem(16px);
-    color: $color__white-160;
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: $color__white;
-    }
-
-    &-email {
-      width: 22px;
-    }
+  .icon-email {
+    width: 22px;
   }
 
   &-print {
