@@ -5,7 +5,7 @@
 
   &__header-cell {
     min-width: 250px;
-    padding: calculate-rem(24px);
+    padding: rem(24px);
     @extend %table__header;
     text-align: left;
     vertical-align: top;
@@ -13,13 +13,13 @@
 
     &:first-of-type {
       min-width: 300px;
-      padding-left: calculate-rem(40px);
+      padding-left: rem(40px);
       color: $color__white-175;
       border-right: solid 1px #2a72a3;
     }
 
     &:last-of-type {
-      padding-right: calculate-rem(40px);
+      padding-right: rem(40px);
     }
 
     &-title {
@@ -44,7 +44,7 @@
     }
 
     &-org {
-      margin-bottom: calculate-rem(8px);
+      margin-bottom: rem(8px);
     }
 
     &-doc-link {
@@ -55,17 +55,17 @@
 
   &__cell {
     min-width: 250px;
-    padding: calculate-rem(24px);
+    padding: rem(24px);
     vertical-align: top;
     background-color: $color__white;
 
     &:first-of-type {
       min-width: 300px;
-      padding-left: calculate-rem(40px);
+      padding-left: rem(40px);
     }
 
     &:last-of-type {
-      padding-right: calculate-rem(40px);
+      padding-right: rem(40px);
       border-right: solid 1px #dfe3e8;
       box-shadow: 3px 6px 8px 0 rgba(164, 164, 164, 0.5);
     }
