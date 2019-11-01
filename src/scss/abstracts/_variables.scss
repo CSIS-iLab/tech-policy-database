@@ -40,19 +40,11 @@ $font__expo: ExpoSerifPro, serif;
 
 /*----------  Structure  ----------*/
 
-$sizes__default: ('small', 'medium', 'large', 'xlarge');
-
 $breakpoints: (
-  // 0
-    'small': 0,
-  // 600px
-    'medium': 37.5em,
-  // 900px
-    'large': 56.25em,
-  // 1050px
-    'large-2': 68.75em,
-  // 1280px
-    'xlarge': 80em,
-  // 1440px
-    'xlarge-2': 90em
+  'small': 0,
+  'medium': 37.5em,
+  'large': 64em
 );
+
+$size__container-max-width: 1200px;
+$size__container-max-width--inner: 980px;

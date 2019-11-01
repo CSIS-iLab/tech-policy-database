@@ -55,7 +55,7 @@ const TableOptions = () => {
   }
 
   return (
-    <section className="table__options">
+    <section className="table__options container">
       <SearchFilter
         handleFilter={handleFilter}
         searchText={searchText}
