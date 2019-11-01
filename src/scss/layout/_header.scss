@@ -1,1 +1,28 @@
 @use 'abstracts' as *;
+
+.site-header {
+  // header section
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: solid 1px #979797;
+
+  // logo link
+  &__logo {
+    color: $color__white;
+    font-weight: bold;
+    line-height: 1.05;
+    letter-spacing: 1.03px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &-divider {
+      font-weight: 100;
+    }
+    // csis logo svg
+    .csis-link__logo {
+      margin: rem(20px);
+      margin-right: rem(8px);
+    }
+  }
+}

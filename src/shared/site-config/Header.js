@@ -12,6 +12,7 @@ const Header = () => {
             alt="Center for Strategic and International Studies"
             title="Center for Strategic and International Studies"
           />
+          <span className="site-header__logo-divider">|</span> Explore The Data
         </a>
       </div>
       <SocialShare />
