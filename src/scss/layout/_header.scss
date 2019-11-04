@@ -4,25 +4,24 @@
   // header section
   display: flex;
   justify-content: space-between;
-  height: 60px;
   border-bottom: solid 1px #979797;
 
   // logo link
   &__logo {
+    display: block;
     color: $color__white;
     font-weight: bold;
     line-height: 1.05;
     letter-spacing: 1.03px;
     text-transform: uppercase;
     text-decoration: none;
-    
-    &-divider {
-      font-weight: 100;
-    }
+
     // csis logo svg
     .csis-link__logo {
       margin: rem(20px);
-      margin-right: rem(8px);
+      margin-right: rem(10px);
+      padding-right: rem(10px);
+      border-right: 1px solid $color__white;
     }
   }
 }
