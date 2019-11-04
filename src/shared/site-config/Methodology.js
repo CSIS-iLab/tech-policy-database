@@ -6,11 +6,19 @@ const Methodology = () => {
 
   const { methodology, program_description } = siteInfo
 
+  const createMarkup = (lang) => {
+    return { __html: lang }
+  }
+
   return (
     <section id="methodology" className="methodology container--inner">
       <h2 className="methodology__title">Methodology</h2>
       <p className="methodology__desc">{methodology}</p>
-      <p className="methodology__program-desc">{program_description}</p>
+      <p
+        className="methodology__program-desc"
+        dangerouslySetInnerHTML={createMarkup(program_description)}
+      >
+      </p>
     </section>
   )
 }
