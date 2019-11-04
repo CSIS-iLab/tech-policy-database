@@ -33,11 +33,17 @@ const ScrollBar = () => {
 
   return (
     <div className="table__scroll">
-      <button className="scroll-btn" onClick={scrollLeft}>
-        <Icon icon={'arrow_chev_left'} />
+      <button
+        className="scroll-btn btn btn--scroll btn--square"
+        onClick={scrollLeft}
+      >
+        <Icon icon={'arrow-chev-left'} />
       </button>
-      <button className="scroll-btn" onClick={scrollRight}>
-        <Icon icon={'arrow_chev_right'} />
+      <button
+        className="scroll-btn btn btn--scroll btn--square"
+        onClick={scrollRight}
+      >
+        <Icon icon={'arrow-chev-right'} />
       </button>
     </div>
   )
