@@ -6,12 +6,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  
-  &-item {
-    display: flex;
-    width: 37px;
-    height: 37px;
-  }
 
   &-link {
     @include font-size(20px);
