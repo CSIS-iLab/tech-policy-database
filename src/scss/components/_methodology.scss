@@ -4,6 +4,7 @@
   position: relative;
   display: grid;
   grid-column-gap: 72px;
+  grid-row-gap: rem(16px);
   grid-template-columns: 2fr 1fr;
   padding-top: rem(60px);
 
@@ -22,24 +23,23 @@
   &__title {
     grid-column: 1 / span 2;
     margin-top: 0;
+    margin-bottom: 0;
     color: $color__white;
     font-family: $font__expo;
-    font-weight: 600;
-    font-style: normal;
     @include font-size(34px);
-    font-stretch: normal;
     line-height: 1;
-    letter-spacing: normal;
   }
   
   &__desc {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    margin-bottom: 0;
     color: $color__white-190;
     @extend %body__text-l;
   }
   
   &__program-desc {
+    margin-bottom: 0;
     padding-left: rem(24px);
     color: $color__white-190;
     @extend %body__text-m;
