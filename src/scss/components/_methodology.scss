@@ -37,11 +37,6 @@
     margin-bottom: 0;
     color: $color__white-190;
     @extend %body__text-l;
-
-    @include breakpoint('medium') {
-      grid-column: 1 / span 1;
-    }
-    
   }
   
   &__program-desc {
