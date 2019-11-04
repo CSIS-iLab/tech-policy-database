@@ -3,10 +3,13 @@
 .methodology {
   position: relative;
   display: grid;
-  grid-column-gap: 72px;
+  grid-column-gap: rem(72px);
   grid-row-gap: rem(16px);
-  grid-template-columns: 2fr 1fr;
   padding: rem(48px) 0;
+  
+  @include breakpoint('medium') {
+    grid-template-columns: 2fr 1fr;
+  }
 
   &::before {
     content: '';
@@ -43,24 +46,25 @@
   }
   
   &__program-desc {
+    display: none;
     margin-bottom: 0;
     padding-left: rem(24px);
     color: $color__white-190;
     @extend %body__text-m;
-    visibility: hidden;
     
     @include breakpoint('medium') {
-      visibility: visible;
+      display: block;
     }
 
     a {
       color: $color__blue-200;
       transition: all 0.5s ease;
-
+      
       &:hover {
         color: #89b9dc;
         text-decoration: none;
       }
     }
+    
   }
 }
