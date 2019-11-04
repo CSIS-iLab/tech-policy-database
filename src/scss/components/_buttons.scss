@@ -1,0 +1,142 @@
+@use 'abstracts' as *;
+
+.btn {
+  @extend %button;
+  display: inline-block;
+  padding: rem(8px) rem(16px);
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    outline: 2px solid $color__blue-200;
+  }
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  &.btn--xs {
+    @extend %body__text-xs;
+  }
+
+  &.btn--square {
+    padding: rem(8px);
+  }
+
+  &.btn--primary {
+    color: $color__white-190;
+    text-transform: uppercase;
+    background: $color__blue-400;
+
+    &:not([disabled]):hover {
+      background: $color__blue-600;
+    }
+
+    &[disabled] {
+      background: $color__gray-430;
+    }
+  }
+
+  &.btn--dark {
+    color: $color__white-190;
+    text-transform: uppercase;
+    background: $color__gray-600;
+
+    &:hover {
+      color: $color__white;
+      background: $color__gray-500;
+    }
+
+    &.js-isActive {
+      background: $color__gray-400;
+      border: 2px solid $color__blue-300;
+
+      &:hover {
+        border-color: #85b7db;
+      }
+    }
+  }
+
+  &.btn--white {
+    position: relative;
+    color: $color__gray-300;
+    background: rgba($color__white, 0.85);
+    border: solid 1px $color__white-125;
+    box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21),
+      inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+
+    // Apply outer box-shadow to a pseudo element for performance reasons. More info here: https://alligator.io/css/transition-box-shadows/
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.21);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
+  &.btn--transparent-light,
+  &.btn--transparent-dark {
+    padding: rem(8px);
+  }
+
+  &.btn--transparent {
+    &-light {
+      color: $color__gray-460;
+
+      &:hover {
+        color: $color__black;
+      }
+    }
+
+    &-dark {
+      color: $color__white-160;
+
+      &:hover {
+        color: $color__white;
+      }
+    }
+  }
+
+  &.btn--icon {
+    display: inline-flex;
+    align-items: center;
+
+    .icon {
+      margin-right: rem(8px);
+    }
+  }
+
+  // These get their own class because they don't follow any of the above patterns entirely.
+  &.btn--scroll {
+    display: inline-flex;
+    align-items: center;
+    color: $color__white-190;
+    @include font-size(18px);
+    background: transparent;
+
+    &:not([disabled]):hover {
+      color: $color__white;
+      background: $color__gray-600;
+    }
+
+    &[disabled] {
+      color: $color__white-130;
+    }
+  }
+}
