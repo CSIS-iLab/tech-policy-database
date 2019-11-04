@@ -1,0 +1,32 @@
+@use 'abstracts' as *;
+
+.share {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__link {
+    @include font-size(20px);
+    padding: rem(8px);
+    color: $color__white-160;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $color__white;
+    }
+
+    &-email {
+      @include font-size(22px);
+    }
+
+    &-print {
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+
+
+}
