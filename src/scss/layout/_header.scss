@@ -4,11 +4,11 @@
   // header section
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px #979797;
 
   // logo link
   &__logo {
-    display: block;
+    display: flex;
+    align-items: center;
     color: $color__white;
     font-weight: bold;
     line-height: 1.05;
