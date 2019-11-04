@@ -25,7 +25,7 @@ const CollectionsItem = (props) => {
         <Icon onClick={handleClick} icon={'check_empty'} /> */}
       
 
-      <input type="checkbox" value={name} name="collections" id={name} onChange={handleChange} />
+      <input type="checkbox" value={name} name="collections" id={name} onChange={handleChange} checked={checkedCollections.includes(name)}/>
       <label className="checkbox__items" htmlFor={name}>{name}</label>
 
       <span className="modal__col-count-item">

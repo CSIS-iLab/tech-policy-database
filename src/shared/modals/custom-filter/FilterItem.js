@@ -16,7 +16,7 @@ const FilterItem = (props) => {
 
   return (
     <div className="checkbox__container">   
-      <input type="checkbox" value={name} name="categories" id={name} onChange={handleChange} />
+      <input type="checkbox" value={name} name="categories" id={name} onChange={handleChange} checked={checkedItems.includes(name)} />
       <label className="checkbox__items" htmlFor={name} >{name}</label>
     </div>
   )

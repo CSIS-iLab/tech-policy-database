@@ -58,12 +58,15 @@
 
     &.checkbox--mid {
       + label::before {
-        // light blue background
+        background-color: $color__blue-200;
       }
 
       + label::after {
-        // white line
-        // top: change
+        top: 7px;
+        left: 3.5px;
+        width: 0.6em;
+        height: 0;
+        transform: rotate(0deg);
       }
     }
   }
