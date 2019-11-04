@@ -45,7 +45,7 @@ const FilterSelect = (props) => {
 
   return (
     <div className="checkbox__container">
-      <input className={renderClass()} type="checkbox" value={'SelectAll'} name="collections" id='SelectAll' onChange={selectOnChange()} />
+      <input className={renderClass()} type="checkbox" value={'SelectAll'} name="collections" id='SelectAll' onChange={selectOnChange()} checked={renderText()}/>
       <label className="checkbox__items" htmlFor={'SelectAll'}>{renderText()}</label>
     </div>
   )
