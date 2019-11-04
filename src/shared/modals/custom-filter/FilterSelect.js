@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon from '../../site-config/Icon'
 
 const FilterSelect = (props) => {
   const {
@@ -17,31 +16,37 @@ const FilterSelect = (props) => {
     return activeTab === 'Rows' ? checkedRows : checkedColumns
   }
 
-  const renderText = () => {
-    if (selectTab().length === 0) {
-      return <span className="modal__select-text">Select All</span>
-    } else if (selectTab().length > 0) {
-      return <span className="modal__select-text">Deselect All</span>
-    }
+   // Helper f(n) that returns max items per column or row based on activeTab
+   const maxItems = () => {
+    return (selectTab().length === maxRows && activeTab === 'Rows') || (selectTab().length === maxColumns && activeTab === 'Columns')
   }
 
-  const renderSelect = () => {
+  const renderText = () => {
     if (selectTab().length === 0) {
-      return handleSelectAll 
-    } else if (
-      (selectTab().length === maxRows && activeTab === 'Rows') ||
-      (selectTab().length === maxColumns && activeTab === 'Columns')
-    ) {
-      return handleDeselectAll 
-    } else {
-      return handleDeselectAll 
-    }
+      return 'Select All'
+    } 
+      return 'Deselect All'
   }
+
+  const selectOnChange = () => {
+    if (selectTab().length === 0) {
+      return handleSelectAll
+    } 
+    return handleDeselectAll 
+  }
+
+  const renderClass = () => {
+    if (selectTab().length === 0 || maxItems()) {
+      return null
+    }  
+    return 'checkbox--mid'
+  }
+
 
   return (
     <div className="checkbox__container">
-      <input type="checkbox" value={renderText()} name="collections" id={renderText()} onChange={renderSelect()} />
-      <label className="checkbox__items" htmlFor={renderText()}>{renderText()}</label>
+      <input className={renderClass()} type="checkbox" value={'SelectAll'} name="collections" id='SelectAll' onChange={selectOnChange()} />
+      <label className="checkbox__items" htmlFor={'SelectAll'}>{renderText()}</label>
     </div>
   )
 }
