@@ -24,7 +24,7 @@
 
 
   &__title {
-    grid-column: 1 / span -1;
+    grid-column: 1 / -1;
     margin-top: 0;
     margin-bottom: 0;
     color: $color__white;
