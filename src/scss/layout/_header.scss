@@ -2,8 +2,20 @@
 
 .site-header {
   // header section
+  position: relative;
   display: flex;
   justify-content: space-between;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc((100vw - 100%) / -2 - 10px);
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $color__gray-700;
+  }
 
   // logo link
   &__logo {
