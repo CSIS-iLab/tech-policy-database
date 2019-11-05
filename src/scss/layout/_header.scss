@@ -36,10 +36,13 @@
     
     // csis logo svg
     .csis-link__logo {
-      margin: rem(20px);
-      margin-right: rem(10px);
+      margin: rem(20px) rem(10px) rem(20px) 0;
       padding-right: rem(10px);
       border-right: 1px solid $color__white;
+      
+      @include breakpoint('medium') {
+        margin: rem(20px) rem(10px) rem(20px) rem(20px);
+      }
     }
   }
 }
