@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon from '../../site-config/Icon'
 
 const CollectionsItem = (props) => {
   const { name, checkedCollections, setCheckedCollections, allRows } = props
@@ -19,12 +18,6 @@ const CollectionsItem = (props) => {
 
   return (
     <div className="checkbox__container">
-      {/* {checkedCollections.includes(name) ? (
-        <Icon onClick={handleClick} icon={'check_filled'} />
-      ) : (
-        <Icon onClick={handleClick} icon={'check_empty'} /> */}
-      
-
       <input  type="checkbox" value={name} name="collections" id={name} onChange={handleChange} checked={checkedCollections.includes(name)}/>
       <label className="checkbox__items" htmlFor={name}>{name}</label>
 

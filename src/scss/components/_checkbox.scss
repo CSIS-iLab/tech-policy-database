@@ -1,62 +1,73 @@
 @use 'abstracts' as *;
 
 .modal {
-
   fieldset {
-    border: none;
     padding: 0;
-}
+    border: 0;
+  }
+
+  .legend {
+    display: none;
+  }
 
   .checkbox__container {
     margin: 0.5rem 0;
-}
+  }
 
-  input[type="checkbox"] {
-    opacity: 0;
+  input[type='checkbox'] {
     position: absolute;
     visibility: hidden;
+    opacity: 0;
   
-  + label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    padding-left: 1.5rem;
-    font-family: $font__roboto;
-    
-    &::before {
-      content: '';
+    + label {
+      @extend %body__text-m;
+      position: relative;
       display: block;
-      position: absolute;
-      left: 0px;
-      border: 1px solid $color__gray-487;
-      border-radius: 2px;
-      width: 1em;
-      height: 1em;
-    }
+      padding-left: 1.5rem;
+      color: $color__gray-300;
+      font-family: $font__roboto;
+      cursor: pointer;
     
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      left: 4px;
-      top: 0.5px;
-      width: 0.5em;
-      height: 0.75em;
+      &::before {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 1em;
+        height: 1em;
+        border: 1px solid $color__gray-487;
+        border-radius: 2px;
+        transition: background 0.3s ease-in-out;
+        content: '';
+      }
+    
+      &::after {
+        position: absolute;
+        top: 0.5px;
+        left: 4px;
+        display: block;
+        width: 0.45em;
+        height: 0.75em;
+        content: '';
+      }
     }
-  }
   
-  &:checked {
-    + label::before {
-      background-color: $color__blue-400;
-    }
-    + label::after {
-      transform: rotate(45deg);
-      border-bottom: 2px solid $color__white;
-      border-right: 2px solid $color__white;
+    &:checked {
+      + label::before {
+        background-color: $color__blue-400;
+      }
+
+      + label::after {
+        border-right: 2px solid $color__white;
+        border-bottom: 2px solid $color__white;
+        transform: rotate(45deg);
     
+      }
+
+      
     }
 
-    &.checkbox--mid {
+    /* stylelint-disable-next-line */
+    &.checkbox--mid:checked {
       + label::before {
         background-color: $color__blue-200;
       }
@@ -69,13 +80,12 @@
         transform: rotate(0deg);
       }
     }
-  }
   
-  &:focus {
-    + label::before {
-      box-shadow: 0 0px 8px $color__blue-300;
+    &:focus {
+      + label::before {
+        box-shadow: 0 0 8px $color__blue-300;
 
+      }
     }
   }
-}
 }

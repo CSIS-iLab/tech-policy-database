@@ -14,6 +14,7 @@ const FilterContent = (props) => {
 
   return activeTab === 'Rows' ? (
     <fieldset>
+      <legend className="legend">Select the rows to display</legend>
       {displayedRows.map((row, i) => (
         <FilterItem
           key={i}
@@ -26,6 +27,7 @@ const FilterContent = (props) => {
       </fieldset>
   ) : (
     <fieldset>
+      <legend className="legend">Select the columns to display</legend>
       {displayedColumns.map((data, i) => (
         <FilterItem
           key={i}
