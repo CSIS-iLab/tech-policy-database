@@ -158,6 +158,7 @@ const FilterModal = () => {
       <section className="modal__content">
         <FilterTabs
           setActiveTab={setActiveTab}
+          activeTab={activeTab}
           handleSearchFilter={handleSearchFilter}
         />
         <FilterPanel
