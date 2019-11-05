@@ -2,7 +2,11 @@
 
 /* Import Styles */
 
-@use 'components/checkbox';
-@use 'components/table';
 @use 'vendors/normalize';
+@use 'components/buttons';
+@use 'components/checkbox';
+@use 'components/methodology';
+@use 'components/social-share';
+@use 'components/table';
 @use 'layout/body';
+@use 'layout/header';
