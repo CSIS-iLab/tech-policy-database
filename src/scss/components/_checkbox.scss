@@ -18,18 +18,18 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-  
+
     + label {
       @extend %body__text-m;
       position: relative;
       display: block;
       padding-left: 1.5rem;
       color: $color__gray-300;
-      font-family: $font__roboto;
       cursor: pointer;
-    
+
       &::before {
         position: absolute;
+        top: 4px;
         left: 0;
         display: block;
         width: 1em;
@@ -39,10 +39,10 @@
         transition: background 0.3s ease-in-out;
         content: '';
       }
-    
+
       &::after {
         position: absolute;
-        top: 0.5px;
+        top: 4px;
         left: 4px;
         display: block;
         width: 0.45em;
@@ -50,7 +50,7 @@
         content: '';
       }
     }
-  
+
     &:checked {
       + label::before {
         background-color: $color__blue-400;
@@ -60,10 +60,7 @@
         border-right: 2px solid $color__white;
         border-bottom: 2px solid $color__white;
         transform: rotate(45deg);
-    
       }
-
-      
     }
 
     /* stylelint-disable-next-line */
@@ -73,18 +70,17 @@
       }
 
       + label::after {
-        top: 7px;
+        top: 50%;
         left: 3.5px;
         width: 0.6em;
         height: 0;
         transform: rotate(0deg);
       }
     }
-  
+
     &:focus {
       + label::before {
         box-shadow: 0 0 8px $color__blue-300;
-
       }
     }
   }
