@@ -5,7 +5,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-
+  
+  
   &::after {
     content: '';
     position: absolute;
@@ -16,18 +17,23 @@
     height: 1px;
     background-color: $color__gray-700;
   }
-
+  
   // logo link
   &__logo {
     display: flex;
     align-items: center;
+    margin: 0 auto;
     color: $color__white;
     font-weight: bold;
     line-height: 1.05;
     letter-spacing: 1.03px;
     text-transform: uppercase;
     text-decoration: none;
-
+    
+    @include breakpoint('medium') {
+      margin: inherit;
+    }
+    
     // csis logo svg
     .csis-link__logo {
       margin: rem(20px);
