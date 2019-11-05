@@ -13,7 +13,8 @@ const FilterContent = (props) => {
   } = props
 
   return activeTab === 'Rows' ? (
-    <ul className="modal__option-list">
+    <fieldset>
+      <legend className="legend">Select the rows to display</legend>
       {displayedRows.map((row, i) => (
         <FilterItem
           key={i}
@@ -22,9 +23,11 @@ const FilterContent = (props) => {
           checkedItems={checkedRows}
         />
       ))}
-    </ul>
+   
+      </fieldset>
   ) : (
-    <ul className="modal__option-list">
+    <fieldset>
+      <legend className="legend">Select the columns to display</legend>
       {displayedColumns.map((data, i) => (
         <FilterItem
           key={i}
@@ -33,7 +36,7 @@ const FilterContent = (props) => {
           checkedItems={checkedColumns}
         />
       ))}
-    </ul>
+    </fieldset>
   )
 }
 

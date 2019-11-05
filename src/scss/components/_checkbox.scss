@@ -1,0 +1,87 @@
+@use 'abstracts' as *;
+
+.modal {
+  fieldset {
+    padding: 0;
+    border: 0;
+  }
+
+  .legend {
+    display: none;
+  }
+
+  .checkbox__container {
+    margin: 0.5rem 0;
+  }
+
+  input[type='checkbox'] {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+
+    + label {
+      @extend %body__text-m;
+      position: relative;
+      display: block;
+      padding-left: 1.5rem;
+      color: $color__gray-300;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        display: block;
+        width: 1em;
+        height: 1em;
+        border: 1px solid $color__gray-487;
+        border-radius: 2px;
+        transition: background 0.3s ease-in-out;
+        content: '';
+      }
+
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        display: block;
+        width: 0.45em;
+        height: 0.75em;
+        content: '';
+      }
+    }
+
+    &:checked {
+      + label::before {
+        background-color: $color__blue-400;
+      }
+
+      + label::after {
+        border-right: 2px solid $color__white;
+        border-bottom: 2px solid $color__white;
+        transform: rotate(45deg);
+      }
+    }
+
+    /* stylelint-disable-next-line */
+    &.checkbox--mid:checked {
+      + label::before {
+        background-color: $color__blue-200;
+      }
+
+      + label::after {
+        top: 50%;
+        left: 3.5px;
+        width: 0.6em;
+        height: 0;
+        transform: rotate(0deg);
+      }
+    }
+
+    &:focus {
+      + label::before {
+        box-shadow: 0 0 8px $color__blue-300;
+      }
+    }
+  }
+}

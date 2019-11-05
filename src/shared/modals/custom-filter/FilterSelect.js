@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon from '../../site-config/Icon'
 
 const FilterSelect = (props) => {
   const {
@@ -17,33 +16,37 @@ const FilterSelect = (props) => {
     return activeTab === 'Rows' ? checkedRows : checkedColumns
   }
 
-  // Returns one of three icons based on status of checked rows or checked columns based on activeTab
-  // When checked items is empty, all are selected; Otherwise all items are deselected.
-  const renderIcon = () => {
-    if (selectTab().length === 0) {
-      return <Icon onClick={handleSelectAll} icon={'check_empty'} />
-    } else if (
-      (selectTab().length === maxRows && activeTab === 'Rows') ||
-      (selectTab().length === maxColumns && activeTab === 'Columns')
-    ) {
-      return <Icon onClick={handleDeselectAll} icon={'check_filled'} />
-    } else {
-      return <Icon onClick={handleDeselectAll} icon={'check_dash'} />
-    }
+   // Helper f(n) that returns max items per column or row based on activeTab
+   const maxItems = () => {
+    return (selectTab().length === maxRows && activeTab === 'Rows') || (selectTab().length === maxColumns && activeTab === 'Columns')
   }
 
   const renderText = () => {
     if (selectTab().length === 0) {
-      return <span className="modal__select-text">Select All</span>
-    } else if (selectTab().length > 0) {
-      return <span className="modal__select-text">Deselect All</span>
-    }
+      return 'Select All'
+    } 
+      return 'Deselect All'
   }
 
+  const selectOnChange = () => {
+    if (selectTab().length === 0) {
+      return handleSelectAll
+    } 
+    return handleDeselectAll 
+  }
+
+  const renderClass = () => {
+    if (selectTab().length === 0 || maxItems()) {
+      return null
+    }  
+    return 'checkbox--mid'
+  }
+
+
   return (
-    <div className="modal__select">
-      {renderIcon()}
-      {renderText()}
+    <div className="checkbox__container">
+      <input className={renderClass()} type="checkbox" value={'SelectAll'} name="collections" id='SelectAll' onChange={selectOnChange()} checked={renderText()}/>
+      <label className="checkbox__items" htmlFor={'SelectAll'}>{renderText()}</label>
     </div>
   )
 }

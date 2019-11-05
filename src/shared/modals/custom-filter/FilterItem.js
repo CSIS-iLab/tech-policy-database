@@ -1,11 +1,10 @@
 import React from 'react'
-import Icon from '../../site-config/Icon'
 
 const FilterItem = (props) => {
   const { setCheckedItems, checkedItems, name } = props
 
   // Toggles checked status of item (row or column based on tab)
-  const handleClick = () => {
+  const handleChange = () => {
     if (!checkedItems.includes(name)) {
       setCheckedItems([...checkedItems, name])
     } else {
@@ -13,14 +12,12 @@ const FilterItem = (props) => {
     }
   }
 
+  
+
   return (
-    <div className="option-item">
-      {checkedItems.includes(name) ? (
-        <Icon onClick={handleClick} icon={'check_filled'} />
-      ) : (
-        <Icon onClick={handleClick} icon={'check_empty'} />
-      )}
-      <span className="modal__option">{name}</span>
+    <div className="checkbox__container">   
+      <input type="checkbox" value={name} name="categories" id={name} onChange={handleChange} checked={checkedItems.includes(name)} />
+      <label className="checkbox__items" htmlFor={name} >{name}</label>
     </div>
   )
 }
