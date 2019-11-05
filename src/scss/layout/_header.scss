@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  
+  height: rem(80px);
   
   &::after {
     content: '';
