@@ -829,7 +829,7 @@
     }
   },
   {
-    "name": "AU Malabo Convention",
+    "name": "AU Convention on Cyber Security and Personal Data Protection",
     "url": "https://www.sbs.ox.ac.uk/cybersecurity-capacity/system/files/African%20Union%20Convention%20on%20CyberSecurity%20%26%20Personal%20Data%20Protection_0.pdf",
     "year": "2014",
     "categories": {
@@ -1065,9 +1065,9 @@
       }
     },
     "organization": "African Union",
-    "also_known_as": "",
+    "also_known_as": "Malabo Convention",
     "members": {
-      "description": "",
+      "description": "African nations",
       "list": [
         "Benin",
         "Chad",
@@ -1090,8 +1090,8 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "https://au.int/en/education-science-technology",
+      "name": "AU Education, Science & Technology"
     }
   },
   {
@@ -1330,10 +1330,10 @@
         "original_lang": ""
       }
     },
-    "organization": "",
+    "organization": "Association of Southeast Asian Nations",
     "also_known_as": "",
     "members": {
-      "description": "",
+      "description": "Southeast Asian nations",
       "list": [
         "Indonesia",
         "Philippines",
@@ -1348,8 +1348,8 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
+      "name": "ASEAN Telecommunications and IT Ministers Meeting"
     }
   },
   {
@@ -1588,10 +1588,10 @@
         "original_lang": ""
       }
     },
-    "organization": "",
+    "organization": "Organization of American States",
     "also_known_as": "",
     "members": {
-      "description": "",
+      "description": "Independent states of the Americas",
       "list": [
         "Antigua and Barbuda",
         "Argentina",
@@ -1631,8 +1631,8 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "https://www.citel.oas.org/en/Pages/default.aspx",
+      "name": "Inter-American Telecommunication Commission"
     }
   },
   {
@@ -1871,10 +1871,10 @@
         "original_lang": ""
       }
     },
-    "organization": "",
+    "organization": "United Nations",
     "also_known_as": "",
     "members": {
-      "description": "",
+      "description": "UN member organizations",
       "list": [
         "International Organization for Migration (IOM)",
         "Food and Agriculture Organization (FAO)",
@@ -1931,8 +1931,8 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "https://www.unsystem.org/privacy-principles",
+      "name": "Principles on Personal Data Protection and Privacy"
     }
   },
   {
@@ -2171,7 +2171,7 @@
         "original_lang": "<p>(Article 28)</p><p><strong>Holder may oppose to the treatment of its personal data</strong> when:</p><ol><li><p>It has a legitimate reason resulting from its particular situation.</p></li><li><p>The purpose of the treatment of its personal data is direct marketing, including preparing profiles, to the extent that it is related to such activity.</p></li></ol><p>In the case of the previous item, when holder opposes treatment with direct marketing purposes, its personal data must stop being treated with such purposes</p>"
       }
     },
-    "organization": "",
+    "organization": "Ibero-American Data Protection Network",
     "also_known_as": "",
     "members": {
       "description": "",
@@ -2195,12 +2195,12 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "http://www.redipd.es/index-iden-idphp.php",
+      "name": "RIPD Home Page"
     }
   },
   {
-    "name": "CoE Convention 108+",
+    "name": "CoE Modernized Convention for the Protection of Individuals with Regard to the Processing of Personal Data",
     "url": "https://rm.coe.int/convention-108-convention-for-the-protection-of-individuals-with-regar/16808b36f1",
     "year": "2018",
     "categories": {
@@ -2436,7 +2436,7 @@
       }
     },
     "organization": "Council of Europe",
-    "also_known_as": "",
+    "also_known_as": "Convention 108+",
     "members": {
       "description": "",
       "list": [
@@ -2477,12 +2477,12 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "https://www.coe.int/en/web/data-protection",
+      "name": "Council of Europe Data Protection website"
     }
   },
   {
-    "name": "ICDPPC Madrid Resolution",
+    "name": "ICDPPC International Standards on the Protection of Personal Data and Privacy (2009)",
     "url": "https://icdppc.org/wp-content/uploads/2015/02/The-Madrid-Resolution.pdf",
     "year": "2009",
     "categories": {
@@ -2717,8 +2717,8 @@
         "original_lang": "<p>(Principle 18)</p><p><strong>The data subject may object to the processing of personal data where there is a legitimate reason </strong>related to his/her specific personal situation.</p><p>The exercise of this right to object is not justified where the processing is necessary for the performance of a duty imposed on the responsible person by the applicable national legislation.</p>"
       }
     },
-    "organization": "",
-    "also_known_as": "",
+    "organization": "International Conference of Data Protection and Privacy Commissioners",
+    "also_known_as": "Madrid Resolution",
     "members": {
       "description": "",
       "list": [
@@ -2848,8 +2848,8 @@
       ]
     },
     "website": {
-      "url": "",
-      "name": ""
+      "url": "https://icdppc.org/",
+      "name": "ICDPPC Home Page"
     }
   }
 ]
