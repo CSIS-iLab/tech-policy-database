@@ -1,35 +1,40 @@
-import React from 'react'
-import Icon from '../../site-config/Icon'
+import React from 'react'
+import Icon from '../../site-config/Icon'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-const FilterTabs = (props) => {
-  const { activeTab, setActiveTab, handleSearchFilter } = props
+const FilterTabs = (props) => {
+  const { setActiveTab, handleSearchFilter } = props
 
-  // Switches the activeTab and calls the searchFilter based on current search term
-  const handleTabSwitch = (tab) => {
-    console.log(activeTab)
-    setActiveTab(tab)
-    handleSearchFilter(document.getElementById('search-input').value, tab)
-  }
-  
-  return (
-    <div className="modal__tab-menu" >
-      <ul role="tablist" >
-        <li role="presentation" >
-          <a className="modal__tab" id="tab_1" href="#Columns" role="tab" aria-selected="true" aria-controls="Columns" tabIndex="0" onClick={() => handleTabSwitch('Columns')} onKeyUp={() => handleTabSwitch('Columns')}>
-            <Icon icon={'columns'} />Columns
-          </a>
-        </li>
-        <li >
-          <a className="modal__tab" id="tab_2" href="#Rows" role="tab" aria-selected="false" aria-controls="Rows" tabIndex="0" onClick={() => handleTabSwitch('Rows')} onKeyUp={() => handleTabSwitch('Rows')}>
-            <Icon icon={'rows'} /> Rows
-          </a>
-        </li>
-      </ul>
-        <div id="Columns" aria-labelledby="tab_1" role="tabpanel"></div>
-        <div id="Rows" aria-labelledby="tab_2" role="tabpanel" aria-hidden="true"></div>
-    </div>
-  )
+  // Switches the activeTab and calls the searchFilter based on current search term
+  const handleTabSwitch = (tab) => {
+    setActiveTab(tab)
+    handleSearchFilter(document.getElementById('search-input').value, tab)
+  }
+
+  // className="modal__tab"
+  //       onClick={() => handleTabSwitch('Columns')}
+
+  //       <div className="modal__tab" onClick={() => handleTabSwitch('Rows')}>
+
+  //       </div>
+
+  return (
+    <Tabs className="modal__tab-menu">
+      <TabList>
+        <Tab>
+          <Icon icon={'columns'} />
+          Columns
+        </Tab>
+        <Tab>
+          <Icon icon={'rows'} />
+          Rows
+        </Tab>
+      </TabList>
+
+      <TabPanel>Columns go here</TabPanel>
+      <TabPanel>Rows go here</TabPanel>
+    </Tabs>
+  )
 }
 
-export default FilterTabs
-
+export default FilterTabs
