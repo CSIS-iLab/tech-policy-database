@@ -15,11 +15,12 @@
     content: '';
     position: absolute;
     top: 0;
-    left: calc((100vw - 100%) / -2 - 10px);
+    left: calc((100vw - 100%) / -2);
     display: block;
     width: 100vw;
     height: 1px;
     background-color: $color__gray-700;
+    opacity: 0.37;
   }
 
 
