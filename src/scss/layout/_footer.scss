@@ -3,20 +3,17 @@
 .site-footer {
   @extend %body__text-s;
   position: relative;
-  height: rem(250px);
+  height: rem(183px);
 
   &::before {
     content: '';
     position: absolute;
-    bottom: 0;
-    // top: 0;
-    left: calc((100vw - 100%) / -2 - 10px);
+    left: calc((100vw - 100%) / -2);
     z-index: -1;
     display: block;
     width: 100vw;
-    height: rem(250px);
+    height: 100%;
     background-color: $color__gray-500;
-    background-size: cover;
   }
 
   a {
