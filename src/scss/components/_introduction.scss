@@ -36,11 +36,12 @@
 
     &::before {
       position: absolute;
-      top: 35vh;
-      left: calc((100vh - 18%));
-      width: 25vh;
+      top: 65%;
+      left: calc((100vh - 42%));
+      width: 20vh;
       height: 1px;
-      background-color: $color__gray-700;
+      opacity: 0.55;
+      background-color: #979797;
       transform: rotate(90deg);
       content: '';
     }
