@@ -82,22 +82,19 @@ const FilterModal = () => {
     checkAllColumns()
   }
 
-  // Sets all rows or columns to unchecked depending on which tab the user is on
-  const handleDeselectAll = () => {
-    if (activeTab === 'Rows') {
-      setCheckedRows([])
-    } else if (activeTab === 'Columns') {
-      setCheckedColumns([])
-    }
+  // Sets all rows as unchecked
+  const uncheckAllRows = () => {
+    setCheckedRows([])
   }
 
-  // Sets all rows or columns to checked depending on which tab the user is on
-  const handleSelectAll = () => {
-    if (activeTab === 'Rows') {
-      checkAllRows()
-    } else if (activeTab === 'Columns') {
-      checkAllColumns()
-    }
+  // Sets all columns as unchecked
+  const uncheckAllColumns = () => {
+    setCheckedColumns([])
+  }
+
+  const handleResetFilters = () => {
+    uncheckAllRows()
+    uncheckAllColumns()
   }
 
   // Helper f(n) for applyFilters()
@@ -147,11 +144,6 @@ const FilterModal = () => {
     applyRowFilters()
   }
 
-  const handleResetFilters = () => {
-    setCheckedRows([])
-    setCheckedColumns([])
-  }
-
   return filterModalStatus ? (
     <aside className="modal">
       <ModalHeader title={'Filter'} onClose={onClose} />
@@ -166,10 +158,12 @@ const FilterModal = () => {
           displayedColumns={displayedColumns}
           setCheckedColumns={setCheckedColumns}
           checkedColumns={checkedColumns}
-          handleSelectAll={handleSelectAll}
-          handleDeselectAll={handleDeselectAll}
           maxRows={allRows.length}
           maxColumns={allHeaders.slice(1).length}
+          checkAllColumns={checkAllColumns}
+          checkAllRows={checkAllRows}
+          uncheckAllColumns={uncheckAllColumns}
+          uncheckAllRows={uncheckAllRows}
         />
         {/* <FilterPanel
           handleSearchFilter={handleSearchFilter}

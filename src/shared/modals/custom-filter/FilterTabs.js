@@ -14,10 +14,12 @@ const FilterTabs = (props) => {
     displayedColumns,
     setCheckedColumns,
     checkedColumns,
-    handleSelectAll,
-    handleDeselectAll,
     maxRows,
-    maxColumns
+    maxColumns,
+    checkAllColumns,
+    checkAllRows,
+    uncheckAllColumns,
+    uncheckAllRows
   } = props
 
   // Switches the activeTab and calls the searchFilter based on current search term
@@ -48,8 +50,8 @@ const FilterTabs = (props) => {
 
       <TabPanel>
         <FilterSelect
-          handleSelectAll={handleSelectAll}
-          handleDeselectAll={handleDeselectAll}
+          handleSelectAll={checkAllColumns}
+          handleDeselectAll={uncheckAllColumns}
           maxItems={maxColumns}
           checkedItems={checkedColumns}
         />
@@ -62,8 +64,8 @@ const FilterTabs = (props) => {
       </TabPanel>
       <TabPanel>
         <FilterSelect
-          handleSelectAll={handleSelectAll}
-          handleDeselectAll={handleDeselectAll}
+          handleSelectAll={checkAllRows}
+          handleDeselectAll={uncheckAllRows}
           maxItems={maxRows}
           checkedItems={checkedRows}
         />
