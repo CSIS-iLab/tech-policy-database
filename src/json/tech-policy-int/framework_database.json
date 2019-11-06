@@ -101,7 +101,7 @@
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure when:</p><ol><li><p>Data no longer necessary</p></li><li><p>Subject withdraws consent</p></li><li><p>Subject objects to processing</p></li><li><p>Data has been unlawfully processed</p></li><li><p>necessary for compliance with a legal obligation</p></li><li><p>data was collected from a child</p></li></ol><p>When this data has been made public:</p><ol><li><p>Controller must erase data</p></li><li><p>Controller must inform other processors of the erasure request</p></li></ol>",
+        "abbreviated_lang": "<p>Right to erasure when:</p><ol><li><p>Data no longer necessary</p></li><li><p>Subject withdraws consent</p></li><li><p>Subject objects to processing</p></li><li><p>Data has been unlawfully processed</p></li><li><p>necessary for compliance with a legal obligation</p></li><li><p>data was collected from a child</p></li></ol><p>When this data has been made public:</p><ol><li><p>Controller must erase data</p></li><li><p>Controller must inform other processors of the erasure request</p></li></ol>",
         "original_lang": "<p>(Article 17)</p><p>The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and <strong>the controller shall have the obligation to erase personal data without undue delay</strong> where one of the following grounds applies:</p><ol><li><p>the personal data are <strong>no longer necessary</strong> in relation to the purposes for which they were collected or otherwise processed;</p></li><li><p>the data subject <strong>withdraws consent</strong> on which the processing is based according to point (a) of <a href=\"https://gdpr-info.eu/art-6-gdpr/\">Article 6</a>(1), or point (a) of <a href=\"https://gdpr-info.eu/art-9-gdpr/\">Article 9</a>(2), and where there is no other legal ground for the processing;</p></li><li><p>the data subject <strong>objects to the processing</strong> pursuant to <a href=\"https://gdpr-info.eu/art-21-gdpr/\">Article 21</a>(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to <a href=\"https://gdpr-info.eu/art-21-gdpr/\">Article 21</a>(2);</p></li><li><p>the personal data have been <strong>unlawfully processed</strong>;</p></li><li><p>the personal data have to be erased for <strong>compliance with a legal obligation</strong> in Union or Member State law to which the controller is subject;</p></li><li><p>the personal data have been collected in relation to the offer of information society services referred to in <a href=\"https://gdpr-info.eu/art-8-gdpr/\">Article 8</a>(1).</p></li></ol><p><strong>Where the controller has made the personal data public</strong> and is obliged pursuant to paragraph 1 to erase the personal data, <strong>the controller, taking account of available technology and the cost of implementation, shall take reasonable steps, including technical measures, to inform controllers which are processing the personal data that the data subject has requested the erasure by such controllers of any links to, or copy or replication of, those personal data.</strong></p><p>Paragraphs 1 and 2 shall not apply to the extent that processing is necessary:</p><ol><li><p>for exercising the right of freedom of expression and information;</p></li><li><p>for compliance with a legal obligation which requires processing by Union or Member State law to which the controller is subject or for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;</p></li><li><p>for reasons of public interest in the area of public health in accordance with points (h) and (i) of <a href=\"https://gdpr-info.eu/art-9-gdpr/\">Article 9</a>(2) as well as <a href=\"https://gdpr-info.eu/art-9-gdpr/\">Article 9</a>(3);</p></li><li><p>for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89</a>(1) in so far as the right referred to in paragraph 1 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or</p></li><li><p>for the establishment, exercise or defence of legal claims.</p></li></ol>"
       },
       "right_to_object_processing": {
@@ -206,8 +206,8 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection by design required",
-        "original_lang": "(Article 25)\n\nTaking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects. \n\nThe controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual’s intervention to an indefinite number of natural persons.</p>"
+        "abbreviated_lang": "Data protection by design and default required",
+        "original_lang": "(Article 25)\n\nTaking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects. \n\nThe controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual’s intervention to an indefinite number of natural persons."
       },
       "security": {
         "has_data": false,
@@ -231,8 +231,8 @@
       },
       "right_to_object_to_processing": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to object to processing based on the interests of the public or the controller</p>",
-        "original_lang": "<p>(Article 21)</p><p>The data subject shall have <strong>the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of </strong><a href=\"https://gdpr-info.eu/art-6-gdpr/\"><strong>Article 6(</strong></a><strong>1)</strong>, [processing necessary for the public interest or for the legitimate interests of the controller] including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.</p><p>Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.</p><p>Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.</p><p>At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.</p><p>In the context of the use of information society services, and notwithstanding <a href=\"http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058\">Directive 2002/58/EC</a>, the data subject may exercise his or her right to object by automated means using technical specifications.</p><p>Where personal data are processed for scientific or historical research purposes or statistical purposes pursuant to <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89(</a>1), the data subject, on grounds relating to his or her particular situation, shall have the right to object to processing of personal data concerning him or her, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>"
+        "abbreviated_lang": "<p>Right to object to processing</p>",
+        "original_lang": "<p>(Article 18)</p><p>The data subject shall have the <strong>right to obtain from the controller restriction of processing </strong>where one of the following applies:</p><ol><li><p>the accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data;</p></li><li><p>the processing is unlawful and the data subject opposes the erasure of the personal data and requests the restriction of their use instead;</p></li><li><p>the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;</p></li><li><p>the data subject has objected to processing pursuant to <a href=\"https://gdpr-info.eu/art-21-gdpr/\">Article 21</a>(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.</p></li></ol><p>Where processing has been restricted under paragraph 1, such personal data shall, with the exception of storage, only be processed with the data subject’s consent or for the establishment, exercise or defence of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the Union or of a Member State.</p><p>(Article 21)</p><p>The data subject shall have <strong>the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of </strong><a href=\"https://gdpr-info.eu/art-6-gdpr/\"><strong>Article 6(</strong></a><strong>1)</strong>, [processing necessary for the public interest or for the legitimate interests of the controller] including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.</p><p>Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.</p><p>Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.</p><p>At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.</p><p>In the context of the use of information society services, and notwithstanding <a href=\"http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058\">Directive 2002/58/EC</a>, the data subject may exercise his or her right to object by automated means using technical specifications.</p><p>Where personal data are processed for scientific or historical research purposes or statistical purposes pursuant to <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89(</a>1), the data subject, on grounds relating to his or her particular situation, shall have the right to object to processing of personal data concerning him or her, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>"
       }
     },
     "organization": "European Union",
@@ -661,7 +661,7 @@
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure for inaccurate data</p>",
+        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ul><li><p>inaccurate</p></li></ul>",
         "original_lang": "<p>(Principle VIII) </p><p>Individuals should be able to: <strong>challenge the accuracy of information relating to them</strong> and, if possible and as appropriate, <strong>have the information rectified, completed, amended or deleted</strong></p>"
       },
       "right_to_object_processing": {
@@ -930,7 +930,7 @@
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>equivocal</p></li><li><p>out of date</p></li><li><p>unlawfully processed</p></li></ol>",
+        "abbreviated_lang": "<p>Right to erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>equivocal</p></li><li><p>out of date</p></li><li><p>unlawfully processed</p></li></ol>",
         "original_lang": "<p>(Article 19) </p><p>Any natural person may <strong>demand that the data controller rectify, complete, update, block or erase, as the case may be, the personal data concerning him/her</strong> where such data are inaccurate, incomplete, equivocal or out of date, or whose collection, use, disclosure or storage are prohibited.</p>"
       },
       "right_to_object_processing": {
@@ -1286,7 +1286,7 @@
       },
       "retention": {
         "has_data": true,
-        "abbreviated_lang": "Personal data shall be kept no longer than necessary",
+        "abbreviated_lang": "<p>Kept no longer than necessary</p>",
         "original_lang": "<p>(Paragraph 6)</p><p>An organisation should <strong>cease to retain documents</strong> containing personal data, or remove the means by which the personal data can be associated with particular individuals <strong>as soon as it is reasonable to assume that the retention is no longer necessary</strong> for legal or business purposes;</p>"
       },
       "cross_border_transfers": {
@@ -1369,7 +1369,7 @@
       },
       "personal_data": {
         "has_data": true,
-        "abbreviated_lang": "<p>Data that identifies or can reasonably be used to identify an individual</p><p>(Lists categories of covered data)</p>",
+        "abbreviated_lang": "<p>Data that identifies or can reasonably be used to identify an individual</p><p>(Lists specific classes of covered data)</p>",
         "original_lang": "<p>(Preamble) </p><p>Personal-Data. As used in these Principles, the term “personal data” includes <strong>information that identifies, or can be reasonably be used to identify, a specific individual, whether directly or indirectly</strong>, in particular by reference to an identification number or to one or more factors specific to his or her physical, physiological, mental, economic, cultural or social identity. The term does not include information that does not identify (or cannot reasonably be used to identify) a particular individual.</p>"
       },
       "sensitive_personal_data": {
@@ -1544,7 +1544,7 @@
       },
       "retention": {
         "has_data": true,
-        "abbreviated_lang": "Personal data shall be kept no longer than necessary",
+        "abbreviated_lang": "<p>Kept no longer than necessary</p>",
         "original_lang": "<p>(Fourth Principle) </p><p>Personal data should be kept and used only in a lawful manner not incompatible with the purpose(s) for which it was collected.<strong> It should not be kept for longer than necessary</strong> for that purpose or purposes and in accordance with relevant domestic law.</p>"
       },
       "cross_border_transfers": {
@@ -1559,7 +1559,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection by design required",
+        "abbreviated_lang": "Privacy by design required",
         "original_lang": "(Tenth Principle)\n\nOne effective contemporary approach is to require data controllers to build privacy protection into the design and architecture of their information technology systems and business practices. Privacy and security considerations should be incorporated into every stage of product design."
       },
       "security": {
@@ -1827,7 +1827,7 @@
       },
       "retention": {
         "has_data": true,
-        "abbreviated_lang": "Personal data shall be kept no longer than necessary",
+        "abbreviated_lang": "<p>Kept no longer than necessary</p>",
         "original_lang": "<p>(Principle 4)</p><p>Personal data should only be <strong>retained for the time that is necessary</strong> for the specified purposes.</p>"
       },
       "cross_border_transfers": {
@@ -2012,7 +2012,7 @@
       },
       "conditions_for_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Informed</p><p>Unambiguous;</p><p>Freely given</p>",
+        "abbreviated_lang": "<p>Informed;</p><p>Unambiguous;</p><p>Freely given</p>",
         "original_lang": "<p>(Principle 2)</p><p>Consent: expression of the <strong>free, specific, unequivocal and informed will of holder</strong> through which he accepts and authorizes the treatment of the personal data that concern him.</p><p>(Principle 12)</p><p>When it is necessary to obtain holder’s consent, the person responsible shall prove in an indubitable way that holder granted its consent, whether through a clear representation or affirmation.</p>"
       },
       "conditions_for_access": {
@@ -2296,12 +2296,12 @@
       },
       "right_to_correction": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request correction of data</p><ol><li><p>processed contrary to the Convention</p></li></ol>",
+        "abbreviated_lang": "<p>Right to correction of data that is</p><ol><li><p>processed contrary to the Convention</p></li></ol>",
         "original_lang": "<p>(Article 9)</p><p>Every individual shall have <strong>a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure</strong>, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure of data</p><ul><li><p>processed contrary to the Convention</p></li></ul>",
+        "abbreviated_lang": "<p>Right to erasure of data that is</p><ol><li><p>processed contrary to the Convention</p></li></ol>",
         "original_lang": "<p>(Article 9)</p><p>Every individual shall have <strong>a right: to obtain, on request, free of charge and without excessive delay, rectification or erasure</strong>, as the case may be, of such data if these are being, or have been, processed contrary to the provisions of this Convention;</p><p>(Explanatory Report)</p><p>The rectification or erasure, if justified, must be free of charge. In the case of rectifications and erasures obtained in conformity with the principle set out in littera e., those rectifications and erasures should, where possible, be brought to the attention of the recipients of the original information, unless this proves to be impossible or involves disproportionate efforts.</p>"
       },
       "right_to_object_processing": {
@@ -2391,7 +2391,7 @@
       },
       "retention": {
         "has_data": true,
-        "abbreviated_lang": "Personal data shall be kept no longer than necessary",
+        "abbreviated_lang": "<p>Kept no longer than necessary</p>",
         "original_lang": "<p>(Article 5)</p><p>Personal data undergoing automatic processing shall be: preserved in a form which permits identification of the data subjects for<strong> no longer than is required for the purpose for which those data are stored.</strong></p>"
       },
       "cross_border_transfers": {
@@ -2558,7 +2558,7 @@
       },
       "conditions_for_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Informed</p><p>Unambiguous;</p><p>Freely given</p>",
+        "abbreviated_lang": "<p>Informed;</p><p>Unambiguous;</p><p>Freely given</p>",
         "original_lang": "<p>(Principle 12) </p><p>As a general rule, personal data may only be processed in one of the following situations:</p><ol><li><p>After obtaining the <strong>free, unambiguous and informed</strong> consent of the data subject</p></li></ol>"
       },
       "conditions_for_access": {
@@ -2578,7 +2578,7 @@
       },
       "right_to_correction": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol><p>Controllers should notify third parties to whom data had been disclosed</p>",
+        "abbreviated_lang": "<p>Right to request correction of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol>",
         "original_lang": "<p>(Principle 17)</p><p>The data subject has the <strong>right to request from the responsible person the deletion or rectification of personal data </strong>that might be incomplete, inaccurate, unnecessary or excessive.</p><p>Where justified, the responsible person should carry out the rectification or deletion requested. The responsible person should also notify this fact to third parties to whom personal data had been disclosed, where they are known.</p>"
       },
       "right_to_erasure": {
