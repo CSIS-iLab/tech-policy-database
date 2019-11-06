@@ -512,7 +512,7 @@
       }
     },
     "organization": "Organization for Economic Co-operation and Development",
-    "also_known_as": "",
+    "also_known_as": "N/A",
     "members": {
       "description": "Advanced democratic market economies",
       "list": [
@@ -796,7 +796,7 @@
       }
     },
     "organization": "Asia-Pacific Economic Cooperation",
-    "also_known_as": "",
+    "also_known_as": "N/A",
     "members": {
       "description": "Pacific rim economies",
       "list": [
@@ -1331,7 +1331,7 @@
       }
     },
     "organization": "Association of Southeast Asian Nations",
-    "also_known_as": "",
+    "also_known_as": "N/A",
     "members": {
       "description": "Southeast Asian nations",
       "list": [
@@ -1589,7 +1589,7 @@
       }
     },
     "organization": "Organization of American States",
-    "also_known_as": "",
+    "also_known_as": "N/A",
     "members": {
       "description": "Independent states of the Americas",
       "list": [
@@ -1872,9 +1872,9 @@
       }
     },
     "organization": "United Nations",
-    "also_known_as": "",
+    "also_known_as": "N/A",
     "members": {
-      "description": "UN member organizations",
+      "description": "UN system organizations",
       "list": [
         "International Organization for Migration (IOM)",
         "Food and Agriculture Organization (FAO)",
@@ -2172,9 +2172,9 @@
       }
     },
     "organization": "Ibero-American Data Protection Network",
-    "also_known_as": "",
+    "also_known_as": "N/A",
     "members": {
-      "description": "",
+      "description": "Data protection authorities of Iberian and Central and South American countries",
       "list": [
         "Andorra Data Protection Agency",
         "Argentinian Agency for Access to Public Information",
@@ -2438,7 +2438,7 @@
     "organization": "Council of Europe",
     "also_known_as": "Convention 108+",
     "members": {
-      "description": "",
+      "description": "European nations",
       "list": [
         "Andorra",
         "Armenia",
@@ -2720,7 +2720,7 @@
     "organization": "International Conference of Data Protection and Privacy Commissioners",
     "also_known_as": "Madrid Resolution",
     "members": {
-      "description": "",
+      "description": "Data protection authorities from around the world",
       "list": [
         "Albania Commissioner for Personal Data Protection",
         "Andorra Data Protection Agency",
