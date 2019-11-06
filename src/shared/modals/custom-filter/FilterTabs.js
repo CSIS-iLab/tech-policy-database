@@ -1,8 +1,8 @@
 import React from 'react'
-import FilterItem from './FilterItem'
 import Icon from '../../site-config/Icon'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import FilterContent from './FilterContent'
+import FilterSelect from './FilterSelect'
 
 const FilterTabs = (props) => {
   const {
@@ -13,7 +13,11 @@ const FilterTabs = (props) => {
     checkedRows,
     displayedColumns,
     setCheckedColumns,
-    checkedColumns
+    checkedColumns,
+    handleSelectAll,
+    handleDeselectAll,
+    maxRows,
+    maxColumns
   } = props
 
   // Switches the activeTab and calls the searchFilter based on current search term
@@ -43,6 +47,12 @@ const FilterTabs = (props) => {
       </TabList>
 
       <TabPanel>
+        <FilterSelect
+          handleSelectAll={handleSelectAll}
+          handleDeselectAll={handleDeselectAll}
+          maxItems={maxColumns}
+          checkedItems={checkedColumns}
+        />
         <FilterContent
           title={'columns'}
           displayedItems={displayedColumns}
@@ -51,6 +61,12 @@ const FilterTabs = (props) => {
         />
       </TabPanel>
       <TabPanel>
+        <FilterSelect
+          handleSelectAll={handleSelectAll}
+          handleDeselectAll={handleDeselectAll}
+          maxItems={maxRows}
+          checkedItems={checkedRows}
+        />
         <FilterContent
           title={'rows'}
           displayedItems={displayedRows}

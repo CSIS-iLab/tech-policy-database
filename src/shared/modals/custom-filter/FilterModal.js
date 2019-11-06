@@ -166,6 +166,10 @@ const FilterModal = () => {
           displayedColumns={displayedColumns}
           setCheckedColumns={setCheckedColumns}
           checkedColumns={checkedColumns}
+          handleSelectAll={handleSelectAll}
+          handleDeselectAll={handleDeselectAll}
+          maxRows={allRows.length}
+          maxColumns={allHeaders.slice(1).length}
         />
         {/* <FilterPanel
           handleSearchFilter={handleSearchFilter}
