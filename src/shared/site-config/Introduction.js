@@ -19,16 +19,16 @@ const Introduction = () => {
     <section className="intro container--inner">
       <div className="intro__program">{program_name}</div>
       <h1 className="intro__subject">{subject}</h1>
-      <div>{intro_paragraph}</div>
+      <div className="intro__description">{intro_paragraph}</div>
       <nav role="navigation">
         <ul className="intro__nav">
-          <li>
+          <li className="intro__nav-item intro__nav-item-methodology">
             <a className="intro__methodology" href="#methodology">
               Methodology
               <Icon icon={'arrow'} />
             </a>
           </li>
-          <li>
+          <li className="intro__nav-item intro__nav-item-download">
             <a className="intro__download" href={renderDownloadFile().url}>
               Download the data
               <Icon icon={'download'} />

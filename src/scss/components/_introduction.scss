@@ -1,0 +1,93 @@
+@use 'abstracts' as *;
+
+.intro {
+  position: relative;
+  display: grid;
+  grid-column-gap: rem(72px);
+  padding: rem(48px) 0;
+  
+  @include breakpoint('medium') {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__program {
+    grid-column: 1 / span 2;
+    color: $color__white-160;
+    text-align: center;
+    @extend %subtitle;
+  }
+
+  &__subject {
+    grid-column: 1 / span 2;
+    margin-top: 10px;
+    color: $color__white;
+    font-family: $font__expo;
+    font-weight: 600;
+    line-height: 1.04;
+    text-align: center;
+    @include font-size(54px);
+  }
+
+  &__description {
+    grid-column: 1 /  span 1;
+    margin-bottom: 0;
+    color: $color__white-190;
+    @extend %body__text-l;
+
+    &::before {
+      position: absolute;
+      top: 35vh;
+      left: calc((100vh - 18%));
+      width: 25vh;
+      height: 1px;
+      background-color: $color__gray-700;
+      transform: rotate(90deg);
+      content: '';
+    }
+  
+  }
+
+  ul {
+    list-style-type: none;
+    border-style: none;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+  }
+
+  &__methodology {
+    grid-column: 2 / span 1;
+    color: $color__white-190;
+    text-decoration: none;
+    @extend %body__text-m;
+  }
+
+  &__nav-item-methodology {
+    padding-bottom: 10px;
+  }
+  
+  &__download {
+    margin-bottom: 0;
+    color: $color__white-190;
+    text-decoration: none;
+    @extend %body__text-m;
+  }
+
+  &__download-desc {
+    grid-column: 2 / span 1;
+    margin-bottom: 0;
+    color: $color__white-160;
+    @extend %body__text-m;
+  }
+  
+  .icon-arrow {
+    margin-left: 10px;
+    @include font-size(20px);
+    color: $color__blue-200;
+  }
+
+  .icon-download {
+    margin-left: 10px;
+    @include font-size(20px);
+    color: $color__blue-200;
+  }
+}
