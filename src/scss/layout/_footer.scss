@@ -1,6 +1,67 @@
 @use 'abstracts' as *;
 
 .site-footer {
-  display: grid;
+  @extend %body__text-s;
+  position: relative;
+  height: rem(250px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    // top: 0;
+    left: calc((100vw - 100%) / -2 - 10px);
+    z-index: -1;
+    display: block;
+    width: 100vw;
+    height: rem(250px);
+    background-color: $color__gray-500;
+    background-size: cover;
+  }
+
+  a {
+    color: $color__blue-200;
+
+    &:hover {
+      color: $color__blue-700;
+      text-decoration: none;
+    }
+  }
+
+  &__about {
+    display: grid;
+    grid-column-gap: rem(96px);
+    grid-row-gap: rem(16px);
+    padding: rem(48px) 0;
   
+    @include breakpoint('medium') {
+      grid-template-columns: rem(310px) rem(400px) rem(310px); 
+    }
+  }
+
+  &__logo {
+    margin-bottom: rem(15px);
+  }
+
+  &__copyright {
+    margin-bottom: 0;
+    color: $color__white-160;
+    opacity: 0.77;
+  }
+
+  &__privacy-pol a {
+    margin-bottom: 0;
+    opacity: 0.77;
+  }
+
+  &__desc,
+  &__address {
+    color: $color__white-175;
+  }
+
+  &__address {
+    width: rem(197px);
+    margin-top: rem(11px);
+    font-style: normal;
+  }
 }
