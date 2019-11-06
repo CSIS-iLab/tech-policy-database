@@ -44,19 +44,23 @@
   }
 
   &__copyright {
-    margin-bottom: 0;
     color: $color__white-160;
     opacity: 0.77;
   }
 
-  &__privacy-pol a {
-    margin-bottom: 0;
-    opacity: 0.77;
+  &__privacy-pol {
+    @include breakpoint('medium') {
+      display: block;
+    }
   }
 
   &__desc,
   &__address {
     color: $color__white-175;
+  }
+
+  &__desc p {
+    margin-bottom: 0;
   }
 
   &__address {
