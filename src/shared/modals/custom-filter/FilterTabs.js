@@ -1,9 +1,20 @@
 import React from 'react'
+import FilterItem from './FilterItem'
 import Icon from '../../site-config/Icon'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import FilterContent from './FilterContent'
 
 const FilterTabs = (props) => {
-  const { setActiveTab, handleSearchFilter } = props
+  const {
+    setActiveTab,
+    handleSearchFilter,
+    displayedRows,
+    setCheckedRows,
+    checkedRows,
+    displayedColumns,
+    setCheckedColumns,
+    checkedColumns
+  } = props
 
   // Switches the activeTab and calls the searchFilter based on current search term
   const handleTabSwitch = (tab) => {
@@ -31,8 +42,22 @@ const FilterTabs = (props) => {
         </Tab>
       </TabList>
 
-      <TabPanel>Columns go here</TabPanel>
-      <TabPanel>Rows go here</TabPanel>
+      <TabPanel>
+        <FilterContent
+          title={'columns'}
+          displayedItems={displayedColumns}
+          checkedItems={checkedColumns}
+          setCheckedItems={setCheckedColumns}
+        />
+      </TabPanel>
+      <TabPanel>
+        <FilterContent
+          title={'rows'}
+          displayedItems={displayedRows}
+          checkedItems={checkedRows}
+          setCheckedItems={setCheckedRows}
+        />
+      </TabPanel>
     </Tabs>
   )
 }

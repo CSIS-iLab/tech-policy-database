@@ -160,8 +160,14 @@ const FilterModal = () => {
           setActiveTab={setActiveTab}
           activeTab={activeTab}
           handleSearchFilter={handleSearchFilter}
+          displayedRows={displayedRows}
+          setCheckedRows={setCheckedRows}
+          checkedRows={checkedRows}
+          displayedColumns={displayedColumns}
+          setCheckedColumns={setCheckedColumns}
+          checkedColumns={checkedColumns}
         />
-        <FilterPanel
+        {/* <FilterPanel
           handleSearchFilter={handleSearchFilter}
           maxColumns={allHeaders.slice(1).length}
           collections={collections}
@@ -190,7 +196,7 @@ const FilterModal = () => {
           displayedColumns={displayedColumns}
           checkedColumns={checkedColumns}
           setCheckedColumns={setCheckedColumns}
-        />
+        /> */}
       </section>
       <FilterFooter
         checkedRows={checkedRows}
