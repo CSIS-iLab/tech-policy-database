@@ -3,12 +3,7 @@ import React from 'react'
 const FilterSelect = (props) => {
   const { maxItems, checkedItems, handleDeselectAll, handleSelectAll } = props
 
-  // // Helper f(n) that returns checked rows or columns based on activeTab
-  // const selectTab = () => {
-  //   return activeTab === 'Rows' ? checkedRows : checkedColumns
-  // }
-
-  // Helper f(n) that returns max items per column or row based on activeTab
+  // Helper f(n) that returns max items per column or row based on the active tab
   const maxCheckedItems = () => {
     return checkedItems.length === maxItems
   }

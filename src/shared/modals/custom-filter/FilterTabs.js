@@ -3,10 +3,10 @@ import Icon from '../../site-config/Icon'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import FilterContent from './FilterContent'
 import FilterSelect from './FilterSelect'
+import FilterPanel from './FilterPanel'
 
 const FilterTabs = (props) => {
   const {
-    setActiveTab,
     handleSearchFilter,
     displayedRows,
     setCheckedRows,
@@ -19,36 +19,38 @@ const FilterTabs = (props) => {
     checkAllColumns,
     checkAllRows,
     uncheckAllColumns,
-    uncheckAllRows
+    uncheckAllRows,
+    collections,
+    allRows,
+    checkedCollections,
+    setCheckedCollections
   } = props
-
-  // Switches the activeTab and calls the searchFilter based on current search term
-  const handleTabSwitch = (tab) => {
-    setActiveTab(tab)
-    handleSearchFilter(document.getElementById('search-input').value, tab)
-  }
-
-  // className="modal__tab"
-  //       onClick={() => handleTabSwitch('Columns')}
-
-  //       <div className="modal__tab" onClick={() => handleTabSwitch('Rows')}>
-
-  //       </div>
 
   return (
     <Tabs className="modal__tab-menu">
       <TabList>
-        <Tab>
+        <Tab className="modal__tab">
           <Icon icon={'columns'} />
           Columns
         </Tab>
-        <Tab>
+        <Tab className="modal__tab">
           <Icon icon={'rows'} />
           Rows
         </Tab>
       </TabList>
 
       <TabPanel>
+        <FilterPanel
+          handleSearchFilter={handleSearchFilter}
+          collections={collections}
+          allRows={allRows}
+          checkedCollections={checkedCollections}
+          setCheckedCollections={setCheckedCollections}
+          title={'Columns'}
+          displayedItems={displayedColumns}
+          maxItems={maxColumns}
+        />
+
         <FilterSelect
           handleSelectAll={checkAllColumns}
           handleDeselectAll={uncheckAllColumns}
@@ -63,6 +65,17 @@ const FilterTabs = (props) => {
         />
       </TabPanel>
       <TabPanel>
+        <FilterPanel
+          handleSearchFilter={handleSearchFilter}
+          collections={collections}
+          allRows={allRows}
+          checkedCollections={checkedCollections}
+          setCheckedCollections={setCheckedCollections}
+          title={'Rows'}
+          displayedItems={displayedRows}
+          maxItems={maxRows}
+        />
+
         <FilterSelect
           handleSelectAll={checkAllRows}
           handleDeselectAll={uncheckAllRows}
