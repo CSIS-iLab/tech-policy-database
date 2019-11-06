@@ -68,5 +68,18 @@ fields:
       required: false
     label: LinkedIn
   label: Social Media
+- name: program
+  type: text
+  config:
+    required: false
+  label: Program
+  description: "(eg. Tech Policy Program)"
+  hidden: false
+- name: subject
+  type: text
+  config:
+    required: false
+  label: Subject
+  description: "(eg. Data Governance)"
 pages:
 - src/json/tech-policy-int/site_info.json
