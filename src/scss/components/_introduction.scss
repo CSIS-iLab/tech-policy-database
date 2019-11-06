@@ -11,14 +11,14 @@
   }
 
   &__program {
-    grid-column: 1 / span 2;
+    grid-column: 1 / -1;
     color: $color__white-160;
     text-align: center;
     @extend %subtitle;
   }
 
   &__subject {
-    grid-column: 1 / span 2;
+    grid-column: 1 / -1;
     margin-top: 10px;
     color: $color__white;
     font-family: $font__expo;
@@ -33,19 +33,6 @@
     margin-bottom: 0;
     color: $color__white-190;
     @extend %body__text-l;
-
-    &::before {
-      position: absolute;
-      top: 65%;
-      left: calc((100vh - 42%));
-      width: 20vh;
-      height: 1px;
-      opacity: 0.55;
-      background-color: #979797;
-      transform: rotate(90deg);
-      content: '';
-    }
-  
   }
 
   ul {
@@ -53,6 +40,11 @@
     border-style: none;
     margin-block-start: 0;
     padding-inline-start: 0;
+  }
+
+  nav {
+    padding-left: 15px;
+    border-left: 1px solid #979797;
   }
 
   &__methodology {
