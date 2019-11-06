@@ -17,6 +17,7 @@
     width: 100vw;
     height: 1px;
     background-color: $color__gray-700;
+    opacity: 0.37;
   }
   
   // logo link
@@ -26,6 +27,7 @@
     margin: 0 auto;
     color: $color__white;
     font-weight: bold;
+    @include font-size(16px);
     line-height: 1.05;
     letter-spacing: 1.03px;
     text-transform: uppercase;
@@ -37,13 +39,9 @@
     
     // csis logo svg
     .csis-link__logo {
-      margin: rem(20px) rem(10px) rem(20px) 0;
+      margin-right: rem(10px);
       padding-right: rem(10px);
-      border-right: 1px solid $color__white;
-      
-      @include breakpoint('medium') {
-        margin: rem(20px) rem(10px) rem(20px) rem(20px);
-      }
+      border-right: 1px solid rgba($color__white, 0.58);
     }
   }
 }
