@@ -3,7 +3,10 @@
 .site-footer {
   @extend %body__text-s;
   position: relative;
-  height: rem(183px);
+
+  @include breakpoint('medium') {
+    height: rem(183px);
+  }
 
   &::before {
     content: '';

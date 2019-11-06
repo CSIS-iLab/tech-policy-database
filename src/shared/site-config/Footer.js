@@ -20,10 +20,8 @@ const Footer = () => {
             </a>
           </div>
           <p className="site-footer__copyright">
-            All content © {renderDate()}. All rights reserved.
-          </p>
-          <p className="site-footer__privacy-pol">
-            <a href="https://www.csis.org/privacy-policy" alt="Privacy Policy">
+            All content © {renderDate()}. All rights reserved.&nbsp;
+            <a href="https://www.csis.org/privacy-policy" alt="Privacy Policy" className="site-footer__privacy-pol">
               Privacy Policy
             </a>
           </p>
