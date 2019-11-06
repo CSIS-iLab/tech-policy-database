@@ -2,26 +2,46 @@
 
 .site-header {
   // header section
+  position: relative;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
+  height: rem(80px);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc((100vw - 100%) / -2);
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $color__gray-700;
+    opacity: 0.37;
+  }
+  
   // logo link
   &__logo {
     display: flex;
     align-items: center;
+    margin: 0 auto;
     color: $color__white;
     font-weight: bold;
+    @include font-size(16px);
     line-height: 1.05;
     letter-spacing: 1.03px;
     text-transform: uppercase;
     text-decoration: none;
-
+    
+    @include breakpoint('medium') {
+      margin: inherit;
+    }
+    
     // csis logo svg
     .csis-link__logo {
-      margin: rem(20px);
       margin-right: rem(10px);
       padding-right: rem(10px);
-      border-right: 1px solid $color__white;
+      border-right: 1px solid rgba($color__white, 0.58);
     }
   }
 }

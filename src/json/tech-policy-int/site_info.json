@@ -1,14 +1,16 @@
 {
-  "intro_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "methodology": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "intro_paragraph": "This table provides a resource for researchers and policymakers involved in the creation of data governance frameworks at the national and international level. We have selected ten of the most influential data governance frameworks proposed internationally, and have mapped each one to their positions across thirty different definitions and principles.",
+  "methodology": "We selected ten international data governance frameworks for analysis based on an evaluation of their current impact on policy discussions. We attempted to include a range of agreements representative of multiple regions as well as multiple philosophical approaches to the issues involved. Our selection of principles to catalog was based off an assessment of which issues were driving current policy conversations, as well as which issues offered an opportunity to highlight the differences in approach between frameworks.",
   "program_description": "<a href='https://www.csis.org/programs/technology-policy-program'>The CSIS Technology Policy Program</a> conducts research on the social, economic, and security challenges created by disruptive technologies to inform effective policy.",
   "download_file": {
-    "url": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+    "url": "https://docs.google.com/spreadsheets/d/1e5BqA8d2Daq2w3kXNPiew9bcZYIFo97JQVjqIiejL_c/edit?usp=sharing",
+    "description": "Access this information in a Google sheet here"
   },
   "social_media": {
     "facebook": "",
-    "twitter": "",
+    "twitter": "https://twitter.com/CyberCSIS",
     "linkedin": ""
-  }
+  },
+  "program": "Tech Policy Program",
+  "subject": "Data Governance"
 }
