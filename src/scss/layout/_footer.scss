@@ -8,7 +8,7 @@
   grid-row-gap: rem(16px);
   padding: rem(48px) 0;
 
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     grid-template-columns: 3fr 4fr 3fr; 
   }
 
@@ -25,11 +25,16 @@
 
   a {
     color: $color__blue-200;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: $color__blue-700;
       text-decoration: none;
     }
+  }
+
+  p {
+    margin-bottom: 0;
   }
 
   &__logo {
@@ -42,7 +47,7 @@
   }
 
   &__privacy-pol {
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       display: block;
     }
   }
@@ -50,10 +55,6 @@
   &__desc,
   &__address {
     color: $color__white-175;
-  }
-
-  &__desc p {
-    margin-bottom: 0;
   }
 
   &__address {
