@@ -18,6 +18,7 @@
 
   a {
     color: $color__blue-400;
+    text-decoration: none;
     transition: color 0.3s ease-in-out;
 
     &:hover {
@@ -74,7 +75,7 @@
 
       .icon {
         margin-left: rem(4px);
-        @include font-size(10px);
+        font-size: 0.8em;
       }
     }
 
@@ -102,14 +103,18 @@
   }
 
   dl {
-    margin: 0 0 rem(32px);
-    border-bottom: 1px solid $color__gray-420;
+    margin: 0;
   }
 
   &__subtitle {
     @extend %subtitle;
     color: $color__gray-460;
     text-transform: uppercase;
+
+    &--members {
+      padding-top: rem(32px);
+      border-top: 1px solid $color__gray-420;
+    }
   }
 
   &__value {
@@ -117,9 +122,32 @@
     @extend %body__text-l;
   }
 
+  &__org-link {
+    @extend %body__text-xs;
+
+    .icon {
+      margin-left: rem(4px);
+      font-size: 0.8em;
+    }
+  }
+
   &__orig-lang {
+    padding-top: rem(32px);
     @extend %body__text-l;
     color: $color__gray-300;
+    border-top: 1px solid $color__gray-420;
+  }
+
+  &__mem-list {
+    margin: rem(8px) 0 0;
+    padding: 0;
+    list-style: none;
+    @extend %body__text-m;
+
+    li {
+      padding-left: 1rem;
+      text-indent: -1rem;
+    }
   }
 }
 
