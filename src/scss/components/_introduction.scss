@@ -30,7 +30,6 @@
   }
 
   &__description {
-    grid-column: 1 / span 1;
     margin-bottom: rem(24px);
     color: $color__white-190;
     @extend %body__text-l;
