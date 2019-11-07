@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-column-gap: rem(72px);
-  padding: rem(48px) 0;
+  padding: rem(64px) 0;
   
   @include breakpoint('medium') {
     grid-template-columns: 2fr 1fr;
@@ -19,7 +19,8 @@
 
   &__subject {
     grid-column: 1 / -1;
-    margin-top: 10px;
+    margin-top: rem(10px);
+    margin-bottom: rem(48px);
     color: $color__white;
     font-family: $font__expo;
     font-weight: 600;
@@ -35,36 +36,45 @@
     @extend %body__text-l;
   }
 
-  ul {
+  nav {
+    @include breakpoint('medium') {
+      padding-left: rem(24px);
+      border-left: 1px solid rgba($color__gray-700, 0.55);
+    }
+    
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     border-style: none;
-    margin-block-start: 0;
-    padding-inline-start: 0;
   }
 
-  nav {
-    padding-left: 15px;
-    border-left: 1px solid #979797;
+  li {
+    margin-bottom: rem(10px);
   }
 
-  &__methodology {
+  &__nav-item {
     grid-column: 2 / span 1;
     color: $color__white-190;
     text-decoration: none;
     @extend %body__text-m;
+
+    &:hover {
+      color: $color__white;
+    }
+
+    &:focus {
+      color: $color__white-190;
+      text-decoration: underline;
+    }
   }
 
   &__nav-item-methodology {
     padding-bottom: 10px;
   }
   
-  &__download {
-    margin-bottom: 0;
-    color: $color__white-190;
-    text-decoration: none;
-    @extend %body__text-m;
-  }
-
   &__download-desc {
     grid-column: 2 / span 1;
     margin-bottom: 0;
@@ -72,15 +82,17 @@
     @extend %body__text-m;
   }
   
-  .icon-arrow {
+  .intro__nav-item .icon {
     margin-left: 10px;
     @include font-size(20px);
     color: $color__blue-200;
-  }
 
-  .icon-download {
-    margin-left: 10px;
-    @include font-size(20px);
-    color: $color__blue-200;
+    &:hover {
+      color: $color__blue-100;
+    }
+
+    &:focus {
+      color: $color__blue-200;
+    }
   }
 }
