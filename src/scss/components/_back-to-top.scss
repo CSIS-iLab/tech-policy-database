@@ -2,10 +2,14 @@
 
 .back-to-top {
   position: absolute;
-  @include font-size(40px);
+  right: 40px;
+  display: flex;
+  margin-bottom: 40px;
+  padding: rem(7px);
   color: $color__white;
   background-color: $color__blue-500;
   border: 0;
   border-radius: 50%;
   box-shadow: 0 2px 4px 0 rgba($color__black, 0.34);
+  @include font-size(40px);
 }
