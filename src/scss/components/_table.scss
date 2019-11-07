@@ -63,9 +63,21 @@
       color: $color__gray-300;
       @extend %body__text-m;
       background-color: $color__white;
+      transition: background 0.3s ease-in-out;
 
       &:first-child {
+        z-index: 5;
         box-shadow: 0 6px 8px 0 rgba(164, 164, 164, 0.5);
+        pointer-events: none;
+      }
+
+      .cell__orig-lang {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .icon {
+        transition: none;
       }
     }
 
@@ -83,7 +95,30 @@
   }
 
   &__row {
+    background-color: $color__white;
     border-bottom: solid 1px $color__gray-200;
+    pointer-events: none;
+
+    > *:not(.table__cell--collection) {
+      pointer-events: auto;
+    }
+
+    &:hover,
+    &:focus-within {
+      > * {
+        background: $color__highlight-row;
+      }
+
+      > :hover,
+      > :focus {
+        background: $color__highlight-cell;
+
+        /* stylelint-disable-next-line */
+        .cell__orig-lang {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   .header-cell {
