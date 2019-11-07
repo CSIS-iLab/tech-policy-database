@@ -45,10 +45,10 @@
   }
 
   &__nav {
-    list-style-type: none;
-    border-style: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    border-style: none;
   }
 
   li {
@@ -60,6 +60,15 @@
     color: $color__white-190;
     text-decoration: none;
     @extend %body__text-m;
+
+    &:hover {
+      color: $color__white;
+    }
+
+    &:focus {
+      color: $color__white-190;
+      text-decoration: underline;
+    }
   }
 
   &__nav-item-methodology {
@@ -77,5 +86,13 @@
     margin-left: 10px;
     @include font-size(20px);
     color: $color__blue-200;
+
+    &:hover {
+      color: $color__blue-100;
+    }
+
+    &:focus {
+      color: $color__blue-200;
+    }
   }
 }
