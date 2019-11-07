@@ -1,0 +1,106 @@
+@use 'abstracts' as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background: $color__white;
+  box-shadow: 0 6px 8px 0 rgba(164, 164, 164, 0.5);
+  // This animation is here as a stop-gap measure, but the modal component should be adjusted so it doesn't get destroyed when the close button is clicked. Instead, it should have a class applied that hides it off screen.
+  animation: slide-in 0.6s forwards;
+  animation-timing-function: ease-in-out;
+
+  &__header,
+  &__footer,
+  &__content {
+    padding-right: rem(32px);
+    padding-left: rem(32px);
+  }
+
+  &__header,
+  &__footer {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: rem(108px);
+    padding-top: rem(32px);
+    padding-bottom: rem(32px);
+  }
+
+  &__header {
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $color__highlight-cell;
+    border-bottom: 1px solid rgba($color__gray-400, 0.24);
+
+    .btn {
+      display: inline-flex;
+      /* prettier-ignore */
+      margin-bottom: rem(-8px); // Offset bottom padding so icon is level with text
+      margin-left: rem(24px);
+      @include font-size(20px);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: $color__gray-300;
+    @include font-size(24px);
+    font-weight: 500;
+  }
+
+  &__content {
+    flex: 1 1 100%;
+    overflow-y: scroll;
+  }
+
+  &__footer {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-top: 1px solid rgba($color__gray-400, 0.24);
+
+    a {
+      @extend %body__text-xs;
+      color: $color__blue-400;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__blue-600;
+      }
+
+      .icon {
+        margin-left: rem(4px);
+        @include font-size(10px);
+      }
+    }
+
+    .modal__reset {
+      margin-right: auto;
+    }
+
+    .modal__warning {
+      flex: 1 0 100%;
+      margin: rem(4px) 0 0;
+      color: $color__red-100;
+      @include font-size(16px);
+      line-height: 1.19;
+      text-align: right;
+    }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

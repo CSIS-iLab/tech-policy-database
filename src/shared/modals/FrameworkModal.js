@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
-import './Modal.css'
 import Icon from '../site-config/Icon'
 import ModalHeader from './ModalHeader'
 import ModalFooter from './ModalFooter'
