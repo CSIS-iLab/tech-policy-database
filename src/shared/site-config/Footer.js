@@ -47,7 +47,7 @@ const Footer = () => {
           www.csis.org
           </a>
         <address className="site-footer__address">
-          1616 Rhode Island Avenue, NW Washington, DC 20036
+          1616 Rhode Island Avenue, NW <br />Washington, DC 20036
           </address>
       </div>
     </footer>
