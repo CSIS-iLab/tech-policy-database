@@ -16,6 +16,16 @@
   animation: slide-in 0.6s forwards;
   animation-timing-function: ease-in-out;
 
+  a {
+    color: $color__blue-400;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $color__blue-600;
+    }
+  }
+
   &__header,
   &__footer,
   &__content {
@@ -55,11 +65,6 @@
     font-weight: 500;
   }
 
-  &__content {
-    flex: 1 1 100%;
-    overflow-y: scroll;
-  }
-
   &__footer {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -67,16 +72,10 @@
 
     a {
       @extend %body__text-xs;
-      color: $color__blue-400;
-      transition: color 0.3s ease-in-out;
-
-      &:hover {
-        color: $color__blue-600;
-      }
 
       .icon {
         margin-left: rem(4px);
-        @include font-size(10px);
+        font-size: 0.8em;
       }
     }
 
@@ -91,6 +90,63 @@
       @include font-size(16px);
       line-height: 1.19;
       text-align: right;
+    }
+  }
+
+  &__content {
+    flex: 1 1 100%;
+    overflow-y: scroll;
+
+    &-wrapper {
+      padding: rem(32px) rem(16px);
+    }
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  &__subtitle {
+    @extend %subtitle;
+    color: $color__gray-460;
+    text-transform: uppercase;
+
+    &--members {
+      padding-top: rem(32px);
+      border-top: 1px solid $color__gray-420;
+    }
+  }
+
+  &__value {
+    margin: 0 0 rem(16px);
+    @extend %body__text-l;
+  }
+
+  &__org-link {
+    @extend %body__text-xs;
+
+    .icon {
+      margin-left: rem(4px);
+      font-size: 0.8em;
+    }
+  }
+
+  &__orig-lang {
+    padding-top: rem(32px);
+    @extend %body__text-l;
+    color: $color__gray-300;
+    border-top: 1px solid $color__gray-420;
+  }
+
+  &__mem-list {
+    margin: rem(8px) 0 0;
+    padding: 0;
+    list-style: none;
+    @extend %body__text-m;
+
+    li {
+      padding-left: 1rem;
+      text-indent: -1rem;
     }
   }
 }
