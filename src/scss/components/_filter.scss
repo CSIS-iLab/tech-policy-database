@@ -1,1 +1,21 @@
 @use 'abstracts' as *;
+
+.filter-btn {
+  // height: rem(36px);
+  padding: rem(8.5px) rem(11px);
+  color: $color__white-190;
+  font-weight: 500;
+  @include font-size(14px);
+  line-height: 1.37;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color__gray-600;
+  border: 0;
+  border-radius: 2px;
+
+  .icon {
+    @include font-size(12px);
+    margin-right: rem(15px);
+  }
+}
