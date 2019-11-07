@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Icon from '../../site-config/Icon'
 import CollectionsFilter from './CollectionsFilter'
 
@@ -8,37 +8,34 @@ const FilterPanel = (props) => {
   const {
     allRows,
     handleSearchFilter,
-    maxColumns,
     collections,
-    activeTab,
-    displayedColumns,
-    displayedRows,
     checkedCollections,
-    setCheckedCollections
+    setCheckedCollections,
+    title,
+    maxItems,
+    displayedItems
   } = props
 
+  // resets filter on tab change
+  useEffect(() => {
+    handleSearchFilter('', title)
+    // eslint-disable-next-line
+  }, [])
+
   const handleInput = (e) => {
-    handleSearchFilter(e.target.value, activeTab)
+    handleSearchFilter(e.target.value, title)
   }
 
   const handleClick = () => {
     setCollectionsMenu(!collectionsMenu)
   }
 
-  const renderRowsCount = () => {
-    return activeTab === 'Rows' ? (
+  const renderItemsCount = () => {
+    return (
       <p>
-        Showing {displayedRows.length} of {allRows.length} results
+        Showing {displayedItems.length} of {maxItems} results
       </p>
-    ) : null
-  }
-
-  const renderColumnsCount = () => {
-    return activeTab === 'Columns' ? (
-      <p>
-        Showing {displayedColumns.length} of {maxColumns} results
-      </p>
-    ) : null
+    )
   }
 
   return (
@@ -62,8 +59,7 @@ const FilterPanel = (props) => {
         collectionsMenu={collectionsMenu}
       />
 
-      {renderColumnsCount()}
-      {renderRowsCount()}
+      {renderItemsCount()}
     </section>
   )
 }

@@ -16,7 +16,7 @@ const CollectionsFilter = (props) => {
     <React.Fragment>
       <button className="modal__collections-btn" onClick={handleClick}>
         <Icon icon={'filter2'} />
-        <Icon icon={'arrow_dropdown'} />
+        <Icon icon={'arrow-dropdown'} />
       </button>
       <div className="modal__collections-count">
         {checkedCollections.length}
