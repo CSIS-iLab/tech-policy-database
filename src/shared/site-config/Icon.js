@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../app/App.css'
 
 const Icon = (props) => {
   const name = props.icon

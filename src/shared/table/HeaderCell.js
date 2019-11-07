@@ -22,7 +22,7 @@ const HeaderCell = (props) => {
       </button>
       <p className="header-cell__org">{organization}</p>
       <a className="header-cell__doc-link" href={url}>
-        <Icon icon={'external_link'} />
+        <Icon icon={'external-link'} />
         Original Document
       </a>
     </th>

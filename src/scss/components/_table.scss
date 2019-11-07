@@ -88,32 +88,53 @@
 
   .header-cell {
     &__title {
+      position: relative;
+      max-width: 100%;
       margin-bottom: rem(4px);
-    }
-
-    &__framework {
+      padding: 0 rem(20px) 0 0;
+      overflow: hidden;
       color: $color__white;
       @extend %table__header;
-    }
+      white-space: nowrap;
+      text-align: left;
+      text-overflow: ellipsis;
+      background: transparent;
+      border: 0;
+      cursor: pointer;
 
-    &__icon {
-      width: 17px;
-      height: 17px;
-      color: $color__white-175;
-    }
+      &:hover .icon {
+        color: $color__white;
+      }
 
-    &__org,
-    &__doc-link {
-      @extend %body__text-xs;
-      color: $color__white-175;
+      .icon {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        color: $color__white-160;
+        font-size: 0.8em;
+      }
     }
 
     &__org {
       margin-bottom: rem(8px);
+      color: $color__white-175;
+      @extend %body__text-xs;
     }
 
     &__doc-link {
+      display: inline-flex;
+      color: $color__white-160;
+      @extend %body__text-xs;
       text-decoration: none;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__white;
+      }
+
+      .icon {
+        margin-right: rem(4px);
+      }
     }
   }
 
