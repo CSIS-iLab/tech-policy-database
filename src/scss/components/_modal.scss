@@ -61,6 +61,7 @@
   }
 
   &__footer {
+    flex-wrap: wrap;
     justify-content: flex-end;
     border-top: 1px solid rgba($color__gray-400, 0.24);
 
@@ -77,6 +78,19 @@
         margin-left: rem(4px);
         @include font-size(10px);
       }
+    }
+
+    .modal__reset {
+      margin-right: auto;
+    }
+
+    .modal__warning {
+      flex: 1 0 100%;
+      margin: rem(4px) 0 0;
+      color: $color__red-100;
+      @include font-size(16px);
+      line-height: 1.19;
+      text-align: right;
     }
   }
 }
