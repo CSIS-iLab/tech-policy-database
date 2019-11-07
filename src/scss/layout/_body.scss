@@ -1,5 +1,8 @@
 @use 'abstracts' as *;
 
+$padding--mobile: 24px;
+$padding--desktop: 40px;
+
 html {
   box-sizing: border-box;
 }
@@ -11,13 +14,13 @@ html {
 }
 
 body {
-  padding: 0 rem(24px);
+  padding: 0 rem($padding--mobile);
   font-family: $font__roboto;
   background-color: $color__gray-400;
 
   @include breakpoint('medium') {
-    padding-right: rem(40px);
-    padding-left: rem(40px);
+    padding-right: rem($padding--desktop);
+    padding-left: rem($padding--desktop);
   }
 
   &::before,
@@ -60,5 +63,15 @@ body {
     max-width: $size__container-max-width--inner;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+// Offset padding on body on table section
+.datatable {
+  margin-right: rem(-$padding--mobile);
+  margin-bottom: rem(48px);
+
+  @include breakpoint('medium') {
+    margin-right: rem(-$padding--desktop);
   }
 }

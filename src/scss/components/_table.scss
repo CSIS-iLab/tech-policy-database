@@ -49,13 +49,14 @@
     &--header {
       position: sticky;
       top: 0;
+      z-index: 1;
       color: $color__white;
       @extend %table__header;
       background-color: $color__blue-300;
 
       &:first-child {
         z-index: 10;
-        box-shadow: 0 6px 17px -1px rgba(7, 23, 35, 0.64);
+        box-shadow: 0 -5px 17px -1px rgba(7, 23, 35, 0.64);
       }
     }
 
@@ -70,6 +71,7 @@
     }
 
     &--collection {
+      position: relative;
       padding: rem(24px) rem(40px);
       color: $color__gray-487;
       @extend %subtitle;
