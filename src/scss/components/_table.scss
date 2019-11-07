@@ -88,18 +88,30 @@
 
   .header-cell {
     &__title {
+      position: relative;
+      max-width: 100%;
       margin-bottom: rem(4px);
-    }
-
-    &__framework {
+      padding: 0 rem(20px) 0 0;
+      overflow: hidden;
       color: $color__white;
       @extend %table__header;
-    }
+      white-space: nowrap;
+      text-align: left;
+      text-overflow: ellipsis;
+      background: transparent;
+      border: 0;
 
-    &__icon {
-      width: 17px;
-      height: 17px;
-      color: $color__white-175;
+      &:hover .icon {
+        color: $color__white;
+      }
+
+      .icon {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        color: $color__white-160;
+        font-size: 0.8em;
+      }
     }
 
     &__org,
@@ -113,6 +125,7 @@
     }
 
     &__doc-link {
+      color: $color__white-160;
       text-decoration: none;
     }
   }
