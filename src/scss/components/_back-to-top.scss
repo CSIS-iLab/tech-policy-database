@@ -1,0 +1,11 @@
+@use 'abstracts' as *;
+
+.back-to-top {
+  position: absolute;
+  @include font-size(40px);
+  color: $color__white;
+  background-color: $color__blue-500;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba($color__black, 0.34);
+}

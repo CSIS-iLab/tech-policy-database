@@ -8,7 +8,7 @@ const BackToTop = () => {
       className="back-to-top sticky"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
-      <Icon icon={'arrow_up'} />
+      <Icon icon={'arrow-up'} />
     </button>
   )
 }
