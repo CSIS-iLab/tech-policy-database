@@ -100,6 +100,7 @@
       text-overflow: ellipsis;
       background: transparent;
       border: 0;
+      cursor: pointer;
 
       &:hover .icon {
         color: $color__white;
@@ -114,19 +115,26 @@
       }
     }
 
-    &__org,
-    &__doc-link {
-      @extend %body__text-xs;
-      color: $color__white-175;
-    }
-
     &__org {
       margin-bottom: rem(8px);
+      color: $color__white-175;
+      @extend %body__text-xs;
     }
 
     &__doc-link {
+      display: inline-flex;
       color: $color__white-160;
+      @extend %body__text-xs;
       text-decoration: none;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__white;
+      }
+
+      .icon {
+        margin-right: rem(4px);
+      }
     }
   }
 
