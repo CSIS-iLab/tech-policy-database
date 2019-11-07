@@ -9,7 +9,7 @@
   padding: rem(48px) 0;
 
   @include breakpoint('medium') {
-    grid-template-columns: rem(310px) rem(400px) rem(310px); 
+    grid-template-columns: 3fr 4fr 3fr; 
   }
 
   &::before {
