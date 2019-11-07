@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import Icon from '../site-config/Icon'
 import { GlobalContext } from '../../context/GlobalContext'
 
 const TableCell = (props) => {
@@ -25,7 +26,11 @@ const TableCell = (props) => {
 
   const renderOriginalLang = () => {
     return catObj.original_lang !== '' ? (
-      <button className="cell__orig-lang" onClick={handleClick}>
+      <button
+        className="btn btn--transparent-light btn--xs btn--icon cell__orig-lang"
+        onClick={handleClick}
+      >
+        <Icon icon={'eye'} />
         View Original Language
       </button>
     ) : null
