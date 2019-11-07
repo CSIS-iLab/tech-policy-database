@@ -33,7 +33,7 @@ const FrameworkModal = () => {
       <section className="modal__content">
         <dl>
           <dt className="modal__subtitle">Organization</dt>
-          <dd className="modal__element">
+          <dd className="modal__value">
             {organization}
             <a
               className="modal__org-link"
@@ -45,13 +45,13 @@ const FrameworkModal = () => {
             </a>
           </dd>
           <dt className="modal__subtitle">Year</dt>
-          <dd className="modal__element">{year}</dd>
+          <dd className="modal__value">{year}</dd>
           <dt className="modal__subtitle">Also Known As</dt>
           <dd className="modal__aka">
             dangerouslySetInnerHTML={createMarkup(also_known_as)}
           </dd>
           <dt className="modal__subtitle">Members</dt>
-          <dd className="modal__element">
+          <dd className="modal__value">
             {members.description}
 
             <ul className="modal__mem-list">
