@@ -19,6 +19,34 @@ body {
     padding-right: rem(40px);
     padding-left: rem(40px);
   }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+  }
+
+  &::before {
+    background-image: url('../../assets/tech-code-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.1;
+  }
+
+  &::after {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(67, 87, 102, 0),
+      rgba(42, 57, 68, 0.71) 35%,
+      $color__gray-400 82%
+    );
+  }
 }
 
 .container {
