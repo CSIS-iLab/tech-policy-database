@@ -5,9 +5,9 @@ const ScrollBar = () => {
   const [scrollPos, setScrollPos] = useState(0)
 
   const scrollLeft = () => {
-    let wrapper = document.getElementsByClassName('table__wrapper')[0]
+    let table = document.getElementsByClassName('table__container')[0]
 
-    wrapper.scrollTo(scrollPos - 300, 0)
+    table.scrollTo(scrollPos - 300, 0)
 
     if (scrollPos - 300 < 0) {
       setScrollPos(0)
@@ -17,12 +17,12 @@ const ScrollBar = () => {
   }
 
   const scrollRight = () => {
-    let wrapper = document.getElementsByClassName('table__wrapper')[0]
+    let table = document.getElementsByClassName('table__container')[0]
     let maxScroll =
       document.getElementsByTagName('table')[0].offsetWidth -
-      wrapper.offsetWidth
+      table.offsetWidth
 
-    wrapper.scrollTo(scrollPos + 300, 0)
+    table.scrollTo(scrollPos + 300, 0)
 
     if (scrollPos + 300 > maxScroll) {
       setScrollPos(maxScroll)
