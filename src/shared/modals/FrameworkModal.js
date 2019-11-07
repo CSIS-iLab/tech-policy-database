@@ -47,9 +47,10 @@ const FrameworkModal = () => {
           <dt className="modal__subtitle">Year</dt>
           <dd className="modal__value">{year}</dd>
           <dt className="modal__subtitle">Also Known As</dt>
-          <dd className="modal__aka">
+          <dd
+            className="modal__aka"
             dangerouslySetInnerHTML={createMarkup(also_known_as)}
-          </dd>
+          ></dd>
           <dt className="modal__subtitle">Members</dt>
           <dd className="modal__value">
             {members.description}
