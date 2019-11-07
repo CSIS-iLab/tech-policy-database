@@ -1,0 +1,9 @@
+@use 'abstracts' as *;
+
+.btn.btn--scroll {
+
+  &:disabled {
+    color: $color__white-130;
+    transition: color 0.3s ease-in-out;
+  }
+}
