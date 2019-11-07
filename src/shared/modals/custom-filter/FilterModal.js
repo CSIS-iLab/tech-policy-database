@@ -2,15 +2,11 @@ import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../../context/GlobalContext'
 import { uniq } from 'lodash'
 import ModalHeader from '../ModalHeader'
-import FilterPanel from './FilterPanel'
-import FilterContent from './FilterContent'
-import FilterSelect from './FilterSelect'
 import '../Modal.css'
 import FilterTabs from './FilterTabs'
 import FilterFooter from './FilterFooter'
 
 const FilterModal = () => {
-  const [activeTab, setActiveTab] = useState('Rows')
   const [checkedRows, setCheckedRows] = useState([])
   const [displayedRows, setDisplayedRows] = useState([])
   const [checkedColumns, setCheckedColumns] = useState([])
@@ -31,6 +27,7 @@ const FilterModal = () => {
   useEffect(() => {
     setCheckedFilters()
     setDisplayedRowsAndColumns()
+    // eslint-disable-next-line
   }, [allRows, allHeaders])
 
   const onClose = () => {
@@ -38,7 +35,6 @@ const FilterModal = () => {
   }
 
   // Filters display of columns or rows based on search input
-  // Argument of tab is passed in place of activeTab to avoid aysnc issues on tab switch
   const handleSearchFilter = (text, tab) => {
     tab === 'Rows'
       ? setDisplayedRows(
@@ -82,22 +78,19 @@ const FilterModal = () => {
     checkAllColumns()
   }
 
-  // Sets all rows or columns to unchecked depending on which tab the user is on
-  const handleDeselectAll = () => {
-    if (activeTab === 'Rows') {
-      setCheckedRows([])
-    } else if (activeTab === 'Columns') {
-      setCheckedColumns([])
-    }
+  // Sets all rows as unchecked
+  const uncheckAllRows = () => {
+    setCheckedRows([])
   }
 
-  // Sets all rows or columns to checked depending on which tab the user is on
-  const handleSelectAll = () => {
-    if (activeTab === 'Rows') {
-      checkAllRows()
-    } else if (activeTab === 'Columns') {
-      checkAllColumns()
-    }
+  // Sets all columns as unchecked
+  const uncheckAllColumns = () => {
+    setCheckedColumns([])
+  }
+
+  const handleResetFilters = () => {
+    uncheckAllRows()
+    uncheckAllColumns()
   }
 
   // Helper f(n) for applyFilters()
@@ -147,48 +140,28 @@ const FilterModal = () => {
     applyRowFilters()
   }
 
-  const handleResetFilters = () => {
-    setCheckedRows([])
-    setCheckedColumns([])
-  }
-
   return filterModalStatus ? (
     <aside className="modal">
       <ModalHeader title={'Filter'} onClose={onClose} />
       <section className="modal__content">
         <FilterTabs
-          setActiveTab={setActiveTab}
           handleSearchFilter={handleSearchFilter}
-        />
-        <FilterPanel
-          handleSearchFilter={handleSearchFilter}
-          maxColumns={allHeaders.slice(1).length}
-          collections={collections}
-          allRows={allRows}
-          activeTab={activeTab}
-          displayedColumns={displayedColumns}
           displayedRows={displayedRows}
-          checkedCollections={checkedCollections}
-          setCheckedCollections={setCheckedCollections}
-        />
-        <FilterSelect
+          setCheckedRows={setCheckedRows}
           checkedRows={checkedRows}
+          displayedColumns={displayedColumns}
+          setCheckedColumns={setCheckedColumns}
           checkedColumns={checkedColumns}
-          activeTab={activeTab}
-          handleSelectAll={handleSelectAll}
-          handleDeselectAll={handleDeselectAll}
           maxRows={allRows.length}
           maxColumns={allHeaders.slice(1).length}
-        />
-
-        <FilterContent
-          activeTab={activeTab}
-          checkedRows={checkedRows}
-          setCheckedRows={setCheckedRows}
-          displayedRows={displayedRows}
-          displayedColumns={displayedColumns}
-          checkedColumns={checkedColumns}
-          setCheckedColumns={setCheckedColumns}
+          checkAllColumns={checkAllColumns}
+          checkAllRows={checkAllRows}
+          uncheckAllColumns={uncheckAllColumns}
+          uncheckAllRows={uncheckAllRows}
+          collections={collections}
+          allRows={allRows}
+          checkedCollections={checkedCollections}
+          setCheckedCollections={setCheckedCollections}
         />
       </section>
       <FilterFooter

@@ -2,38 +2,17 @@ import React from 'react'
 import FilterItem from './FilterItem'
 
 const FilterContent = (props) => {
-  const {
-    setCheckedRows,
-    checkedRows,
-    setCheckedColumns,
-    checkedColumns,
-    activeTab,
-    displayedRows,
-    displayedColumns
-  } = props
+  const { title, setCheckedItems, checkedItems, displayedItems } = props
 
-  return activeTab === 'Rows' ? (
+  return (
     <fieldset>
-      <legend className="legend">Select the rows to display</legend>
-      {displayedRows.map((row, i) => (
+      <legend className="legend">Select the {title} to display</legend>
+      {displayedItems.map((item, i) => (
         <FilterItem
           key={i}
-          name={row}
-          setCheckedItems={setCheckedRows}
-          checkedItems={checkedRows}
-        />
-      ))}
-   
-      </fieldset>
-  ) : (
-    <fieldset>
-      <legend className="legend">Select the columns to display</legend>
-      {displayedColumns.map((data, i) => (
-        <FilterItem
-          key={i}
-          name={data}
-          setCheckedItems={setCheckedColumns}
-          checkedItems={checkedColumns}
+          name={item}
+          setCheckedItems={setCheckedItems}
+          checkedItems={checkedItems}
         />
       ))}
     </fieldset>
