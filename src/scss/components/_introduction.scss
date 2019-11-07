@@ -5,8 +5,8 @@
   display: grid;
   grid-column-gap: rem(72px);
   padding: rem(64px) 0;
-  
-  @include breakpoint('medium') {
+
+  @include breakpoint('large') {
     grid-template-columns: 2fr 1fr;
   }
 
@@ -30,18 +30,21 @@
   }
 
   &__description {
-    grid-column: 1 /  span 1;
-    margin-bottom: 0;
+    grid-column: 1 / span 1;
+    margin-bottom: rem(24px);
     color: $color__white-190;
     @extend %body__text-l;
+
+    @include breakpoint('large') {
+      margin-bottom: 0;
+    }
   }
 
   nav {
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       padding-left: rem(24px);
       border-left: 1px solid rgba($color__gray-700, 0.55);
     }
-    
   }
 
   &__nav {
@@ -51,48 +54,43 @@
     border-style: none;
   }
 
-  li {
-    margin-bottom: rem(10px);
-  }
-
   &__nav-item {
-    grid-column: 2 / span 1;
-    color: $color__white-190;
-    text-decoration: none;
+    margin-bottom: rem(10px);
     @extend %body__text-m;
 
-    &:hover {
-      color: $color__white;
-    }
-
-    &:focus {
+    a {
+      display: flex;
+      align-items: center;
       color: $color__white-190;
-      text-decoration: underline;
-    }
-  }
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
 
-  &__nav-item-methodology {
-    padding-bottom: 10px;
-  }
-  
-  &__download-desc {
-    grid-column: 2 / span 1;
-    margin-bottom: 0;
-    color: $color__white-160;
-    @extend %body__text-m;
-  }
-  
-  .intro__nav-item .icon {
-    margin-left: 10px;
-    @include font-size(20px);
-    color: $color__blue-200;
+      &:hover {
+        color: $color__white;
+      }
 
-    &:hover {
-      color: $color__blue-100;
+      &:hover .icon {
+        color: $color__blue-100;
+      }
+
+      &:focus {
+        color: $color__white-190;
+        text-decoration: underline;
+        outline: none;
+      }
     }
 
-    &:focus {
+    .icon {
+      margin-left: rem(10px);
+      @include font-size(20px);
       color: $color__blue-200;
+      transition: color 0.3s ease-in-out;
+    }
+
+    p {
+      margin: rem(4px) 0 0;
+      color: $color__white-160;
+      @extend %body__text-m;
     }
   }
 }
