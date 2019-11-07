@@ -22,14 +22,14 @@ const Introduction = () => {
       <div className="intro__description">{intro_paragraph}</div>
       <nav role="navigation">
         <ul className="intro__nav">
-          <li className="intro__nav-item intro__nav-item-methodology">
-            <a className="intro__methodology" href="#methodology">
+          <li >
+            <a className="intro__nav-item" href="#methodology">
               Methodology
               <Icon icon={'arrow'} />
             </a>
           </li>
-          <li className="intro__nav-item intro__nav-item-download">
-            <a className="intro__download" href={renderDownloadFile().url}>
+          <li >
+            <a className="intro__nav-item" href={renderDownloadFile().url}>
               Download the data
               <Icon icon={'download'} />
             </a>
