@@ -1,19 +1,22 @@
 @use 'abstracts' as *;
 
 .filter-btn {
-  margin: 10px;
+  margin: 6px;
   font-weight: 500;
   @include font-size(14px);
   line-height: 1.37;
   letter-spacing: 0.2px;
-
+  
   .icon {
     @include font-size(12px);
-    margin-right: rem(15px);
   }
 
   &:focus {
     background-color: transparent;
-    border: 2px solid $color__blue-300;
+    
+    &:hover {
+      background-color: transparent;
+      box-shadow: 0 0 0 2px #85b7db;
+    }
   }
 }
