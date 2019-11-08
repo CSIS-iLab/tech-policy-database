@@ -34,7 +34,7 @@ const FilterSelect = (props) => {
   }
 
   return (
-    <div className="checkbox__container">
+    <div className="checkbox__container checkbox__container--select-all">
       <input
         className={renderClass()}
         type="checkbox"
