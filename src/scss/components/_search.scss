@@ -4,33 +4,83 @@
   overflow: hidden;
   border: 0;
 
-  &__table {
-    display: flex;
-    align-items: center;
-  }
-  
+  /* ----Table & Modal Search----- */
+
   &__input {
     position: relative;
     display: flex;
     align-items: center;
+    padding: rem(6px) 0;
     
     &-field {
+      @include font-size(16px);
       text-indent: rem(28px);
-    }
-
-    .icon-search {
-      position: absolute;
-      left: rem(12px);
-      margin-right: rem(6px);
+      border: 0;
     }
   }
+  
+  .icon-search {
+    position: absolute;
+    left: rem(12px);
+    margin-right: rem(6px);
+  }
+  
+  &__button-close {
+    position: absolute;
+    right: rem(12px);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    @include font-size(14px);
+  }
+
+  /* ----Table Search Only---- */
 
   &__table {
-    &-dropdown,
-    &-input,
+    display: flex;
+    align-items: center;
+
+    &-dropdown-field,
+    &-input-field,
     .icon {
       @extend %input;
+      color: $color__white-190;
+    }
+    
+    &-input-field {
+      padding: rem(8px);
+      background-color: $color__gray-500;
+      
+      &::placeholder {
+        color: $color__white-130;
+      }
+    }
+    
+    .icon-close-circle {
+      color: $color__white-160;
+      
+      &:hover {
+        color: $color__white-190;
+      }
+    }
+    
+    &-dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: $color__gray-600;
+      
+      &-field {
+        background-color: $color__gray-600;
+        border: 0;
+        appearance: none;
+      }
+      
+      .icon {
+        @include font-size(4px);
+        color: $color__white-160 !important;
 
+      }
     }
   }
 }

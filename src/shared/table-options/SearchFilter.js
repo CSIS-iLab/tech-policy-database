@@ -34,20 +34,22 @@ const SearchFilter = (props) => {
           <Icon icon={'close-circle'} className="search__icon search__icon-close search__icon-close-table" />
         </button>
       </div>
-      <select className="search-dropdown search__dropdown search__table-dropdown" onChange={handleFilterSubject}>
-        <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="categories">
-          Categories
+      <div className="search__dropdown search__table-dropdown">
+        <select className="search-dropdown search__dropdown-field search__table-dropdown-field" onChange={handleFilterSubject}>
+          <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="categories">
+            Categories
         </option>
-        <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="abbreviated_lang">
-          Abbreviated Language
+          <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="abbreviated_lang">
+            Abbreviated Language
         </option>
-        <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="original_lang">
-          Original Language
+          <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="original_lang">
+            Original Language
         </option>
-      </select>
-      <button className="btn search__button-triangle search__table-button search__table-button-triangle">
-        <Icon icon={'arrow-triangle-down'} className="search__icon search__icon-triangle search__table-icon-triangle" />
-      </button>
+        </select>
+        <button className="btn search__button-triangle search__table-button search__table-button-triangle">
+          <Icon icon={'arrow-triangle-down'} className="search__icon search__icon-triangle search__table-icon-triangle" />
+        </button>
+      </div>
     </div>
   )
 }
