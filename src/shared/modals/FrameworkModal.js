@@ -53,7 +53,9 @@ const FrameworkModal = () => {
               className="modal__value modal__value--aka"
               dangerouslySetInnerHTML={createMarkup(also_known_as)}
             ></dd>
-            <dt className="modal__subtitle modal__subtitle--members">Members</dt>
+            <dt className="modal__subtitle modal__subtitle--members">
+              Members
+            </dt>
             <dd className="modal__value">
               {members.description}
 

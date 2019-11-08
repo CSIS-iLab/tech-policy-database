@@ -140,7 +140,7 @@ const FilterModal = () => {
   }
 
   return filterModalStatus ? (
-    <aside className="modal">
+    <aside className="modal modal--filter">
       <ModalHeader title={'Filter'} onClose={onClose} />
       <section className="modal__content">
         <FilterTabs

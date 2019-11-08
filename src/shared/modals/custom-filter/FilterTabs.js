@@ -27,13 +27,13 @@ const FilterTabs = (props) => {
   } = props
 
   return (
-    <Tabs className="modal__tab-menu">
-      <TabList>
-        <Tab className="modal__tab">
+    <Tabs className="tabs">
+      <TabList className="tabs__list">
+        <Tab className="tabs__list-item" aria-label="Filter table columns">
           <Icon icon={'columns'} />
           Columns
         </Tab>
-        <Tab className="modal__tab">
+        <Tab className="tabs__list-item" aria-label="Filter table rows">
           <Icon icon={'rows'} />
           Rows
         </Tab>
