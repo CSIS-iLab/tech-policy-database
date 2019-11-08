@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .filter-btn {
-  margin: 6px;
   font-weight: 500;
   @include font-size(14px);
   line-height: 1.37;
@@ -18,5 +17,11 @@
       background-color: transparent;
       box-shadow: 0 0 0 2px #85b7db;
     }
+  }
+}
+
+.table__reset {
+  .icon {
+    margin-right: rem(2px) !important;
   }
 }
