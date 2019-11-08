@@ -3,4 +3,34 @@
 .search {
   overflow: hidden;
   border: 0;
+
+  &__table {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &-field {
+      text-indent: rem(28px);
+    }
+
+    .icon-search {
+      position: absolute;
+      left: rem(12px);
+      margin-right: rem(6px);
+    }
+  }
+
+  &__table {
+    &-dropdown,
+    &-input,
+    .icon {
+      @extend %input;
+
+    }
+  }
 }
