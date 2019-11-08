@@ -2,55 +2,48 @@ import React, { useState, useEffect } from 'react'
 import Icon from '../site-config/Icon'
 
 const ScrollBar = () => {
-
   const [scrollPos, setScrollPos] = useState(0)
 
   const scrollLeft = () => {
-    let table = document.getElementsByClassName('table__container')[0]
-    let btnLeft = document.getElementsByClassName('btn')[0]
-
-    table.scrollTo(scrollPos - 300, 0)
-
-    if (scrollPos - 300 < 0) {
-      setScrollPos(0)
-      btnLeft.disabled = true
-    } else {
-      setScrollPos(scrollPos - 300)
-      btnLeft.disabled = false
-    }
+    setScrollPos(scrollPos - 300)
   }
 
   const scrollRight = () => {
-    let table = document.getElementsByClassName('table__container')[0]
-    let maxScroll = document.getElementsByTagName('table')[0].offsetWidth - table.offsetWidth
-    let btnRight = document.getElementsByClassName('btn')[1]
-
-    table.scrollTo(scrollPos + 300, 0)
-
-    if (scrollPos + 300 > maxScroll) {
-      setScrollPos(maxScroll)
-      btnRight.setAttribute('disabled', true)
-    } else {
-      setScrollPos(scrollPos + 300)
-      btnRight.setAttribute('disabled', false) 
-    }
+    setScrollPos(scrollPos + 300)
   }
 
-  // useEffect(() => {
-      // combine scrolls here
-  // }, scrollPos)
+  useEffect(() => {
+    const wrapper = document.getElementById('table-container')
+    const table = document.getElementById('table')
+    const maxScroll = table.offsetWidth - wrapper.offsetWidth
+    const btnLeft = document.getElementById('scroll-left-btn')
+    const btnRight = document.getElementById('scroll-right-btn')
 
+    wrapper.scrollTo(scrollPos, 0)
 
-  
+    if (scrollPos <= 0) {
+      setScrollPos(0)
+      btnLeft.disabled = true
+    } else if (scrollPos >= maxScroll) {
+      setScrollPos(maxScroll)
+      btnRight.disabled = true
+    } else {
+      btnRight.disabled = false
+      btnLeft.disabled = false
+    }
+  }, [scrollPos])
+
   return (
     <div className="table__scroll">
       <button
+        id="scroll-left-btn"
         className="scroll-btn btn btn--scroll btn--square"
         onClick={scrollLeft}
       >
         <Icon icon={'arrow-chev-left'} />
       </button>
       <button
+        id="scroll-right-btn"
         className="scroll-btn btn btn--scroll btn--square"
         onClick={scrollRight}
       >
