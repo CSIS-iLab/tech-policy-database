@@ -21,12 +21,11 @@
 }
 
 .table__reset {
+  padding: rem(8px);
+  color: $color__white-160;
+
   .icon {
     margin-right: rem(2px) !important;
-  }
-
-  &:hover {
-    color: $color__white-160 !important;
   }
 
   &:focus {

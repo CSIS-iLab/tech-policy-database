@@ -12,7 +12,7 @@ const CustomFilter = (props) => {
         <Icon icon={'filter2'} />
         Filter
       </button>
-      <button className="btn btn--transparent-dark btn--xs btn--icon table__reset">
+      <button className="btn btn--xs btn--icon table__reset">
         <Icon icon={'reset'} />
         Reset all filters
       </button>
