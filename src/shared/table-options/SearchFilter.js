@@ -46,9 +46,7 @@ const SearchFilter = (props) => {
             Original Language
         </option>
         </select>
-        <button className="btn search__button-triangle search__table-button search__table-button-triangle">
-          <Icon icon={'arrow-triangle-down'} className="search__icon search__icon-triangle search__table-icon-triangle" />
-        </button>
+        <Icon icon={'arrow-triangle-down'} className="search__icon search__icon-triangle search__table-icon-triangle" />
       </div>
     </div>
   )
