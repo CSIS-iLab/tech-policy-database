@@ -33,6 +33,7 @@ const SearchFilter = (props) => {
         <button className="btn search__button-close search__table-button search__table-button-close">
           <Icon icon={'close-circle'} className="search__icon search__icon-close search__icon-close-table" />
         </button>
+        <div className="search__table-input-fade"></div>
       </div>
       <div className="search__dropdown search__table-dropdown">
         <select className="search-dropdown search__dropdown-field search__table-dropdown-field" onChange={handleFilterSubject}>
@@ -47,6 +48,7 @@ const SearchFilter = (props) => {
         </option>
         </select>
         <Icon icon={'arrow-triangle-down'} className="search__icon search__icon-triangle search__table-icon-triangle" />
+        <div className="search__table-dropdown-fade"></div>
       </div>
     </div>
   )
