@@ -26,8 +26,8 @@ const DataTable = (props) => {
   const { headers, rows } = props
 
   return (
-    <div className="table__container">
-      <table className="table">
+    <div id="table-container" className="table__container">
+      <table id="table" className="table">
         <thead>
           <tr className="table__header-row">{headers.map(renderHeadingRow)}</tr>
         </thead>

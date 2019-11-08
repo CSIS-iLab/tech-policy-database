@@ -1,0 +1,95 @@
+@use 'abstracts' as *;
+
+.intro {
+  position: relative;
+  display: grid;
+  grid-column-gap: rem(72px);
+  padding: rem(64px) 0;
+
+  @include breakpoint('large') {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__program {
+    grid-column: 1 / -1;
+    color: $color__white-160;
+    text-align: center;
+    @extend %subtitle;
+  }
+
+  &__subject {
+    grid-column: 1 / -1;
+    margin-top: rem(10px);
+    margin-bottom: rem(48px);
+    color: $color__white;
+    font-family: $font__expo;
+    font-weight: 600;
+    line-height: 1.04;
+    text-align: center;
+    @include font-size(54px);
+  }
+
+  &__description {
+    margin-bottom: rem(24px);
+    color: $color__white-190;
+    @extend %body__text-l;
+
+    @include breakpoint('large') {
+      margin-bottom: 0;
+    }
+  }
+
+  nav {
+    @include breakpoint('large') {
+      padding-left: rem(24px);
+      border-left: 1px solid rgba($color__gray-700, 0.55);
+    }
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-style: none;
+  }
+
+  &__nav-item {
+    margin-bottom: rem(10px);
+    @extend %body__text-m;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $color__white-190;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__white;
+      }
+
+      &:hover .icon {
+        color: $color__blue-100;
+      }
+
+      &:focus {
+        color: $color__white-190;
+        text-decoration: underline;
+        outline: none;
+      }
+    }
+
+    .icon {
+      margin-left: rem(10px);
+      @include font-size(20px);
+      color: $color__blue-200;
+      transition: color 0.3s ease-in-out;
+    }
+
+    p {
+      margin: rem(4px) 0 0;
+      color: $color__white-160;
+      @extend %body__text-m;
+    }
+  }
+}

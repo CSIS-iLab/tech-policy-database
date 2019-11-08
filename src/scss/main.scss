@@ -3,11 +3,16 @@
 /* Import Styles */
 
 @use 'vendors/normalize';
+@use 'components/back-to-top';
 @use 'components/buttons';
 @use 'components/checkbox';
 @use 'components/filter';
+@use 'components/icons';
+@use 'components/introduction';
 @use 'components/methodology';
+@use 'components/modal';
 @use 'components/social-share';
 @use 'components/table';
 @use 'layout/body';
+@use 'layout/footer';
 @use 'layout/header';

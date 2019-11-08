@@ -2,7 +2,6 @@ import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../../context/GlobalContext'
 import { uniq } from 'lodash'
 import ModalHeader from '../ModalHeader'
-import '../Modal.css'
 import FilterTabs from './FilterTabs'
 import FilterFooter from './FilterFooter'
 
