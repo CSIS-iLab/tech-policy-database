@@ -26,7 +26,7 @@ const FilterPanel = (props) => {
 
   const renderItemsCount = () => {
     return (
-      <p>
+      <p className="modal-search__results">
         Showing {displayedItems.length} of {maxItems} results
       </p>
     )
@@ -35,25 +35,25 @@ const FilterPanel = (props) => {
   return (
     <fieldset className="modal-search">
       <legend>Search available results</legend>
-      <input
-        className="modal-search__input"
-        id="search-input"
-        placeholder="Search"
-        onChange={handleInput}
-      />
-
-      <CollectionsFilter
-        allRows={allRows}
-        setCheckedCollections={setCheckedCollections}
-        checkedCollections={checkedCollections}
-        collections={collections}
-        handleClick={handleClick}
-        collectionsMenu={collectionsMenu}
-        displayedItems={displayedItems}
-        setDisplayedRows={setDisplayedRows}
-      />
-
-      {renderItemsCount()}
+      <div class="modal-search__wrapper">
+        <input
+          className="modal-search__input"
+          id="search-input"
+          placeholder="Search"
+          onChange={handleInput}
+        />
+        <CollectionsFilter
+          allRows={allRows}
+          setCheckedCollections={setCheckedCollections}
+          checkedCollections={checkedCollections}
+          collections={collections}
+          handleClick={handleClick}
+          collectionsMenu={collectionsMenu}
+          displayedItems={displayedItems}
+          setDisplayedRows={setDisplayedRows}
+        />
+        {renderItemsCount()}
+      </div>
     </fieldset>
   )
 }
