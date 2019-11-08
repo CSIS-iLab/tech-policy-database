@@ -60,7 +60,7 @@ const CollectionsItem = (props) => {
         {name}
       </label>
 
-      <span className="modal__col-count-item">
+      <span className="modal-collections__item-count">
         {collectionCount(name)}&nbsp;items
       </span>
     </div>
