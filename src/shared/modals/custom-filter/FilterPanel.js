@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Icon from '../../site-config/Icon'
 import CollectionsFilter from './CollectionsFilter'
 
 const FilterPanel = (props) => {
@@ -34,16 +33,14 @@ const FilterPanel = (props) => {
   }
 
   return (
-    <section className="modal__panel">
-      <div className="modal__search">
-        <Icon icon={'search'} />
-        <input
-          className="modal__input"
-          id="search-input"
-          placeholder="Search"
-          onChange={handleInput}
-        />
-      </div>
+    <fieldset className="modal-search">
+      <legend>Search available results</legend>
+      <input
+        className="modal-search__input"
+        id="search-input"
+        placeholder="Search"
+        onChange={handleInput}
+      />
 
       <CollectionsFilter
         allRows={allRows}
@@ -57,7 +54,7 @@ const FilterPanel = (props) => {
       />
 
       {renderItemsCount()}
-    </section>
+    </fieldset>
   )
 }
 

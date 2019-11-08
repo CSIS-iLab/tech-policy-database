@@ -1,0 +1,8 @@
+@use 'abstracts' as *;
+
+.modal-search {
+  margin: 0;
+  padding: rem(16px);
+  background-color: $color__highlight-row;
+  border: 0;
+}
