@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react'
 import Icon from '../site-config/Icon'
 
 const ScrollBar = () => {
+  const scrollOffset = 250
   const [scrollPos, setScrollPos] = useState(0)
 
   const scrollLeft = () => {
-    setScrollPos(scrollPos - 300)
+    setScrollPos(scrollPos - scrollOffset)
   }
 
   const scrollRight = () => {
-    setScrollPos(scrollPos + 300)
+    setScrollPos(scrollPos + scrollOffset)
   }
 
   useEffect(() => {
@@ -38,6 +39,7 @@ const ScrollBar = () => {
       <button
         id="scroll-left-btn"
         className="scroll-btn btn btn--scroll btn--square"
+        aria-label="Scroll table to the left"
         onClick={scrollLeft}
       >
         <Icon icon={'arrow-chev-left'} />
@@ -45,6 +47,7 @@ const ScrollBar = () => {
       <button
         id="scroll-right-btn"
         className="scroll-btn btn btn--scroll btn--square"
+        aria-label="Scroll table to the right"
         onClick={scrollRight}
       >
         <Icon icon={'arrow-chev-right'} />
