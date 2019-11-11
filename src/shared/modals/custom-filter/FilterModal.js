@@ -29,6 +29,12 @@ const FilterModal = () => {
     // eslint-disable-next-line
   }, [allRows, allHeaders])
 
+  useEffect(() => {
+    if (checkedCollections.length === 0) {
+      setDisplayedRows(allRows.map((row) => row[0][0]))
+    }
+  }, [checkedCollections])
+
   const onClose = () => {
     setFilterModalStatus(false)
   }
