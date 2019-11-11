@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../../context/GlobalContext'
-import { uniq } from 'lodash'
 import ModalHeader from '../ModalHeader'
 import FilterTabs from './FilterTabs'
 import FilterFooter from './FilterFooter'
@@ -29,6 +28,7 @@ const FilterModal = () => {
     // eslint-disable-next-line
   }, [allRows, allHeaders])
 
+  // Condition for resetting displayedRows when no collections are checked
   useEffect(() => {
     if (checkedCollections.length === 0) {
       setDisplayedRows(allRows.map((row) => row[0][0]))
@@ -113,23 +113,20 @@ const FilterModal = () => {
   const applyRowFilters = () => {
     setFilteredRows(
       sortRows(
-        uniq([
-          ...allRows.filter(
+        allRows
+          .filter(
             (row) =>
               checkedRows.includes(row[0][0]) &&
               displayedRows.includes(row[0][0])
-          ),
-          ...allRows.filter((row) =>
-            checkedCollections.includes(row[1][1].category)
           )
-        ]).map((row) => {
-          return row.filter(
-            (r) =>
-              (checkedColumns.includes(r[0]) &&
-                displayedColumns.includes(r[0])) ||
-              typeof r[1] === 'string'
-          )
-        })
+          .map((row) => {
+            return row.filter(
+              (r) =>
+                (checkedColumns.includes(r[0]) &&
+                  displayedColumns.includes(r[0])) ||
+                typeof r[1] === 'string'
+            )
+          })
       )
     )
   }
