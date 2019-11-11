@@ -17,12 +17,6 @@ const FilterPanel = (props) => {
     setDisplayedRows
   } = props
 
-  // resets filter on tab change
-  useEffect(() => {
-    handleSearchFilter('', title)
-    // eslint-disable-next-line
-  }, [])
-
   const handleInput = (e) => {
     handleSearchFilter(e.target.value, title)
   }
