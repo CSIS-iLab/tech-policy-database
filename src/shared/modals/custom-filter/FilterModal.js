@@ -161,6 +161,7 @@ const FilterModal = () => {
           allRows={allRows}
           checkedCollections={checkedCollections}
           setCheckedCollections={setCheckedCollections}
+          setDisplayedRows={setDisplayedRows}
         />
       </section>
       <FilterFooter

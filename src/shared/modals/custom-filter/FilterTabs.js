@@ -23,7 +23,8 @@ const FilterTabs = (props) => {
     collections,
     allRows,
     checkedCollections,
-    setCheckedCollections
+    setCheckedCollections,
+    setDisplayedRows
   } = props
 
   return (
@@ -49,6 +50,7 @@ const FilterTabs = (props) => {
           title={'Columns'}
           displayedItems={displayedColumns}
           maxItems={maxColumns}
+          setDisplayedRows={setDisplayedRows}
         />
 
         <FilterSelect
@@ -74,6 +76,7 @@ const FilterTabs = (props) => {
           title={'Rows'}
           displayedItems={displayedRows}
           maxItems={maxRows}
+          setDisplayedRows={setDisplayedRows}
         />
 
         <FilterSelect

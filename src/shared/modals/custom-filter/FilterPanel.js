@@ -13,7 +13,8 @@ const FilterPanel = (props) => {
     setCheckedCollections,
     title,
     maxItems,
-    displayedItems
+    displayedItems,
+    setDisplayedRows
   } = props
 
   // resets filter on tab change
@@ -57,6 +58,8 @@ const FilterPanel = (props) => {
         collections={collections}
         handleClick={handleClick}
         collectionsMenu={collectionsMenu}
+        displayedItems={displayedItems}
+        setDisplayedRows={setDisplayedRows}
       />
 
       {renderItemsCount()}
