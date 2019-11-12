@@ -10,25 +10,25 @@ const TableTextResize = () => {
   return (
     <div className="table__resize">
       <button
-        className="resize-btn"
+        className="btn btn--dark btn--square"
         alt="font size small"
         onClick={() => resize('var(--font-size-1)')}
       >
-        <Icon icon={'font_size'} />
+        <Icon icon={'font-size'} />
       </button>
       <button
-        className="resize-btn"
+        className="btn btn--dark btn--square"
         alt="font size medium"
         onClick={() => resize('var(--font-size-2)')}
       >
-        <Icon icon={'font_size'} />
+        <Icon icon={'font-size'} />
       </button>
       <button
-        className="resize-btn"
+        className="btn btn--dark btn--square"
         alt="font size large"
         onClick={() => resize('var(--font-size-3)')}
       >
-        <Icon icon={'font_size'} />
+        <Icon icon={'font-size'} />
       </button>
     </div>
   )
