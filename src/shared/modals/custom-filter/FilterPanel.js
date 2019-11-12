@@ -13,14 +13,9 @@ const FilterPanel = (props) => {
     setCheckedCollections,
     title,
     maxItems,
-    displayedItems
+    displayedItems,
+    setDisplayedRows
   } = props
-
-  // resets filter on tab change
-  useEffect(() => {
-    handleSearchFilter('', title)
-    // eslint-disable-next-line
-  }, [])
 
   const handleInput = (e) => {
     handleSearchFilter(e.target.value, title)
@@ -57,6 +52,8 @@ const FilterPanel = (props) => {
         collections={collections}
         handleClick={handleClick}
         collectionsMenu={collectionsMenu}
+        displayedItems={displayedItems}
+        setDisplayedRows={setDisplayedRows}
       />
 
       {renderItemsCount()}
