@@ -57,9 +57,9 @@
       z-index: 1;
       color: $color__white;
       font-weight: 500;
-      line-height: 1.2;
-      font-size: 18px; 
+      font-size: 18px;
       font-size: calc((rem(18px) * var(--table-font-size)));
+      line-height: 1.2;
       background-color: $color__blue-300;
 
       &:first-child {
@@ -70,9 +70,9 @@
 
     &--body {
       color: $color__gray-300;
-      line-height: 1.41;
-      font-size: 16px; 
+      font-size: 16px;
       font-size: calc((rem(16px) * var(--table-font-size)));
+      line-height: 1.41;
       background-color: $color__white;
       transition: background 0.3s ease-in-out;
 
