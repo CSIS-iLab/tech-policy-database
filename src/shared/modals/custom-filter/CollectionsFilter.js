@@ -18,10 +18,16 @@ const CollectionsFilter = (props) => {
     countIsHidden = ''
   }
 
+  let filtersAreVisible = ''
+  if (collectionsMenu) {
+    filtersAreVisible = 'modal-collections__btn--active'
+  }
+
   return (
     <React.Fragment>
       <button
-        className="btn btn--white btn--square modal-collections__btn"
+        className={`btn btn--white btn--square modal-collections__btn ${filtersAreVisible}`}
+        aria-label="View suggested filters"
         onClick={handleClick}
       >
         <Icon icon={'filter2'} />
@@ -32,7 +38,7 @@ const CollectionsFilter = (props) => {
       </button>
 
       {collectionsMenu ? (
-        <fieldset class="modal-collections__list">
+        <fieldset className="modal-collections__list">
           <legend>Filter by Collection</legend>
           {collections.map((c, i) => (
             <CollectionsItem

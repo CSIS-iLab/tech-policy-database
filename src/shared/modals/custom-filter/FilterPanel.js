@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import CollectionsFilter from './CollectionsFilter'
 
 const FilterPanel = (props) => {
@@ -35,7 +35,7 @@ const FilterPanel = (props) => {
   return (
     <fieldset className="modal-search">
       <legend>Search available results</legend>
-      <div class="modal-search__wrapper">
+      <div className="modal-search__wrapper">
         <input
           className="modal-search__input"
           id="search-input"

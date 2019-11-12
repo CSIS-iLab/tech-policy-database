@@ -2,8 +2,30 @@
 
 .modal-collections {
   &__btn {
+    position: relative;
     display: flex;
     align-items: center;
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid $color__blue-400;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &.modal-collections__btn--active,
+    &:focus {
+      outline: none;
+
+      &::after {
+        opacity: 1;
+      }
+    }
 
     .icon-arrow-dropdown {
       color: $color__gray-460;
@@ -14,6 +36,7 @@
     position: absolute;
     top: rem(-8px);
     right: rem(-8px);
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,6 +83,7 @@
   }
 
   &__item-count {
+    margin-top: rem(4px);
     margin-left: rem(16px);
     color: $color__gray-460;
     @extend %body__text-xs;
