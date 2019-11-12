@@ -9,7 +9,8 @@ const CollectionsFilter = (props) => {
     setCheckedCollections,
     collectionsMenu,
     allRows,
-    collections
+    collections,
+    setDisplayedRows
   } = props
 
   return (
@@ -30,6 +31,7 @@ const CollectionsFilter = (props) => {
               allRows={allRows}
               setCheckedCollections={setCheckedCollections}
               checkedCollections={checkedCollections}
+              setDisplayedRows={setDisplayedRows}
               key={i}
               name={c}
             ></CollectionsItem>
