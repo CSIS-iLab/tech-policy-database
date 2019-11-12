@@ -21,34 +21,34 @@ const SearchFilter = (props) => {
   }
 
   return (
-    <div className="table__search search search__table">
-      <div className="search__input search__table-input">
-        <Icon icon={'search'} className="search__icon search__table-icon-search search__icon-search" />
+    <div className="search table-search">
+      <div className="search__input table-search__input">
+        <Icon icon={'search'} />
         <input
-          className="search-input search__input-field search__table-input-field"
+          className="search__input-field table-search__input-field"
           type="text"
           onChange={handleSearchText}
           placeholder="Search"
         />
-        <button className="btn search__button-close search__table-button search__table-button-close">
-          <Icon icon={'close-circle'} className="search__icon search__icon-close search__icon-close-table" />
+        <button className="btn search__button-close table-search__button-close">
+          <Icon icon={'close-circle'} />
         </button>
-        <div className="search__table-input-fade"></div>
+        <div className="search__input-fade table-search__input-fade"></div>
       </div>
-      <div className="search__dropdown search__table-dropdown">
-        <select className="search-dropdown search__dropdown-field search__table-dropdown-field" onChange={handleFilterSubject}>
-          <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="categories">
+      <div className="search__dropdown table-search__dropdown">
+        <select className="search__dropdown-field table-search__dropdown-field" onChange={handleFilterSubject}>
+          <option className="search__dropdown-item table-search__dropdown-item" value="categories">
             Categories
         </option>
-          <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="abbreviated_lang">
+          <option className="search__dropdown-item table-search__dropdown-item" value="abbreviated_lang">
             Abbreviated Language
         </option>
-          <option className="dropdown-item search__dropdown-item search__table-dropdown-item" value="original_lang">
+          <option className="search__dropdown-item table-search__dropdown-item" value="original_lang">
             Original Language
         </option>
         </select>
-        <Icon icon={'arrow-dropdown'} className="search__icon search__icon-triangle search__table-icon-triangle" />
-        <div className="search__table-dropdown-fade"></div>
+        <Icon icon={'arrow-dropdown'} />
+        <div className="search__dropdown-fade table-search__dropdown-fade"></div>
       </div>
     </div>
   )
