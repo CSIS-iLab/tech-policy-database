@@ -6,6 +6,11 @@
   --font-size-2: 16px;
   --font-size-3: 20px;
 
+  --font-size--sm: 1;
+  --font-size--md: 2;
+  --font-size--lg: 3;
+  --table-font-size: var(--font-size--sm);
+
   flex: 1 0 auto;
   width: 100%;
   text-align: left;
@@ -51,7 +56,10 @@
       top: 0;
       z-index: 1;
       color: $color__white;
-      @extend %table__header;
+      font-weight: 500;
+      line-height: 1.2;
+      font-size: 18px; 
+      font-size: calc((rem(18px) * var(--table-font-size)));
       background-color: $color__blue-300;
 
       &:first-child {
@@ -62,7 +70,9 @@
 
     &--body {
       color: $color__gray-300;
-      @extend %body__text-m;
+      line-height: 1.41;
+      font-size: 16px; 
+      font-size: calc((rem(16px) * var(--table-font-size)));
       background-color: $color__white;
       transition: background 0.3s ease-in-out;
 

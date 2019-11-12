@@ -1,14 +1,15 @@
 import React from 'react'
 import Icon from '../site-config/Icon'
 
-const TableTextResize = () => {
+const FontResize = () => {
   const resize = (size) => {
-    let table = document.getElementsByTagName('table')[0]
+    let table = document.getElementById('table')
     table.style.fontSize = size
   }
 
+  // --table-font-size: var(--font-size--md)
   return (
-    <div className="table__resize">
+    <div className="font__resize">
       <button
         className="btn btn--dark btn--square"
         alt="font size small"
@@ -19,7 +20,7 @@ const TableTextResize = () => {
       <button
         className="btn btn--dark btn--square"
         alt="font size medium"
-        onClick={() => resize('var(--font-size-2)')}
+        onClick={() => resize('var(--font-size-1)')}
       >
         <Icon icon={'font-size'} />
       </button>
@@ -34,4 +35,4 @@ const TableTextResize = () => {
   )
 }
 
-export default TableTextResize
+export default FontResize
