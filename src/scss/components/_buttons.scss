@@ -63,6 +63,10 @@
         border-color: #85b7db;
       }
     }
+
+    &:focus {
+      background: transparent;
+    }
   }
 
   &.btn--white {

@@ -1,0 +1,21 @@
+@use 'abstracts' as *;
+
+.filter__button {
+  .icon {
+    @include font-size(12px);
+  }
+
+  &:focus:hover {
+    box-shadow: 0 0 0 2px #85b7db;
+  }
+}
+
+.filter__reset {
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover {
+    color: $color__white-160 !important;
+  }
+}

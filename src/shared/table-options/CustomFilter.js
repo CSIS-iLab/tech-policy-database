@@ -8,11 +8,11 @@ const CustomFilter = (props) => {
 
   return (
     <div className="table__filter">
-      <button className="btn btn--dark btn--icon filter-btn" onClick={handleClick}>
+      <button className="btn btn--dark btn--icon filter__button" onClick={handleClick}>
         <Icon icon={'filter2'} />
         Filter
       </button>
-      <button className="btn btn--xs btn--icon table__reset">
+      <button className="btn btn--xs btn--icon btn--transparent-dark filter__reset">
         <Icon icon={'reset'} />
         Reset all filters
       </button>
