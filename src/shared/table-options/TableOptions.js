@@ -9,6 +9,10 @@ const TableOptions = () => {
   const {
     setFilteredRows,
     allRows,
+    allHeaders,
+    setFilteredHeaders,
+    isFiltered,
+    setIsFiltered,
     searchText,
     setSearchText,
     filterSubject,
@@ -63,7 +67,15 @@ const TableOptions = () => {
         filterSubject={filterSubject}
         setFilterSubject={setFilterSubject}
       />
-      <CustomFilter setFilterModalStatus={setFilterModalStatus} />
+      <CustomFilter  
+        setFilterModalStatus={setFilterModalStatus}
+        setFilteredRows={setFilteredRows}
+        allRows={allRows}
+        allHeaders={allHeaders}
+        setFilteredHeaders={setFilteredHeaders}
+        isFiltered={isFiltered}
+        setIsFiltered={setIsFiltered} 
+      />
       <FontResize />
       <ScrollBar />
     </section>
