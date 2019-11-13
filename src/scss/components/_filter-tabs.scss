@@ -1,0 +1,53 @@
+@use 'abstracts' as *;
+
+.tabs {
+  &__list {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    margin: 0 rem(-32px); // Offset padding on .modal__content
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+    flex: 1 0 50%;
+    padding: rem(16px) rem(32px);
+    color: $color__gray-487;
+    @extend %subtitle;
+    text-transform: uppercase;
+    background: $color__highlight-cell;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+
+    &:hover {
+      color: $color__gray-300;
+
+      .icon {
+        color: $color__black;
+      }
+    }
+
+    .icon {
+      margin-right: rem(8px);
+      color: $color__gray-460;
+      font-size: 0.8em;
+    }
+  }
+
+  .react-tabs__tab--selected {
+    color: $color__gray-300;
+    background: $color__white;
+    box-shadow: 0 -3px 3px 0 rgba(0, 49, 78, 0.18);
+
+    .icon {
+      color: $color__black;
+    }
+  }
+
+  .react-tabs__tab-panel:not(:empty) {
+    padding: rem(48px) 0;
+  }
+}

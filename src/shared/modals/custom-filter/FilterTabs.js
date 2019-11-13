@@ -23,17 +23,18 @@ const FilterTabs = (props) => {
     collections,
     allRows,
     checkedCollections,
-    setCheckedCollections
+    setCheckedCollections,
+    setDisplayedRows
   } = props
 
   return (
-    <Tabs className="modal__tab-menu">
-      <TabList>
-        <Tab className="modal__tab">
+    <Tabs className="tabs">
+      <TabList className="tabs__list">
+        <Tab className="tabs__list-item" aria-label="Filter table columns">
           <Icon icon={'columns'} />
           Columns
         </Tab>
-        <Tab className="modal__tab">
+        <Tab className="tabs__list-item" aria-label="Filter table rows">
           <Icon icon={'rows'} />
           Rows
         </Tab>
@@ -49,20 +50,23 @@ const FilterTabs = (props) => {
           title={'Columns'}
           displayedItems={displayedColumns}
           maxItems={maxColumns}
+          setDisplayedRows={setDisplayedRows}
         />
 
-        <FilterSelect
-          handleSelectAll={checkAllColumns}
-          handleDeselectAll={uncheckAllColumns}
-          maxItems={maxColumns}
-          checkedItems={checkedColumns}
-        />
-        <FilterContent
-          title={'columns'}
-          displayedItems={displayedColumns}
-          checkedItems={checkedColumns}
-          setCheckedItems={setCheckedColumns}
-        />
+        <fieldset className="modal__checkboxes">
+          <legend>Select the rows to display</legend>
+          <FilterSelect
+            handleSelectAll={checkAllColumns}
+            handleDeselectAll={uncheckAllColumns}
+            maxItems={maxColumns}
+            checkedItems={checkedColumns}
+          />
+          <FilterContent
+            displayedItems={displayedColumns}
+            checkedItems={checkedColumns}
+            setCheckedItems={setCheckedColumns}
+          />
+        </fieldset>
       </TabPanel>
       <TabPanel>
         <FilterPanel
@@ -74,20 +78,22 @@ const FilterTabs = (props) => {
           title={'Rows'}
           displayedItems={displayedRows}
           maxItems={maxRows}
+          setDisplayedRows={setDisplayedRows}
         />
-
-        <FilterSelect
-          handleSelectAll={checkAllRows}
-          handleDeselectAll={uncheckAllRows}
-          maxItems={maxRows}
-          checkedItems={checkedRows}
-        />
-        <FilterContent
-          title={'rows'}
-          displayedItems={displayedRows}
-          checkedItems={checkedRows}
-          setCheckedItems={setCheckedRows}
-        />
+        <fieldset className="modal__checkboxes">
+          <legend>Select the rows to display</legend>
+          <FilterSelect
+            handleSelectAll={checkAllRows}
+            handleDeselectAll={uncheckAllRows}
+            maxItems={maxRows}
+            checkedItems={checkedRows}
+          />
+          <FilterContent
+            displayedItems={displayedRows}
+            checkedItems={checkedRows}
+            setCheckedItems={setCheckedRows}
+          />
+        </fieldset>
       </TabPanel>
     </Tabs>
   )

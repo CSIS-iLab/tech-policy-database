@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../../context/GlobalContext'
-import { uniq } from 'lodash'
 import ModalHeader from '../ModalHeader'
 import FilterTabs from './FilterTabs'
 import FilterFooter from './FilterFooter'
@@ -28,6 +27,13 @@ const FilterModal = () => {
     setDisplayedRowsAndColumns()
     // eslint-disable-next-line
   }, [allRows, allHeaders])
+
+  // Condition for resetting displayedRows when no collections are checked
+  useEffect(() => {
+    if (checkedCollections.length === 0) {
+      setDisplayedRows(allRows.map((row) => row[0][0]))
+    }
+  }, [checkedCollections])
 
   const onClose = () => {
     setFilterModalStatus(false)
@@ -107,23 +113,20 @@ const FilterModal = () => {
   const applyRowFilters = () => {
     setFilteredRows(
       sortRows(
-        uniq([
-          ...allRows.filter(
+        allRows
+          .filter(
             (row) =>
               checkedRows.includes(row[0][0]) &&
               displayedRows.includes(row[0][0])
-          ),
-          ...allRows.filter((row) =>
-            checkedCollections.includes(row[1][1].category)
           )
-        ]).map((row) => {
-          return row.filter(
-            (r) =>
-              (checkedColumns.includes(r[0]) &&
-                displayedColumns.includes(r[0])) ||
-              typeof r[1] === 'string'
-          )
-        })
+          .map((row) => {
+            return row.filter(
+              (r) =>
+                (checkedColumns.includes(r[0]) &&
+                  displayedColumns.includes(r[0])) ||
+                typeof r[1] === 'string'
+            )
+          })
       )
     )
   }
@@ -140,7 +143,7 @@ const FilterModal = () => {
   }
 
   return filterModalStatus ? (
-    <aside className="modal">
+    <aside className="modal modal--filter">
       <ModalHeader title={'Filter'} onClose={onClose} />
       <section className="modal__content">
         <FilterTabs
@@ -161,6 +164,7 @@ const FilterModal = () => {
           allRows={allRows}
           checkedCollections={checkedCollections}
           setCheckedCollections={setCheckedCollections}
+          setDisplayedRows={setDisplayedRows}
         />
       </section>
       <FilterFooter
