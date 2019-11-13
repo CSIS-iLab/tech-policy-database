@@ -33,22 +33,20 @@ const SearchFilter = (props) => {
         <button className="btn search__button-close table-search__button-close">
           <Icon icon={'close-circle'} />
         </button>
-        <div className="search__input-fade table-search__input-fade"></div>
       </div>
       <div className="search__dropdown table-search__dropdown">
         <select className="search__dropdown-field table-search__dropdown-field" onChange={handleFilterSubject}>
-          <option className="search__dropdown-item table-search__dropdown-item" value="categories">
+          <option value="categories">
             Categories
         </option>
-          <option className="search__dropdown-item table-search__dropdown-item" value="abbreviated_lang">
+          <option value="abbreviated_lang">
             Abbreviated Language
         </option>
-          <option className="search__dropdown-item table-search__dropdown-item" value="original_lang">
+          <option value="original_lang">
             Original Language
         </option>
         </select>
         <Icon icon={'arrow-dropdown'} />
-        <div className="search__dropdown-fade table-search__dropdown-fade"></div>
       </div>
     </div>
   )

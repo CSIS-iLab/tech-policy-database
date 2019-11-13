@@ -5,7 +5,7 @@
   align-items: center;
 
   &__input-field,
-  &__dropdown-field,
+  &__dropdown select,
   .icon-search {
     color: $color__white-190;
   }
@@ -54,9 +54,10 @@
       width: rem(20px);
       height: 100%;
       background-image: linear-gradient(to right, rgba(8, 18, 26, 0) 0%, $color__gray-600 100%);
+      pointer-events: none;
     }
 
-    &-field {
+    select {
       width: rem(190px);
       padding: rem(8px) rem(30px) rem(8px) rem(12px);
       background-color: $color__gray-600;
