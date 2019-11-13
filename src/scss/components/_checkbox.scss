@@ -1,12 +1,13 @@
 @use 'abstracts' as *;
 
 .modal {
-  fieldset {
+  &__checkboxes {
+    margin: 0 rem(16px);
     padding: 0;
     border: 0;
   }
 
-  .legend {
+  legend {
     display: none;
   }
 

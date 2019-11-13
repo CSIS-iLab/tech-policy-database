@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import Icon from '../../site-config/Icon'
+import React, { useState } from 'react'
 import CollectionsFilter from './CollectionsFilter'
 
 const FilterPanel = (props) => {
@@ -27,37 +26,35 @@ const FilterPanel = (props) => {
 
   const renderItemsCount = () => {
     return (
-      <p>
+      <p className="modal-search__results">
         Showing {displayedItems.length} of {maxItems} results
       </p>
     )
   }
 
   return (
-    <section className="modal__panel">
-      <div className="modal__search">
-        <Icon icon={'search'} />
+    <fieldset className="modal-search">
+      <legend>Search available results</legend>
+      <div className="modal-search__wrapper">
         <input
-          className="modal__input"
+          className="modal-search__input"
           id="search-input"
           placeholder="Search"
           onChange={handleInput}
         />
+        <CollectionsFilter
+          allRows={allRows}
+          setCheckedCollections={setCheckedCollections}
+          checkedCollections={checkedCollections}
+          collections={collections}
+          handleClick={handleClick}
+          collectionsMenu={collectionsMenu}
+          displayedItems={displayedItems}
+          setDisplayedRows={setDisplayedRows}
+        />
+        {renderItemsCount()}
       </div>
-
-      <CollectionsFilter
-        allRows={allRows}
-        setCheckedCollections={setCheckedCollections}
-        checkedCollections={checkedCollections}
-        collections={collections}
-        handleClick={handleClick}
-        collectionsMenu={collectionsMenu}
-        displayedItems={displayedItems}
-        setDisplayedRows={setDisplayedRows}
-      />
-
-      {renderItemsCount()}
-    </section>
+    </fieldset>
   )
 }
 

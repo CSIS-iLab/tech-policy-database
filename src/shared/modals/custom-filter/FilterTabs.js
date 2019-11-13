@@ -53,18 +53,20 @@ const FilterTabs = (props) => {
           setDisplayedRows={setDisplayedRows}
         />
 
-        <FilterSelect
-          handleSelectAll={checkAllColumns}
-          handleDeselectAll={uncheckAllColumns}
-          maxItems={maxColumns}
-          checkedItems={checkedColumns}
-        />
-        <FilterContent
-          title={'columns'}
-          displayedItems={displayedColumns}
-          checkedItems={checkedColumns}
-          setCheckedItems={setCheckedColumns}
-        />
+        <fieldset className="modal__checkboxes">
+          <legend>Select the rows to display</legend>
+          <FilterSelect
+            handleSelectAll={checkAllColumns}
+            handleDeselectAll={uncheckAllColumns}
+            maxItems={maxColumns}
+            checkedItems={checkedColumns}
+          />
+          <FilterContent
+            displayedItems={displayedColumns}
+            checkedItems={checkedColumns}
+            setCheckedItems={setCheckedColumns}
+          />
+        </fieldset>
       </TabPanel>
       <TabPanel>
         <FilterPanel
@@ -78,19 +80,20 @@ const FilterTabs = (props) => {
           maxItems={maxRows}
           setDisplayedRows={setDisplayedRows}
         />
-
-        <FilterSelect
-          handleSelectAll={checkAllRows}
-          handleDeselectAll={uncheckAllRows}
-          maxItems={maxRows}
-          checkedItems={checkedRows}
-        />
-        <FilterContent
-          title={'rows'}
-          displayedItems={displayedRows}
-          checkedItems={checkedRows}
-          setCheckedItems={setCheckedRows}
-        />
+        <fieldset className="modal__checkboxes">
+          <legend>Select the rows to display</legend>
+          <FilterSelect
+            handleSelectAll={checkAllRows}
+            handleDeselectAll={uncheckAllRows}
+            maxItems={maxRows}
+            checkedItems={checkedRows}
+          />
+          <FilterContent
+            displayedItems={displayedRows}
+            checkedItems={checkedRows}
+            setCheckedItems={setCheckedRows}
+          />
+        </fieldset>
       </TabPanel>
     </Tabs>
   )

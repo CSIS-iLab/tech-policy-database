@@ -13,18 +13,32 @@ const CollectionsFilter = (props) => {
     setDisplayedRows
   } = props
 
+  let countIsHidden = 'modal-collections__count--hidden'
+  if (checkedCollections.length) {
+    countIsHidden = ''
+  }
+
+  let filtersAreVisible = ''
+  if (collectionsMenu) {
+    filtersAreVisible = 'modal-collections__btn--active'
+  }
+
   return (
     <React.Fragment>
-      <button className="modal__collections-btn" onClick={handleClick}>
+      <button
+        className={`btn btn--white btn--square modal-collections__btn ${filtersAreVisible}`}
+        aria-label="View suggested filters"
+        onClick={handleClick}
+      >
         <Icon icon={'filter2'} />
         <Icon icon={'arrow-dropdown'} />
+        <span className={`modal-collections__count ${countIsHidden}`}>
+          {checkedCollections.length}
+        </span>
       </button>
-      <div className="modal__collections-count">
-        {checkedCollections.length}
-      </div>
 
       {collectionsMenu ? (
-        <fieldset>
+        <fieldset className="modal-collections__list">
           <legend>Filter by Collection</legend>
           {collections.map((c, i) => (
             <CollectionsItem

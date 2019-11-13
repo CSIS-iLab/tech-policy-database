@@ -2,11 +2,10 @@ import React from 'react'
 import FilterItem from './FilterItem'
 
 const FilterContent = (props) => {
-  const { title, setCheckedItems, checkedItems, displayedItems } = props
+  const { setCheckedItems, checkedItems, displayedItems } = props
 
   return (
-    <fieldset>
-      <legend className="legend">Select the {title} to display</legend>
+    <div>
       {displayedItems.map((item, i) => (
         <FilterItem
           key={i}
@@ -15,7 +14,7 @@ const FilterContent = (props) => {
           checkedItems={checkedItems}
         />
       ))}
-    </fieldset>
+    </div>
   )
 }
 
