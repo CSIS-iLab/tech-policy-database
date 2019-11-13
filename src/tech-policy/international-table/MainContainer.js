@@ -55,19 +55,13 @@ const MainContainer = () => {
       .sort((a, b) => a.localeCompare(b))
   }
 
-  const formatSiteInfo = () => {
-    info['program_name'] = 'TECH POLICY PROGRAM'
-    info['subject'] = 'Data Governance'
-    return info
-  }
-
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
     context.setFilteredHeaders(formatHeaders())
     context.setFilteredRows(sortRows(formatRows()))
     context.setCollections(getCollections())
-    context.setSiteInfo(formatSiteInfo())
+    context.setSiteInfo(info)
     // eslint-disable-next-line
   }, [])
 
