@@ -4,12 +4,7 @@ import Icon from '../site-config/Icon'
 const FontResize = () => {
   const resize = (size) => {
     let table = document.getElementById('table')
-    // let val = getComputedStyle(table).getPropertyValue(size)
-
     table.style.setProperty('--table-font-size', 'var(--font-size--' + size + ')')
-
-    console.log(getComputedStyle(table).getPropertyValue('--table-font-size'))
-    console.log(getComputedStyle(table).getPropertyValue('font-size'))
   }
 
   return (
