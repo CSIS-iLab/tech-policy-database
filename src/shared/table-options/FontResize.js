@@ -2,10 +2,14 @@ import React from 'react'
 import Icon from '../site-config/Icon'
 
 const FontResize = () => {
-  const resize = () => {
+  const resize = (size) => {
     let table = document.getElementById('table')
-    table.style.getPropertyValue("--table-font-size");
-    table.style.setProperty("--table-font-size", '14px') 
+    let val = getComputedStyle(table).getPropertyValue(size)
+
+    table.style.setProperty('--table-font-size', val)
+
+    console.log(getComputedStyle(table).getPropertyValue('--table-font-size'))
+    console.log(getComputedStyle(table).getPropertyValue('font-size'))
   }
 
   return (
@@ -13,21 +17,21 @@ const FontResize = () => {
       <button
         className="btn btn--dark btn--square"
         alt="font size small"
-        onClick={() => resize('var(--font-size--sm)')}
+        onClick={() => resize('--font-size--sm')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
         className="btn btn--dark btn--square"
         alt="font size medium"
-        onClick={() => resize('var(--font-size--md)')}
+        onClick={() => resize('--font-size--md')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
         className="btn btn--dark btn--square"
         alt="font size large"
-        onClick={() => resize('var(--font-size--lg)')}
+        onClick={() => resize('--font-size--lg')}
       >
         <Icon icon={'font-size'} />
       </button>
