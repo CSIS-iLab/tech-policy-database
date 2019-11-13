@@ -187,5 +187,10 @@
       @extend %body__text-xs;
       font-weight: normal;
     }
+
+    &__default-lang {
+      color: $color__gray-487;
+      font-style: italic;
+    }
   }
 }
