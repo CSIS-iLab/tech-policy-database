@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 import SearchFilter from './SearchFilter'
-import TableTextResize from './TableTextResize'
+import FontResize from './FontResize'
 import CustomFilter from './CustomFilter'
 import ScrollBar from './ScrollBar'
 
@@ -64,7 +64,7 @@ const TableOptions = () => {
         setFilterSubject={setFilterSubject}
       />
       <CustomFilter setFilterModalStatus={setFilterModalStatus} />
-      <TableTextResize />
+      <FontResize />
       <ScrollBar />
     </section>
   )

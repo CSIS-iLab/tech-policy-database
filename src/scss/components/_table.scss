@@ -1,10 +1,10 @@
 @use 'abstracts' as *;
 
 .table {
-  /* css variables */
-  --font-size-1: 14px;
-  --font-size-2: 16px;
-  --font-size-3: 20px;
+  --font-size--sm: 1;
+  --font-size--md: 1.1;
+  --font-size--lg: 1.2;
+  --table-font-size: var(--font-size--sm);
 
   flex: 1 0 auto;
   width: 100%;
@@ -51,7 +51,10 @@
       top: 0;
       z-index: 1;
       color: $color__white;
-      @extend %table__header;
+      font-weight: 500;
+      font-size: 18px;
+      font-size: calc((1.125rem) * var(--table-font-size));
+      line-height: 1.2;
       background-color: $color__blue-300;
 
       &:first-child {
@@ -62,7 +65,9 @@
 
     &--body {
       color: $color__gray-300;
-      @extend %body__text-m;
+      font-size: 16px;
+      font-size: calc((1rem) * var(--table-font-size));
+      line-height: 1.41;
       background-color: $color__white;
       transition: background 0.3s ease-in-out;
 
@@ -132,6 +137,7 @@
       overflow: hidden;
       color: $color__white;
       @extend %table__header;
+      font-size: calc((1.125rem) * var(--table-font-size));
       white-space: nowrap;
       text-align: left;
       text-overflow: ellipsis;
@@ -156,14 +162,16 @@
       margin-bottom: rem(8px);
       color: $color__white-175;
       @extend %body__text-xs;
+      font-size: calc((	0.8125rem) * var(--table-font-size));
     }
 
     &__doc-link {
       display: inline-flex;
       color: $color__white-160;
-      @extend %body__text-xs;
+      font-size: calc((	0.8125rem) * var(--table-font-size));
       text-decoration: none;
       transition: color 0.3s ease-in-out;
+      @extend %body__text-xs;
 
       &:hover {
         color: $color__white;
@@ -186,6 +194,7 @@
       color: $color__gray-487;
       @extend %body__text-xs;
       font-weight: normal;
+      font-size: calc((0.8125rem) * var(--table-font-size));
     }
   }
 }
