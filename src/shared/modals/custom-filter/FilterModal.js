@@ -142,6 +142,7 @@ const FilterModal = () => {
     applyHeaderFilters()
     applyRowFilters()
     setIsFiltered(true)
+    setCheckedFilters()
   }
 
   return filterModalStatus ? (

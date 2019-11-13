@@ -2,7 +2,15 @@ import React from 'react'
 import Icon from '../site-config/Icon'
 
 const CustomFilter = (props) => {
-  const {setFilterModalStatus, setFilteredRows, setFilteredHeaders, isFiltered, setIsFiltered, allRows, allHeaders } = props
+  const {
+    setFilterModalStatus, 
+    setFilteredRows, 
+    setFilteredHeaders, 
+    isFiltered, 
+    setIsFiltered, 
+    allRows, 
+    allHeaders 
+  } = props
 
   const handleClick = () => {
     setFilterModalStatus(true)
