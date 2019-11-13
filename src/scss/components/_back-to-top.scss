@@ -4,6 +4,7 @@
   position: fixed;
   right: rem(20px);
   bottom: rem(20px);
+  z-index: 2;
   display: flex;
   padding: rem(7px);
   color: $color__white;

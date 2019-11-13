@@ -11,7 +11,8 @@
   transition: all 0.3s ease-in-out;
 
   &:focus {
-    outline: 2px solid $color__blue-200;
+    outline: none;
+    box-shadow: 0 0 0 2px $color__blue-300;
   }
 
   &:not([disabled]) {
@@ -61,6 +62,10 @@
       &:hover {
         border-color: #85b7db;
       }
+    }
+
+    &:focus {
+      background: transparent;
     }
   }
 
