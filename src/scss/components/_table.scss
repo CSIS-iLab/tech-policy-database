@@ -137,6 +137,7 @@
       overflow: hidden;
       color: $color__white;
       @extend %table__header;
+      font-size: calc((1.125rem) * var(--table-font-size));
       white-space: nowrap;
       text-align: left;
       text-overflow: ellipsis;
@@ -161,14 +162,16 @@
       margin-bottom: rem(8px);
       color: $color__white-175;
       @extend %body__text-xs;
+      font-size: calc((	0.8125rem) * var(--table-font-size));
     }
 
     &__doc-link {
       display: inline-flex;
       color: $color__white-160;
-      @extend %body__text-xs;
+      font-size: calc((	0.8125rem) * var(--table-font-size));
       text-decoration: none;
       transition: color 0.3s ease-in-out;
+      @extend %body__text-xs;
 
       &:hover {
         color: $color__white;
