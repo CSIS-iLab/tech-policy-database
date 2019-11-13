@@ -49,6 +49,10 @@
     background-color: $color__highlight-cell;
     border-bottom: 1px solid rgba($color__gray-400, 0.24);
 
+    .modal--filter & {
+      border-bottom: 0;
+    }
+
     .btn {
       display: inline-flex;
       /* prettier-ignore */
