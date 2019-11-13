@@ -25,11 +25,6 @@
       pointer-events: none;
     }
 
-    &-field,
-    .icon {
-      @extend %input;
-    }
-
     &-field {
       padding: rem(8px) rem(34px);
       overflow: hidden;
