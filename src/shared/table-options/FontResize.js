@@ -4,9 +4,9 @@ import Icon from '../site-config/Icon'
 const FontResize = () => {
   const resize = (size) => {
     let table = document.getElementById('table')
-    let val = getComputedStyle(table).getPropertyValue(size)
+    // let val = getComputedStyle(table).getPropertyValue(size)
 
-    table.style.setProperty('--table-font-size', val)
+    table.style.setProperty('--table-font-size', 'var(--font-size--' + size + ')')
 
     console.log(getComputedStyle(table).getPropertyValue('--table-font-size'))
     console.log(getComputedStyle(table).getPropertyValue('font-size'))
@@ -17,21 +17,21 @@ const FontResize = () => {
       <button
         className="btn btn--dark btn--square"
         alt="font size small"
-        onClick={() => resize('--font-size--sm')}
+        onClick={() => resize('sm')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
         className="btn btn--dark btn--square"
         alt="font size medium"
-        onClick={() => resize('--font-size--md')}
+        onClick={() => resize('md')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
         className="btn btn--dark btn--square"
         alt="font size large"
-        onClick={() => resize('--font-size--lg')}
+        onClick={() => resize('lg')}
       >
         <Icon icon={'font-size'} />
       </button>
