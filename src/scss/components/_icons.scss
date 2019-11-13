@@ -8,7 +8,7 @@
   stroke: currentColor;
 
   a &,
-  .btn & {
+  .btn--icon & {
     transition: none; // Transition is applied at the a level instead of the icon
   }
 }

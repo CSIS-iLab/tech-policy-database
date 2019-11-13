@@ -67,7 +67,7 @@
       @extend %input;
 
       &:focus {
-        box-shadow: inset 0 0 0 2px #3385bd;
+        box-shadow: inset 0 0 0 2px $color__blue-300;
       }
     }
 

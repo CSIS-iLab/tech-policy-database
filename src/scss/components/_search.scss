@@ -53,7 +53,10 @@
     display: flex;
     align-items: center;
     padding: 0;
-    @include font-size(14px);
+
+    .icon {
+      @include font-size(14px);
+    }
   }
 }
 
