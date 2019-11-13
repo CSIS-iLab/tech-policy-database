@@ -1,0 +1,83 @@
+@use 'abstracts' as *;
+
+.table-search {
+  display: flex;
+  align-items: center;
+
+  &__input-field,
+  &__dropdown select,
+  .icon-search {
+    color: $color__white-190;
+  }
+
+  &__input {
+    background-color: $color__gray-500;
+
+    // Text fade out at end of field
+    &::before {
+      background-image: linear-gradient(to right, rgba(19, 31, 42, 0) 0%, $color__gray-500 100%);
+    }
+
+    &-field {
+      background-color: $color__gray-500;
+
+      &:focus {
+        box-shadow: inset 0 0 0 2px $color__blue-300, inset 0 1px 2px 0 rgba(102, 113, 123, 0.21), inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+      }
+
+      &::placeholder {
+        color: $color__white-130;
+      }
+    }
+  }
+
+  .icon-close-circle {
+    color: $color__white-160;
+
+    &:hover {
+      color: $color__white-190;
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $color__gray-600;
+    border-radius: 2px;
+
+    // Text fade out at end of field
+    &::before {
+      content: '';
+      position: absolute;
+      right: rem(30px);
+      width: rem(20px);
+      height: 90%;
+      background-image: linear-gradient(to right, rgba(8, 18, 26, 0) 0%, $color__gray-600 100%);
+      pointer-events: none;
+    }
+
+    select {
+      width: rem(190px);
+      padding: rem(8px) rem(30px) rem(8px) rem(12px);
+      background-color: $color__gray-600;
+      border: 0;
+      border-radius: 2px;
+      appearance: none;
+      @extend %input;
+
+      &:focus {
+        box-shadow: inset 0 0 0 2px #3385bd;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      right: rem(12px);
+      z-index: 99;
+      color: $color__white-160 !important;
+      pointer-events: none;
+    }
+  }
+}
+

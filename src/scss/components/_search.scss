@@ -1,0 +1,59 @@
+@use 'abstracts' as *;
+
+.search {
+
+  /* ----Table & Modal Search----- */
+
+  border: 0;
+
+  *:focus {
+    outline: none;
+  }
+
+  &__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    // Text fade out at end of field
+    &::before {
+      content: '';
+      position: absolute;
+      right: rem(34px);
+      width: rem(20px);
+      height: 90%;
+      pointer-events: none;
+    }
+
+    &-field,
+    .icon {
+      @extend %input;
+    }
+
+    &-field {
+      padding: rem(8px) rem(34px);
+      overflow: hidden;
+      border: 0;
+      border-radius: 2px;
+    }
+  }
+
+  .icon-search,
+  &__button-close {
+    position: absolute;
+  }
+
+  .icon-search {
+    left: rem(12px);
+    margin-right: rem(6px);
+  }
+
+  &__button-close {
+    right: rem(12px);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    @include font-size(14px);
+  }
+}
+
