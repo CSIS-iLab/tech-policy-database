@@ -29,7 +29,7 @@ const FilterTabs = (props) => {
 
   const renderFilterErr = () => {
     return (
-    <div> 
+    <div className="filter__search-error"> 
       <div>No Results</div>
       <p>Sorry we didn’t find any row titles that match your search.</p>
     </div>

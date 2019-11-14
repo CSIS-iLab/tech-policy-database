@@ -1,0 +1,16 @@
+@use 'abstracts' as *;
+
+.filter__search-error {
+  div {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    color: $color__black;
+    @extend %table__header;
+  }
+
+  p {
+    color: $color__gray-300;
+    font-size: rem(16px);
+    line-height: 1.41;
+  }
+}
