@@ -80,6 +80,11 @@
       .icon {
         transition: none;
       }
+
+      &-no-data {
+        color: $color__gray-487;
+        font-style: italic;
+      }
     }
 
     &--collection {
@@ -186,11 +191,6 @@
       color: $color__gray-487;
       @extend %body__text-xs;
       font-weight: normal;
-    }
-
-    &__default-lang {
-      color: $color__gray-487;
-      font-style: italic;
     }
   }
 }
