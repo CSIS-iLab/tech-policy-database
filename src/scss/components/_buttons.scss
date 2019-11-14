@@ -144,5 +144,9 @@
     &[disabled] {
       color: $color__white-130;
     }
+
+    &:first-child {
+      margin-right: rem(13px);
+    }
   }
 }
