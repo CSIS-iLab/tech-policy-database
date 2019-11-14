@@ -10,21 +10,21 @@ const FontResize = () => {
   return (
     <div className="font__resize">
       <button
-        className="btn btn--dark btn--square"
+        className="btn btn--dark table__options-resize table__options-resize-sm"
         alt="font size small"
         onClick={() => resize('sm')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
-        className="btn btn--dark btn--square"
+        className="btn btn--dark table__options-resize table__options-resize-md"
         alt="font size medium"
         onClick={() => resize('md')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
-        className="btn btn--dark btn--square"
+        className="btn btn--dark table__options-resize table__options-resize-lg"
         alt="font size large"
         onClick={() => resize('lg')}
       >

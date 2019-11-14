@@ -131,6 +131,7 @@
   &.btn--scroll {
     display: inline-flex;
     align-items: center;
+    padding: rem(9px) rem(8px);
     color: $color__white-190;
     @include font-size(18px);
     background: transparent;

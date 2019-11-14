@@ -197,4 +197,33 @@
       font-size: calc((0.8125rem) * var(--table-font-size));
     }
   }
+
+  &__options {
+    display: flex;
+    align-items: center;
+
+    &-resize {
+      padding: rem(8.5px) rem(10px);
+      
+      &-sm,
+      &-md {
+        margin-right: rem(10px);
+      }
+      
+      &-sm {
+        padding: rem(6.5px) rem(9.5px);
+        @include font-size(17px);
+      }
+      
+      &-md {
+        @include font-size(18px);
+        padding: rem(6px) rem(9px);
+      }
+      
+      &-lg {
+        @include font-size(19px);
+        padding: rem(5px) rem(8.5px);
+      }
+    }
+  }
 }
