@@ -56,16 +56,20 @@ const TableOptions = () => {
 
   return (
     <section className="table__options container">
-      <SearchFilter
-        handleFilter={handleFilter}
-        searchText={searchText}
-        setSearchText={setSearchText}
-        filterSubject={filterSubject}
-        setFilterSubject={setFilterSubject}
-      />
-      <CustomFilter setFilterModalStatus={setFilterModalStatus} />
-      <FontResize />
-      <ScrollBar />
+      <div className="table__options-spacer">
+        <SearchFilter
+          handleFilter={handleFilter}
+          searchText={searchText}
+          setSearchText={setSearchText}
+          filterSubject={filterSubject}
+          setFilterSubject={setFilterSubject}
+        />
+        <CustomFilter setFilterModalStatus={setFilterModalStatus} />
+      </div>
+      <div className="table__options-spacer">
+        <FontResize />
+        <ScrollBar />
+      </div>
     </section>
   )
 }

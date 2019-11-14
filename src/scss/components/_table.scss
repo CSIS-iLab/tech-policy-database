@@ -200,10 +200,20 @@
 
   &__options {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: rem(28px);
+
+    &-spacer {
+      display: flex;
+      align-items: center;
+    }
 
     &-resize {
-      padding: rem(8.5px) rem(10px);
+      .icon {
+        display: flex;
+        align-items: center;
+      }
       
       &-sm,
       &-md {
@@ -211,18 +221,20 @@
       }
       
       &-sm {
-        padding: rem(6.5px) rem(9.5px);
+        // margin-left: rem(300px);
+        padding: rem(9.5px) rem(9.5px);
         @include font-size(17px);
       }
       
       &-md {
         @include font-size(18px);
-        padding: rem(6px) rem(9px);
+        padding: rem(9px) rem(9px);
       }
       
       &-lg {
         @include font-size(19px);
-        padding: rem(5px) rem(8.5px);
+        margin-right: rem(20px);
+        padding: rem(8.5px) rem(8.5px);
       }
     }
   }
