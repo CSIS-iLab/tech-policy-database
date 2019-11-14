@@ -25,13 +25,36 @@ const DataTable = (props) => {
 
   const { headers, rows } = props
 
+  const renderSearchErr = () => {
+    return (
+      <td className="table__cell table__cell--body" colspan="11">
+        <div>No Results</div>
+        <p>
+          Sorry we didn't find any results for <span>"keyword"</span> within{' '}
+          <span>Group</span>.
+        </p>
+        <ul>
+          <li>Check your spelling and try again</li>
+          <li>Try a similar but different term</li>
+          <li>Use the dropdown to search another type of data</li>
+        </ul>
+      </td>
+    )
+  }
+
   return (
     <div id="table-container" className="table__container">
       <table id="table" className="table">
         <thead>
           <tr className="table__header-row">{headers.map(renderHeadingRow)}</tr>
         </thead>
-        <tbody>{rows.map(renderRow)}</tbody>
+        {rows.length > 0 ? (
+          <tbody>{rows.map(renderRow)}</tbody>
+        ) : (
+          <tbody>
+            <tr>{renderSearchErr()}</tr>
+          </tbody>
+        )}
       </table>
     </div>
   )
