@@ -68,9 +68,8 @@ const TableCell = (props) => {
       )
     } else if (!catObj.has_data) {
       return (
-        <td className="table__cell table__cell--body">
-          <div className="cell__default-lang">{catObj.default_lang}</div>
-          {renderOriginalLang()}
+        <td className="table__cell table__cell--body table__cell--body-no-data">
+          {catObj.default_lang} {renderOriginalLang()}
         </td>
       )
     }
