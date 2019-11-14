@@ -27,6 +27,15 @@ const FilterTabs = (props) => {
     setDisplayedRows
   } = props
 
+  const renderFilterErr = () => {
+    return (
+    <div> 
+      <div>No Results</div>
+      <p>Sorry we didn’t find any row titles that match your search.</p>
+    </div>
+    )
+  }
+
   return (
     <Tabs className="tabs">
       <TabList className="tabs__list">
@@ -61,11 +70,15 @@ const FilterTabs = (props) => {
             maxItems={maxColumns}
             checkedItems={checkedColumns}
           />
+          {displayedColumns.length > 0 ? 
           <FilterContent
             displayedItems={displayedColumns}
             checkedItems={checkedColumns}
             setCheckedItems={setCheckedColumns}
           />
+          :
+          renderFilterErr()
+          }
         </fieldset>
       </TabPanel>
       <TabPanel>
@@ -88,11 +101,15 @@ const FilterTabs = (props) => {
             maxItems={maxRows}
             checkedItems={checkedRows}
           />
+          {displayedRows.length > 0 ? 
           <FilterContent
             displayedItems={displayedRows}
             checkedItems={checkedRows}
             setCheckedItems={setCheckedRows}
           />
+          :
+          renderFilterErr()
+          }
         </fieldset>
       </TabPanel>
     </Tabs>
