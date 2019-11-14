@@ -214,23 +214,22 @@
         display: flex;
         align-items: center;
       }
-      
+
       &-sm,
       &-md {
         margin-right: rem(10px);
       }
-      
+
       &-sm {
-        // margin-left: rem(300px);
         padding: rem(9.5px) rem(9.5px);
         @include font-size(17px);
       }
-      
+
       &-md {
         @include font-size(18px);
         padding: rem(9px) rem(9px);
       }
-      
+
       &-lg {
         @include font-size(19px);
         margin-right: rem(20px);
