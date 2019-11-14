@@ -7,8 +7,7 @@ const TableCell = (props) => {
     allHeaders,
     allRows,
     setLangModalStatus,
-    setLangModalData,
-    filteredRows
+    setLangModalData
   } = useContext(GlobalContext)
 
   const framework = props.content[0]
@@ -41,12 +40,6 @@ const TableCell = (props) => {
     return { __html: lang }
   }
 
-  const handleSearchErr = () => {
-    return filteredRows.length > 0
-      ? 'table__cell table__cell--body'
-      : 'table__cell table__cell--body table__cell--hidden'
-  }
-
   // Conditionally renders cells based on position in the table and the presence of data
   const renderCell = () => {
     if (typeof catObj === 'string' && catObj.length === 1) {
@@ -58,7 +51,7 @@ const TableCell = (props) => {
     } else if (typeof catObj !== 'object') {
       let catDesc = allRows.find((r) => r[0][0] === framework)[0][1]
       return (
-        <th className={handleSearchErr()} scope="row">
+        <th className="table__cell table__cell--body" scope="row">
           <div className="cell__category">{framework}</div>
           <p className="cell__desc">{catDesc}</p>
         </th>

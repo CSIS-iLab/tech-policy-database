@@ -87,6 +87,11 @@
       }
     }
 
+    &--hidden > * {
+      display: none;
+      visibility: hidden;
+    }
+
     &--collection {
       position: relative;
       padding: rem(24px) rem(40px);

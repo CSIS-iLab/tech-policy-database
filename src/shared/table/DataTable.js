@@ -4,9 +4,11 @@ import TableCell from './TableCell'
 
 const DataTable = (props) => {
   const renderHeadingRow = (cell, cellIndex) => {
-    const { headers } = props
+    const { headers, rows } = props
 
-    return <HeaderCell key={cellIndex} content={headers[cellIndex]} />
+    return (
+      <HeaderCell key={cellIndex} content={headers[cellIndex]} rows={rows} />
+    )
   }
 
   const renderRow = (row, rowIndex) => {
@@ -27,7 +29,7 @@ const DataTable = (props) => {
 
   const renderSearchErr = () => {
     return (
-      <td className="table__cell table__cell--body" colspan="11">
+      <td className="table__cell table__cell--body" colSpan="11">
         <div>No Results</div>
         <p>
           Sorry we didn't find any results for <span>"keyword"</span> within{' '}
