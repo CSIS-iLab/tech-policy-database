@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import CollectionsFilter from './CollectionsFilter'
+import Icon from '../../site-config/Icon'
 
 const FilterPanel = (props) => {
   const [collectionsMenu, setCollectionsMenu] = useState(false)
@@ -35,13 +36,19 @@ const FilterPanel = (props) => {
   return (
     <fieldset className="modal-search">
       <legend>Search available results</legend>
-      <div className="modal-search__wrapper">
-        <input
-          className="modal-search__input"
-          id="search-input"
-          placeholder="Search"
-          onChange={handleInput}
-        />
+      <div className="search modal-search__wrapper">
+        <div className="search__input modal-search__input">
+          <Icon icon={'search'} />
+          <input
+            className="search__input-field modal-search__input-field"
+            id="search-input"
+            placeholder="Search"
+            onChange={handleInput}
+          />
+          <button className="btn search__button-close modal-search__button-close">
+            <Icon icon={'close-circle'} />
+          </button>
+        </div>
         <CollectionsFilter
           allRows={allRows}
           setCheckedCollections={setCheckedCollections}
