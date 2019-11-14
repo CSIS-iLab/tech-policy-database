@@ -29,13 +29,13 @@ const DataTable = (props) => {
 
   const renderSearchErr = () => {
     return (
-      <td className="table__cell table__cell--body" colSpan="11">
+      <td className="table__cell table__cell--body table__search-error" colSpan="11">
         <div>No Results</div>
         <p>
           Sorry we didn't find any results for <span>"keyword"</span> within{' '}
           <span>Group</span>.
         </p>
-        <ul>
+        <ul >
           <li>Check your spelling and try again</li>
           <li>Try a similar but different term</li>
           <li>Use the dropdown to search another type of data</li>
