@@ -72,6 +72,7 @@ const MainContainer = () => {
       <TableContainer
         headers={context.filteredHeaders}
         rows={context.filteredRows}
+        isLoaded={context.isLoaded}
       />
       <ModalContainer />
       <Methodology />

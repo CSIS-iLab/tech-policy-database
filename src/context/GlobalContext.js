@@ -17,6 +17,7 @@ export const GlobalContextProvider = (props) => {
   const [filterModalStatus, setFilterModalStatus] = useState(false)
   const [langModalData, setLangModalData] = useState({})
   const [siteInfo, setSiteInfo] = useState({})
+  const [isLoaded, setIsLoaded] = useState(false)
 
   // Sorts by collections and adds divider when at least one category is present
   const sortRows = (rows) => {
@@ -58,7 +59,9 @@ export const GlobalContextProvider = (props) => {
     langModalData,
     setLangModalData,
     siteInfo,
-    setSiteInfo
+    setSiteInfo,
+    isLoaded,
+    setIsLoaded
   }
 
   return (
