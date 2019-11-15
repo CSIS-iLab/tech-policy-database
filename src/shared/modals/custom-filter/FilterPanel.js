@@ -33,6 +33,10 @@ const FilterPanel = (props) => {
     )
   }
 
+  const handleClear = (e) => {
+    handleSearchFilter("", e.target.value)
+  }
+
   return (
     <fieldset className="modal-search">
       <legend>Search available results</legend>
@@ -44,9 +48,10 @@ const FilterPanel = (props) => {
             id="search-input"
             placeholder="Search"
             onChange={handleInput}
+          // value={handleClear}
           />
           <button className="btn search__button-close modal-search__button-close">
-            <Icon icon={'close-circle'} />
+            <Icon icon={'close-circle'} onClick={handleClear} />
           </button>
         </div>
         <CollectionsFilter
