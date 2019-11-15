@@ -8,7 +8,7 @@ const LangModal = () => {
     GlobalContext
   )
 
-  const { link, original_lang, framework, category } = langModalData
+  const { url, link, original_lang, framework, category } = langModalData
 
   const onClose = () => {
     setLangModalStatus(false)
@@ -35,7 +35,7 @@ const LangModal = () => {
           />
         </div>
       </section>
-      <ModalFooter link={link} />
+      <ModalFooter link={url} />
     </aside>
   ) : null
 }

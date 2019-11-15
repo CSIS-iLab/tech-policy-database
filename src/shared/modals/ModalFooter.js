@@ -3,6 +3,7 @@ import Icon from '../site-config/Icon'
 
 const ModalFooter = (props) => {
   const { link } = props
+  console.log(link)
 
   return (
     <footer className="modal__footer">
