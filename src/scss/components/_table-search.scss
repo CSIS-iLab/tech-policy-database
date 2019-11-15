@@ -5,6 +5,10 @@
   align-items: center;
   margin-bottom: rem(10px);
 
+  @include breakpoint('large') {
+    margin-bottom: 0;
+  }
+
   &__input-field,
   &__dropdown select,
   .icon-search {
@@ -14,6 +18,10 @@
   &__input {
     max-width: rem(190px);
     background-color: $color__gray-500;
+
+    @include breakpoint('large') {
+      max-width: none;
+    }
 
     // Text fade out at end of field
     &::before {
@@ -59,7 +67,7 @@
       position: absolute;
       right: rem(30px);
       width: rem(20px);
-      height: 90%;
+      height: 80%;
       background-image: linear-gradient(to right, rgba(8, 18, 26, 0) 0%, $color__gray-600 100%);
       pointer-events: none;
     }

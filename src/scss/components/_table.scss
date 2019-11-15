@@ -225,10 +225,12 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      // width: 100%;
+      width: 100%;
 
       @include breakpoint('large') {
         flex-wrap: nowrap;
+        justify-content: center;
+        width: initial;
       }
     }
 
