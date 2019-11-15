@@ -28,6 +28,12 @@
       background-image: linear-gradient(to right, rgba(19, 31, 42, 0) 0%, $color__gray-500 100%);
     }
 
+
+    &-field,
+    .icon {
+      @extend %input;
+    }
+
     &-field {
       background-color: $color__gray-500;
 
@@ -82,7 +88,7 @@
       @extend %input;
 
       &:focus {
-        box-shadow: inset 0 0 0 2px #3385bd;
+        box-shadow: inset 0 0 0 2px $color__blue-300;
       }
 
       @include breakpoint('large') {
