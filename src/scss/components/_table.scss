@@ -198,15 +198,38 @@
     }
   }
 
+  &__filter {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: rem(10px);
+
+    @include breakpoint('large') {
+      margin-bottom: 0;
+    }
+  }
+
   &__options {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: rem(28px);
 
+    @include breakpoint('large') {
+      flex-wrap: nowrap;
+    }
+
     &-spacer {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
+      // width: 100%;
+
+      @include breakpoint('large') {
+        flex-wrap: nowrap;
+      }
     }
 
     &-resize {

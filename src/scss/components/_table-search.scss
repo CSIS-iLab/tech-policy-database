@@ -3,6 +3,7 @@
 .table-search {
   display: flex;
   align-items: center;
+  margin-bottom: rem(10px);
 
   &__input-field,
   &__dropdown select,
@@ -11,6 +12,7 @@
   }
 
   &__input {
+    max-width: rem(190px);
     background-color: $color__gray-500;
 
     // Text fade out at end of field
@@ -28,6 +30,10 @@
       &::placeholder {
         color: $color__white-130;
       }
+    }
+
+    @include breakpoint('large') {
+      max-width: none;
     }
   }
 
@@ -59,8 +65,8 @@
     }
 
     select {
-      width: rem(190px);
-      padding: rem(7.5px) rem(30px) rem(7.5px) rem(12px);
+      max-width: rem(137px);
+      padding: rem(8px) rem(30px) rem(8px) rem(12px);
       background-color: $color__gray-600;
       border: 0;
       border-radius: 2px;
@@ -69,6 +75,10 @@
 
       &:focus {
         box-shadow: inset 0 0 0 2px #3385bd;
+      }
+
+      @include breakpoint('large') {
+        max-width: rem(190px);
       }
     }
 
