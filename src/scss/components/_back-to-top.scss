@@ -4,7 +4,7 @@
   position: fixed;
   right: rem(20px);
   bottom: rem(20px);
-  z-index: 2;
+  z-index: 10;
   display: flex;
   padding: rem(7px);
   color: $color__white;
@@ -17,6 +17,11 @@
   
   &:hover {
     background-color: $color__blue-400;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $color__blue-300;
   }
   
   @include breakpoint('large') {

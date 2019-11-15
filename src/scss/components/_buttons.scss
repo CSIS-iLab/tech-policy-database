@@ -131,6 +131,7 @@
   &.btn--scroll {
     display: inline-flex;
     align-items: center;
+    padding: rem(9px) rem(8px);
     color: $color__white-190;
     @include font-size(18px);
     background: transparent;
@@ -142,6 +143,18 @@
 
     &[disabled] {
       color: $color__white-130;
+    }
+
+    &:first-child {
+      margin-right: rem(13px);
+    }
+
+    &:last-child {
+      margin-right: rem(24px);
+
+      @include breakpoint('large') {
+        margin-right: 0;
+      }
     }
   }
 }
