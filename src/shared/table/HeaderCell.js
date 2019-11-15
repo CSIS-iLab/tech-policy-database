@@ -3,13 +3,20 @@ import Icon from '../site-config/Icon'
 import { GlobalContext } from '../../context/GlobalContext'
 
 const HeaderCell = (props) => {
-  const { setFrameModalStatus, setActiveFramework } = useContext(GlobalContext)
+  const {
+    setFrameModalStatus,
+    setActiveFramework,
+    setLangModalStatus,
+    setFilterModalStatus
+  } = useContext(GlobalContext)
 
   const { name, url, organization } = props.content
 
   const handleClick = () => {
     setActiveFramework(props.content)
     setFrameModalStatus(true)
+    setLangModalStatus(false)
+    setFilterModalStatus(false)
   }
 
   return name === 'Categories' ? (

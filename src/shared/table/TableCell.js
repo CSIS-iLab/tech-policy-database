@@ -7,7 +7,9 @@ const TableCell = (props) => {
     allHeaders,
     allRows,
     setLangModalStatus,
-    setLangModalData
+    setLangModalData,
+    setFilterModalStatus,
+    setFrameModalStatus
   } = useContext(GlobalContext)
 
   const framework = props.content[0]
@@ -22,6 +24,8 @@ const TableCell = (props) => {
     setLangModalData(langModalObj)
 
     setLangModalStatus(true)
+    setFrameModalStatus(false)
+    setFilterModalStatus(false)
   }
 
   const renderOriginalLang = () => {

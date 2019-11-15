@@ -14,7 +14,9 @@ const TableOptions = () => {
     filterSubject,
     setFilterSubject,
     setFilterModalStatus,
-    sortRows
+    sortRows,
+    setFrameModalStatus,
+    setLangModalStatus
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -63,7 +65,11 @@ const TableOptions = () => {
         filterSubject={filterSubject}
         setFilterSubject={setFilterSubject}
       />
-      <CustomFilter setFilterModalStatus={setFilterModalStatus} />
+      <CustomFilter
+        setFilterModalStatus={setFilterModalStatus}
+        setFrameModalStatus={setFrameModalStatus}
+        setLangModalStatus={setLangModalStatus}
+      />
       <FontResize />
       <ScrollBar />
     </section>
