@@ -6,6 +6,7 @@ const TableCell = (props) => {
   const {
     allHeaders,
     allRows,
+    filteredHeaders,
     setLangModalStatus,
     setLangModalData
   } = useContext(GlobalContext)
@@ -44,7 +45,7 @@ const TableCell = (props) => {
   const renderCell = () => {
     if (typeof catObj === 'string' && catObj.length === 1) {
       return (
-        <td className="table__cell--collection" colSpan={allHeaders.length}>
+        <td className="table__cell--collection" colSpan={filteredHeaders.length}>
           {props.content}
         </td>
       )
