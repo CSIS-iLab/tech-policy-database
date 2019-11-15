@@ -11,6 +11,7 @@ import tableData from '../../json/tech-policy-int/framework_database.json'
 import categories from '../../json/tech-policy-int/explanations.json'
 import collections from '../../json/tech-policy-int/curated_categories.json'
 import info from '../../json/tech-policy-int/site_info.json'
+import Loader from '../../shared/site-config/Loader'
 
 const MainContainer = () => {
   const context = useContext(GlobalContext)
@@ -65,16 +66,28 @@ const MainContainer = () => {
     // eslint-disable-next-line
   }, [])
 
+  useEffect(() => {
+    if (context.allRows.length > 0 && context.siteInfo.program) {
+      context.setIsLoaded(true)
+    }
+  }, [context.allRows, context.siteInfo])
+
   return (
     <div className="site-content">
       <Header />
-      <Introduction />
-      <TableContainer
-        headers={context.filteredHeaders}
-        rows={context.filteredRows}
-      />
-      <ModalContainer />
-      <Methodology />
+      {context.isLoaded ? (
+        <React.Fragment>
+          <Introduction />
+          <TableContainer
+            headers={context.filteredHeaders}
+            rows={context.filteredRows}
+          />
+          <ModalContainer />
+          <Methodology />
+        </React.Fragment>
+      ) : (
+        <Loader />
+      )}
       <Footer />
       <BackToTop />
     </div>
