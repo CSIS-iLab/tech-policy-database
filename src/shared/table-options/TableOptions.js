@@ -18,7 +18,8 @@ const TableOptions = () => {
     filterSubject,
     setFilterSubject,
     setFilterModalStatus,
-    sortRows
+    sortRows,
+    filteredHeaders
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -54,8 +55,26 @@ const TableOptions = () => {
   }
 
   // Serves as the master filter that combines filterRows and filterByCurated
+  // Additional filter layer applied when custom filter modal is active
   const handleFilter = (text, subject) => {
-    setFilteredRows(sortRows(filterBySearch(allRows, text, subject)))
+    if (isFiltered) {
+      let frameworks = filteredHeaders.slice(1).map((header) => header.name)
+      setFilteredRows(
+        sortRows(
+          filterBySearch(
+            allRows.map((row) =>
+              row.filter(
+                (r) => frameworks.includes(r[0]) || typeof r[1] === 'string'
+              )
+            ),
+            text,
+            subject
+          )
+        )
+      )
+    } else {
+      setFilteredRows(sortRows(filterBySearch(allRows, text, subject)))
+    }
   }
 
   return (
@@ -67,14 +86,14 @@ const TableOptions = () => {
         filterSubject={filterSubject}
         setFilterSubject={setFilterSubject}
       />
-      <CustomFilter  
+      <CustomFilter
         setFilterModalStatus={setFilterModalStatus}
         setFilteredRows={setFilteredRows}
         allRows={allRows}
         allHeaders={allHeaders}
         setFilteredHeaders={setFilteredHeaders}
         isFiltered={isFiltered}
-        setIsFiltered={setIsFiltered} 
+        setIsFiltered={setIsFiltered}
       />
       <FontResize />
       <ScrollBar />
