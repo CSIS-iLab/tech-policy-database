@@ -3,17 +3,13 @@ import TableOptions from '../table-options/TableOptions'
 import DataTable from './DataTable'
 
 const TableContainer = (props) => {
-  const { headers, rows, isLoaded } = props
+  const { headers, rows } = props
 
-  return isLoaded ? (
+  return (
     <section className="datatable">
       <TableOptions />
       <DataTable headers={headers} rows={rows} />
     </section>
-  ) : (
-    <div className="loader">
-      <div className="spinner"></div>
-    </div>
   )
 }
 
