@@ -17,6 +17,7 @@ export const GlobalContextProvider = (props) => {
   const [filterModalStatus, setFilterModalStatus] = useState(false)
   const [langModalData, setLangModalData] = useState({})
   const [siteInfo, setSiteInfo] = useState({})
+  const [isLoaded, setIsLoaded] = useState(false)
   const [isFiltered, setIsFiltered] = useState(false)
   const [customFilteredRows, setCustomFilteredRows] = useState([])
 
@@ -61,6 +62,8 @@ export const GlobalContextProvider = (props) => {
     setLangModalData,
     siteInfo,
     setSiteInfo,
+    isLoaded,
+    setIsLoaded
     isFiltered,
     setIsFiltered,
     customFilteredRows,

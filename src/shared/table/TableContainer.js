@@ -3,10 +3,12 @@ import TableOptions from '../table-options/TableOptions'
 import DataTable from './DataTable'
 
 const TableContainer = (props) => {
+  const { headers, rows } = props
+
   return (
     <section className="datatable">
       <TableOptions />
-      <DataTable headers={props.headers} rows={props.rows} />
+      <DataTable headers={headers} rows={rows} />
     </section>
   )
 }
