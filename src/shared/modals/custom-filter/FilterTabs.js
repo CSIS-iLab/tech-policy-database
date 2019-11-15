@@ -29,10 +29,29 @@ const FilterTabs = (props) => {
 
   const renderFilterErr = () => {
     return (
-    <div className="filter__search-error"> 
-      <div>No Results</div>
-      <p>Sorry we didn’t find any row titles that match your search.</p>
-    </div>
+      <div className="filter__search-error">
+        <div>No Results</div>
+        <p>Sorry we didn’t find any row titles that match your search.</p>
+      </div>
+    )
+  }
+
+  const renderDisabledSelect = () => {
+    return (
+      <div className="checkbox__container checkbox__container--select-all">
+        <input
+          readOnly
+          className={null}
+          type="checkbox"
+          value={'SelectAll'}
+          name="collections"
+          id="SelectAll"
+          checked={false}
+        />
+        <label className="checkbox__items" htmlFor={'SelectAll'}>
+          Select All
+        </label>
+      </div>
     )
   }
 
@@ -64,21 +83,25 @@ const FilterTabs = (props) => {
 
         <fieldset className="modal__checkboxes">
           <legend>Select the rows to display</legend>
-          <FilterSelect
-            handleSelectAll={checkAllColumns}
-            handleDeselectAll={uncheckAllColumns}
-            maxItems={maxColumns}
-            checkedItems={checkedColumns}
-          />
-          {displayedColumns.length > 0 ? 
-          <FilterContent
-            displayedItems={displayedColumns}
-            checkedItems={checkedColumns}
-            setCheckedItems={setCheckedColumns}
-          />
-          :
-          renderFilterErr()
-          }
+          {displayedColumns.length > 0 ? (
+            <FilterSelect
+              handleSelectAll={checkAllColumns}
+              handleDeselectAll={uncheckAllColumns}
+              maxItems={maxColumns}
+              checkedItems={checkedColumns}
+            />
+          ) : (
+            renderDisabledSelect()
+          )}
+          {displayedColumns.length > 0 ? (
+            <FilterContent
+              displayedItems={displayedColumns}
+              checkedItems={checkedColumns}
+              setCheckedItems={setCheckedColumns}
+            />
+          ) : (
+            renderFilterErr()
+          )}
         </fieldset>
       </TabPanel>
       <TabPanel>
@@ -95,21 +118,25 @@ const FilterTabs = (props) => {
         />
         <fieldset className="modal__checkboxes">
           <legend>Select the rows to display</legend>
-          <FilterSelect
-            handleSelectAll={checkAllRows}
-            handleDeselectAll={uncheckAllRows}
-            maxItems={maxRows}
-            checkedItems={checkedRows}
-          />
-          {displayedRows.length > 0 ? 
-          <FilterContent
-            displayedItems={displayedRows}
-            checkedItems={checkedRows}
-            setCheckedItems={setCheckedRows}
-          />
-          :
-          renderFilterErr()
-          }
+          {displayedRows.length > 0 ? (
+            <FilterSelect
+              handleSelectAll={checkAllRows}
+              handleDeselectAll={uncheckAllRows}
+              maxItems={maxRows}
+              checkedItems={checkedRows}
+            />
+          ) : (
+            renderDisabledSelect()
+          )}
+          {displayedRows.length > 0 ? (
+            <FilterContent
+              displayedItems={displayedRows}
+              checkedItems={checkedRows}
+              setCheckedItems={setCheckedRows}
+            />
+          ) : (
+            renderFilterErr()
+          )}
         </fieldset>
       </TabPanel>
     </Tabs>
