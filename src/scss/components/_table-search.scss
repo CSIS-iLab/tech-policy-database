@@ -2,6 +2,7 @@
 
 .table-search {
   display: flex;
+  flex: 1;
   align-items: center;
   margin-bottom: rem(10px);
 
@@ -16,32 +17,36 @@
   }
 
   &__input {
-    max-width: rem(190px);
+    flex: 1;
     background-color: $color__gray-500;
 
     @include breakpoint('large') {
-      max-width: none;
+      max-width: 280px;
     }
 
     // Text fade out at end of field
     &::before {
-      background-image: linear-gradient(to right, rgba(19, 31, 42, 0) 0%, $color__gray-500 100%);
+      background-image: linear-gradient(
+        to right,
+        rgba(19, 31, 42, 0) 0%,
+        $color__gray-500 100%
+      );
     }
 
     &-field {
+      width: 100%;
+      min-width: 280px;
       background-color: $color__gray-500;
 
       &:focus {
-        box-shadow: inset 0 0 0 2px $color__blue-300, inset 0 1px 2px 0 rgba(102, 113, 123, 0.21), inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+        box-shadow: inset 0 0 0 2px $color__blue-300,
+          inset 0 1px 2px 0 rgba(102, 113, 123, 0.21),
+          inset 0 0 0 1px rgba(102, 113, 123, 0.25);
       }
 
       &::placeholder {
         color: $color__white-130;
       }
-    }
-
-    @include breakpoint('large') {
-      max-width: none;
     }
   }
 
@@ -68,7 +73,11 @@
       right: rem(30px);
       width: rem(20px);
       height: 80%;
-      background-image: linear-gradient(to right, rgba(8, 18, 26, 0) 0%, $color__gray-600 100%);
+      background-image: linear-gradient(
+        to right,
+        rgba(8, 18, 26, 0) 0%,
+        $color__gray-600 100%
+      );
       pointer-events: none;
     }
 
@@ -99,4 +108,3 @@
     }
   }
 }
-
