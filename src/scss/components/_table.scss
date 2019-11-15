@@ -85,6 +85,16 @@
       .icon {
         transition: none;
       }
+
+      &-no-data {
+        color: $color__gray-487;
+        font-style: italic;
+      }
+    }
+
+    &--hidden > * {
+      display: none;
+      visibility: hidden;
     }
 
     &--collection {
@@ -162,13 +172,13 @@
       margin-bottom: rem(8px);
       color: $color__white-175;
       @extend %body__text-xs;
-      font-size: calc((	0.8125rem) * var(--table-font-size));
+      font-size: calc((0.8125rem) * var(--table-font-size));
     }
 
     &__doc-link {
       display: inline-flex;
       color: $color__white-160;
-      font-size: calc((	0.8125rem) * var(--table-font-size));
+      font-size: calc((0.8125rem) * var(--table-font-size));
       text-decoration: none;
       transition: color 0.3s ease-in-out;
       @extend %body__text-xs;
