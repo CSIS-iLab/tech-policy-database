@@ -4,6 +4,7 @@ import Icon from '../../site-config/Icon'
 
 const FilterPanel = (props) => {
   const [collectionsMenu, setCollectionsMenu] = useState(false)
+  const [modalSearchText, setModalSearchText] = useState('')
 
   const {
     allRows,
@@ -18,6 +19,7 @@ const FilterPanel = (props) => {
   } = props
 
   const handleInput = (e) => {
+    setModalSearchText(e.target.value)
     handleSearchFilter(e.target.value, title)
   }
 
@@ -33,8 +35,9 @@ const FilterPanel = (props) => {
     )
   }
 
-  const handleClear = (e) => {
-    handleSearchFilter("", e.target.value)
+  const handleClear = () => {
+    setModalSearchText("")
+    handleSearchFilter("", title)
   }
 
   return (
@@ -48,10 +51,10 @@ const FilterPanel = (props) => {
             id="search-input"
             placeholder="Search"
             onChange={handleInput}
-          // value={handleClear}
+            value={modalSearchText}
           />
-          <button className="btn search__button-close modal-search__button-close">
-            <Icon icon={'close-circle'} onClick={handleClear} />
+          <button className="btn search__button-close modal-search__button-close" onClick={handleClear}>
+            <Icon icon={'close-circle'}  />
           </button>
         </div>
         <CollectionsFilter
