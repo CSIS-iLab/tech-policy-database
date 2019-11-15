@@ -23,9 +23,8 @@ const CustomFilter = (props) => {
   }
 
   const renderClass = () => {
-    return isFiltered
-      ? 'btn btn--dark btn--icon filter__button js-isActive'
-      : 'btn btn--dark btn--icon filter__button'
+    let filteredClass = isFiltered ? ' js-isActive' : ''
+    return 'btn btn--dark btn--icon filter__button' + filteredClass
   }
 
   return (
