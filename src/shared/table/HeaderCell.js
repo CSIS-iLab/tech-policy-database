@@ -18,7 +18,6 @@ const HeaderCell = (props) => {
   }
 
   const handleSearchErr = () => {
-    console.log(filteredRows)
     return filteredRows.length > 0
       ? 'table__cell table__cell--header'
       : 'table__cell table__cell--header table__cell--hidden'

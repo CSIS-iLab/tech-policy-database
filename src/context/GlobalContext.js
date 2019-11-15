@@ -63,7 +63,7 @@ export const GlobalContextProvider = (props) => {
     siteInfo,
     setSiteInfo,
     isLoaded,
-    setIsLoaded
+    setIsLoaded,
     isFiltered,
     setIsFiltered,
     customFilteredRows,
