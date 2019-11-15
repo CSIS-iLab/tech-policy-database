@@ -12,6 +12,7 @@ const FilterModal = () => {
   const [checkedCollections, setCheckedCollections] = useState([])
 
   const {
+    setIsFiltered,
     filterModalStatus,
     setFilterModalStatus,
     allRows,
@@ -140,6 +141,7 @@ const FilterModal = () => {
   const applyFilters = () => {
     applyHeaderFilters()
     applyRowFilters()
+    setIsFiltered(true)
   }
 
   return filterModalStatus ? (
