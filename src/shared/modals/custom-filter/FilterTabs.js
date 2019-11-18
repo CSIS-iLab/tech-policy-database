@@ -40,7 +40,7 @@ const FilterTabs = (props) => {
     return (
       <div className="checkbox__container checkbox__container--select-all">
         <input
-          readOnly
+          disabled
           className={null}
           type="checkbox"
           value={'SelectAll'}
