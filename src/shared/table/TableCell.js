@@ -14,11 +14,13 @@ const TableCell = (props) => {
   const catObj = props.content[1]
 
   const handleClick = (e) => {
+    const frameworkInfo = allHeaders.find((h) => h.name === framework)
+
     const langModalObj = {
-      framework: allHeaders.find((h) => h.name === framework).name,
+      framework: frameworkInfo.name,
       category: catObj.row_title,
       original_lang: catObj.original_lang,
-      link: allHeaders.find((h) => h.name === framework).url
+      link: frameworkInfo.url
     }
     setLangModalData(langModalObj)
 
