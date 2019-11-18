@@ -7,36 +7,38 @@ const FontResize = () => {
   const resize = (size) => {
     setActiveSize(size)
     let table = document.getElementById('table')
-    table.style.setProperty('--table-font-size', 'var(--font-size--' + size + ')')
+    table.style.setProperty(
+      '--table-font-size',
+      'var(--font-size--' + size + ')'
+    )
   }
 
   const renderClass = (size) => {
-    let baseClass = "btn btn--dark table__options-resize table__options-resize-" + size
+    let baseClass =
+      'btn btn--dark table__options-resize table__options-resize-' + size
 
-    return activeSize === size
-      ? baseClass + " js-isActive"
-      : baseClass
+    return activeSize === size ? baseClass + ' js-isActive' : baseClass
   }
 
   return (
     <div className="font__resize">
       <button
         className={renderClass('sm')}
-        alt="font size small"
+        aria-label="Reset font size to standard size."
         onClick={() => resize('sm')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
         className={renderClass('md')}
-        alt="font size medium"
+        aria-label="Make font size a little bit larger."
         onClick={() => resize('md')}
       >
         <Icon icon={'font-size'} />
       </button>
       <button
         className={renderClass('lg')}
-        alt="font size large"
+        aria-label="Make font size larger."
         onClick={() => resize('lg')}
       >
         <Icon icon={'font-size'} />
