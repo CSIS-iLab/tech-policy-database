@@ -19,7 +19,6 @@ const TableOptions = () => {
     setFilterSubject,
     setFilterModalStatus,
     sortRows,
-    filteredHeaders,
     customFilteredRows
   } = useContext(GlobalContext)
 

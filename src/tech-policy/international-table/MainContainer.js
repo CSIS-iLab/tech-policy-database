@@ -14,7 +14,22 @@ import info from '../../json/tech-policy-int/site_info.json'
 import Loader from '../../shared/site-config/Loader'
 
 const MainContainer = () => {
-  const context = useContext(GlobalContext)
+  const {
+    filteredRows,
+    filteredHeaders,
+    allHeaders,
+    setAllRows,
+    setAllHeaders,
+    setFilteredHeaders,
+    setFilteredRows,
+    setCollections,
+    setSiteInfo,
+    siteInfo,
+    allRows,
+    isLoaded,
+    setIsLoaded,
+    filteredRows
+  } = useContext(GlobalContext)
 
   // Adding key-value pair of Categories to tableData JSON to create top-left cell
   const formatHeaders = () => {
@@ -57,37 +72,32 @@ const MainContainer = () => {
   }
 
   const handleHeaderErr = () => {
-    return context.filteredRows.length > 0
-      ? context.filteredHeaders
-      : context.allHeaders
+    return filteredRows.length > 0 ? filteredHeaders : allHeaders
   }
 
   useEffect(() => {
-    context.setAllRows(formatRows())
-    context.setAllHeaders(formatHeaders())
-    context.setFilteredHeaders(formatHeaders())
-    context.setFilteredRows(sortRows(formatRows()))
-    context.setCollections(getCollections())
-    context.setSiteInfo(info)
+    setAllRows(formatRows())
+    setAllHeaders(formatHeaders())
+    setFilteredHeaders(formatHeaders())
+    setFilteredRows(sortRows(formatRows()))
+    setCollections(getCollections())
+    setSiteInfo(info)
     // eslint-disable-next-line
   }, [])
 
   useEffect(() => {
-    if (context.allRows.length > 0 && context.siteInfo.program) {
-      context.setIsLoaded(true)
+    if (allRows.length > 0 && siteInfo.program) {
+      setIsLoaded(true)
     }
-  }, [context.allRows, context.siteInfo])
+  }, [allRows, siteInfo])
 
   return (
     <div className="site-content">
       <Header />
-      {context.isLoaded ? (
+      {isLoaded ? (
         <React.Fragment>
           <Introduction />
-          <TableContainer
-            headers={handleHeaderErr()}
-            rows={context.filteredRows}
-          />
+          <TableContainer headers={handleHeaderErr()} rows={filteredRows} />
           <ModalContainer />
           <Methodology />
         </React.Fragment>
