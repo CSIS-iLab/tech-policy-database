@@ -27,11 +27,11 @@ const FilterTabs = (props) => {
     setDisplayedRows
   } = props
 
-  const renderFilterErr = () => {
+  const renderFilterErr = (tab) => {
     return (
       <div className="filter__search-error">
         <div>No Results</div>
-        <p>Sorry we didn’t find any row titles that match your search.</p>
+        <p>Sorry we didn’t find any {tab} that match your search.</p>
       </div>
     )
   }
@@ -100,7 +100,7 @@ const FilterTabs = (props) => {
               setCheckedItems={setCheckedColumns}
             />
           ) : (
-            renderFilterErr()
+            renderFilterErr('columns')
           )}
         </fieldset>
       </TabPanel>
@@ -135,7 +135,7 @@ const FilterTabs = (props) => {
               setCheckedItems={setCheckedRows}
             />
           ) : (
-            renderFilterErr()
+            renderFilterErr('rows')
           )}
         </fieldset>
       </TabPanel>
