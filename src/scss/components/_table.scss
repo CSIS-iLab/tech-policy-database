@@ -6,7 +6,7 @@
   --font-size--lg: 1.2;
   --table-font-size: var(--font-size--sm);
 
-  flex: 1 0 auto;
+  flex: 1 1;
   width: 100%;
   text-align: left;
   table-layout: fixed;
@@ -167,13 +167,13 @@
       margin-bottom: rem(8px);
       color: $color__white-175;
       @extend %body__text-xs;
-      font-size: calc((	0.8125rem) * var(--table-font-size));
+      font-size: calc((0.8125rem) * var(--table-font-size));
     }
 
     &__doc-link {
       display: inline-flex;
       color: $color__white-160;
-      font-size: calc((	0.8125rem) * var(--table-font-size));
+      font-size: calc((0.8125rem) * var(--table-font-size));
       text-decoration: none;
       transition: color 0.3s ease-in-out;
       @extend %body__text-xs;
