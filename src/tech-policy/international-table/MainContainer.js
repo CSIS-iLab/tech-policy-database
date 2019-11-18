@@ -28,7 +28,6 @@ const MainContainer = () => {
     allRows,
     isLoaded,
     setIsLoaded,
-    filteredRows
   } = useContext(GlobalContext)
 
   // Adding key-value pair of Categories to tableData JSON to create top-left cell
