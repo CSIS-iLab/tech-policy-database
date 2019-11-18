@@ -57,7 +57,7 @@
 
     &.js-isActive {
       background: $color__gray-400;
-      box-shadow: 2px solid $color__blue-300;
+      box-shadow: 0 1px 2px 3px $color__blue-300;
 
       &:hover {
         border-color: #85b7db;

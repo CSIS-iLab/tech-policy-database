@@ -11,9 +11,11 @@ const FontResize = () => {
   }
 
   const renderClass = (size) => {
+    let baseClass = "btn btn--dark btn--square"
+
     return activeSize === size
-      ? "btn btn--dark btn--square js-isActive"
-      : "btn btn--dark btn--square"
+      ? baseClass + " js-isActive"
+      : baseClass
   }
 
   return (
