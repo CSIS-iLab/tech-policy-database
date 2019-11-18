@@ -12,6 +12,7 @@ const FilterModal = () => {
   const [checkedCollections, setCheckedCollections] = useState([])
 
   const {
+    setIsFiltered,
     filterModalStatus,
     setFilterModalStatus,
     allRows,
@@ -19,7 +20,8 @@ const FilterModal = () => {
     allHeaders,
     setFilteredHeaders,
     collections,
-    sortRows
+    sortRows,
+    setCustomFilteredRows
   } = useContext(GlobalContext)
 
   useEffect(() => {
@@ -111,24 +113,19 @@ const FilterModal = () => {
 
   // Helper f(n) for applyFilters()
   const applyRowFilters = () => {
-    setFilteredRows(
-      sortRows(
-        allRows
-          .filter(
-            (row) =>
-              checkedRows.includes(row[0][0]) &&
-              displayedRows.includes(row[0][0])
-          )
-          .map((row) => {
-            return row.filter(
-              (r) =>
-                (checkedColumns.includes(r[0]) &&
-                  displayedColumns.includes(r[0])) ||
-                typeof r[1] === 'string'
-            )
-          })
+    return allRows
+      .filter(
+        (row) =>
+          checkedRows.includes(row[0][0]) && displayedRows.includes(row[0][0])
       )
-    )
+      .map((row) => {
+        return row.filter(
+          (r) =>
+            (checkedColumns.includes(r[0]) &&
+              displayedColumns.includes(r[0])) ||
+            typeof r[1] === 'string'
+        )
+      })
   }
 
   // Filters based on all checked rows, columns, and collections
@@ -139,41 +136,46 @@ const FilterModal = () => {
   // Sorts by collections and adds divider when at least one category is present
   const applyFilters = () => {
     applyHeaderFilters()
-    applyRowFilters()
+    setCustomFilteredRows(applyRowFilters())
+    setFilteredRows(sortRows(applyRowFilters()))
+    setIsFiltered(true)
   }
 
   return filterModalStatus ? (
-    <aside className="modal modal--filter">
-      <ModalHeader title={'Filter'} onClose={onClose} />
-      <section className="modal__content">
-        <FilterTabs
-          handleSearchFilter={handleSearchFilter}
-          displayedRows={displayedRows}
-          setCheckedRows={setCheckedRows}
+    <React.Fragment>
+      <div className="modal__overlay"></div>
+      <aside className="modal modal--filter">
+        <ModalHeader title={'Filter'} onClose={onClose} />
+        <section className="modal__content">
+          <FilterTabs
+            handleSearchFilter={handleSearchFilter}
+            displayedRows={displayedRows}
+            setCheckedRows={setCheckedRows}
+            checkedRows={checkedRows}
+            displayedColumns={displayedColumns}
+            setCheckedColumns={setCheckedColumns}
+            checkedColumns={checkedColumns}
+            maxRows={allRows.length}
+            maxColumns={allHeaders.slice(1).length}
+            checkAllColumns={checkAllColumns}
+            checkAllRows={checkAllRows}
+            uncheckAllColumns={uncheckAllColumns}
+            uncheckAllRows={uncheckAllRows}
+            collections={collections}
+            allRows={allRows}
+            checkedCollections={checkedCollections}
+            setCheckedCollections={setCheckedCollections}
+            setDisplayedRows={setDisplayedRows}
+          />
+        </section>
+        <FilterFooter
           checkedRows={checkedRows}
-          displayedColumns={displayedColumns}
-          setCheckedColumns={setCheckedColumns}
           checkedColumns={checkedColumns}
-          maxRows={allRows.length}
-          maxColumns={allHeaders.slice(1).length}
-          checkAllColumns={checkAllColumns}
-          checkAllRows={checkAllRows}
-          uncheckAllColumns={uncheckAllColumns}
-          uncheckAllRows={uncheckAllRows}
-          collections={collections}
-          allRows={allRows}
-          checkedCollections={checkedCollections}
-          setCheckedCollections={setCheckedCollections}
-          setDisplayedRows={setDisplayedRows}
+          handleResetFilters={handleResetFilters}
+          applyFilters={applyFilters}
         />
-      </section>
-      <FilterFooter
-        checkedRows={checkedRows}
-        checkedColumns={checkedColumns}
-        handleResetFilters={handleResetFilters}
-        applyFilters={applyFilters}
-      />
-    </aside>
+      </aside>
+    </React.Fragment>
   ) : null
 }
 
