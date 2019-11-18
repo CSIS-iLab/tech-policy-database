@@ -56,6 +56,12 @@ const MainContainer = () => {
       .sort((a, b) => a.localeCompare(b))
   }
 
+  const handleHeaderErr = () => {
+    return context.filteredRows.length > 0
+      ? context.filteredHeaders
+      : context.allHeaders
+  }
+
   useEffect(() => {
     context.setAllRows(formatRows())
     context.setAllHeaders(formatHeaders())
@@ -79,7 +85,7 @@ const MainContainer = () => {
         <React.Fragment>
           <Introduction />
           <TableContainer
-            headers={context.filteredHeaders}
+            headers={handleHeaderErr()}
             rows={context.filteredRows}
           />
           <ModalContainer />
