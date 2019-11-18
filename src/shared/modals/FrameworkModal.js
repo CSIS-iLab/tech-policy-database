@@ -18,6 +18,7 @@ const FrameworkModal = () => {
     year,
     members
   } = activeFramework
+ 
 
   const onClose = () => {
     setFrameModalStatus(false)

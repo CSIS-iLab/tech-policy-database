@@ -17,7 +17,8 @@ const TableCell = (props) => {
     const langModalObj = {
       framework: allHeaders.find((h) => h.name === framework).name,
       category: catObj.row_title,
-      original_lang: catObj.original_lang
+      original_lang: catObj.original_lang,
+      link: allHeaders.find((h) => h.name === framework).url
     }
     setLangModalData(langModalObj)
 
