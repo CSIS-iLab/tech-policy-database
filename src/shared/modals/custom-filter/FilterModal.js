@@ -12,6 +12,7 @@ const FilterModal = () => {
   const [checkedCollections, setCheckedCollections] = useState([])
 
   const {
+    setIsFiltered,
     filterModalStatus,
     setFilterModalStatus,
     allRows,
@@ -19,7 +20,8 @@ const FilterModal = () => {
     allHeaders,
     setFilteredHeaders,
     collections,
-    sortRows
+    sortRows,
+    setCustomFilteredRows
   } = useContext(GlobalContext)
 
   useEffect(() => {
@@ -111,24 +113,19 @@ const FilterModal = () => {
 
   // Helper f(n) for applyFilters()
   const applyRowFilters = () => {
-    setFilteredRows(
-      sortRows(
-        allRows
-          .filter(
-            (row) =>
-              checkedRows.includes(row[0][0]) &&
-              displayedRows.includes(row[0][0])
-          )
-          .map((row) => {
-            return row.filter(
-              (r) =>
-                (checkedColumns.includes(r[0]) &&
-                  displayedColumns.includes(r[0])) ||
-                typeof r[1] === 'string'
-            )
-          })
+    return allRows
+      .filter(
+        (row) =>
+          checkedRows.includes(row[0][0]) && displayedRows.includes(row[0][0])
       )
-    )
+      .map((row) => {
+        return row.filter(
+          (r) =>
+            (checkedColumns.includes(r[0]) &&
+              displayedColumns.includes(r[0])) ||
+            typeof r[1] === 'string'
+        )
+      })
   }
 
   // Filters based on all checked rows, columns, and collections
@@ -139,7 +136,9 @@ const FilterModal = () => {
   // Sorts by collections and adds divider when at least one category is present
   const applyFilters = () => {
     applyHeaderFilters()
-    applyRowFilters()
+    setCustomFilteredRows(applyRowFilters())
+    setFilteredRows(sortRows(applyRowFilters()))
+    setIsFiltered(true)
   }
 
   return filterModalStatus ? (

@@ -1,6 +1,8 @@
 @use 'abstracts' as *;
 
 .filter__button {
+  padding: rem(8.5px) rem(16px);
+  
   .icon {
     @include font-size(12px);
   }

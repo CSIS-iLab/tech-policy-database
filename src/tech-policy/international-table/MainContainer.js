@@ -11,9 +11,24 @@ import tableData from '../../json/tech-policy-int/framework_database.json'
 import categories from '../../json/tech-policy-int/explanations.json'
 import collections from '../../json/tech-policy-int/curated_categories.json'
 import info from '../../json/tech-policy-int/site_info.json'
+import Loader from '../../shared/site-config/Loader'
 
 const MainContainer = () => {
-  const context = useContext(GlobalContext)
+  const {
+    filteredRows,
+    filteredHeaders,
+    allHeaders,
+    setAllRows,
+    setAllHeaders,
+    setFilteredHeaders,
+    setFilteredRows,
+    setCollections,
+    setSiteInfo,
+    siteInfo,
+    allRows,
+    isLoaded,
+    setIsLoaded,
+  } = useContext(GlobalContext)
 
   // Adding key-value pair of Categories to tableData JSON to create top-left cell
   const formatHeaders = () => {
@@ -55,26 +70,39 @@ const MainContainer = () => {
       .sort((a, b) => a.localeCompare(b))
   }
 
+  const handleHeaderErr = () => {
+    return filteredRows.length > 0 ? filteredHeaders : allHeaders
+  }
+
   useEffect(() => {
-    context.setAllRows(formatRows())
-    context.setAllHeaders(formatHeaders())
-    context.setFilteredHeaders(formatHeaders())
-    context.setFilteredRows(sortRows(formatRows()))
-    context.setCollections(getCollections())
-    context.setSiteInfo(info)
+    setAllRows(formatRows())
+    setAllHeaders(formatHeaders())
+    setFilteredHeaders(formatHeaders())
+    setFilteredRows(sortRows(formatRows()))
+    setCollections(getCollections())
+    setSiteInfo(info)
     // eslint-disable-next-line
   }, [])
+
+  useEffect(() => {
+    if (allRows.length > 0 && siteInfo.program) {
+      setIsLoaded(true)
+    }
+  }, [allRows, siteInfo])
 
   return (
     <div className="site-content">
       <Header />
-      <Introduction />
-      <TableContainer
-        headers={context.filteredHeaders}
-        rows={context.filteredRows}
-      />
-      <ModalContainer />
-      <Methodology />
+      {isLoaded ? (
+        <React.Fragment>
+          <Introduction />
+          <TableContainer headers={handleHeaderErr()} rows={filteredRows} />
+          <ModalContainer />
+          <Methodology />
+        </React.Fragment>
+      ) : (
+        <Loader />
+      )}
       <Footer />
       <BackToTop />
     </div>

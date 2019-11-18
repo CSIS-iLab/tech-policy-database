@@ -11,7 +11,7 @@ const FontResize = () => {
   }
 
   const renderClass = (size) => {
-    let baseClass = "btn btn--dark btn--square"
+    let baseClass = "btn btn--dark table__options-resize table__options-resize-" + size
 
     return activeSize === size
       ? baseClass + " js-isActive"

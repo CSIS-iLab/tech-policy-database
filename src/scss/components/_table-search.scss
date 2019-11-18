@@ -2,7 +2,13 @@
 
 .table-search {
   display: flex;
+  flex: 1;
   align-items: center;
+  margin-bottom: rem(10px);
+
+  @include breakpoint('large') {
+    margin-bottom: 0;
+  }
 
   &__input-field,
   &__dropdown select,
@@ -11,11 +17,20 @@
   }
 
   &__input {
+    flex: 1;
     background-color: $color__gray-500;
+
+    @include breakpoint('large') {
+      max-width: 280px;
+    }
 
     // Text fade out at end of field
     &::before {
-      background-image: linear-gradient(to right, rgba(19, 31, 42, 0) 0%, $color__gray-500 100%);
+      background-image: linear-gradient(
+        to right,
+        rgba(19, 31, 42, 0) 0%,
+        $color__gray-500 100%
+      );
     }
 
 
@@ -25,10 +40,14 @@
     }
 
     &-field {
+      width: 100%;
+      min-width: 280px;
       background-color: $color__gray-500;
 
       &:focus {
-        box-shadow: inset 0 0 0 2px $color__blue-300, inset 0 1px 2px 0 rgba(102, 113, 123, 0.21), inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+        box-shadow: inset 0 0 0 2px $color__blue-300,
+          inset 0 1px 2px 0 rgba(102, 113, 123, 0.21),
+          inset 0 0 0 1px rgba(102, 113, 123, 0.25);
       }
 
       &::placeholder {
@@ -49,6 +68,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-right: rem(25px);
     background-color: $color__gray-600;
     border-radius: 2px;
 
@@ -58,13 +78,17 @@
       position: absolute;
       right: rem(30px);
       width: rem(20px);
-      height: 90%;
-      background-image: linear-gradient(to right, rgba(8, 18, 26, 0) 0%, $color__gray-600 100%);
+      height: 80%;
+      background-image: linear-gradient(
+        to right,
+        rgba(8, 18, 26, 0) 0%,
+        $color__gray-600 100%
+      );
       pointer-events: none;
     }
 
     select {
-      width: rem(190px);
+      max-width: rem(137px);
       padding: rem(8px) rem(30px) rem(8px) rem(12px);
       background-color: $color__gray-600;
       border: 0;
@@ -74,6 +98,10 @@
 
       &:focus {
         box-shadow: inset 0 0 0 2px $color__blue-300;
+      }
+
+      @include breakpoint('large') {
+        max-width: rem(190px);
       }
     }
 
@@ -86,4 +114,3 @@
     }
   }
 }
-
