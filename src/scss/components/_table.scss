@@ -92,6 +92,11 @@
       }
     }
 
+    &--hidden > * {
+      display: none;
+      visibility: hidden;
+    }
+
     &--collection {
       position: relative;
       padding: rem(24px) rem(40px);
@@ -167,13 +172,13 @@
       margin-bottom: rem(8px);
       color: $color__white-175;
       @extend %body__text-xs;
-      font-size: calc((	0.8125rem) * var(--table-font-size));
+      font-size: calc((0.8125rem) * var(--table-font-size));
     }
 
     &__doc-link {
       display: inline-flex;
       color: $color__white-160;
-      font-size: calc((	0.8125rem) * var(--table-font-size));
+      font-size: calc((0.8125rem) * var(--table-font-size));
       text-decoration: none;
       transition: color 0.3s ease-in-out;
       @extend %body__text-xs;
@@ -200,6 +205,71 @@
       @extend %body__text-xs;
       font-weight: normal;
       font-size: calc((0.8125rem) * var(--table-font-size));
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: rem(10px);
+
+    @include breakpoint('large') {
+      margin-bottom: 0;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(28px);
+
+    @include breakpoint('large') {
+      flex-wrap: nowrap;
+    }
+
+    &-spacer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      @include breakpoint('large') {
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: initial;
+      }
+    }
+
+    &-resize {
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+
+      &-sm,
+      &-md {
+        margin-right: rem(10px);
+      }
+
+      &-sm {
+        padding: rem(9.5px) rem(9.5px);
+        @include font-size(17px);
+      }
+
+      &-md {
+        @include font-size(18px);
+        padding: rem(9px) rem(9px);
+      }
+
+      &-lg {
+        @include font-size(19px);
+        margin-right: rem(20px);
+        padding: rem(8.5px) rem(8.5px);
+      }
     }
   }
 }

@@ -1,0 +1,32 @@
+@use 'abstracts' as *;
+
+.table__search-error {
+  div {
+    margin-bottom: 8px;
+    padding-top: 20px;
+    color: $color__gray-300;
+    font-weight: 500;
+    font-size: rem(24px);
+    line-height: 1;
+  }
+
+  p {
+    color: $color__gray-300;
+    @extend %body__text-l;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    padding-bottom: 20px;
+    color: $color__gray-300;
+    font-size: rem(18px);
+    line-height: 1.33;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}

@@ -9,6 +9,10 @@ const TableOptions = () => {
   const {
     setFilteredRows,
     allRows,
+    allHeaders,
+    setFilteredHeaders,
+    isFiltered,
+    setIsFiltered,
     searchText,
     setSearchText,
     filterSubject,
@@ -16,7 +20,8 @@ const TableOptions = () => {
     setFilterModalStatus,
     sortRows,
     setFrameModalStatus,
-    setLangModalStatus
+    setLangModalStatus,
+    customFilteredRows
   } = useContext(GlobalContext)
 
   const filterByCategories = (rows, text) => {
@@ -52,27 +57,44 @@ const TableOptions = () => {
   }
 
   // Serves as the master filter that combines filterRows and filterByCurated
+  // Additional filter layer applied when custom filter modal is active
   const handleFilter = (text, subject) => {
-    setFilteredRows(sortRows(filterBySearch(allRows, text, subject)))
+    if (isFiltered) {
+      setFilteredRows(
+        sortRows(filterBySearch(customFilteredRows, text, subject))
+      )
+    } else {
+      setFilteredRows(sortRows(filterBySearch(allRows, text, subject)))
+    }
   }
 
   return (
     <section className="table__options container">
-      <SearchFilter
-        handleFilter={handleFilter}
-        searchText={searchText}
-        setSearchText={setSearchText}
-        filterSubject={filterSubject}
-        setFilterSubject={setFilterSubject}
-      />
-      <CustomFilter
-        setFilterModalStatus={setFilterModalStatus}
-        setFrameModalStatus={setFrameModalStatus}
-        setLangModalStatus={setLangModalStatus}
-      />
-      <FontResize />
-      <ScrollBar />
-    </section>
+      <div className="table__options-spacer">
+        <SearchFilter
+          handleFilter={handleFilter}
+          searchText={searchText}
+          setSearchText={setSearchText}
+          filterSubject={filterSubject}
+          setFilterSubject={setFilterSubject}
+        />
+        <CustomFilter
+          setFilterModalStatus={setFilterModalStatus}
+          setFrameModalStatus={setFrameModalStatus}
+          setLangModalStatus={setLangModalStatus}
+          setFilteredRows={setFilteredRows}
+          allRows={allRows}
+          allHeaders={allHeaders}
+          setFilteredHeaders={setFilteredHeaders}
+          isFiltered={isFiltered}
+          setIsFiltered={setIsFiltered}
+        />
+      </div>
+      <div className="table__options-spacer">
+        <FontResize />
+        <ScrollBar />
+      </div>
+   </section>
   )
 }
 

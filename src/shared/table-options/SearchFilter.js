@@ -20,6 +20,11 @@ const SearchFilter = (props) => {
     handleFilter(searchText, e.target.value)
   }
 
+  const handleClear = () => {
+    setSearchText("")
+    handleFilter("", filterSubject)
+  }
+
   return (
     <div className="search table-search">
       <div className="search__input table-search__input">
@@ -29,8 +34,9 @@ const SearchFilter = (props) => {
           type="text"
           onChange={handleSearchText}
           placeholder="Search"
+          value={searchText}
         />
-        <button className="btn search__button-close table-search__button-close">
+        <button className="btn search__button-close table-search__button-close" onClick={handleClear}>
           <Icon icon={'close-circle'} />
         </button>
       </div>
