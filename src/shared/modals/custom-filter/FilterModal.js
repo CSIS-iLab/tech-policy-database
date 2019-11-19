@@ -149,6 +149,7 @@ const FilterModal = () => {
     setCustomFilteredRows(applyRowFilters())
     setFilteredRows(sortRows(applyRowFilters()))
     setIsFiltered(true)
+    setFilterModalStatus(false)
   }
 
   return filterModalStatus ? (

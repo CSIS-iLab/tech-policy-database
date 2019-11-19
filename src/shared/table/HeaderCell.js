@@ -6,15 +6,21 @@ import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
 
 const HeaderCell = (props) => {
-  const { setFrameModalStatus, setActiveFramework, filteredRows } = useContext(
-    GlobalContext
-  )
+  const {
+    setFrameModalStatus,
+    setActiveFramework,
+    setLangModalStatus,
+    setFilterModalStatus,
+    filteredRows
+  } = useContext(GlobalContext)
 
   const { name, url, organization } = props.content
 
   const handleClick = () => {
     setActiveFramework(props.content)
     setFrameModalStatus(true)
+    setLangModalStatus(false)
+    setFilterModalStatus(false)
   }
 
   const handleSearchErr = () => {

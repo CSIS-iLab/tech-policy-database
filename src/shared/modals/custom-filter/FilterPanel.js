@@ -36,8 +36,14 @@ const FilterPanel = (props) => {
   }
 
   const handleClear = () => {
-    setModalSearchText("")
-    handleSearchFilter("", title)
+    setModalSearchText('')
+    handleSearchFilter('', title)
+  }
+
+  const renderClass = () => {
+    let closeClass =
+      modalSearchText.length > 0 ? '' : ' search__button-close--hidden'
+    return 'btn search__button-close modal-search__button-close' + closeClass
   }
 
   return (
@@ -53,8 +59,8 @@ const FilterPanel = (props) => {
             onChange={handleInput}
             value={modalSearchText}
           />
-          <button className="btn search__button-close modal-search__button-close" onClick={handleClear}>
-            <Icon icon={'close-circle'}  />
+          <button className={renderClass()} onClick={handleClear}>
+            <Icon icon={'close-circle'} />
           </button>
         </div>
         <CollectionsFilter
