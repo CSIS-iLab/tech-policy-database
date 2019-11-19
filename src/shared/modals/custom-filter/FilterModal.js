@@ -24,6 +24,7 @@ const FilterModal = () => {
     setCustomFilteredRows
   } = useContext(GlobalContext)
 
+  // Sets filterModal to default state with all items checked and displayed
   useEffect(() => {
     setCheckedFilters()
     setDisplayedRowsAndColumns()
@@ -36,6 +37,15 @@ const FilterModal = () => {
       setDisplayedRows(allRows.map((row) => row[0][0]))
     }
   }, [checkedCollections])
+
+  // Sets initial focus to filterModal upon opening
+  useEffect(() => {
+    if (filterModalStatus) {
+      let filter = document.getElementById('modal--filter')
+
+      filter.focus()
+    }
+  }, [filterModalStatus])
 
   const onClose = () => {
     setFilterModalStatus(false)
@@ -139,6 +149,7 @@ const FilterModal = () => {
     setCustomFilteredRows(applyRowFilters())
     setFilteredRows(sortRows(applyRowFilters()))
     setIsFiltered(true)
+    setFilterModalStatus(false)
   }
 
   const renderClass = () => {
@@ -149,7 +160,7 @@ const FilterModal = () => {
   return (
     <React.Fragment>
       {filterModalStatus ? <div className="modal__overlay"></div> : null}
-      <aside className={renderClass()}>
+      <aside className={renderClass()} id="modal--filter" tabIndex="0">
         <ModalHeader title={'Filter'} onClose={onClose} />
         <section className="modal__content">
           <FilterTabs

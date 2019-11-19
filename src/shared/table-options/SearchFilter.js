@@ -21,8 +21,14 @@ const SearchFilter = (props) => {
   }
 
   const handleClear = () => {
-    setSearchText("")
-    handleFilter("", filterSubject)
+    setSearchText('')
+    handleFilter('', filterSubject)
+  }
+
+  const renderClass = () => {
+    let closeClass =
+      searchText.length > 0 ? '' : ' search__button-close--hidden'
+    return 'btn search__button-close table-search__button-close' + closeClass
   }
 
   return (
@@ -36,21 +42,18 @@ const SearchFilter = (props) => {
           placeholder="Search"
           value={searchText}
         />
-        <button className="btn search__button-close table-search__button-close" onClick={handleClear}>
+        <button className={renderClass()} onClick={handleClear}>
           <Icon icon={'close-circle'} />
         </button>
       </div>
       <div className="search__dropdown table-search__dropdown">
-        <select className="search__dropdown-field table-search__dropdown-field" onChange={handleFilterSubject}>
-          <option value="categories">
-            Categories
-        </option>
-          <option value="abbreviated_lang">
-            Abbreviated Language
-        </option>
-          <option value="original_lang">
-            Original Language
-        </option>
+        <select
+          className="search__dropdown-field table-search__dropdown-field"
+          onChange={handleFilterSubject}
+        >
+          <option value="categories">Categories</option>
+          <option value="abbreviated_lang">Abbreviated Language</option>
+          <option value="original_lang">Original Language</option>
         </select>
         <Icon icon={'arrow-dropdown'} />
       </div>
