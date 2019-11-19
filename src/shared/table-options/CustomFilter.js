@@ -9,11 +9,15 @@ const CustomFilter = (props) => {
     isFiltered,
     setIsFiltered,
     allRows,
-    allHeaders
+    allHeaders,
+    setFrameModalStatus,
+    setLangModalStatus
   } = props
 
   const handleClick = () => {
     setFilterModalStatus(true)
+    setFrameModalStatus(false)
+    setLangModalStatus(false)
   }
 
   const handleResetFilters = () => {
