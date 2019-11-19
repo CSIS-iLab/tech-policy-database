@@ -18,10 +18,14 @@ const LangModal = () => {
     return { __html: lang }
   }
 
-  return langModalStatus ? (
+  const renderClass = () => {
+    return langModalStatus ? 'modal' : 'modal modal--hidden'
+  }
+
+  return (
     <React.Fragment>
-      <div className="modal__overlay"></div>
-      <aside className="modal">
+      {langModalStatus ? <div className="modal__overlay"></div> : null}
+      <aside className={renderClass()}>
         <ModalHeader title={'Original Language'} onClose={onClose} />
         <section className="modal__content">
           <div className="modal__content-wrapper">
@@ -40,7 +44,7 @@ const LangModal = () => {
         <ModalFooter link={link} />
       </aside>
     </React.Fragment>
-  ) : null
+  )
 }
 
 export default LangModal
