@@ -18,7 +18,6 @@ const FrameworkModal = () => {
     year,
     members
   } = activeFramework
- 
 
   const onClose = () => {
     setFrameModalStatus(false)
@@ -28,10 +27,14 @@ const FrameworkModal = () => {
     return { __html: lang }
   }
 
-  return frameModalStatus ? (
+  const renderClass = () => {
+    return frameModalStatus ? 'modal' : 'modal modal--hidden'
+  }
+
+  return (
     <React.Fragment>
-      <div className="modal__overlay"></div>
-      <aside className="modal">
+      {frameModalStatus ? <div className="modal__overlay"></div> : null}
+      <aside className={renderClass()}>
         <ModalHeader title={name} onClose={onClose} />
         <section className="modal__content">
           <div className="modal__content-wrapper">
@@ -42,10 +45,10 @@ const FrameworkModal = () => {
                 <br />
                 <a
                   className="modal__org-link"
-                  href={website.url}
+                  href={website ? website.url : null}
                   title="Visit this organization's website"
                 >
-                  {website.name}
+                  {website ? website.name : null}
                   <Icon icon={'external-link'} />
                 </a>
               </dd>
@@ -60,14 +63,16 @@ const FrameworkModal = () => {
                 Members
               </dt>
               <dd className="modal__value">
-                {members.description}
+                {members ? members.description : null}
 
                 <ul className="modal__mem-list">
-                  {members.list.map((member, i) => (
-                    <li className="mem-list-item" key={i}>
-                      {member}
-                    </li>
-                  ))}
+                  {members
+                    ? members.list.map((member, i) => (
+                        <li className="mem-list-item" key={i}>
+                          {member}
+                        </li>
+                      ))
+                    : null}
                 </ul>
               </dd>
             </dl>
@@ -76,7 +81,7 @@ const FrameworkModal = () => {
         <ModalFooter link={url} />
       </aside>
     </React.Fragment>
-  ) : null
+  )
 }
 
 export default FrameworkModal
