@@ -20,6 +20,7 @@ const FilterFooter = (props) => {
     return (
       <button
         className="btn btn--primary modal__apply"
+        id="modal-apply"
         onClick={applyFilters}
         disabled={isDisabled}
       >
