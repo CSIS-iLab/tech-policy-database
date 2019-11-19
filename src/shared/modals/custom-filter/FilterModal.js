@@ -141,10 +141,15 @@ const FilterModal = () => {
     setIsFiltered(true)
   }
 
-  return filterModalStatus ? (
+  const renderClass = () => {
+    let hiddenClass = filterModalStatus ? '' : ' modal--hidden'
+    return 'modal modal--filter' + hiddenClass
+  }
+
+  return (
     <React.Fragment>
-      <div className="modal__overlay"></div>
-      <aside className="modal modal--filter">
+      {filterModalStatus ? <div className="modal__overlay"></div> : null}
+      <aside className={renderClass()}>
         <ModalHeader title={'Filter'} onClose={onClose} />
         <section className="modal__content">
           <FilterTabs
@@ -176,7 +181,7 @@ const FilterModal = () => {
         />
       </aside>
     </React.Fragment>
-  ) : null
+  )
 }
 
 export default FilterModal
