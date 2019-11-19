@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .search {
-
   /* ----Table & Modal Search----- */
 
   border: 0;
@@ -49,9 +48,12 @@
     align-items: center;
     padding: 0;
 
+    &--hidden {
+      display: none;
+    }
+
     .icon {
       @include font-size(14px);
     }
   }
 }
-

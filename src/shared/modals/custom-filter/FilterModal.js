@@ -139,11 +139,12 @@ const FilterModal = () => {
     setCustomFilteredRows(applyRowFilters())
     setFilteredRows(sortRows(applyRowFilters()))
     setIsFiltered(true)
+    setFilterModalStatus(false)
   }
 
   return filterModalStatus ? (
     <React.Fragment>
-      <div className="modal__overlay"></div>
+      <div className="modal__overlay"></div>
       <aside className="modal modal--filter">
         <ModalHeader title={'Filter'} onClose={onClose} />
         <section className="modal__content">
