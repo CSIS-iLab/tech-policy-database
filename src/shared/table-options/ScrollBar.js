@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Icon from '../site-config/Icon'
+import smoothscroll from 'smoothscroll-polyfill'
 
 const ScrollBar = () => {
   const scrollOffset = 250
@@ -20,6 +21,7 @@ const ScrollBar = () => {
     const btnLeft = document.getElementById('scroll-left-btn')
     const btnRight = document.getElementById('scroll-right-btn')
 
+    smoothscroll.polyfill()
     wrapper.scrollTo(scrollPos, 0)
 
     if (scrollPos <= 0) {
