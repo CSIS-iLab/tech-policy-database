@@ -3,7 +3,7 @@ import { GlobalContext } from '../../context/GlobalContext'
 import SearchFilter from './SearchFilter'
 import FontResize from './FontResize'
 import CustomFilter from './CustomFilter'
-import ScrollBar from './ScrollBar'
+// import ScrollBar from './ScrollBar'
 
 const TableOptions = () => {
   const {
@@ -92,9 +92,9 @@ const TableOptions = () => {
       </div>
       <div className="table__options-spacer">
         <FontResize />
-        <ScrollBar />
+        {/* <ScrollBar /> */}
       </div>
-   </section>
+    </section>
   )
 }
 
