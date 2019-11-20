@@ -21,8 +21,6 @@ $ npm start
 
 ### Build for Production
 
-This will set the `JEKYLL_ENV` to `production` and use the production config file(s) set in `frasco.config.js` to override default settings.
-
 ```shell
 $ npm run build
 ```
