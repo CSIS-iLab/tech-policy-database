@@ -206,6 +206,13 @@
       font-weight: normal;
       font-size: calc((0.8125rem) * var(--table-font-size));
     }
+
+    &__orig-lang {
+      &:focus {
+        color: $color__black;
+        opacity: 1;
+      }
+    }
   }
 
   &__filter {
