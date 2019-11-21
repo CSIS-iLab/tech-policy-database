@@ -129,10 +129,10 @@
       > :hover,
       > :focus {
         background: $color__highlight-cell;
+        opacity: 1;
 
         /* stylelint-disable-next-line */
         .cell__orig-lang {
-          position: relative;
           opacity: 1;
         }
       }
