@@ -60,6 +60,7 @@
       &:first-child {
         z-index: 10;
         box-shadow: 0 -5px 17px -1px rgba(7, 23, 35, 0.64);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=true, ShadowOpacity=0.3);
       }
     }
 
