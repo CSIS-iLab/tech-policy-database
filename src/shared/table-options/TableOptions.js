@@ -94,7 +94,7 @@ const TableOptions = () => {
         <FontResize />
         <ScrollBar />
       </div>
-   </section>
+    </section>
   )
 }
 
