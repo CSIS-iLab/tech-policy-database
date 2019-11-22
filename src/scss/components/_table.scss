@@ -32,14 +32,22 @@
 
   &__cell {
     width: 250px;
-    padding: rem(24px);
+    padding: 1rem;
     vertical-align: top;
-
+    
+    @include breakpoint('large') {
+      padding: rem(24px);
+    }
     &:first-child {
       position: sticky;
       left: 0;
-      width: 300px;
-      padding-left: rem(40px);
+      width: 150px;
+      padding-left: 1rem;
+
+      @include breakpoint('large') {
+        width: 300px;
+        padding-left: rem(40px);
+      }
     }
 
     &:last-child {
