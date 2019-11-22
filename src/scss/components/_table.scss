@@ -13,6 +13,12 @@
   border-collapse: collapse;
   border-spacing: 0;
 
+  @supports(-ms-ime-align:auto) {
+    .table {
+      border-collapse: inherit;
+    }
+  }
+
   &__container {
     position: relative;
     display: flex;
