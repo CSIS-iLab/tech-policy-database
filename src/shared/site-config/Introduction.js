@@ -5,7 +5,7 @@ import Icon from './Icon'
 const Introduction = () => {
   const { siteInfo } = useContext(GlobalContext)
 
-  const { subject, program_name, download_file, intro_paragraph } = siteInfo
+  const { subject, program, download_file, intro_paragraph } = siteInfo
 
   const renderDownloadFile = () => {
     if (download_file === undefined) {
@@ -17,7 +17,7 @@ const Introduction = () => {
 
   return (
     <section className="intro container--inner">
-      <div className="intro__program">{program_name}</div>
+      <div className="intro__program">{program}</div>
       <h1 className="intro__subject">{subject}</h1>
       <div className="intro__description">{intro_paragraph}</div>
       <nav>
