@@ -31,13 +31,15 @@
   }
 
   &__cell {
-    width: 250px;
+    width: 200px;
     padding: 1rem;
     vertical-align: top;
     
     @include breakpoint('large') {
+      width: 250px;
       padding: rem(24px);
     }
+
     &:first-child {
       position: sticky;
       left: 0;
@@ -219,6 +221,16 @@
       &:focus {
         color: $color__black;
         opacity: 1;
+      }
+    }
+
+    &__abbrev-lang {
+      @include font-size(14px);
+      font-size: calc((0.875rem) * var(--table-font-size));
+
+      @include breakpoint('large') {
+        font-size: 16px;
+        font-size: calc((1rem) * var(--table-font-size));
       }
     }
   }
