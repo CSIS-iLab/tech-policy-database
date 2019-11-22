@@ -218,9 +218,15 @@
     }
 
     &__orig-lang {
+      padding: 0;
+
       &:focus {
         color: $color__black;
         opacity: 1;
+      }
+
+      @include breakpoint('large') {
+        padding: rem(8px);
       }
     }
 
