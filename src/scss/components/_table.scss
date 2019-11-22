@@ -288,9 +288,9 @@
     &__row {
       border-bottom: solid 1px $color__gray-200;
     }
-  }
 
-  .cell__orig-lang {
-    opacity: 1;
+    &__cell--body .cell__orig-lang {
+      opacity: 1;
+    }
   }
 }
