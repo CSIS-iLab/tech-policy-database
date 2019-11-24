@@ -40,11 +40,10 @@
 
     &-field {
       width: 100%;
-      min-width: 200px;
+      min-width: 180px;
       background-color: $color__gray-500;
 
       @include breakpoint('large') {
-      
         min-width: 280px;
       }
 
@@ -72,9 +71,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: rem(25px);
+    margin-right: 1rem;
     background-color: $color__gray-600;
     border-radius: 2px;
+
+    @include breakpoint('medium') {
+      margin-right: rem(25px);
+    }
 
     // Text fade out at end of field
     &::before {
