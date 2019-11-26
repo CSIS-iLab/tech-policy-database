@@ -10,13 +10,26 @@ const ModalContainer = () => {
   )
 
   // toggles disabled class to prevent body from scrolling when modals are open
-  useEffect(() => {
+  const disableScroll = () => {
     let body = document.getElementsByTagName('body')[0]
     if (filterModalStatus || langModalStatus || frameModalStatus) {
       body.classList.add('body--disabled')
     } else {
       body.classList.remove('body--disabled')
     }
+  }
+
+  // disables tooltip when modal is opened
+  const disableToolTip = () => {
+    let headerCells = document.getElementsByClassName('header-cell__title')
+    if (filterModalStatus || langModalStatus || frameModalStatus) {
+      Array.from(headerCells).forEach((h) => h._tippy.disable())
+    }
+  }
+
+  useEffect(() => {
+    disableScroll()
+    disableToolTip()
   }, [filterModalStatus, langModalStatus, frameModalStatus])
 
   return (
