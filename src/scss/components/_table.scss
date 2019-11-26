@@ -316,3 +316,11 @@
     }
   }
 }
+
+.tippy-tooltip {
+  display: none;
+
+  @include breakpoint('large') {
+    display: block;
+  }
+}
