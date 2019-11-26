@@ -52,6 +52,11 @@ body {
   }
 }
 
+.body--disabled {
+  height: 100%;
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: $size__container-max-width;
