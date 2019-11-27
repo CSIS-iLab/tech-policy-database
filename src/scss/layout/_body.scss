@@ -3,6 +3,10 @@
 $padding--mobile: 24px;
 $padding--desktop: 40px;
 
+:root {
+  --scrollbar: 0;
+}
+
 html {
   box-sizing: border-box;
 }

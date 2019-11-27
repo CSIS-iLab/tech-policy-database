@@ -18,7 +18,7 @@
     left: calc((100vw - 100%) / -2);
     z-index: -1;
     display: block;
-    width: 100vw;
+    @include vw100;
     height: 100%;
     background-color: $color__gray-500;
   }

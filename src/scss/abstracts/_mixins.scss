@@ -47,3 +47,8 @@
   font-size: $size; //Fallback in px
   font-size: rem($size);
 }
+
+@mixin vw100() {
+  width: 100vw; // Fallback for old browsers
+  width: calc(100vw - var(--scrollbar));
+}
