@@ -27,7 +27,7 @@ const MainContainer = () => {
     siteInfo,
     allRows,
     isLoaded,
-    setIsLoaded,
+    setIsLoaded
   } = useContext(GlobalContext)
 
   // Adding key-value pair of Categories to tableData JSON to create top-left cell
@@ -81,6 +81,7 @@ const MainContainer = () => {
     setFilteredRows(sortRows(formatRows()))
     setCollections(getCollections())
     setSiteInfo(info)
+    document.title = `${info.subject} | CSIS ${info.program}`
     // eslint-disable-next-line
   }, [])
 
