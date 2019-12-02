@@ -69,7 +69,7 @@ const TableOptions = () => {
   }
 
   return (
-    <section className="table__options container">
+    <section className="table__options container sticky-headers">
       <div className="table__options-spacer">
         <SearchFilter
           handleFilter={handleFilter}

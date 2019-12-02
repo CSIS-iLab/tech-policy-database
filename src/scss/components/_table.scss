@@ -17,8 +17,6 @@
     position: relative;
     display: flex;
     max-width: 100%;
-    /* height must be set for the header to be sticky */
-    height: 100vh;
     overflow: scroll;
 
     &::after {
@@ -34,7 +32,7 @@
     width: 200px;
     padding: 1rem;
     vertical-align: top;
-    
+
     @include breakpoint('large') {
       width: 250px;
       padding: rem(24px);
@@ -57,8 +55,7 @@
     }
 
     &--header {
-      position: sticky;
-      top: 0;
+      position: relative;
       z-index: 1;
       color: $color__white;
       font-weight: 500;
@@ -115,10 +112,6 @@
       text-transform: uppercase;
       background-color: $color__gray-100;
     }
-  }
-
-  &__header-row {
-    background: $color__blue-300;
   }
 
   &__row {
@@ -253,14 +246,28 @@
   }
 
   &__options {
+    position: relative;
+    z-index: 20;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: rem(28px);
+    padding: rem(24px) 0;
+    background-color: $color__gray-400;
 
     @include breakpoint('large') {
       flex-wrap: nowrap;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc((100vw - 100%) / -2);
+      z-index: -1;
+      display: block;
+      @include vw100;
+      height: 100%;
+      background-color: $color__gray-400;
     }
 
     &-spacer {
@@ -307,7 +314,7 @@
   }
 }
 
-@supports(-ms-ime-align:auto) {
+@supports (-ms-ime-align: auto) {
   .table {
     border-collapse: separate;
 
@@ -323,4 +330,9 @@
   @include breakpoint('large') {
     display: block;
   }
+}
+
+.sticky-headers {
+  transform: translate3d(0, var(--yPos, 0), 0);
+  will-change: transform;
 }
