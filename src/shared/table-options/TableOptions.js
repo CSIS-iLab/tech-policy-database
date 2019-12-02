@@ -75,12 +75,14 @@ const TableOptions = () => {
     const height = options.getBoundingClientRect().height
     document.documentElement.style.setProperty('--optionsHeight', `${height}px`)
 
-    const observer = new IntersectionObserver(
-      ([e]) => setIsSticky(e.intersectionRatio < 1),
-      { threshold: [1] }
-    )
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        ([e]) => setIsSticky(e.intersectionRatio < 1),
+        { threshold: [1] }
+      )
 
-    observer.observe(options)
+      observer.observe(options)
+    }
   }, [])
 
   const className = 'table__options container'
