@@ -1,11 +1,6 @@
 @use 'abstracts' as *;
 
 .table {
-  --font-size--sm: 1;
-  --font-size--md: 1.1;
-  --font-size--lg: 1.2;
-  --table-font-size: var(--font-size--sm);
-
   flex: 1 1 auto;
   width: 100%;
   text-align: left;
