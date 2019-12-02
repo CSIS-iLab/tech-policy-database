@@ -1,9 +1,14 @@
 import React from 'react'
 import HeaderCell from './HeaderCell'
 import TableCell from './TableCell'
+import { ScrollSync, ScrollSyncPane } from 'react-scroll-sync'
 
 const DataTable = (props) => {
   const { headers, rows } = props
+
+  const renderColRow = (cell, cellIndex) => {
+    return <col key={cellIndex}></col>
+  }
 
   const renderHeadingRow = (cell, cellIndex) => {
     const { headers, rows } = props
@@ -48,20 +53,44 @@ const DataTable = (props) => {
   }
 
   return (
-    <div id="table-container" className="table__container">
-      <table id="table" className="table">
-        <thead>
-          <tr className="table__header-row">{headers.map(renderHeadingRow)}</tr>
-        </thead>
-        {rows.length > 0 ? (
-          <tbody>{rows.map(renderRow)}</tbody>
-        ) : (
-          <tbody>
-            <tr>{renderSearchErr()}</tr>
-          </tbody>
-        )}
-      </table>
-    </div>
+    <ScrollSync>
+      <div>
+        <ScrollSyncPane>
+          <div
+            className="table__container table__container--sticky"
+            aria-hidden="true"
+          >
+            <table id="table-copy" className="table">
+              <colgroup>{headers.map(renderColRow)}</colgroup>
+              <thead>
+                <tr className="table__header-row">
+                  {headers.map(renderHeadingRow)}
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </ScrollSyncPane>
+        <ScrollSyncPane>
+          <div id="table-container" className="table__container">
+            <table id="table" className="table">
+              <colgroup>{headers.map(renderColRow)}</colgroup>
+              {/* <thead>
+                <tr className="table__header-row">
+                  {headers.map(renderHeadingRow)}
+                </tr>
+              </thead> */}
+              {rows.length > 0 ? (
+                <tbody>{rows.map(renderRow)}</tbody>
+              ) : (
+                <tbody>
+                  <tr>{renderSearchErr()}</tr>
+                </tbody>
+              )}
+            </table>
+          </div>
+        </ScrollSyncPane>
+      </div>
+    </ScrollSync>
   )
 }
 
