@@ -74,11 +74,6 @@ const DataTable = (props) => {
           <div id="table-container" className="table__container">
             <table id="table" className="table">
               <colgroup>{headers.map(renderColRow)}</colgroup>
-              {/* <thead>
-                <tr className="table__header-row">
-                  {headers.map(renderHeadingRow)}
-                </tr>
-              </thead> */}
               {rows.length > 0 ? (
                 <tbody>{rows.map(renderRow)}</tbody>
               ) : (
