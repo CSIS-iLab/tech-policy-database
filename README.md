@@ -9,6 +9,10 @@ $ npm install
 $ npm start
 ```
 
+## Version
+
+Note that this project uses React v16.9 and should **not** be updated until the [React Scroll Sync](https://github.com/okonet/react-scroll-sync) plugin has been updated to use new lifecycle hooks.
+
 ## Usage
 
 ### Local Development

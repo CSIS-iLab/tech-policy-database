@@ -6,8 +6,7 @@ const FontResize = () => {
 
   const resize = (size) => {
     setActiveSize(size)
-    let table = document.getElementById('table')
-    table.style.setProperty(
+    document.documentElement.style.setProperty(
       '--table-font-size',
       'var(--font-size--' + size + ')'
     )

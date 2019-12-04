@@ -5,6 +5,11 @@ $padding--desktop: 40px;
 
 :root {
   --scrollbar: 0;
+  --optionsHeight: 0;
+  --font-size--sm: 1;
+  --font-size--md: 1.1;
+  --font-size--lg: 1.2;
+  --table-font-size: var(--font-size--sm);
 }
 
 html {

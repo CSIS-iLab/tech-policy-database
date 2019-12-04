@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 import SearchFilter from './SearchFilter'
 import FontResize from './FontResize'
@@ -23,6 +23,8 @@ const TableOptions = () => {
     setLangModalStatus,
     customFilteredRows
   } = useContext(GlobalContext)
+
+  const [isSticky, setIsSticky] = useState(false)
 
   const filterByCategories = (rows, text) => {
     return rows.filter((row) =>
@@ -68,8 +70,28 @@ const TableOptions = () => {
     }
   }
 
+  useEffect(() => {
+    const options = document.getElementById('table__options')
+    const height = options.getBoundingClientRect().height
+    document.documentElement.style.setProperty('--optionsHeight', `${height}px`)
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        ([e]) => setIsSticky(e.intersectionRatio < 1),
+        { threshold: [1] }
+      )
+
+      observer.observe(options)
+    }
+  }, [])
+
+  const className = 'table__options container'
+
   return (
-    <section className="table__options container">
+    <section
+      id="table__options"
+      className={className + (isSticky ? ' table__options--sticky' : '')}
+    >
       <div className="table__options-spacer">
         <SearchFilter
           handleFilter={handleFilter}

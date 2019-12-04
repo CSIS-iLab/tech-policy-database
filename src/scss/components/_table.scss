@@ -1,12 +1,7 @@
 @use 'abstracts' as *;
 
 .table {
-  --font-size--sm: 1;
-  --font-size--md: 1.1;
-  --font-size--lg: 1.2;
-  --table-font-size: var(--font-size--sm);
-
-  flex: 1 1;
+  flex: 1 1 auto;
   width: 100%;
   text-align: left;
   table-layout: fixed;
@@ -17,9 +12,7 @@
     position: relative;
     display: flex;
     max-width: 100%;
-    /* height must be set for the header to be sticky */
-    height: 100vh;
-    overflow: scroll;
+    overflow-x: scroll;
 
     &::after {
       content: '';
@@ -28,26 +21,45 @@
       width: 2rem;
       height: 100%;
     }
+
+    &--sticky {
+      position: sticky;
+      top: 65px;
+      top: calc(var(--optionsHeight) - 1px);
+      z-index: 10;
+    }
+  }
+
+  col {
+    width: 200px;
+
+    @include breakpoint('large') {
+      width: 250px;
+    }
+
+    &:first-child {
+      width: 150px;
+
+      @include breakpoint('large') {
+        width: 300px;
+      }
+    }
   }
 
   &__cell {
-    width: 200px;
     padding: 1rem;
     vertical-align: top;
-    
+
     @include breakpoint('large') {
-      width: 250px;
       padding: rem(24px);
     }
 
     &:first-child {
       position: sticky;
       left: 0;
-      width: 150px;
       padding-left: 1rem;
 
       @include breakpoint('large') {
-        width: 300px;
         padding-left: rem(40px);
       }
     }
@@ -57,8 +69,7 @@
     }
 
     &--header {
-      position: sticky;
-      top: 0;
+      position: relative;
       z-index: 1;
       color: $color__white;
       font-weight: 500;
@@ -253,14 +264,32 @@
   }
 
   &__options {
+    position: sticky;
+    top: -1px;
+    z-index: 15;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: rem(28px);
+    padding: rem(24px) 0;
 
     @include breakpoint('large') {
       flex-wrap: nowrap;
+    }
+
+    &--sticky {
+      background-color: $color__gray-400;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: calc((100vw - 100%) / -2);
+        z-index: -1;
+        display: block;
+        @include vw100;
+        height: 100%;
+        background-color: $color__gray-400;
+      }
     }
 
     &-spacer {
@@ -307,7 +336,7 @@
   }
 }
 
-@supports(-ms-ime-align:auto) {
+@supports (-ms-ime-align: auto) {
   .table {
     border-collapse: separate;
 
