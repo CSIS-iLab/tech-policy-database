@@ -42,7 +42,12 @@ const HeaderCell = (props) => {
         </button>
       </Tippy>
       <p className="header-cell__org">{organization}</p>
-      <a className="header-cell__doc-link" href={url}>
+      <a
+        className="header-cell__doc-link"
+        href={url}
+        target="_blank"
+        alt="See originial document"
+      >
         <Icon icon={'external-link'} />
         Original Document
       </a>

@@ -23,13 +23,17 @@ const Introduction = () => {
       <nav>
         <ul className="intro__nav">
           <li className="intro__nav-item">
-            <a href="#methodology">
+            <a href="#methodology" alt="Jump to the Methodology section">
               Methodology
               <Icon icon={'arrow'} />
             </a>
           </li>
           <li className="intro__nav-item">
-            <a href={renderDownloadFile().url}>
+            <a
+              href={renderDownloadFile().url}
+              target="_blank"
+              alt="View the data spreadsheet"
+            >
               Download the data
               <Icon icon={'download'} />
             </a>

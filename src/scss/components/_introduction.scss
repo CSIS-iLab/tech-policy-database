@@ -4,10 +4,11 @@
   position: relative;
   display: grid;
   grid-column-gap: rem(72px);
-  padding: rem(64px) 0;
+  padding: rem(54px) 0 rem(40px);
 
   @include breakpoint('large') {
     grid-template-columns: 2fr 1fr;
+    padding: rem(64px) 0;
   }
 
   &__program {
@@ -20,18 +21,26 @@
   &__subject {
     grid-column: 1 / -1;
     margin-top: rem(10px);
-    margin-bottom: rem(48px);
+    margin-bottom: rem(32px);
     color: $color__white;
     font-family: $font__expo;
     font-weight: 600;
     line-height: 1.04;
     text-align: center;
-    @include font-size(54px);
+    @include font-size(40px);
+    @include breakpoint('medium') {
+      @include font-size(48px);
+      margin-bottom: rem(48px);
+    }
+    @include breakpoint('large') {
+      @include font-size(54px);
+    }
   }
 
   &__description {
     margin-bottom: rem(24px);
     color: $color__white-190;
+    font-weight: 300;
     @extend %body__text-l;
 
     @include breakpoint('large') {
@@ -90,6 +99,7 @@
       margin: rem(4px) 0 0;
       color: $color__white-160;
       @extend %body__text-m;
+      font-weight: 300;
     }
   }
 }

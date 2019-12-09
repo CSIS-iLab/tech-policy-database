@@ -24,7 +24,7 @@
   box-shadow: 0 6px 8px 0 rgba(44, 8, 8, 0.5);
   transform: translateX(0);
   visibility: visible;
-  transition: visibility 0.6s linear, transform 0.6s ease-in-out;
+  transition: visibility 0.4s linear, transform 0.4s ease-in-out;
 
   a {
     color: $color__blue-400;
@@ -44,25 +44,34 @@
   &__header,
   &__footer,
   &__content {
-    padding-right: rem(32px);
-    padding-left: rem(32px);
+    padding-right: rem(20px);
+    padding-left: rem(20px);
+    @include breakpoint('medium') {
+      padding-right: rem(32px);
+      padding-left: rem(32px);
+    }
   }
 
   &__header,
   &__footer {
     display: flex;
     flex: 1 1 auto;
-    min-height: rem(108px);
-    padding-top: rem(32px);
+    min-height: rem(80px);
+  }
+
+  &__footer {
+    padding-top: rem(24px);
     padding-bottom: rem(32px);
   }
 
   &__header {
     position: relative;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    padding-top: rem(32px);
+    padding-bottom: rem(24px);
     background-color: $color__highlight-cell;
-    border-bottom: 1px solid rgba($color__gray-400, 0.24);
+    //border-bottom: 1px solid rgba($color__gray-400, 0.24);
 
     .modal--filter & {
       border-bottom: 0;
@@ -106,8 +115,8 @@
       flex: 1 0 100%;
       margin: rem(4px) 0 0;
       color: $color__red-100;
-      @include font-size(16px);
-      line-height: 1.19;
+      @include font-size(14px);
+      line-height: 1;
       text-align: right;
     }
   }
