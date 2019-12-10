@@ -329,7 +329,6 @@
         width: rem(34px);
         height: rem(34px);
         padding: 0;
-        //border: 2px solid $color__gray-600;
         box-shadow: 0 0 0 2px $color__gray-600;
       }
 
@@ -343,19 +342,16 @@
       }
 
       &-sm {
-        //padding: rem(9.5px) rem(9.5px);
         @include font-size(12px);
       }
 
       &-md {
         @include font-size(14px);
-        //padding: rem(9px) rem(9px);
       }
 
       &-lg {
         @include font-size(16px);
         margin-right: rem(20px);
-        //padding: rem(8.5px) rem(8.5px);
       }
     }
   }
