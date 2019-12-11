@@ -32,6 +32,7 @@ const Introduction = () => {
             <a
               href={renderDownloadFile().url}
               target="_blank"
+              rel="noopener noreferrer"
               alt="View the data spreadsheet"
             >
               Download the data
