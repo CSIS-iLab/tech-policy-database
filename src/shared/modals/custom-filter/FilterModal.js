@@ -106,8 +106,8 @@ const FilterModal = () => {
   }
 
   const handleResetFilters = () => {
-    uncheckAllRows()
-    uncheckAllColumns()
+    checkAllRows()
+    checkAllColumns()
   }
 
   // Helper f(n) for applyFilters()
