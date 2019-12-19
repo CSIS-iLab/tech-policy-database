@@ -23,7 +23,7 @@ const Introduction = () => {
       <nav>
         <ul className="intro__nav">
           <li className="intro__nav-item">
-            <a href="#methodology" alt="Jump to the Methodology section">
+            <a href="#methodology" title="Jump to the Methodology section">
               Methodology
               <Icon icon={'arrow'} />
             </a>
@@ -33,7 +33,7 @@ const Introduction = () => {
               href={renderDownloadFile().url}
               target="_blank"
               rel="noopener noreferrer"
-              alt="View the data spreadsheet"
+              title="View the data spreadsheet"
             >
               Download the data
               <Icon icon={'download'} />

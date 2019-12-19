@@ -47,7 +47,7 @@ const HeaderCell = (props) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        alt="See originial document"
+        title="See original document"
       >
         <Icon icon={'external-link'} />
         Original Document
