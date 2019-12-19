@@ -284,11 +284,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: rem(16px) $padding--mobile rem(16px) 0;
+    padding: rem(16px) 0;
+    padding-right: calc(#{$padding--mobile} - 0.5rem);
 
     @include breakpoint('large') {
       flex-wrap: nowrap;
-      padding: rem(20px) $padding--desktop rem(20px) 0;
+      padding: rem(20px) 0;
+      padding-right: calc(#{$padding--desktop} - 0.5rem);
     }
 
     &--sticky {
