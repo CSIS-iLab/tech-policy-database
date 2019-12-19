@@ -5,8 +5,8 @@
   display: grid;
   grid-column-gap: rem(72px);
   grid-row-gap: rem(16px);
-  padding: rem(48px) 0;
-  
+  padding: rem(48px) 0 rem(72px);
+
   @include breakpoint('medium') {
     grid-template-columns: 2fr 1fr;
   }
@@ -32,31 +32,33 @@
     @include font-size(34px);
     line-height: 1;
   }
-  
+
   &__desc {
     margin-bottom: 0;
     color: $color__white-190;
+    font-weight: 300;
     @extend %body__text-l;
   }
-  
+
   &__program-desc {
     margin-bottom: 0;
     color: $color__white-190;
+    font-weight: 300;
     @extend %body__text-m;
-    
+
     @include breakpoint('medium') {
       padding-left: rem(24px);
     }
 
     a {
       color: $color__blue-200;
+      font-weight: normal;
       transition: all 0.5s ease;
-      
+
       &:hover {
         color: $color__blue-700;
         text-decoration: none;
       }
     }
-    
   }
 }

@@ -46,13 +46,16 @@
   }
 
   &.btn--dark {
+    height: rem(34px);
     color: $color__white-190;
     text-transform: uppercase;
     background: $color__gray-600;
+    box-shadow: 0 0 0 2px $color__gray-600;
 
     &:hover {
       color: $color__white;
       background: $color__gray-500;
+      box-shadow: 0 0 0 2px $color__gray-500;
     }
 
     &.js-isActive {

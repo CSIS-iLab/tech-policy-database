@@ -10,6 +10,8 @@ const ModalFooter = (props) => {
         className="modal__doc-link"
         href={link}
         title="View the original document."
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Original Framework Document
         <Icon icon={'external-link'} />

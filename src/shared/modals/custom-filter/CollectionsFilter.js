@@ -26,7 +26,7 @@ const CollectionsFilter = (props) => {
   return (
     <React.Fragment>
       <button
-        className={`btn btn--white btn--square modal-collections__btn ${filtersAreVisible}`}
+        className={`btn btn--white modal-collections__btn ${filtersAreVisible}`}
         aria-label="View suggested filters"
         onClick={handleClick}
       >

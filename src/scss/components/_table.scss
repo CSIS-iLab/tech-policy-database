@@ -25,7 +25,7 @@
     &--sticky {
       position: sticky;
       top: 65px;
-      top: calc(var(--optionsHeight) - 1px);
+      top: calc(var(--optionsHeight) - 2px);
       z-index: 10;
     }
   }
@@ -47,11 +47,11 @@
   }
 
   &__cell {
-    padding: 1rem;
+    padding: rem(12px);
     vertical-align: top;
 
     @include breakpoint('large') {
-      padding: rem(24px);
+      padding: rem(24px) rem(24px) rem(16px);
     }
 
     &:first-child {
@@ -120,7 +120,7 @@
 
     &--collection {
       position: relative;
-      padding: rem(24px) rem(40px);
+      padding: rem(16px) rem(40px);
       color: $color__gray-487;
       @extend %subtitle;
       text-transform: uppercase;
@@ -237,7 +237,7 @@
       }
 
       @include breakpoint('large') {
-        padding: rem(8px);
+        padding: rem(8px) rem(8px) rem(8px) 0;
       }
     }
 
@@ -248,6 +248,16 @@
       @include breakpoint('large') {
         font-size: 16px;
         font-size: calc((1rem) * var(--table-font-size));
+      }
+
+      p {
+        margin-bottom: 0.3rem;
+      }
+
+      ul,
+      ol {
+        margin-top: 0;
+        padding-left: rem(20px);
       }
     }
   }
@@ -271,24 +281,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: rem(24px) 0;
+    padding: rem(16px) 0;
 
     @include breakpoint('large') {
       flex-wrap: nowrap;
+      padding: rem(20px) 0;
     }
 
     &--sticky {
       background-color: $color__gray-400;
 
       &::before {
-        content: '';
         position: absolute;
         left: calc((100vw - 100%) / -2);
         z-index: -1;
         display: block;
-        @include vw100;
         height: 100%;
         background-color: $color__gray-400;
+        content: '';
+        @include vw100;
       }
     }
 
@@ -313,24 +324,34 @@
       }
 
       &-sm,
+      &-md,
+      &-lg {
+        width: rem(34px);
+        height: rem(34px);
+        padding: 0;
+        box-shadow: 0 0 0 2px $color__gray-600;
+      }
+
+      svg {
+        width: 100%;
+      }
+
+      &-sm,
       &-md {
         margin-right: rem(10px);
       }
 
       &-sm {
-        padding: rem(9.5px) rem(9.5px);
-        @include font-size(17px);
+        @include font-size(12px);
       }
 
       &-md {
-        @include font-size(18px);
-        padding: rem(9px) rem(9px);
+        @include font-size(14px);
       }
 
       &-lg {
-        @include font-size(19px);
+        @include font-size(16px);
         margin-right: rem(20px);
-        padding: rem(8.5px) rem(8.5px);
       }
     }
   }
