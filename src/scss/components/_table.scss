@@ -18,8 +18,11 @@
       content: '';
       display: block;
       flex: 1 0 auto;
-      width: 2rem;
-      height: 100%;
+      width: $padding--mobile;
+
+      @include breakpoint('medium') {
+        width: $padding--desktop;
+      }
     }
 
     &--sticky {
@@ -282,10 +285,12 @@
     justify-content: space-between;
     align-items: center;
     padding: rem(16px) 0;
+    padding-right: calc(#{$padding--mobile} - 0.5rem);
 
     @include breakpoint('large') {
       flex-wrap: nowrap;
       padding: rem(20px) 0;
+      padding-right: calc(#{$padding--desktop} - 0.5rem);
     }
 
     &--sticky {
