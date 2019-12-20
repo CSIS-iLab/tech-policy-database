@@ -70,6 +70,7 @@ const FilterPanel = (props) => {
           collections={collections}
           handleClick={handleClick}
           collectionsMenu={collectionsMenu}
+          setCollectionsMenu={setCollectionsMenu}
           displayedItems={displayedItems}
           setDisplayedRows={setDisplayedRows}
         />
