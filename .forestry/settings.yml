@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  label: Build Status
+  path: NETLIFY.md
+  read_only: true
+- type: document
   path: src/json/tech-policy-int/site_info.json
   label: Site Information
 - type: document
