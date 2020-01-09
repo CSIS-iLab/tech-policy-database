@@ -19,7 +19,7 @@ Usually when a build fails, it's because content is improperly formatted.  To se
 
   ![Site Activity](https://res.cloudinary.com/csisilab/image/upload/v1578601264/site_activity_azttmh.png)
 
-- If available, click on "Show Log" and review the error message provided by Forestry to determine the error.
+- If available, click on "Show Log" and review the error message provided by Forestry to determine the error. You might need to scroll for a while until the error is visible. The error message will appear towards the end of the log.
 
   ![Forestry Error](https://res.cloudinary.com/csisilab/image/upload/v1578601268/forestry_error_pmwzb0.png)
 
