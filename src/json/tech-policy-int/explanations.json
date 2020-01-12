@@ -7,7 +7,7 @@
   },
   "data_processor": {
     "title": "Data Processor",
-    "description": "Does the framework define a secondary category of entities with reduced legal obligations?",
+    "description": "How does the framework define data processors?",
     "category": "Definitions",
     "default_lang": "Not Specified"
   },
