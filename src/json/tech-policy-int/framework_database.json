@@ -235,10 +235,10 @@
         "original_lang": "<p>(Article 18)</p><p>The data subject shall have the <strong>right to obtain from the controller restriction of processing </strong>where one of the following applies:</p><ol><li><p>the accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data;</p></li><li><p>the processing is unlawful and the data subject opposes the erasure of the personal data and requests the restriction of their use instead;</p></li><li><p>the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;</p></li><li><p>the data subject has objected to processing pursuant to <a href=\"https://gdpr-info.eu/art-21-gdpr/\">Article 21</a>(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.</p></li></ol><p>Where processing has been restricted under paragraph 1, such personal data shall, with the exception of storage, only be processed with the data subject’s consent or for the establishment, exercise or defence of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the Union or of a Member State.</p><p>(Article 21)</p><p>The data subject shall have <strong>the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of </strong><a href=\"https://gdpr-info.eu/art-6-gdpr/\"><strong>Article 6(</strong></a><strong>1)</strong>, [processing necessary for the public interest or for the legitimate interests of the controller] including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.</p><p>Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.</p><p>Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.</p><p>At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.</p><p>In the context of the use of information society services, and notwithstanding <a href=\"http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002L0058\">Directive 2002/58/EC</a>, the data subject may exercise his or her right to object by automated means using technical specifications.</p><p>Where personal data are processed for scientific or historical research purposes or statistical purposes pursuant to <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89(</a>1), the data subject, on grounds relating to his or her particular situation, shall have the right to object to processing of personal data concerning him or her, unless the processing is necessary for the performance of a task carried out for reasons of public interest.</p>"
       }
     },
-    "organization": "European Union",
+    "organization": "European Union ",
     "also_known_as": "General Data Protection Regulation",
     "members": {
-      "description": "European Union member states",
+      "description": "Binding for European Union Member States",
       "list": [
         "Austria",
         "Belgium",
@@ -514,7 +514,7 @@
     "organization": "Organization for Economic Co-operation and Development",
     "also_known_as": "N/A",
     "members": {
-      "description": "Advanced democratic market economies",
+      "description": "Voluntary Framework for OECD Member States",
       "list": [
         "Australia",
         "Austria",
@@ -796,31 +796,18 @@
       }
     },
     "organization": "Asia-Pacific Economic Cooperation",
-    "also_known_as": "N/A",
+    "also_known_as": "Cross-Border Privacy Rules System (CBPR)",
     "members": {
-      "description": "Pacific rim economies",
+      "description": "8 APEC Member States Participating in the CBPR System",
       "list": [
         "Australia",
-        "Brunei",
         "Canada",
-        "Chile",
-        "China",
-        "Hong Kong",
-        "Indonesia",
         "Japan",
-        "Malaysia",
         "Mexico",
-        "New Zealand",
-        "Papua New Guinea",
-        "Peru",
-        "Philippines",
-        "Russia",
         "Singapore",
         "South Korea",
         "Taiwan",
-        "Thailand",
-        "United States",
-        "Vietnam"
+        "United States"
       ]
     },
     "website": {
@@ -1067,7 +1054,7 @@
     "organization": "African Union",
     "also_known_as": "Malabo Convention",
     "members": {
-      "description": "African nations",
+      "description": "Voluntary to 18 AU member states",
       "list": [
         "Benin",
         "Chad",
@@ -1333,7 +1320,7 @@
     "organization": "Association of Southeast Asian Nations",
     "also_known_as": "N/A",
     "members": {
-      "description": "Southeast Asian nations",
+      "description": "Voluntary for ASEAN Member States",
       "list": [
         "Indonesia",
         "Philippines",
@@ -1591,7 +1578,7 @@
     "organization": "Organization of American States",
     "also_known_as": "N/A",
     "members": {
-      "description": "Independent states of the Americas",
+      "description": "Voluntary for OAS Member States",
       "list": [
         "Antigua and Barbuda",
         "Argentina",
@@ -1874,7 +1861,7 @@
     "organization": "United Nations",
     "also_known_as": "N/A",
     "members": {
-      "description": "UN system organizations",
+      "description": "Voluntary for UN System Organizations",
       "list": [
         "International Organization for Migration (IOM)",
         "Food and Agriculture Organization (FAO)",
@@ -2174,24 +2161,18 @@
     "organization": "Ibero-American Data Protection Network",
     "also_known_as": "N/A",
     "members": {
-      "description": "Data protection authorities of Iberian and Central and South American countries",
+      "description": "Voluntary for Data Protection Authorities of 10 Iberian and Central and South American Countries",
       "list": [
-        "Andorra Data Protection Agency",
-        "Argentinian Agency for Access to Public Information",
-        "Chilean Council for Transparency",
-        "Colombian Superintendent of Industry and Commerce - Delegation for the Protection of Personal Data",
-        "Costa Rican Agency for the Protection of Inhabitants' Data",
-        "Spanish Agency for Data Protection",
-        "Catalan Data Protection Authority",
-        "Basque Agency for Data Protection",
-        "Mexican National Institute of Transparency",
-        " Access to Information and Protection of Personal Data",
-        "Mexican Institute of Access to Public Information and Protection of Personal Data of the Federal District",
-        "Institute of Transparency",
-        " Access to Public Information and Protection of Personal Data of the State of Mexico and Municipalities",
-        "Perúvian National Authority for the Protection of Personal Data",
-        "Portugese National Commission for Data Protection",
-        "Uruguayan AGESIC Regulatory and Personal Data Control Unit"
+        "Andorra (Andorra Data Protection Agency (APDA))",
+        "Argentina (Agency for Access to Public Information (AAIP))",
+        "Chile (Council for Transparency (CplT))",
+        "Columbia (Superintendence of Industry and Commerce-Delegation of Protection of Personal Data (SIC))",
+        "Costa Rica (Agency for the Protection of Inhabitants' Data (PRODHAB))",
+        "Spain (Spanish Agency for Data Protection (AEPD); Catalan Data Protection Authority (APDCAT); Basque Agency for Data Protection (AVPD))",
+        "Mexico (National Institute of Transparency, Access to Information and Protection of Personal Data (INAI); Institute of Access to Public Information and Protection of Personal Data of the Federal District (INFODF); Institute of Transparency, Access to Public Information and Protection of Personal Data of the State of Mexico and Municipalities (INFOEM))",
+        "Peru (National Authority for the Protection of Personal Data)",
+        "Portugal (National Comisão de Proteção de Dados (CNPD))",
+        "Uruguay (AGESIC Regulatory and Personal Data Control Unit (URCDP))"
       ]
     },
     "website": {
