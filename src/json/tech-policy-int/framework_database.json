@@ -111,7 +111,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to withdraw consent</p>",
+        "abbreviated_lang": "<p>Controllers must facilitate subjects' right to withdraw consent</p>",
         "original_lang": "<p>(Article 7) </p><p>The data subject shall have the <strong>right to withdraw his or her consent at any time</strong>. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.</p>"
       },
       "right_to_challenge_denials": {
@@ -1451,7 +1451,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "Right to withdraw consent",
+        "abbreviated_lang": "<p>Controllers must facilitate subjects' withdrawal of consent</p>",
         "original_lang": "<p>(Second Principle)</p><p><strong>An individual is entitled to withdraw consent </strong>depending on the nature of the consent given and the purposes for which the data is collected. In general, withdrawal of consent does not affect the validity of anything already done on the basis of the consent.</p>"
       },
       "right_to_challenge_denials": {
@@ -2034,7 +2034,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "Right to withdraw consent",
+        "abbreviated_lang": "<p>Controllers must establish simple, agile, efficient and free mechanisms for a subject to withdraw consent</p>",
         "original_lang": "<p>(Principle 12)</p><p><strong>Whenever consent is required for the treatment of personal data, holder may revoke it at any time</strong>, for which the person responsible shall establish simple, agile, efficient and free mechanisms.</p>"
       },
       "right_to_challenge_denials": {
@@ -2292,7 +2292,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to withdraw consent</p>",
+        "abbreviated_lang": "<p>Controllers must facilitate subjects' right to withdraw consent</p>",
         "original_lang": "<p>(Explanatory Report)</p><p>The data subject has <strong>the right to withdraw the consent he or she gave at any time </strong>(which is to be distinguished from the separate right to object to processing). This will not affect the lawfulness of the data processing that occurred before the data controller has received his or her withdrawal of consent but does not allow continued processing of data, unless justified by some other legitimate basis laid down by law.</p>"
       },
       "right_to_challenge_denials": {
@@ -2574,7 +2574,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to withdraw consent</p>",
+        "abbreviated_lang": "<p>Controllers must establish simple, fast, and efficient procedures for a subject to withdraw consent</p>",
         "original_lang": "<p>(Principle 12)</p><p>The responsible person shall provide simple, fast and efficient procedures that <strong>allow data subjects to withdraw their consent at any time </strong>and that shall not entail undue delay or cost, nor any gain whatsoever for the responsible person.</p>"
       },
       "right_to_challenge_denials": {
