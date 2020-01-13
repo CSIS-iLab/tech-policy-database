@@ -1441,7 +1441,7 @@
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol>",
+        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol><p>No right to request erasure of accurate data that is</p><ol><li><p>embarrassing</p></li><li><p>excessive</p></li><li><p>irrelevant</p></li></ol>",
         "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data and to request that the data controller amend, correct or delete that data</p><p><strong>The individual must be able to exercise the right to request the correction of (or an addition to) personal data about himself or herself that is incomplete, inaccurate, unnecessary or excessive.</strong> This is sometimes referred to as the right of “rectification.”</p><p>These Principles embrace the rights of access, challenge and correction. Because, at this point in time, a “right to erasure or deletion” remains contentious and subject to differing definitions and views, the Principles do not explicitly endorse a right to deletion of personal data which (while true or factually accurate) is considered personally embarrassing, excessive or merely irrelevant by the individual concerned</p>"
       },
       "right_to_object_processing": {
