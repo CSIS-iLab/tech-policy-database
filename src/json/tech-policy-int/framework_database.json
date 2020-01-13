@@ -121,7 +121,7 @@
       },
       "portability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to receive personal data in a structured, commonly-used, machine-readable format</p><p>Right to transmit data to another controller without hindrance</p><p>Right to have data transmitted directly from one controller to another where technically feasible</p>",
+        "abbreviated_lang": "<p>Controllers must:</p><ul><li><p>Provide access to personal data in machine-readable format</p></li><li><p>Allow subject to transmit data to other controllers</p></li><li><p>Transmit data directly to another controller where technically feasible</p></li></ul>",
         "original_lang": "<p>(Article 20) </p><p>The data subject shall have the <strong>right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller</strong> to which the personal data have been provided, where:</p><ol><li><p>the processing is based on consent pursuant to point (a) of <a href=\"https://gdpr-info.eu/art-6-gdpr/\">Article 6</a>(1) or point (a) of <a href=\"https://gdpr-info.eu/art-9-gdpr/\">Article 9</a>(2) or on a contract pursuant to point (b) of <a href=\"https://gdpr-info.eu/art-6-gdpr/\">Article 6</a>(1); and</p></li><li><p>the processing is carried out by automated means.</p></li></ol><p>In exercising his or her right to data portability pursuant to paragraph 1, the data subject shall have the right to have the personal data transmitted directly from one controller to another, where technically feasible.</p>"
       },
       "automated_processing": {
@@ -2044,7 +2044,7 @@
       },
       "portability": {
         "has_data": true,
-        "abbreviated_lang": "Right to portability of personal data",
+        "abbreviated_lang": "<p>Controllers must:</p><ul><li><p>Provide access to personal data in machine-readable format</p></li><li><p>Allow subject to transmit data to other controllers</p></li><li><p>Transmit data directly to another controller where technically feasible</p></li></ul>",
         "original_lang": "<p>(Principle 30) </p><p>In the case of personal data by telephone or automated means, <strong>holder shall have the right to obtain a copy of the personal data that it had provided to the person responsible, or that are subject to treatment, in a structured electronic format, of common use and mechanical reading, that allows it to keep using them and transfer them to another person responsible</strong>, in case it requires so. </p><p>Holder may request that its personal data are transferred directly from person responsible to person responsible when technically possible. </p><p>The right to portability of personal data shall not affect negatively the rights and freedoms of others. </p><p>Without prejudice to holder’s rights, the right to portability of personal data shall not be admissible in the case of inferred, derived, created or generated information, or information obtained from the analysis or treatment performed by the person responsible, based on the personal data provided by holder, such as personal data that had been subject to a personalization, recommendation, categorization or profile creation process.</p>"
       },
       "automated_processing": {
@@ -2302,7 +2302,7 @@
       },
       "portability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to data portability tools</p>",
+        "abbreviated_lang": "<p>Controllers should:</p><ul><li><p>provide tools to enable subjects to transfer data to another provider</p></li></ul>",
         "original_lang": "<p>(Explanatory Report)</p><p><strong>There should also be easy-to-use tools to enable data subjects to take their data to another provider</strong> of their choice or keep the data themselves (data portability tools).</p>"
       },
       "automated_processing": {
