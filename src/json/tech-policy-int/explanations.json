@@ -115,7 +115,7 @@
   },
   "use_limitation": {
     "title": "Use Limitation",
-    "description": "Does the data protection framework put restrictions on how data can be used by controllers once it has been collected?",
+    "description": "Does the data protection framework put restrictions on how data controllers can use data for reasons beyond the original purpose of collection?",
     "category": "Legitimate Processing",
     "default_lang": "Not Specified"
   },
