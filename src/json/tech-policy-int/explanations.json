@@ -25,7 +25,7 @@
   },
   "consent_requirement": {
     "title": "Consent Requirement",
-    "description": "Does the framework include a requirement that data controllers obtain consent from subjects before collecting and using their personal data?",
+    "description": "Does the framework include consent as a basis for the legitimate processing of personal data?",
     "category": "Principles of Consent",
     "default_lang": "Not Specified"
   },
