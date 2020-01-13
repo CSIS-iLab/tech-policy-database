@@ -91,7 +91,7 @@
   },
   "portability": {
     "title": "Portability",
-    "description": "Do data subjects have the right to access their personal data in a form that would allow it to be easily transferred to another controller?",
+    "description": "Do controllers have an obligation to enable users to take their personal data to competing providers?",
     "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
