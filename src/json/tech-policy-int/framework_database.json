@@ -146,7 +146,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Personal data should not be processed in a manner incompatible with the purposes for which it was originally collected</p>",
+        "abbreviated_lang": "<p>Subsequent processing must be incompatible with the original purpose of collection</p>",
         "original_lang": "<p>(Article 5):</p><p>Personal data shall be:</p><p>(b) collected for specified, explicit and legitimate purposes and <strong>not further processed in a manner that is incompatible with those purposes</strong>; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with <a href=\"https://gdpr-info.eu/art-89-gdpr/\">Article 89</a>(1), not be considered to be incompatible with the initial purposes (‘purpose limitation’);</p><p>(Article 6)</p><ol><li><p>Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject’s consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in <a href=\"https://gdpr-info.eu/art-23-gdpr/\">Article 23</a>(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia:</p><ol><li><p>any link between the purposes for which the personal data have been collected and the purposes of the intended further processing;</p></li><li><p>the context in which the personal data have been collected, in particular regarding the relationship between data subjects and the controller;</p></li><li><p>the nature of the personal data, in particular whether special categories of personal data are processed, pursuant to <a href=\"https://gdpr-info.eu/art-9-gdpr/\">Article 9</a>, or whether personal data related to criminal convictions and offences are processed, pursuant to <a href=\"https://gdpr-info.eu/art-10-gdpr/\">Article 10</a>;</p></li><li><p>the possible consequences of the intended further processing for data subjects;</p></li><li><p>the existence of appropriate safeguards, which may include encryption or pseudonymisation.</p></li></ol></li></ol><p><br>(Recital 50)</p><p>The <strong>processing of personal data for purposes other than those for which the personal data were initially collected should be allowed only where the processing is compatible with the purposes for which the personal data were initially collected</strong>. In such a case, no legal basis separate from that which allowed the collection of the personal data is required. If the processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, Union or Member State law may determine and specify the tasks and purposes for which the further processing should be regarded as compatible and lawful. Further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes should be considered to be compatible lawful processing operations. The legal basis provided by Union or Member State law for the processing of personal data may also provide a legal basis for further processing. In order to ascertain whether a purpose of further processing is compatible with the purpose for which the personal data are initially collected, the controller, after having met all the requirements for the lawfulness of the original processing, should take into account, inter alia: any link between those purposes and the purposes of the intended further processing; the context in which the personal data have been collected, in particular the reasonable expectations of data subjects based on their relationship with the controller as to their further use; the nature of the personal data; the consequences of the intended further processing for data subjects; and the existence of appropriate safeguards in both the original and intended further processing operations.</p><p>Where the data subject has given consent or the processing is based on Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard, in particular, important objectives of general public interest, the controller should be allowed to further process the personal data irrespective of the compatibility of the purposes. In any case, the application of the principles set out in this Regulation and in particular the information of the data subject on those other purposes and on his or her rights including the right to object, should be ensured. Indicating possible criminal acts or threats to public security by the controller and transmitting the relevant personal data in individual cases or in several cases relating to the same criminal act or threats to public security to a competent authority should be regarded as being in the legitimate interest pursued by the controller. However, such transmission in the legitimate interest of the controller or further processing of personal data should be prohibited if the processing is not compatible with a legal, professional or other binding obligation of secrecy.</p>"
       },
       "minimization": {
@@ -422,7 +422,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Subsequent use limited to the fulfillment of original purpose of collection, or other compatible purposes</p>",
         "original_lang": "<p>(Paragraph 9)</p><p>The purposes for which personal data are collected should be specified not later than at the time of data collection<strong> </strong>and the <strong>subsequent use limited to the fulfilment of those purposes</strong> or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose</p><p>(Paragraph 10)</p><p>Personal data should not be disclosed, made available or otherwise used for purposes other than those specified in accordance with Paragraph 9 except:</p><ol><li><p>with the consent of the data subject; or</p></li><li><p>by the authority of law.</p></li></ol><p>(Explanatory Memorandum)</p><p>it should be possible to identify the purposes for which these data are to be used, and that later changes of purposes should likewise be specified. Such specification of purposes can be made in a number of alternative or complementary ways, e.g. by public declarations, information to data subjects, legislation, administrative decrees, and licences provided by supervisory bodies. According to Paragraphs 9 and 10, new purposes should not be introduced arbitrarily; freedom to make changes should imply compatibility with the original purposes.</p>"
       },
       "minimization": {
@@ -706,7 +706,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Use limited to the fulfillment of original purpose of collection, or other compatible or related purposes</p>",
         "original_lang": "<p>(Principle IV)</p><p>Personal information collected should be <strong>used only to fulfill the purposes of collection and other compatible or related purposes</strong> except:</p><ol><li><p>with the consent of the individual whose personal information is collected;</p></li><li><p>when necessary to provide a service or product requested by the individual; or,</p></li><li><p>by the authority of law and other legal instruments, proclamations and pronouncements of legal effect.</p></li></ol><p>(Principle IV Commentary)</p><p>Application of this Principle requires consideration of the nature of the information, the context of collection and the intended use of the information. The fundamental criterion in determining whether a purpose is compatible with or related to the stated purposes is whether the extended usage stems from or is in furtherance of such purposes. The use of personal information for \"compatible or related purposes\" would extend, for example, to matters such as the creation and use of a centralized database to manage personnel in an effective and efficient manner; the processing of employee payrolls by a third party; or, the use of information collected by an organization for the purpose of granting credit for the subsequent purpose of collecting debt owed to that organization.</p>"
       },
       "minimization": {
@@ -756,7 +756,7 @@
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections</p>",
+        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections, or when subject gives consent</p>",
         "original_lang": "<p>(Principle IX) </p><p>When personal information is to be transferred to another person or organization, whether domestically or internationally, the personal information controller should obtain the consent of the individual or exercise due diligence and <strong>take reasonable steps to ensure that the recipient person or organization will protect the information consistently with these Principles</strong>.</p>"
       },
       "accountability": {
@@ -962,7 +962,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Subsequent processing must not be incompatible with the original purpose of collection</p>",
         "original_lang": "<p>(Article 13 - Principle 3)</p><p>Data collection shall be undertaken for specific, explicit and legitimate purposes, and <strong>not further processed in a way incompatible with those purposes</strong></p>"
       },
       "minimization": {
@@ -1228,8 +1228,8 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose or authorized by law</p>",
-        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p>the <strong>individual has been notified of and given consent</strong> to the purpose(s) of the collection, use or disclosure of his/her personal data; or</p></li><li><p>the collection, use or disclosure without notification or consent is <strong>authorised or required under domestic laws and regulations</strong>.</p></li></ol><p>An organisation may collect, use or disclose personal data about an individual only for purposes that a reasonable person would consider appropriate in the circumstances.</p>"
+        "abbreviated_lang": "<p>Use must be for purposes a reasonable person would consider appropriate in the circumstances</p>",
+        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data; or</p></li><li><p>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</p></li></ol><p><strong>An organisation may collect, use or disclose personal data about an individual only for purposes that a reasonable person would consider appropriate in the circumstances.</strong></p>"
       },
       "minimization": {
         "has_data": false,
@@ -1278,7 +1278,7 @@
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections</p>",
+        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections, or when subject gives consent</p>",
         "original_lang": "<p>(Paragraph 6) </p><p>Before transferring personal data to another country or territory, the organisation should either obtain the consent of the individual for the overseas transfer or <strong>take reasonable steps to ensure that the receiving organisation will protect the personal data consistently with these Principles</strong>.</p>"
       },
       "accountability": {
@@ -1486,7 +1486,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Use must be in a manner not incompatible with the original purpose of collection</p>",
         "original_lang": "<p>(Fourth Principle) </p><p>Personal data should be kept and used only in a lawful manner <strong>not incompatible with the purpose(s) for which it was collected</strong>.</p><p>(Fourth Principle - Commentary) </p><p>Regarding the first premise, personal data must be handled for definite and lawful purposes. Retention and use of personal data must be consistent with individuals’ reasonable expectations, their relationship with the data controller collecting the data, the notice(s) provided by the data controller, and commonly accepted practices. </p><p>Personal data must not be kept or used for purposes other than those compatible with those for which it was collected, except with the knowledge or consent of the data subject or by the authority of law. The concept of \"incompatibility\" includes a certain measure of flexibility, allowing reference to the overall objective or purpose for which the individual's consent to collection was initially given. In this regard, the appropriate measure may often be one of respecting the context in which the individual had provided his or her personal data and his or her reasonable expectations in the particular situation.</p>"
       },
       "minimization": {
@@ -1769,7 +1769,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Processing must not be incompatible with the original purpose of processing</p>",
         "original_lang": "<p>(Principle 2)</p><p>Personal data should be processed for specified purposes, which are consistent with the mandates of the United Nations System Organization concerned and take into account the balancing of relevant rights, freedoms and interests. <strong>Personal data should not be processed in ways that are incompatible with such purposes</strong>.</p>"
       },
       "minimization": {
@@ -2069,7 +2069,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Data must not be processed for purposes other than those that gave rise to the original treatment</p>",
         "original_lang": "<p>(Principle 17)</p><p>The person responsible <strong>may not treat the personal data in its possession for purposes other than those that gave rise to the original treatment </strong>thereof, unless any of the causes that enable a new treatment of data according to the legitimation principle occurs.</p>"
       },
       "minimization": {
@@ -2327,7 +2327,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Data must not be processed in a way incompatible with the original purpose of collection</p>",
         "original_lang": "<p>(Article 5)</p><p>Personal data undergoing processing shall be: ... collected for explicit, specified and legitimate purposes and <strong>not processed in a way incompatible with those purposes</strong>; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes is, subject to appropriate safeguards, compatible with those purposes;</p><p>(Explanatory Report)</p><p>Personal data must also have been collected for explicit, specified and legitimate purposes, and the processing of that particular data must serve those purposes, or at least not be incompatible with them. The reference to specified \"purposes\" indicates that it is not permitted to process data for undefined, imprecise or vague purposes. What is considered a legitimate purpose depends on the circumstances as the objective is to ensure that a balancing of all rights, freedoms and interests at stake is made in each instance; the right to the protection of personal data on the one hand, and the protection of other rights on the other hand, as, for example, between the interests of the data subject and the interests of the controller or of society.</p><p>The concept of compatible use should not hamper the transparency, legal certainty, predictability or fairness of the processing. Personal data should not be further processed in a way that the data subject might consider unexpected, inappropriate or otherwise objectionable. In order to ascertain whether a purpose of further processing is compatible with the purpose for which the personal data is initially collected, the controller, after having met all the requirements for the lawfulness of the original processing, should take into account, inter alia, any link between those purposes and the purposes of the intended further processing; the context in which the personal data has been collected, in particular the reasonable expectations of data subjects based on their relationship with the controller as to its further use; the nature of the personal data; the consequences of the intended further processing for data subjects; and the existence of appropriate safeguards in both the original and intended further processing operations.</p>"
       },
       "minimization": {
@@ -2377,7 +2377,7 @@
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third countries/organizations with equivalent protections</p>",
+        "abbreviated_lang": "<p>Authorized for third countries/organizations with equivalent protections, or when subject gives consent</p>",
         "original_lang": "<p>(Article 14)</p><p>When the recipient is subject to the jurisdiction of a State or international organisation which is not Party to this Convention, the transfer of personal data <strong>may only take place where an appropriate level of protection based on the provisions of this Convention is secured</strong>.</p><p>An appropriate level of protection can be secured by:</p><ol><li><p class=\"MsoListParagraph\">the law of that State or international organisation, including the applicable international treaties or agreements; or</p></li><li><p class=\"MsoListParagraph\">ad hoc or approved standardised safeguards provided by legally-binding and enforceable instruments adopted and implemented by the persons involved in the transfer and further processing.</p></li></ol><p>Notwithstanding the provisions of the previous paragraphs, each Party may provide that the transfer of personal data may take place if:</p><ol><li><p class=\"MsoListParagraph\">the data subject has given explicit, specific and free consent, after being informed of risks arising in the absence of appropriate safeguards; or</p></li><li><p class=\"MsoListParagraph\">the specific interests of the data subject require it in the particular case; or</p></li><li><p class=\"MsoListParagraphCxSpFirst\">prevailing legitimate interests, in particular important public interests, are provided for by law and such transfer constitutes a necessary and proportionate measure in a democratic society; or</p></li><li><p class=\"MsoListParagraphCxSpLast\">it constitutes a necessary and proportionate measure in a democratic society for freedom of expression.</p></li></ol><p>(Explanatory Report)</p><p>Paragraphs 2 and 3 apply to all forms of appropriate protection, whether provided by law or by standardised safeguards. The law must include the relevant elements of data protection as set out in this Convention. The level of protection should be assessed for each transfer or category of transfers. Various elements of the transfer should be examined such as: the type of data; the purposes and duration of processing for which the data are transferred; the respect of the rule of law by the country of final destination; the general and sectoral legal rules applicable in the State or organisation in question; and the professional and security rules which apply there. </p><p>The content of the ad hoc or standardised safeguards must include the relevant elements of data protection. Moreover, the contractual terms could be such, for example, that the data subject is provided with a contact person on the staff of the person responsible for the data transfers, whose responsibility it is to ensure compliance with the substantive standards of protection. The data subject would be free to contact this person at any time and at no cost in relation to the data processing or transfers and, where applicable, obtain assistance in exercising his or her rights. </p><p>The assessment as to whether the level of protection is appropriate must take into account the principles of the Convention, the extent to which they are met in the recipient State or organisation – in so far as they are relevant for the specific case of transfer – and how the data subject is able to defend his or her interests where there is non-compliance. The enforceability of data subjects’ rights and the provision of effective administrative and judicial redress for the data subjects whose personal data are being transferred should be taken into consideration in the assessment. Similarly, the assessment can be made for a whole State or organisation thereby permitting all data transfers to such a destination.</p>"
       },
       "accountability": {
@@ -2609,7 +2609,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "abbreviated_lang": "<p>Data must not be processed for purposes incompatible with the original purpose of collection</p>",
         "original_lang": "<p>(Principle 7)</p><p>The processing of personal data should be limited to the fulfilment of the specific, explicit and legitimate purposes of the responsible person.</p><p>The responsible person <strong>should not carry out any processing that is non-compatible with the purposes for which personal data were collected</strong>, unless he has the unambiguous consent of the data subject.</p>"
       },
       "minimization": {
