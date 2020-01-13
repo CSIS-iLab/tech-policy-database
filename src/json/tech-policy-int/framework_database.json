@@ -1546,7 +1546,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Privacy by design required",
+        "abbreviated_lang": "Data protection and privacy by design encouraged",
         "original_lang": "(Tenth Principle)\n\nOne effective contemporary approach is to require data controllers to build privacy protection into the design and architecture of their information technology systems and business practices. Privacy and security considerations should be incorporated into every stage of product design."
       },
       "security": {
@@ -2129,7 +2129,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection by design required",
+        "abbreviated_lang": "Data protection and privacy by design required",
         "original_lang": "(Principle 38) \n\nThe person responsible shall apply, from the design, in the determination of the treatment means of personal data, during and before the collection of personal data, preventive measures of various natures that allow effectively applying the principles, rights and other obligations provided in the applicable national legislation of the Ibero-American State. \n\nThe person responsible shall guarantee that its programs, services, computing systems or platforms, electronic applications or any other technology that implies a treatment of personal data, comply by default or adapt to the principles, rights and other obligations provided in the applicable national legislation of the Ibero-American State. Specifically, with the purpose that only a minimum of personal data is subject to treatment, and that the accessibility thereof is limited, without holder’s intervention, to an undetermined number of persons"
       },
       "security": {
@@ -2387,7 +2387,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection by design required",
+        "abbreviated_lang": "Data protection by design and default required",
         "original_lang": "(Article 10)\n\nEach Party shall provide that controllers and, where applicable, processors, examine the likely impact of intended data processing on the rights and fundamental freedoms of data subjects prior to the commencement of such processing, and shall design the data processing in such a manner  as to prevent or minimise the risk of interference with those rights and fundamental freedoms.\n\nEach Party shall provide that controllers, and, where applicable, processors, implement technical and organisational measures which take into account the implications of the right to the protection of personal data at all stages of the data processing.\n\n(Explanatory Report)\n\nParagraph 2 clarifies that before carrying out a data processing activity, the controller will have to examine its potential impact on the rights and fundamental freedoms of the data subjects. This examination can be done without excessive formalities. It will also have to consider respect for the proportionality principle on the basis of a comprehensive overview of the intended processing. In some circumstances, where a processor is involved in addition to the controller, the processor will also have to examine the risks. IT systems developers, including security professionals, or designers, together with users and legal experts could assist in examining the risks.\n\nParagraph 3 specifies that in order to better guarantee an effective level of protection, controllers, and, where applicable, processors, should ensure that data protection requirements are integrated as early as possible, that is, ideally at the stage of architecture and system design, in data processing operations through technical and organisational measures (data protection by design). This implementation of data protection requirements should be achieved not only as regards the technology used for processing the data, but also the related work and management processes. Easy-to-use functionalities that facilitate compliance with applicable law should be put in place. For example, secure online access to one’s own data should be offered to data subjects where possible and relevant. There should also be easy-to-use tools to enable data subjects to take their data to another provider of their choice or keep the data themselves (data portability tools). When setting up the technical requirements for default settings, controllers and processors should choose privacy-friendly standard configurations so that the usage of applications and software does not infringe the rights of the data subjects (data protection by default), notably to avoid processing more data than necessary to achieve the legitimate purpose. For example, social networks should be configured by default so as to share posts or pictures only with restricted and chosen circles and not with the whole internet."
       },
       "security": {
