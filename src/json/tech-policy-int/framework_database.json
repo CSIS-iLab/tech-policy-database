@@ -2669,7 +2669,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection by design encouraged",
+        "abbreviated_lang": "Data protection and privacy by design encouraged",
         "original_lang": "(Principle 22)\n\nStates should encourage the adaptation of information systems and/or technologies for the processing of personal data to the applicable laws on the protection of privacy with regard to the processing of personal data, particularly at the time of deciding on their technical specifications and on the development and implementation thereof."
       },
       "security": {
