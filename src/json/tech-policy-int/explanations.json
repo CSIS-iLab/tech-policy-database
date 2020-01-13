@@ -78,8 +78,8 @@
     "default_lang": "Not Specified"
   },
   "right_to_withdraw_consent": {
-    "title": "Right to Withdraw Consent",
-    "description": "Do data subjects have the right to withdraw consent to prevent the further processing of their personal data by a controller?",
+    "title": "Withdrawal of Consent",
+    "description": "Are controllers obligated to facilitate the withdrawal of consent by data subjects?",
     "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
