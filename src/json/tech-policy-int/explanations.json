@@ -168,8 +168,8 @@
     "default_lang": "Not Specified"
   },
   "privacy_by_design": {
-    "title": "Privacy by Design",
-    "description": "Does the data protection framework require controllers to implement privacy and protection by design in the construction and operation of their systems?",
+    "title": "Data Protection by Design",
+    "description": "Does the data protection framework require controllers to implement privacy and/or data protection by design or default in the construction and operation of their systems?",
     "category": "Obligations of Data Controllers",
     "default_lang": "Not Specified"
   }
