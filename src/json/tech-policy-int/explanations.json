@@ -73,7 +73,7 @@
   },
   "right_to_object_processing": {
     "title": "Right to Object to Processing",
-    "description": "Do data subjects have the right to object to the processing of their data?",
+    "description": "Do data subjects have the right to submit objections to data controllers over the processing of their data?",
     "category": "Individual Rights",
     "default_lang": "Not Specified"
   },
