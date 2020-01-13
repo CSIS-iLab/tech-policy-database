@@ -337,7 +337,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "Knowledge or consent required where appropriate",
+        "abbreviated_lang": "<p>Processing should be obtained with the knowledge or consent of the subject where appropriate</p>",
         "original_lang": "<p>(Paragraph 7) </p><p>There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, <strong>where appropriate, with the knowledge or consent of the data subject</strong>.</p><p>(Explanatory Memorandum) </p><p>The knowledge or consent of the data subject is as a rule essential, knowledge being the minimum requirement. On the other hand, consent cannot always be imposed, for practical reasons. In addition, Paragraph 7 contains a reminder (“where appropriate”) that there are situations where for practical or policy reasons the data subject’s knowledge or consent cannot be considered necessary. Criminal investigation activities and the routine up-dating of mailing lists may be mentioned as examples.</p>"
       },
       "consent_exceptions": {
@@ -621,7 +621,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Notice or consent required where appropriate</p>",
+        "abbreviated_lang": "<p>The collection of information should be obtained with notice to, or consent of, the individual concerned where appropriate</p>",
         "original_lang": "<p>(Principle III) </p><p>The collection of personal information should be limited to information that is relevant to the purposes of collection and any such information should be obtained by lawful and fair means, and <strong>where appropriate, with notice to, or consent of, the individual concerned</strong>.</p><p>(Principle V) </p><p>Where appropriate, individuals should be provided with clear, prominent, easily understandable, accessible and affordable mechanisms to exercise choice in relation to the collection, use and disclosure of their personal information.</p>"
       },
       "consent_exceptions": {
@@ -877,7 +877,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required </p>",
+        "abbreviated_lang": "<p>Processing is legitimate where the data subject has given their consent</p>",
         "original_lang": "<p>(Article 13, Principle 1) </p><p>Processing of personal data shall be deemed to be <strong>legitimate where the data subject has given his/her consent</strong>.</p>"
       },
       "consent_exceptions": {
@@ -1143,8 +1143,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required </p>",
-        "original_lang": "<p>(Paragraph 7)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p><strong>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data</strong>; or</p></li><li><p><em>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</em></p></li></ol>"
+        "abbreviated_lang": "<p>Processing legitimate where the data subject has been notified of and given consent to processing</p>",
+        "original_lang": "<p>(Paragraph 7)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p><strong>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data</strong>; or</p></li><li><p>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -1401,7 +1401,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required </p>",
+        "abbreviated_lang": "<p>Personal data should only be collected with the consent of the individual</p>",
         "original_lang": "<p>(Second Principle) </p><p>As a general rule, <strong>personal data should only be collected with the consent of the individual</strong> concerned.</p>"
       },
       "consent_exceptions": {
@@ -1684,8 +1684,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required </p>",
-        "original_lang": "<p></p><p>(Principle 1)</p><p>The United Nations System Organizations should process personal data in a fair manner, in accordance with their mandates and governing instruments and on the basis of any of the following:</p><ol><li><p><strong>the consent of the data subject</strong>;</p></li><li><p>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned;</p></li><li><p>the mandates and governing instruments of the United Nations System Organization concerned; or</p></li><li><p>any other legal basis specifically identified by the United Nations System Organization concerned.</p></li></ol>"
+        "abbreviated_lang": "<p>Processing should be based on the consent of the data subject</p>",
+        "original_lang": "<p>(Principle 1)</p><p>The United Nations System Organizations should process personal data in a fair manner, in accordance with their mandates and governing instruments and on the basis of any of the following:</p><ol><li><p><strong>the consent of the data subject</strong>;</p></li><li><p>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned;</p></li><li><p>the mandates and governing instruments of the United Nations System Organization concerned; or</p></li><li><p>any other legal basis specifically identified by the United Nations System Organization concerned.</p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -1984,7 +1984,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required</p>",
+        "abbreviated_lang": "<p>Processing legitimate if the subject grants consent for one or several specific purposes</p>",
         "original_lang": "<p>(Principle 11) </p><p>As a general rule, the person responsible may only treat personal data, under the following assumptions:</p><ol><li><p><strong>Holder grants its consent</strong> for one or several specific purposes</p></li></ol>"
       },
       "consent_exceptions": {
@@ -2242,7 +2242,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required</p>",
+        "abbreviated_lang": "<p>Processing should be carried out on the basis of consent of the data subject</p>",
         "original_lang": "<p>(Article 5)</p><p>Each Party shall provide that data <strong>processing can be carried out on the basis of the free, specific, informed and unambiguous consent of the data subject</strong> or of some other legitimate basis laid down by law.</p>"
       },
       "consent_exceptions": {
@@ -2524,7 +2524,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Consent required </p>",
+        "abbreviated_lang": "<p>Processing legitimate after obtaining the consent of the data subject</p>",
         "original_lang": "<p>(Principle 12) </p><p>As a general rule, personal data may only be processed in one of the following situations:</p><ol><li><p>After obtaining the <strong>free, unambiguous and informed consent of the data subject</strong></p></li></ol>"
       },
       "consent_exceptions": {
