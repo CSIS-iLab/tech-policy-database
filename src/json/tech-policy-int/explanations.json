@@ -30,7 +30,7 @@
     "default_lang": "Not Specified"
   },
   "consent_exceptions": {
-    "title": "Consent Exceptions",
+    "title": "Alternatives to Consent",
     "description": "Under what circumstances may controllers collect and process personal data if the subject has not given their consent?",
     "category": "Principles of Consent",
     "default_lang": "Not Specified"
