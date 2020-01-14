@@ -295,6 +295,15 @@
       ],
       "lists_of_members": [
         {
+          "specification": "Group 2",
+          "list": [
+            "China",
+            "Spain",
+            "Thailand",
+            "Germany"
+          ]
+        },
+        {
           "specification": "Group 1",
           "list": [
             "Mexico",
