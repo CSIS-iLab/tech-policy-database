@@ -29,29 +29,6 @@ fields:
     config:
       required: false
     label: Organization
-  - name: member-group
-    type: field_group_list
-    fields:
-    - name: description
-      type: text
-      config:
-        required: false
-      label: Description
-    - name: specification
-      type: text
-      config:
-        required: false
-      label: Specification
-      description: The header that will be used to classify the member groups
-    - name: list
-      type: tag_list
-      default: []
-      label: Members
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Members
   - name: website
     type: field_group
     config: {}
@@ -477,5 +454,33 @@ fields:
         config: {}
         template: framework-category-info
         label: Category Template
+  - name: Members
+    type: field_group
+    config: {}
+    fields:
+    - name: description
+      type: text
+      config:
+        required: false
+      label: Description
+    - name: member_categories
+      type: field_group_list
+      fields:
+      - name: specification
+        type: text
+        config:
+          required: false
+        label: Specification
+        description: The header that will be used to classify the member groups
+      - name: list
+        type: tag_list
+        default: []
+        label: Members
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Member Categories
+    label: Members
 pages:
 - src/json/tech-policy-int/framework_database.json
