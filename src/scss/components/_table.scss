@@ -125,9 +125,12 @@
       position: relative;
       padding: rem(16px) rem(40px);
       color: $color__gray-487;
-      @extend %subtitle;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
       background-color: $color__gray-100;
+      @include font-size(17.6px);
     }
   }
 
