@@ -281,7 +281,19 @@
         ],
         "specification": ""
       }
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+        {
+          "list": [
+            "Austria",
+            "India"
+          ],
+          "specification": "Group 1"
+        }
+      ]
+    }
   },
   {
     "name": "OECD Privacy Framework",
@@ -572,7 +584,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "APEC Privacy Framework",
@@ -835,7 +853,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "AU Convention on Cyber Security and Personal Data Protection",
@@ -1108,7 +1132,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "ASEAN Framework on Personal Data Protection",
@@ -1373,7 +1403,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "OAS Principles on Privacy and Data Protection",
@@ -1663,7 +1699,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "UN Personal Data Protection and Privacy Principles",
@@ -1970,7 +2012,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "RIPD Data Protection Standards of the Ibero-American States",
@@ -2235,7 +2283,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "CoE Modernized Convention for the Protection of Individuals with Regard to the Processing of Personal Data",
@@ -2524,7 +2578,13 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   },
   {
     "name": "ICDPPC International Standards on the Protection of Personal Data and Privacy",
@@ -2801,6 +2861,12 @@
     "description": "",
     "member-group": [
 
-    ]
+    ],
+    "Members": {
+      "description": "",
+      "member_categories": [
+
+      ]
+    }
   }
 ]
