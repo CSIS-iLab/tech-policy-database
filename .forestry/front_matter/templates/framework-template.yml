@@ -38,13 +38,24 @@ fields:
       config:
         required: false
       label: Description
-    - name: list
-      type: list
+    - name: member_categories
+      type: field_group_list
+      fields:
+      - name: specification
+        type: text
+        config:
+          required: false
+        label: Specification
+        description: The header that will be used to classify the member groups
+      - name: list
+        type: tag_list
+        default: []
+        label: Members
       config:
-        use_select: false
         min: 
         max: 
-      label: Members
+        labelField: 
+      label: Member Categories
     label: Members
   - name: website
     type: field_group
