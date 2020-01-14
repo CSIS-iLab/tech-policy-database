@@ -39,9 +39,14 @@ fields:
         required: false
       label: Description
     - name: list
-      type: tag_list
-      default: []
-      label: List
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Members
     label: Members
   - name: website
     type: field_group
