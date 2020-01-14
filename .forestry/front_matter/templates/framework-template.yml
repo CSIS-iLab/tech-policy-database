@@ -414,19 +414,15 @@ fields:
         config: {}
         template: framework-category-info
         label: Category Template
-    - type: field_group
+     - type: field_group
       name: accountability
       label: accountability
       fields:
-      - type: boolean
-        name: has_data
-        label: has_data
-      - type: text
-        name: abbreviated_lang
-        label: abbreviated_lang
-      - type: textarea
-        name: original_lang
-        label: original_lang
+      - name: category_template
+        type: include
+        config: {}
+        template: framework-category-info
+        label: Category Template
     - type: field_group
       name: privacy_by_design
       label: privacy_by_design
