@@ -39,13 +39,11 @@ fields:
         required: false
       label: Description
     - name: list
-      type: textarea
-      default: ''
+      type: list
       config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
+        use_select: false
+        min: 
+        max: 
       label: Members
     label: Members
   - name: website
