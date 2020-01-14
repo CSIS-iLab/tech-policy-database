@@ -283,7 +283,7 @@
       }
     ],
     "Members": {
-      "description": "",
+      "description": "Binding for European Union Member States",
       "member_categories": [
         {
           "list": [
@@ -291,6 +291,15 @@
             "India"
           ],
           "specification": "Group 1"
+        }
+      ],
+      "lists_of_members": [
+        {
+          "specification": "Group 1",
+          "list": [
+            "Mexico",
+            "Ireland"
+          ]
         }
       ]
     }
@@ -589,6 +598,9 @@
       "description": "",
       "member_categories": [
 
+      ],
+      "lists_of_members": [
+
       ]
     }
   },
@@ -857,6 +869,9 @@
     "Members": {
       "description": "",
       "member_categories": [
+
+      ],
+      "lists_of_members": [
 
       ]
     }
@@ -1137,6 +1152,9 @@
       "description": "",
       "member_categories": [
 
+      ],
+      "lists_of_members": [
+
       ]
     }
   },
@@ -1407,6 +1425,9 @@
     "Members": {
       "description": "",
       "member_categories": [
+
+      ],
+      "lists_of_members": [
 
       ]
     }
@@ -1703,6 +1724,9 @@
     "Members": {
       "description": "",
       "member_categories": [
+
+      ],
+      "lists_of_members": [
 
       ]
     }
@@ -2017,6 +2041,9 @@
       "description": "",
       "member_categories": [
 
+      ],
+      "lists_of_members": [
+
       ]
     }
   },
@@ -2287,6 +2314,9 @@
     "Members": {
       "description": "",
       "member_categories": [
+
+      ],
+      "lists_of_members": [
 
       ]
     }
@@ -2583,6 +2613,9 @@
       "description": "",
       "member_categories": [
 
+      ],
+      "lists_of_members": [
+
       ]
     }
   },
@@ -2865,6 +2898,9 @@
     "Members": {
       "description": "",
       "member_categories": [
+
+      ],
+      "lists_of_members": [
 
       ]
     }
