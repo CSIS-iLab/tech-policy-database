@@ -414,7 +414,7 @@ fields:
         config: {}
         template: framework-category-info
         label: Category Template
-     - type: field_group
+    - type: field_group
       name: accountability
       label: accountability
       fields:
