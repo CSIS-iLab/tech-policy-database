@@ -38,28 +38,15 @@ fields:
       config:
         required: false
       label: Description
-    - name: member_categories
-      type: field_group_list
-      fields:
-      - name: specification
-        type: textarea
-        default: ''
-        config:
-          required: false
-          wysiwyg: true
-          schema:
-            format: html-blocks
-        description: The header that will be used to classify the member groups
-        label: Specification
-      - name: list
-        type: tag_list
-        default: []
-        label: Members
+    - name: list
+      type: textarea
+      default: ''
       config:
-        min: 
-        max: 
-        labelField: 
-      label: Member Categories
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Members
     label: Members
   - name: website
     type: field_group
