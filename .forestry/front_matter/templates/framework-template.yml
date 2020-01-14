@@ -41,16 +41,20 @@ fields:
     - name: member_categories
       type: field_group_list
       fields:
-      - name: specification
-        type: text
-        config:
-          required: false
-        label: Specification
-        description: The header that will be used to classify the member groups
       - name: list
         type: tag_list
         default: []
         label: Members
+      - name: specification
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        description: The header that will be used to classify the member groups
+        label: Specification
       config:
         min: 
         max: 
