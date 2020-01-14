@@ -80,9 +80,7 @@
   "right_to_withdraw_consent": {
     "title": "Withdrawal of Consent",
     "description": "Are controllers obligated to facilitate the withdrawal of consent by data subjects?",
-    "category": [
-      "Principles of Consent"
-    ],
+    "category": "Principles of Consent",
     "default_lang": "Not Specified"
   },
   "right_to_challenge_denials": {
