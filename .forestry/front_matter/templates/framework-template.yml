@@ -29,23 +29,20 @@ fields:
     config:
       required: false
     label: Organization
-  - name: members_description
-    type: text
-    config:
-      required: false
-    label: Description of Members
   - name: member-group
     type: field_group_list
     fields:
-    - name: specification
-      type: textarea
-      default: ''
+    - name: description
+      type: text
       config:
         required: false
-        wysiwyg: false
-        schema:
-          format: markdown
+      label: Description
+    - name: specification
+      type: text
+      config:
+        required: false
       label: Specification
+      description: The header that will be used to classify the member groups
     - name: list
       type: tag_list
       default: []
