@@ -38,15 +38,27 @@ fields:
       config:
         required: false
       label: Description
-    - name: list
+    label: Members
+  - name: member-group
+    type: field_group_list
+    fields:
+    - name: specification
       type: textarea
       default: ''
       config:
         required: false
-        wysiwyg: true
+        wysiwyg: false
         schema:
-          format: html-blocks
+          format: markdown
+      label: Specification
+    - name: list
+      type: tag_list
+      default: []
       label: Members
+    config:
+      min: 
+      max: 
+      labelField: 
     label: Members
   - name: website
     type: field_group
