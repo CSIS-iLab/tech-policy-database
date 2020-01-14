@@ -266,6 +266,14 @@
     "description": "Binding for European Union Member States",
     "member-group": [
       {
+        "specification": "Group 1",
+        "list": [
+          "USA",
+          "Italy",
+          "Mexico"
+        ]
+      },
+      {
         "list": [
           "Austria",
           "Japan",
