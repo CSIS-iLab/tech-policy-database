@@ -29,16 +29,11 @@ fields:
     config:
       required: false
     label: Organization
-  - name: members
-    type: field_group
-    config: {}
-    fields:
-    - name: description
-      type: text
-      config:
-        required: false
-      label: Description
-    label: Members
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description of Members
   - name: member-group
     type: field_group_list
     fields:
