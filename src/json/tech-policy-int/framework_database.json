@@ -268,6 +268,16 @@
         "Spain",
         "Sweden",
         "United Kingdom"
+      ],
+      "member_categories": [
+        {
+          "specification": "First Members",
+          "list": [
+            "Austria",
+            "Turkey",
+            "Hungary"
+          ]
+        }
       ]
     },
     "website": {
@@ -552,6 +562,9 @@
         "Turkey",
         "United Kingdom",
         "United States"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -808,6 +821,9 @@
         "South Korea",
         "Taiwan",
         "United States"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -1074,6 +1090,9 @@
         "Togo",
         "Tunisia",
         "Zambia"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -1332,6 +1351,9 @@
         "Laos",
         "Singapore",
         "Brunei"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -1615,6 +1637,9 @@
         "United States",
         "Uruguay",
         "Venezuela"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -1915,6 +1940,9 @@
         "World Meteorological Organization (WMO)",
         "World Tourism Organization (UNWTO)",
         "World Trade Organization (WTO)"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -2173,6 +2201,9 @@
         "Peru (National Authority for the Protection of Personal Data)",
         "Portugal (National Comisão de Proteção de Dados (CNPD))",
         "Uruguay (AGESIC Regulatory and Personal Data Control Unit (URCDP))"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -2455,6 +2486,9 @@
         "Argentina",
         "Tunisia",
         "Uruguay"
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
@@ -2725,6 +2759,9 @@
         "Spain (Agencia Española de Protección de Datos; Agència Catalana de Protecció de Dades; Agencia de Protección de Datos de la Comunidad de Madrid; Agencia Vasca de Protección de Datos) ",
         "Switzerland (Préposé fédéral à la protection des données et à la transparence)",
         "United Kingdom (Information Commissioner’s Office; Office of the Data Protection Supervisor (Isle of Man)) "
+      ],
+      "member_categories": [
+
       ]
     },
     "website": {
