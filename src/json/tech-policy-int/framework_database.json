@@ -333,7 +333,7 @@
       "sensitive_personal_data": {
         "has_data": false,
         "abbreviated_lang": "",
-        "original_lang": "<p></p>"
+        "original_lang": ""
       },
       "consent_requirement": {
         "has_data": true,
