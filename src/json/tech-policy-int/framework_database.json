@@ -262,7 +262,18 @@
     "website": {
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
       "name": "EU Data Protection Rules"
-    }
+    },
+    "description": "Binding for European Union Member States",
+    "member-group": [
+      {
+        "list": [
+          "Austria",
+          "Japan",
+          "Canada"
+        ],
+        "specification": ""
+      }
+    ]
   },
   {
     "name": "OECD Privacy Framework",
@@ -549,7 +560,11 @@
     "website": {
       "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
       "name": "OECD Digital Security and Privacy"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "APEC Privacy Framework",
@@ -808,7 +823,11 @@
     "website": {
       "url": "https://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group",
       "name": "APEC Electronic Commerce Steering Group"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "AU Convention on Cyber Security and Personal Data Protection",
@@ -1077,7 +1096,11 @@
     "website": {
       "url": "https://au.int/en/education-science-technology",
       "name": "AU Education, Science & Technology"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "ASEAN Framework on Personal Data Protection",
@@ -1338,7 +1361,11 @@
     "website": {
       "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
       "name": "ASEAN Telecommunications and IT Ministers Meeting"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "OAS Principles on Privacy and Data Protection",
@@ -1624,7 +1651,11 @@
     "website": {
       "url": "https://www.citel.oas.org/en/Pages/default.aspx",
       "name": "Inter-American Telecommunication Commission"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "UN Personal Data Protection and Privacy Principles",
@@ -1927,7 +1958,11 @@
     "website": {
       "url": "https://www.unsystem.org/privacy-principles",
       "name": "Principles on Personal Data Protection and Privacy"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "RIPD Data Protection Standards of the Ibero-American States",
@@ -2188,7 +2223,11 @@
     "website": {
       "url": "http://www.redipd.es/index-iden-idphp.php",
       "name": "RIPD Home Page"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "CoE Modernized Convention for the Protection of Individuals with Regard to the Processing of Personal Data",
@@ -2473,7 +2512,11 @@
     "website": {
       "url": "https://www.coe.int/en/web/data-protection",
       "name": "Council of Europe Data Protection website"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   },
   {
     "name": "ICDPPC International Standards on the Protection of Personal Data and Privacy",
@@ -2746,6 +2789,10 @@
     "website": {
       "url": "https://icdppc.org/",
       "name": "ICDPPC Home Page"
-    }
+    },
+    "description": "",
+    "member-group": [
+
+    ]
   }
 ]
