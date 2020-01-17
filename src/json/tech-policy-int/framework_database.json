@@ -310,7 +310,8 @@
             "Ireland"
           ]
         }
-      ]
+      ],
+      "list": "**First List**\n\nChina\n\nJapan\n\nColumbia\n\nSyria\n\n**Second List**\n\nHaiti\n\nNorway\n\nUruguay"
     }
   },
   {
@@ -610,7 +611,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -882,7 +884,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -1164,7 +1167,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -1438,7 +1442,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -1737,7 +1742,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -2053,7 +2059,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -2327,7 +2334,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -2625,7 +2633,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   },
   {
@@ -2911,7 +2920,8 @@
       ],
       "lists_of_members": [
 
-      ]
+      ],
+      "list": ""
     }
   }
 ]
