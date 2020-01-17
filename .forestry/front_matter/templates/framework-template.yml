@@ -29,7 +29,7 @@ fields:
     config:
       required: false
     label: Organization
-  - name: Members
+  - name: members
     type: field_group
     config: {}
     fields:
