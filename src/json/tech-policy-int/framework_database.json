@@ -239,79 +239,40 @@
     "also_known_as": "General Data Protection Regulation",
     "members": {
       "description": "Binding for European Union Member States",
-      "list": "<p><strong>First List</strong></p><ul><li><p>Austria</p></li><li><p>Belgium</p></li><li><p>Bulgaria</p></li></ul><p><strong>Second List</strong></p><p>Croatia</p><p>Cyprus</p><p></p>",
-      "member_categories": [
-        {
-          "specification": "<p><strong>First Members</strong></p>",
-          "list": [
-            "Austria",
-            "Turkey",
-            "Hungary"
-          ]
-        },
-        {
-          "specification": "<p><strong>Second Members</strong></p>",
-          "list": [
-            "Spain",
-            "Hungary",
-            "China"
-          ]
-        }
+      "list": [
+        "Austria",
+        "Belgium",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
+        "Czechia",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Ireland",
+        "Italy",
+        "Latvia",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Netherlands",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Sweden",
+        "United Kingdom"
       ]
     },
     "website": {
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
       "name": "EU Data Protection Rules"
-    },
-    "description": "Binding for European Union Member States",
-    "member-group": [
-      {
-        "specification": "Group 1",
-        "list": [
-          "USA",
-          "Italy",
-          "Mexico"
-        ]
-      },
-      {
-        "list": [
-          "Austria",
-          "Japan",
-          "Canada"
-        ],
-        "specification": ""
-      }
-    ],
-    "Members": {
-      "description": "Binding for European Union Member States",
-      "member_categories": [
-        {
-          "list": [
-            "Austria",
-            "India"
-          ],
-          "specification": "Group 1"
-        }
-      ],
-      "lists_of_members": [
-        {
-          "specification": "Group 2",
-          "list": [
-            "China",
-            "Spain",
-            "Thailand",
-            "Germany"
-          ]
-        },
-        {
-          "specification": "Group 1",
-          "list": [
-            "Mexico",
-            "Ireland"
-          ]
-        }
-      ],
-      "list": "**First List**\n\n* China\n* Japan\n* Columbia\n* Syria\n\n**Second List**\n\n* Haiti\n* Norway\n* Uruguay"
     }
   },
   {
@@ -591,28 +552,11 @@
         "Turkey",
         "United Kingdom",
         "United States"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
       "name": "OECD Digital Security and Privacy"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "lorem ipsum",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": "**First List**\n\n* Iran\n* Turkey\n* China\n* Spain\n\n**Second List**\n\n* Croatia\n* Germany\n* France\n* Greece"
     }
   },
   {
@@ -864,28 +808,11 @@
         "South Korea",
         "Taiwan",
         "United States"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group",
       "name": "APEC Electronic Commerce Steering Group"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -1147,28 +1074,11 @@
         "Togo",
         "Tunisia",
         "Zambia"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://au.int/en/education-science-technology",
       "name": "AU Education, Science & Technology"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -1422,28 +1332,11 @@
         "Laos",
         "Singapore",
         "Brunei"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
       "name": "ASEAN Telecommunications and IT Ministers Meeting"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -1722,28 +1615,11 @@
         "United States",
         "Uruguay",
         "Venezuela"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://www.citel.oas.org/en/Pages/default.aspx",
       "name": "Inter-American Telecommunication Commission"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -2039,28 +1915,11 @@
         "World Meteorological Organization (WMO)",
         "World Tourism Organization (UNWTO)",
         "World Trade Organization (WTO)"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://www.unsystem.org/privacy-principles",
       "name": "Principles on Personal Data Protection and Privacy"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -2314,28 +2173,11 @@
         "Peru (National Authority for the Protection of Personal Data)",
         "Portugal (National Comisão de Proteção de Dados (CNPD))",
         "Uruguay (AGESIC Regulatory and Personal Data Control Unit (URCDP))"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "http://www.redipd.es/index-iden-idphp.php",
       "name": "RIPD Home Page"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -2613,28 +2455,11 @@
         "Argentina",
         "Tunisia",
         "Uruguay"
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://www.coe.int/en/web/data-protection",
       "name": "Council of Europe Data Protection website"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   },
   {
@@ -2900,28 +2725,11 @@
         "Spain (Agencia Española de Protección de Datos; Agència Catalana de Protecció de Dades; Agencia de Protección de Datos de la Comunidad de Madrid; Agencia Vasca de Protección de Datos) ",
         "Switzerland (Préposé fédéral à la protection des données et à la transparence)",
         "United Kingdom (Information Commissioner’s Office; Office of the Data Protection Supervisor (Isle of Man)) "
-      ],
-      "member_categories": [
-
       ]
     },
     "website": {
       "url": "https://icdppc.org/",
       "name": "ICDPPC Home Page"
-    },
-    "description": "",
-    "member-group": [
-
-    ],
-    "Members": {
-      "description": "",
-      "member_categories": [
-
-      ],
-      "lists_of_members": [
-
-      ],
-      "list": ""
     }
   }
 ]
