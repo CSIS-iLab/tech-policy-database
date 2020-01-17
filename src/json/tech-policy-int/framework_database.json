@@ -273,6 +273,10 @@
     "website": {
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
       "name": "EU Data Protection Rules"
+    },
+    "Members": {
+      "description": "Binding for European Union Member States",
+      "list": "**List One**\n\n* Syria\n* Bulgaria\n* France\n\n**List Two**\n\n* Hungary\n* Norway\n* Sweden"
     }
   },
   {
@@ -557,6 +561,10 @@
     "website": {
       "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
       "name": "OECD Digital Security and Privacy"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -813,6 +821,10 @@
     "website": {
       "url": "https://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group",
       "name": "APEC Electronic Commerce Steering Group"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -1079,6 +1091,10 @@
     "website": {
       "url": "https://au.int/en/education-science-technology",
       "name": "AU Education, Science & Technology"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -1337,6 +1353,10 @@
     "website": {
       "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
       "name": "ASEAN Telecommunications and IT Ministers Meeting"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -1620,6 +1640,10 @@
     "website": {
       "url": "https://www.citel.oas.org/en/Pages/default.aspx",
       "name": "Inter-American Telecommunication Commission"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -1920,6 +1944,10 @@
     "website": {
       "url": "https://www.unsystem.org/privacy-principles",
       "name": "Principles on Personal Data Protection and Privacy"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -2178,6 +2206,10 @@
     "website": {
       "url": "http://www.redipd.es/index-iden-idphp.php",
       "name": "RIPD Home Page"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -2460,6 +2492,10 @@
     "website": {
       "url": "https://www.coe.int/en/web/data-protection",
       "name": "Council of Europe Data Protection website"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   },
   {
@@ -2730,6 +2766,10 @@
     "website": {
       "url": "https://icdppc.org/",
       "name": "ICDPPC Home Page"
+    },
+    "Members": {
+      "description": "",
+      "list": ""
     }
   }
 ]
