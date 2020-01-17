@@ -311,7 +311,7 @@
           ]
         }
       ],
-      "list": "**First List**\n\nChina\n\nJapan\n\nColumbia\n\nSyria\n\n**Second List**\n\nHaiti\n\nNorway\n\nUruguay"
+      "list": "**First List**\n\n* China\n* Japan\n* Columbia\n* Syria\n\n**Second List**\n\n* Haiti\n* Norway\n* Uruguay"
     }
   },
   {
