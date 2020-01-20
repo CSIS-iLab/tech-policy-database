@@ -2544,30 +2544,7 @@
     "also_known_as": "Madrid Resolution",
     "members": {
       "description": "Voluntary for data protection authorities from 21 nations and the EU",
-      "list": [
-        "Andorra (Agència Andorrana de Protecció de Dades) ",
-        "Argentina (National Direction for Personal Data Protection) ",
-        "Burkina-Faso (Commission on Computers and Liberties) ",
-        "Canada (Office of the Privacy Commissioner of Canada)",
-        "Cyprus (Personal Data Protection Commissioner) ",
-        "Czech Republic (Office for Personal Data Protection) ",
-        "Estonia (Estonian Data Protection Inspectorate)",
-        "European Union (European Data Protection Supervisor)",
-        "Finland (Data Protection Ombudsman) ",
-        "France (Commission Nationale de l’Informatique et des Libertés) ",
-        "Germany (Bundesbeauftragte für den Datenschutz und die Informationsfreiheit; Data Protection and Freedom of Information Commissioner of Berlin; Data Protection Commissioner of Schleswig-Holstein) ",
-        "Greece (Hellenic Data Protection Authority)",
-        "Ireland (Irish Data Protection Commissioner)",
-        "Italy (Garante per la Protezione dei Dati Personali) ",
-        "Lithuania (State Data Protection Inspectorate of the Republic of Lithuania)",
-        "Malta (Commissioner for Data Protection) ",
-        "Netherlands (College Bescherming Persoonsgegevens) ",
-        "New Zealand (New Zealand Privacy Commissioner)",
-        "Slovenia (Information Commissioner) ",
-        "Spain (Agencia Española de Protección de Datos; Agència Catalana de Protecció de Dades; Agencia de Protección de Datos de la Comunidad de Madrid; Agencia Vasca de Protección de Datos) ",
-        "Switzerland (Préposé fédéral à la protection des données et à la transparence)",
-        "United Kingdom (Information Commissioner’s Office; Office of the Data Protection Supervisor (Isle of Man)) "
-      ]
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://icdppc.org/",
