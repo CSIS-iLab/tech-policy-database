@@ -741,7 +741,7 @@
     "also_known_as": "Cross-Border Privacy Rules System (CBPR)",
     "members": {
       "description": "Binding for 8 APEC Member States Participating in the CBPR System",
-      "list": "<p></p>"
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group",
