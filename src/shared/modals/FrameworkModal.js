@@ -65,22 +65,11 @@ const FrameworkModal = () => {
               <dd className="modal__value">
                 {members ? members.description : null}
 
-                <ul className="modal__mem-list">
+                {members ?
+                  <div className="modal__mem-list"
+                    dangerouslySetInnerHTML={createMarkup(members.list)} />
+                  : null}
 
-                {members ? 
-                  <div
-                  dangerouslySetInnerHTML={createMarkup(members.list)}>
-                  </div>
-                : null }
-                
-                  {/* {members
-                    ? members.list.map((member, i) => (
-                        <li className="mem-list-item" key={i}>
-                          {member}
-                        </li>
-                      ))
-                    : null} */}
-                </ul>
               </dd>
             </dl>
           </div>

@@ -484,6 +484,10 @@
     },
     "organization": "Organization for Economic Co-operation and Development",
     "also_known_as": "N/A",
+    "members": {
+      "description": "Voluntary Framework for OECD Member States",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Kosovo</p></li><li><p>South Korea</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Turkey</p></li><li><p>Denmark</p></li><li><p>Hungary</p></li></ul>"
+    },
     "website": {
       "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
       "name": "OECD Digital Security and Privacy"
