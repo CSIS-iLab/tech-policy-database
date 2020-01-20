@@ -1226,13 +1226,8 @@
     "organization": "Association of Southeast Asian Nations",
     "also_known_as": "N/A",
     "members": {
-<<<<<<< HEAD
-      "description": "Southeast Asian nations",
-      "list": ""
-=======
       "description": "Voluntary for ASEAN Member States",
       "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
->>>>>>> f67ad3b6900affb7c8374f17292e40a1d5d2eccb
     },
     "website": {
       "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
@@ -2220,11 +2215,7 @@
     "also_known_as": "Convention 108+",
     "members": {
       "description": "European nations",
-<<<<<<< HEAD
-      "list": ""
-=======
       "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
->>>>>>> f67ad3b6900affb7c8374f17292e40a1d5d2eccb
     },
     "website": {
       "url": "https://www.coe.int/en/web/data-protection",
