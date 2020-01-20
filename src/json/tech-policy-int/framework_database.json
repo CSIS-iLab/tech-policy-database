@@ -245,5 +245,248 @@
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
       "name": "EU Data Protection Rules"
     }
+  },
+  {
+    "name": "OECD Privacy Framework",
+    "url": "https://www.oecd.org/internet/ieconomy/oecd_privacy_framework.pdf",
+    "year": "2013",
+    "categories": {
+      "data_controller_definition": {
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
+      },
+      "data_processor_definition": {
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
+      },
+      "personal_data_definition": {
+        "has_data": false,
+        "abbreviated_lang": "<p></p>",
+        "original_lang": "<p></p>"
+      },
+      "personal_data_indirect_identifiers": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "personal_data_enumeration": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "sensitive_personal_data_social_factors": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "sensitive_personal_data_physical_factors": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "data_controller": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Entities competent to decide about the contents and use of personal data</p>",
+        "original_lang": "<p>(Paragraph 1)</p><p>“Data controller” means a party who, according to national law, is <strong>competent to decide about the contents and use of personal data </strong>regardless of whether or not such data are collected, stored, processed or disseminated by that party or by an agent on its behalf.</p><p>(Explanatory Memorandum)</p><p>The term “data controller” is of vital importance. It attempts to define a subject who, under domestic law, should carry ultimate responsibility for activities concerned with the processing of personal data. As defined, the data controller is a party who is legally competent to decide about the contents and use of data, regardless of whether or not such data are collected, stoared, processed or disseminated by that party or by an agent on its behalf. The data controller may be a legal or natural person, public authority, agency or any other body.</p>"
+      },
+      "data_processor": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Entities processing personal data on behalf of a controller</p>",
+        "original_lang": "<p>(Explanatory Memorandum)</p><p>The definition [of data controller] excludes at least four categories which may be involved in the processing of data, viz.</p><p>...</p><ol start=\"2\"><li><p>data processing service <strong>bureaux which carry out data processing on behalf of others</strong>;</p></li></ol>"
+      },
+      "personal_data": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Data related to an identified or identifiable person</p>",
+        "original_lang": "<p>(Paragraph 1)</p><p>“Personal data” means any <strong>information relating to an identified or identifiable individual</strong> (data subject).</p><p>(Explanatory Memorandum)</p><p>The terms “personal data” and “data subject” serve to underscore that the Guidelines are concerned with physical persons. The precise dividing line between personal data in the sense of information relating to identified or identifiable individuals and anonymous data may be difficult to draw and must be left to the regulation of each Member country. In principle, personal data convey information which by direct (e.g. a civil registration number) or indirect linkages (e.g. an address) may be connected to a particular physical person.</p>"
+      },
+      "sensitive_personal_data": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": "<p></p>"
+      },
+      "consent_requirement": {
+        "has_data": true,
+        "abbreviated_lang": "Knowledge or consent required where appropriate",
+        "original_lang": "<p>(Paragraph 7) </p><p>There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, <strong>where appropriate, with the knowledge or consent of the data subject</strong>.</p><p>(Explanatory Memorandum) </p><p>The knowledge or consent of the data subject is as a rule essential, knowledge being the minimum requirement. On the other hand, consent cannot always be imposed, for practical reasons. In addition, Paragraph 7 contains a reminder (“where appropriate”) that there are situations where for practical or policy reasons the data subject’s knowledge or consent cannot be considered necessary. Criminal investigation activities and the routine up-dating of mailing lists may be mentioned as examples.</p>"
+      },
+      "consent_exceptions": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "consent_sensitive_data": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "conditions_for_consent": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "conditions_for_access": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Not excessive charge;</p><p>Reasonable time;</p><p>In intelligible form</p>",
+        "original_lang": "<p>(Paragraph 13)</p><p>Individuals should have the right: ... to have communicated to them, data relating to them </p><ol><li><p><strong>within a reasonable time</strong>; </p></li><li><p>at <strong>a charge, if any, that is not excessive</strong>; </p></li><li><p>in a reasonable manner; and </p></li><li><p>in a <strong>form that is readily intelligible</strong> to them;</p></li></ol>"
+      },
+      "right_to_information": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to confirmation of processing</p>",
+        "original_lang": "<p>(Paragraph 13)</p><p>Individuals should have the right: to obtain from a data controller, or otherwise, <strong>confirmation of whether or not the data controller has data relating to them</strong>;</p>"
+      },
+      "right_to_access": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Determined by individual countries</p>",
+        "original_lang": "<p>(Explanatory Memorandum)</p><p>The extent to which data subjects should be able to obtain copies of data relating to them is a <strong>matter of implementation which must be left to the decision of each Member country</strong>.</p>"
+      },
+      "right_to_correction": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Right to request correction of data</p>",
+        "original_lang": "<p>(Paragraph 13) </p><p>Individuals should have the right: to challenge data relating to them and, <strong>if the challenge is successful to have the data erased, rectified, completed or amended</strong>. </p><p>(Explanatory Memorandum) </p><p>The right to challenge in 13(c) and (d) is broad in scope and includes first instance challenges to data controllers as well as subsequent challenges in courts, administrative bodies, professional organs or other institutions according to domestic rules of procedure (compare with Paragraph 19 of the Guidelines). <strong>The right to challenge does not imply that the data subject can decide what remedy or relief is available</strong> (rectification, annotation that data are in dispute, etc.): such matters will be decided by domestic law and legal procedures. Generally speaking, the criteria which decide the outcome of a challenge are those which are stated elsewhere in the Guidelines.</p>"
+      },
+      "right_to_erasure": {
+        "has_data": true,
+        "abbreviated_lang": "Right to request erasure",
+        "original_lang": "<p>(Paragraph 13)</p><p>Individuals should have the right: to challenge data relating to them and, <strong>if the challenge is successful to have the data erased, rectified, completed or amended</strong>.</p><p>(Explanatory Memorandum)</p><p>The right to challenge in 13(c) and (d) is broad in scope and includes first instance challenges to data controllers as well as subsequent challenges in courts, administrative bodies, professional organs or other institutions according to domestic rules of procedure (compare with Paragraph 19 of the Guidelines). <strong>The right to challenge does not imply that the data subject can decide what remedy or relief is available</strong> (rectification, annotation that data are in dispute, etc.): such matters will be decided by domestic law and legal procedures. Generally speaking, the criteria which decide the outcome of a challenge are those which are stated elsewhere in the Guidelines.</p>"
+      },
+      "right_to_object_processing": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "right_to_withdraw_consent": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "right_to_challenge_denials": {
+        "has_data": true,
+        "abbreviated_lang": "Right to challenge denials",
+        "original_lang": "<p>(Paragraph 13)</p><p>Individuals should have the <strong>right: to be given reasons if a request made under subparagraphs (a) and (b) is denied, and to</strong> <strong>be able to challenge such denial</strong></p><p>(Explanatory Memorandum) </p><p>The right to challenge in 13(c) and (d) is broad in scope and includes first instance challenges to data controllers as well as subsequent challenges in courts, administrative bodies, professional organs or other institutions according to domestic rules of procedure (compare with Paragraph 19 of the Guidelines). The right to challenge does not imply that the data subject can decide what remedy or relief is available (rectification, annotation that data are in dispute, etc.): such matters will be decided by domestic law and legal procedures. Generally speaking, the criteria which decide the outcome of a challenge are those which are stated elsewhere in the Guidelines.</p>"
+      },
+      "portability": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "automated_processing": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "cost": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": "<p>Individuals should have the right: </p><ol><li><p>to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to them; </p></li><li><p>to have communicated to them, data relating to them </p><ol><li><p><strong>within a reasonable time</strong>; </p></li><li><p>at a <strong>charge, if any, that is not excessive</strong>;</p></li><li><p>in a reasonable manner; and </p></li><li><p>in a <strong>form that is readily intelligible</strong> to them;</p></li></ol></li></ol>"
+      },
+      "lawful_and_fair": {
+        "has_data": true,
+        "abbreviated_lang": "Processing must be lawful and fair",
+        "original_lang": "<p>(Paragraph 7)</p><p>There should be limits to the collection of personal data and any such data <strong>should be obtained by lawful and fair means</strong> and, where appropriate, with the knowledge or consent of the data subject.</p>"
+      },
+      "disclosure_of_purpose": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Specified at time of collection</p>",
+        "original_lang": "<p>(Paragraph 9)</p><p>The <strong>purposes for which personal data are collected should be specified not later than at the time of data collection </strong>and the subsequent use limited to the fulfilment of those purposes or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose</p><p>(Explanatory Memorandum) </p><p>Paragraph 9 implies that before, and in any case not later than at the time data collection it should be possible to identify the purposes for which these data are to be used, and that later changes of purposes should likewise be specified. Such specification of purposes can be made in a number of alternative or complementary ways, e.g. by public declarations, information to data subjects, legislation, administrative decrees, and licences provided by supervisory bodies. </p>"
+      },
+      "use_limitation": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
+        "original_lang": "<p>(Paragraph 9)</p><p>The purposes for which personal data are collected should be specified not later than at the time of data collection<strong> </strong>and the <strong>subsequent use limited to the fulfilment of those purposes</strong> or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose</p><p>(Paragraph 10)</p><p>Personal data should not be disclosed, made available or otherwise used for purposes other than those specified in accordance with Paragraph 9 except:</p><ol><li><p>with the consent of the data subject; or</p></li><li><p>by the authority of law.</p></li></ol><p>(Explanatory Memorandum)</p><p>it should be possible to identify the purposes for which these data are to be used, and that later changes of purposes should likewise be specified. Such specification of purposes can be made in a number of alternative or complementary ways, e.g. by public declarations, information to data subjects, legislation, administrative decrees, and licences provided by supervisory bodies. According to Paragraphs 9 and 10, new purposes should not be introduced arbitrarily; freedom to make changes should imply compatibility with the original purposes.</p>"
+      },
+      "minimization": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Data recommended to be</p><ol><li><p>limited to the minimum necessary</p></li></ol>",
+        "original_lang": "<p>(Paragraph 7)</p><p>There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.</p><p>(Explanatory Memorandum)</p><p>Paragraph 7 merely contains a general statement that there should be limits to the collection of personal data. For one thing, this represents an affirmative recommendation to lawmakers to decide on limits which would put an end to the indiscriminate collection of personal data. <strong>The nature of the limits is not spelt out</strong> but it is understood that the limits may relate to: ... limits associated with the purpose of the processing of data (i.e. that <strong>only certain categories of data ought to be collected and, possibly, that data collection should be restricted to the minimum necessary to fulfil the specified purpose</strong>);</p>"
+      },
+      "purpose_specification_timeline": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "use_limitation_factors_for_judging_compatibility_of_additional_processing": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "transparency": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Must make information readily available to subject</p>",
+        "original_lang": "<p>(Paragraph 12) </p><p>There should be a general policy of openness about developments, practices and policies with respect to personal data. <strong>Means should be readily available of establishing the existence and nature of personal data, and the main purposes of their use, as well as the identity and usual residence of the data controller.</strong></p>"
+      },
+      "data_quality": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Data must be </p><ol><li><p>accurate</p></li><li><p>complete</p></li><li><p>up-to-date</p></li></ol>",
+        "original_lang": "<p>(Paragraph 8) </p><p>Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be <strong>accurate, complete and kept up-to-date.</strong></p>"
+      },
+      "security_requirement": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Requires risk-based safeguards</p>",
+        "original_lang": "<p>(Paragraph 11)</p><p>Personal data should be <strong>protected by reasonable security safeguards</strong> against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.</p><p>(Paragraph 15)</p><p>A data controller should: a) Have in place a privacy management programme that: ... provides for <strong>appropriate safeguards based on privacy risk assessment</strong>;</p><p>(Explanatory Memorandum)</p><p>Security and privacy issues are not identical. However, limitations on data use and disclosure should be reinforced by security safeguards. Such safeguards include physical measures (locked doors and identification cards, for instance), organisational measures (such as authority levels with regard to access to data) and, particularly in computer systems, informational measures (such as enciphering and threat monitoring of unusual activities and responses to them). It should be emphasised that the category of organisational measures includes obligations for data processing personnel to maintain confidentiality. Paragraph 11 has a broad coverage. The cases mentioned in the provision are to some extent overlapping (e.g. access/ disclosure). “Loss” of data encompasses such cases as accidental erasure of data, destruction of data storage media (and thus destruction of data) and theft of data storage media. “Modified” should be construed to cover unauthorised input of data, and “use” to cover unauthorised copying.</p><p></p>"
+      },
+      "security_types_of_safeguards": {
+        "has_data": false,
+        "abbreviated_lang": "Technical measures;\nPhysical measures;\nOrganizational measures",
+        "original_lang": "(Paragraph 11) Personal data should be protected by reasonable security safeguards\nagainst such risks as loss or unauthorised access, destruction, use,\nmodification or disclosure of data. \n\n(Explanatory Memorandum) Security and privacy issues are not identical. However, limitations on\ndata use and disclosure should be reinforced by security safeguards. Such\nsafeguards include physical measures (locked doors and identification cards,\nfor instance), organisational measures (such as authority levels with regard\nto access to data) and, particularly in computer systems, informational\nmeasures (such as enciphering and threat monitoring of unusual activities\nand responses to them). It should be emphasised that the category of\norganisational measures includes obligations for data processing personnel\nto maintain confidentiality. Paragraph 11 has a broad coverage. The cases\nmentioned in the provision are to some extent overlapping (e.g. access/\ndisclosure). “Loss” of data encompasses such cases as accidental erasure of\ndata, destruction of data storage media (and thus destruction of data) and\ntheft of data storage media. “Modified” should be construed to cover\nunauthorised input of data, and “use” to cover unauthorised copying."
+      },
+      "data_breach_notification": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Notify data protection authority for significant breaches</p><p>Notify data subject when adverse effects likely</p>",
+        "original_lang": "<p>(Paragraph 15)</p><p>A data controller should: Provide notice, as appropriate, <strong>to privacy enforcement authorities or other relevant authorities where there has been a significant security breach</strong> affecting personal data. <strong>Where the breach is likely to adversely affect data subjects, a data controller should notify affected data subjects</strong>.</p>"
+      },
+      "retention": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Erasure may be necessary</p>",
+        "original_lang": "<p>(Explanatory Memorandum)</p><p><strong>when data no longer serve a purpose, and if it is practicable, it may be necessary to have them destroyed (erased) or given an anonymous form</strong>. The reason is that control over data may be lost when data are no longer of interest; this may lead to risks of theft, unauthorised copying or the like.</p>"
+      },
+      "cross_border_transfers": {
+        "has_data": true,
+        "abbreviated_lang": "<p>Restrictions discouraged for third countries/organizations with equivalent protections</p>",
+        "original_lang": "<p>(Paragraph 17)</p><p>A Member country should refrain from restricting transborder flows of personal data between itself and another country where</p><ol><li><p>the <strong>other country substantially observes these Guidelines</strong> or</p></li><li><p><strong>sufficient safeguards exist</strong>, including effective enforcement mechanisms and appropriate measures put in place by the data controller, <strong>to ensure a continuing level of protection</strong> consistent with these Guidelines.</p></li></ol>"
+      },
+      "accountability": {
+        "has_data": true,
+        "abbreviated_lang": "Controllers accountable for compliance  Processors excluded from framework",
+        "original_lang": "(Paragraph 14)\n\nA data controller should be accountable for complying with measures which give effect to the principles stated above.\n\n(Explanatory Memorandum)\n\nThe definition [of data controller] excludes at least four categories which may be involved in the processing of data, viz.\n\n...\n\ndata processing service bureaux which carry out data processing on behalf of others;"
+      },
+      "privacy_by_design": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "security": {
+        "has_data": false,
+        "abbreviated_lang": "<p>Requires risk-based safeguards;</p><p>Must ensure confidentiality</p>",
+        "original_lang": "<p>(Paragraph 11)</p><p>Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorised access, destruction, use, modification or disclosure of data.</p><p>(Paragraph 15)</p><p>A data controller should have in place a privacy management programme that: </p><ol><li><p>gives effect to these Guidelines for all personal data under its control;</p></li><li><p>is tailored to the structure, scale, volume and sensitivity of its operations; </p></li><li><p><strong>provides for appropriate safeguards based on privacy risk assessment; </strong></p></li><li><p>is integrated into its governance structure and establishes internal oversight mechanisms; </p></li><li><p>includes plans for responding to inquiries and incidents; </p></li><li><p>is updated in light of ongoing monitoring and periodic assessment;</p></li></ol><p>(Explanatory Memorandum)</p><p>Security and privacy issues are not identical. However, limitations on data use and disclosure should be reinforced by security safeguards. Such safeguards include physical measures (locked doors and identification cards, for instance), organisational measures (such as authority levels with regard to access to data) and, particularly in computer systems, informational measures (such as enciphering and threat monitoring of unusual activities and responses to them). <strong>It should be emphasised that the category of organisational measures includes obligations for data processing personnel to maintain confidentiality</strong>.</p>"
+      },
+      "data_breach_notification_data_subject": {
+        "has_data": false,
+        "abbreviated_lang": "<p>Notify data protection authority for significant breaches</p><p>Notify data subject when adverse effects likely</p>",
+        "original_lang": "<p>(Paragraph 11)</p><p>A data controller should provide notice, as appropriate, to privacy enforcement authorities or other relevant authorities where there has been a significant security breach affecting personal data. Where the breach is likely to adversely affect data subjects, a data controller should notify affected data subjects.</p>"
+      },
+      "retention_requirement": {
+        "has_data": false,
+        "abbreviated_lang": "<p>Erasure may be necessary</p>",
+        "original_lang": "<p>(Explanatory Memorandum)</p><p>when data no longer serve a purpose, and if it is practicable, <strong>it may be necessary to have them destroyed (erased) or given an anonymous form</strong>. The reason is that control over data may be lost when data are no longer of interest; this may lead to risks of theft, unauthorised copying or the like.</p>"
+      },
+      "retention_anonymization": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      },
+      "right_to_object_to_processing": {
+        "has_data": false,
+        "abbreviated_lang": "",
+        "original_lang": ""
+      }
+    },
+    "organization": "Organization for Economic Co-operation and Development",
+    "also_known_as": "N/A",
+    "website": {
+      "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
+      "name": "OECD Digital Security and Privacy"
+    }
   }
 ]
