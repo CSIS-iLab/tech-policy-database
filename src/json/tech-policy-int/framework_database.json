@@ -244,10 +244,6 @@
     "website": {
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
       "name": "EU Data Protection Rules"
-    },
-    "Members": {
-      "description": "Binding for European Union Member States",
-      "list": "**List One**\n\n* Syria\n* Bulgaria\n* France\n\n**List Two**\n\n* Hungary\n* Norway\n* Sweden"
     }
   }
 ]
