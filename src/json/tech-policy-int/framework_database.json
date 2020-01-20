@@ -486,7 +486,7 @@
     "also_known_as": "N/A",
     "members": {
       "description": "Voluntary Framework for OECD Member States",
-      "list": "<p><strong>List One</strong></p><ul><li><p>Kosovo</p></li><li><p>South Korea</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Turkey</p></li><li><p>Denmark</p></li><li><p>Hungary</p></li></ul>"
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
@@ -732,8 +732,8 @@
     "organization": "Asia-Pacific Economic Cooperation",
     "also_known_as": "N/A",
     "members": {
-      "description": "Pacific rim economies",
-      "list": ""
+      "description": "Binding for 8 APEC Member States Participating in the CBPR System",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group",
@@ -979,8 +979,8 @@
     "organization": "African Union",
     "also_known_as": "Malabo Convention",
     "members": {
-      "description": "African nations",
-      "list": ""
+      "description": "Voluntary to 18 AU member states",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://au.int/en/education-science-technology",
@@ -1473,8 +1473,8 @@
     "organization": "Organization of American States",
     "also_known_as": "N/A",
     "members": {
-      "description": "Independent states of the Americas",
-      "list": ""
+      "description": "Voluntary for OAS Member States",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://www.citel.oas.org/en/Pages/default.aspx",
@@ -1720,8 +1720,8 @@
     "organization": "United Nations",
     "also_known_as": "N/A",
     "members": {
-      "description": "UN system organizations",
-      "list": ""
+      "description": "Voluntary for UN System Organizations",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://www.unsystem.org/privacy-principles",
@@ -1967,8 +1967,8 @@
     "organization": "Ibero-American Data Protection Network",
     "also_known_as": "N/A",
     "members": {
-      "description": "Data protection authorities of Iberian and Central and South American countries",
-      "list": ""
+      "description": "Voluntary for Data Protection Authorities of 10 Iberian and Central and South American Countries",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "http://www.redipd.es/index-iden-idphp.php",
@@ -2461,8 +2461,8 @@
     "organization": "International Conference of Data Protection and Privacy Commissioners",
     "also_known_as": "Madrid Resolution",
     "members": {
-      "description": "Data protection authorities from around the world",
-      "list": ""
+      "description": "Voluntary for data protection authorities from 21 nations and the EU",
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://icdppc.org/",
