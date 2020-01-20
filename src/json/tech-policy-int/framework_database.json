@@ -2007,18 +2007,7 @@
     "also_known_as": "N/A",
     "members": {
       "description": "Voluntary for Data Protection Authorities of 10 Iberian and Central and South American Countries",
-      "list": [
-        "Andorra (Andorra Data Protection Agency (APDA))",
-        "Argentina (Agency for Access to Public Information (AAIP))",
-        "Chile (Council for Transparency (CplT))",
-        "Columbia (Superintendence of Industry and Commerce-Delegation of Protection of Personal Data (SIC))",
-        "Costa Rica (Agency for the Protection of Inhabitants' Data (PRODHAB))",
-        "Spain (Spanish Agency for Data Protection (AEPD); Catalan Data Protection Authority (APDCAT); Basque Agency for Data Protection (AVPD))",
-        "Mexico (National Institute of Transparency, Access to Information and Protection of Personal Data (INAI); Institute of Access to Public Information and Protection of Personal Data of the Federal District (INFODF); Institute of Transparency, Access to Public Information and Protection of Personal Data of the State of Mexico and Municipalities (INFOEM))",
-        "Peru (National Authority for the Protection of Personal Data)",
-        "Portugal (National Comisão de Proteção de Dados (CNPD))",
-        "Uruguay (AGESIC Regulatory and Personal Data Control Unit (URCDP))"
-      ]
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "http://www.redipd.es/index-iden-idphp.php",
