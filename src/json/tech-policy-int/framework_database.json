@@ -1243,18 +1243,7 @@
     "also_known_as": "N/A",
     "members": {
       "description": "Voluntary for ASEAN Member States",
-      "list": [
-        "Indonesia",
-        "Philippines",
-        "Vietnam",
-        "Thailand",
-        "Myanmar",
-        "Malaysia",
-        "Cambodia",
-        "Laos",
-        "Singapore",
-        "Brunei"
-      ]
+      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
     },
     "website": {
       "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
