@@ -992,26 +992,7 @@
     "also_known_as": "Malabo Convention",
     "members": {
       "description": "Voluntary to 18 AU member states",
-      "list": [
-        "Benin",
-        "Chad",
-        "Comoros",
-        "Congo Republic",
-        "Ghana",
-        "Guinea",
-        "Guinea-Bissau",
-        "Mauritania",
-        "Mauritius",
-        "Mozambique",
-        "Namibia",
-        "Rwanda",
-        "São Tomé and Príncipe",
-        "Senegal",
-        "Sierra Leone",
-        "Togo",
-        "Tunisia",
-        "Zambia"
-      ]
+      "list": "<p><strong>List One</strong></p><ul><li><p>Kosovo</p></li><li><p>South Korea</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Turkey</p></li><li><p>Denmark</p></li><li><p>Hungary</p></li></ul>"
     },
     "website": {
       "url": "https://au.int/en/education-science-technology",
