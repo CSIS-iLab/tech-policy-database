@@ -166,14 +166,30 @@
   }
 
   &__mem-list {
-    margin: rem(8px) 0 0;
-    padding: 0;
-    list-style: none;
     @extend %body__text-m;
+
+    p {
+      margin: rem(8px) 0 0;
+    }
+
+    ul {
+      margin: 0 0 rem(20px);
+      padding: 0;
+      list-style: none;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
 
     li {
       padding-left: 1rem;
       text-indent: -1rem;
+
+      // stylelint-disable-next-line
+      p {
+        margin: 0;
+      }
     }
   }
 }

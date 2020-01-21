@@ -244,10 +244,6 @@
     "website": {
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
       "name": "EU Data Protection Rules"
-    },
-    "Members": {
-      "description": "Binding for European Union Member States",
-      "list": "**List One**\n\n* Syria\n* Bulgaria\n* France\n\n**List Two**\n\n* Hungary\n* Norway\n* Sweden"
     }
   },
   {
@@ -308,11 +304,11 @@
       "sensitive_personal_data": {
         "has_data": false,
         "abbreviated_lang": "",
-        "original_lang": ""
+        "original_lang": "<p></p>"
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing should be obtained with the knowledge or consent of the subject where appropriate</p>",
+        "abbreviated_lang": "Knowledge or consent required where appropriate",
         "original_lang": "<p>(Paragraph 7) </p><p>There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, <strong>where appropriate, with the knowledge or consent of the data subject</strong>.</p><p>(Explanatory Memorandum) </p><p>The knowledge or consent of the data subject is as a rule essential, knowledge being the minimum requirement. On the other hand, consent cannot always be imposed, for practical reasons. In addition, Paragraph 7 contains a reminder (“where appropriate”) that there are situations where for practical or policy reasons the data subject’s knowledge or consent cannot be considered necessary. Criminal investigation activities and the routine up-dating of mailing lists may be mentioned as examples.</p>"
       },
       "consent_exceptions": {
@@ -397,7 +393,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Subsequent use limited to the fulfillment of original purpose of collection, or other compatible purposes</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Paragraph 9)</p><p>The purposes for which personal data are collected should be specified not later than at the time of data collection<strong> </strong>and the <strong>subsequent use limited to the fulfilment of those purposes</strong> or such others as are not incompatible with those purposes and as are specified on each occasion of change of purpose</p><p>(Paragraph 10)</p><p>Personal data should not be disclosed, made available or otherwise used for purposes other than those specified in accordance with Paragraph 9 except:</p><ol><li><p>with the consent of the data subject; or</p></li><li><p>by the authority of law.</p></li></ol><p>(Explanatory Memorandum)</p><p>it should be possible to identify the purposes for which these data are to be used, and that later changes of purposes should likewise be specified. Such specification of purposes can be made in a number of alternative or complementary ways, e.g. by public declarations, information to data subjects, legislation, administrative decrees, and licences provided by supervisory bodies. According to Paragraphs 9 and 10, new purposes should not be introduced arbitrarily; freedom to make changes should imply compatibility with the original purposes.</p>"
       },
       "minimization": {
@@ -495,10 +491,6 @@
     "website": {
       "url": "https://www.oecd.org/going-digital/topics/digital-security-and-privacy/",
       "name": "OECD Digital Security and Privacy"
-    },
-    "Members": {
-      "description": "lorem ipsum",
-      "list": "**List One**\n\n* Syria\n* Bulgaria\n* France\n\n**List Two**\n\n* Hungary\n* Norway\n* Sweden"
     }
   },
   {
@@ -563,7 +555,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>The collection of information should be obtained with notice to, or consent of, the individual concerned where appropriate</p>",
+        "abbreviated_lang": "<p>Notice or consent required where appropriate</p>",
         "original_lang": "<p>(Principle III) </p><p>The collection of personal information should be limited to information that is relevant to the purposes of collection and any such information should be obtained by lawful and fair means, and <strong>where appropriate, with notice to, or consent of, the individual concerned</strong>.</p><p>(Principle V) </p><p>Where appropriate, individuals should be provided with clear, prominent, easily understandable, accessible and affordable mechanisms to exercise choice in relation to the collection, use and disclosure of their personal information.</p>"
       },
       "consent_exceptions": {
@@ -648,7 +640,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Use limited to the fulfillment of original purpose of collection, or other compatible or related purposes</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Principle IV)</p><p>Personal information collected should be <strong>used only to fulfill the purposes of collection and other compatible or related purposes</strong> except:</p><ol><li><p>with the consent of the individual whose personal information is collected;</p></li><li><p>when necessary to provide a service or product requested by the individual; or,</p></li><li><p>by the authority of law and other legal instruments, proclamations and pronouncements of legal effect.</p></li></ol><p>(Principle IV Commentary)</p><p>Application of this Principle requires consideration of the nature of the information, the context of collection and the intended use of the information. The fundamental criterion in determining whether a purpose is compatible with or related to the stated purposes is whether the extended usage stems from or is in furtherance of such purposes. The use of personal information for \"compatible or related purposes\" would extend, for example, to matters such as the creation and use of a centralized database to manage personnel in an effective and efficient manner; the processing of employee payrolls by a third party; or, the use of information collected by an organization for the purpose of granting credit for the subsequent purpose of collecting debt owed to that organization.</p>"
       },
       "minimization": {
@@ -698,7 +690,7 @@
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections, or when subject gives consent</p>",
+        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections</p>",
         "original_lang": "<p>(Principle IX) </p><p>When personal information is to be transferred to another person or organization, whether domestically or internationally, the personal information controller should obtain the consent of the individual or exercise due diligence and <strong>take reasonable steps to ensure that the recipient person or organization will protect the information consistently with these Principles</strong>.</p>"
       },
       "accountability": {
@@ -738,7 +730,7 @@
       }
     },
     "organization": "Asia-Pacific Economic Cooperation",
-    "also_known_as": "Cross-Border Privacy Rules System (CBPR)",
+    "also_known_as": "N/A",
     "members": {
       "description": "Binding for 8 APEC Member States Participating in the CBPR System",
       "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
@@ -746,10 +738,6 @@
     "website": {
       "url": "https://www.apec.org/Groups/Committee-on-Trade-and-Investment/Electronic-Commerce-Steering-Group",
       "name": "APEC Electronic Commerce Steering Group"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
@@ -775,7 +763,7 @@
       "sensitive_personal_data": {
         "has_data": true,
         "abbreviated_lang": "<ul><li><p>race or ethnicity</p></li><li><p>political, religious, or philosophical beliefs</p></li><li><p>trade union membership</p></li><li><p>genetic information</p></li><li><p>health</p></li><li><p>sex life</p></li><li><p>social measures, legal proceedings, and sanctions</p></li></ul>",
-        "original_lang": "<p>(Article 1)</p><p>Sensitive-data means all personal data relating to <strong>religious, philosophical, political and trade-union opinions and activities, as well as to sex life or race, health, social measures, legal proceedings and penal or administrative sanctions</strong>;</p><p>(Article 14)</p><p>State Parties shall undertake to prohibit any data collection and processing revealing <strong>racial, ethnic and regional origin, parental filiation, political opinions, religious or philosophical beliefs, trade union membership, sex life and genetic information or, more generally, data on the state of health of the data subject</strong>.</p><p>The prohibitions set forth in Article 14.1 shall not apply to the following categories where: </p><p>a) Processing relates to data which are manifestly made public by the data subject; </p><p>b) The data subject has given his/her written consent, by any means, to the processing and in conformity with extant texts; </p><p>c) Processing is necessary to protect the vital interests of the data subject or of another person where the data subject is physically or legally incapable of giving his/her consent; </p><p>d) Processing, particularly of genetic data, is required for the establishment, exercise or defence of legal claims; </p><p>e) A judicial procedure or criminal investigation has been instituted; </p><p>f) Processing is necessary in the public interest, especially for historical, statistical or scientific purposes; </p><p>g) Processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract; </p><p>h) Processing is necessary for compliance with a legal or regulatory obligation to which the controller is subject; </p><p>i) Processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority or assigned by a public authority vested in the controller or in a third party to whom data are disclosed; </p><p>j) Processing is carried out in the course of the legitimate activities of a foundation, association or any other non-profit making body with a political, philosophical, religious, cooperative or trade union aim, and on condition that the processing relates solely to the members of the body or to persons who have regular contact with it in connection with its purposes and that the data are not disclosed to a third party without the consent of the data subjects.</p>"
+        "original_lang": "<p>(Article 1)</p><p>Sensitive-data means all personal data relating to <strong>religious, philosophical, political and trade-union opinions and activities, as well as to sex life or race, health, social measures, legal proceedings and penal or administrative sanctions</strong>;</p><p>(Article 14)</p><p>State Parties shall undertake to prohibit any data collection and processing revealing <strong>racial, ethnic and regional origin, parental filiation, political opinions, religious or philosophical beliefs, trade union membership, sex life and genetic information or, more generally, data on the state of health of the data subject</strong>.</p>"
       },
       "data_controller_definition": {
         "has_data": false,
@@ -814,7 +802,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing is legitimate where the data subject has given their consent</p>",
+        "abbreviated_lang": "<p>Consent required </p>",
         "original_lang": "<p>(Article 13, Principle 1) </p><p>Processing of personal data shall be deemed to be <strong>legitimate where the data subject has given his/her consent</strong>.</p>"
       },
       "consent_exceptions": {
@@ -899,7 +887,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Subsequent processing must not be incompatible with the original purpose of collection</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Article 13 - Principle 3)</p><p>Data collection shall be undertaken for specific, explicit and legitimate purposes, and <strong>not further processed in a way incompatible with those purposes</strong></p>"
       },
       "minimization": {
@@ -997,10 +985,6 @@
     "website": {
       "url": "https://au.int/en/education-science-technology",
       "name": "AU Education, Science & Technology"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
@@ -1065,8 +1049,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing legitimate where the data subject has been notified of and given consent to processing</p>",
-        "original_lang": "<p>(Paragraph 7)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p><strong>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data</strong>; or</p></li><li><p>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</p></li></ol>"
+        "abbreviated_lang": "<p>Consent required </p>",
+        "original_lang": "<p>(Paragraph 7)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p><strong>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data</strong>; or</p></li><li><p><em>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</em></p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -1150,8 +1134,8 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Use must be for purposes a reasonable person would consider appropriate in the circumstances</p>",
-        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p>the individual has been notified of and given consent to the purpose(s) of the collection, use or disclosure of his/her personal data; or</p></li><li><p>the collection, use or disclosure without notification or consent is authorised or required under domestic laws and regulations.</p></li></ol><p><strong>An organisation may collect, use or disclose personal data about an individual only for purposes that a reasonable person would consider appropriate in the circumstances.</strong></p>"
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose or authorized by law</p>",
+        "original_lang": "<p>(Paragraph 6)</p><p>An organisation should not collect, use or disclose personal data about an individual unless:</p><ol><li><p>the <strong>individual has been notified of and given consent</strong> to the purpose(s) of the collection, use or disclosure of his/her personal data; or</p></li><li><p>the collection, use or disclosure without notification or consent is <strong>authorised or required under domestic laws and regulations</strong>.</p></li></ol><p>An organisation may collect, use or disclose personal data about an individual only for purposes that a reasonable person would consider appropriate in the circumstances.</p>"
       },
       "minimization": {
         "has_data": false,
@@ -1200,7 +1184,7 @@
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections, or when subject gives consent</p>",
+        "abbreviated_lang": "<p>Authorized for third party organizations with equivalent protections</p>",
         "original_lang": "<p>(Paragraph 6) </p><p>Before transferring personal data to another country or territory, the organisation should either obtain the consent of the individual for the overseas transfer or <strong>take reasonable steps to ensure that the receiving organisation will protect the personal data consistently with these Principles</strong>.</p>"
       },
       "accountability": {
@@ -1248,10 +1232,6 @@
     "website": {
       "url": "https://asean.org/asean-economic-community/asean-telecommunications-and-it-ministers-meeting-telmin/",
       "name": "ASEAN Telecommunications and IT Ministers Meeting"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
@@ -1277,7 +1257,7 @@
       "sensitive_personal_data": {
         "has_data": true,
         "abbreviated_lang": "<ul><li><p>race or ethnicity</p></li><li><p>religious beliefs</p></li><li><p>health</p></li><li><p>sexual preferences</p></li><li><p>others as appropriate</p></li></ul>",
-        "original_lang": "<p>(Ninth Principle)</p><p>The term “sensitive personal data” refers to data affecting the most intimate aspects of individuals. Depending on the specific cultural, social or political context, it might include <strong>data related to an individual’s personal health or sexual preferences, religious beliefs, or racial or ethnic origins</strong>.</p><p>In certain circumstances, this data might be considered entitled to special protection because its improper handling or disclosure would intrude deeply upon the personal dignity and honor of the individual concerned and could trigger unlawful or arbitrary discrimination against the individual or result in risk of serious harm to the individual.</p><p>The nature of the sensitivity may vary from situation to situation. In certain settings and cultures, for example, it is entirely predictable that disclosure of certain types of personal data might result in harm to personal reputation, discrimination with respect to employment or freedom of movement, political persecution, or even physical violence, while by distinction disclosure of the same data in other circumstances would pose no difficulties at all.</p><p>Within the Member States of the OAS, a wide variety of cultural and legal settings exists, making it difficult to say, as a general matter, which specific types of data are categorically more likely to lead to especially serious encroachments on individual rights and interests.</p><p>Accordingly, appropriate guarantees should be established within the context of national law and rules, reflecting the circumstances within the relevant jurisdiction, to ensure that the privacy interests of individuals are sufficiently protected. Member States should identify clearly the categories of personal data which are considered especially “sensitive” and therefore require enhanced protection. Explicit consent of the individual concerned should be the governing rule for the collection, disclosure and use of sensitive personal data. The context in which a person provides such data should be taken into account when determining any applicable regulatory obligations.</p>"
+        "original_lang": "<p>(Ninth Principle)</p><p>The term “sensitive personal data” refers to data affecting the most intimate aspects of individuals. Depending on the specific cultural, social or political context, it might include <strong>data related to an individual’s personal health or sexual preferences, religious beliefs, or racial or ethnic origins</strong>.</p><p>In certain circumstances, this data might be considered entitled to special protection because its improper handling or disclosure would intrude deeply upon the personal dignity and honor of the individual concerned and could trigger unlawful or arbitrary discrimination against the individual or result in risk of serious harm to the individual.</p><p>The nature of the sensitivity may vary from situation to situation. In certain settings and cultures, for example, it is entirely predictable that disclosure of certain types of personal data might result in harm to personal reputation, discrimination with respect to employment or freedom of movement, political persecution, or even physical violence, while by distinction disclosure of the same data in other circumstances would pose no difficulties at all.</p><p>Within the Member States of the OAS, a wide variety of cultural and legal settings exists, making it difficult to say, as a general matter, which specific types of data are categorically more likely to lead to especially serious encroachments on individual rights and interests.</p>"
       },
       "data_controller_definition": {
         "has_data": false,
@@ -1316,7 +1296,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Personal data should only be collected with the consent of the individual</p>",
+        "abbreviated_lang": "<p>Consent required </p>",
         "original_lang": "<p>(Second Principle) </p><p>As a general rule, <strong>personal data should only be collected with the consent of the individual</strong> concerned.</p>"
       },
       "consent_exceptions": {
@@ -1356,7 +1336,7 @@
       },
       "right_to_erasure": {
         "has_data": true,
-        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol><p>No right to request erasure of accurate data that is</p><ol><li><p>embarrassing</p></li><li><p>excessive</p></li><li><p>irrelevant</p></li></ol>",
+        "abbreviated_lang": "<p>Right to request erasure of data that is</p><ol><li><p>inaccurate</p></li><li><p>incomplete</p></li><li><p>unnecessary</p></li><li><p>excessive</p></li></ol>",
         "original_lang": "<p>(Eighth Principle)</p><p>Reasonable methods should be available to permit individuals whose personal data has been collected to seek access to that data and to request that the data controller amend, correct or delete that data</p><p><strong>The individual must be able to exercise the right to request the correction of (or an addition to) personal data about himself or herself that is incomplete, inaccurate, unnecessary or excessive.</strong> This is sometimes referred to as the right of “rectification.”</p><p>These Principles embrace the rights of access, challenge and correction. Because, at this point in time, a “right to erasure or deletion” remains contentious and subject to differing definitions and views, the Principles do not explicitly endorse a right to deletion of personal data which (while true or factually accurate) is considered personally embarrassing, excessive or merely irrelevant by the individual concerned</p>"
       },
       "right_to_object_processing": {
@@ -1366,7 +1346,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers must facilitate subjects' withdrawal of consent</p>",
+        "abbreviated_lang": "Right to withdraw consent",
         "original_lang": "<p>(Second Principle)</p><p><strong>An individual is entitled to withdraw consent </strong>depending on the nature of the consent given and the purposes for which the data is collected. In general, withdrawal of consent does not affect the validity of anything already done on the basis of the consent.</p>"
       },
       "right_to_challenge_denials": {
@@ -1401,7 +1381,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Use must be in a manner not incompatible with the original purpose of collection</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Fourth Principle) </p><p>Personal data should be kept and used only in a lawful manner <strong>not incompatible with the purpose(s) for which it was collected</strong>.</p><p>(Fourth Principle - Commentary) </p><p>Regarding the first premise, personal data must be handled for definite and lawful purposes. Retention and use of personal data must be consistent with individuals’ reasonable expectations, their relationship with the data controller collecting the data, the notice(s) provided by the data controller, and commonly accepted practices. </p><p>Personal data must not be kept or used for purposes other than those compatible with those for which it was collected, except with the knowledge or consent of the data subject or by the authority of law. The concept of \"incompatibility\" includes a certain measure of flexibility, allowing reference to the overall objective or purpose for which the individual's consent to collection was initially given. In this regard, the appropriate measure may often be one of respecting the context in which the individual had provided his or her personal data and his or her reasonable expectations in the particular situation.</p>"
       },
       "minimization": {
@@ -1461,7 +1441,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection and privacy by design encouraged",
+        "abbreviated_lang": "Privacy by design required",
         "original_lang": "(Tenth Principle)\n\nOne effective contemporary approach is to require data controllers to build privacy protection into the design and architecture of their information technology systems and business practices. Privacy and security considerations should be incorporated into every stage of product design."
       },
       "security": {
@@ -1499,10 +1479,6 @@
     "website": {
       "url": "https://www.citel.oas.org/en/Pages/default.aspx",
       "name": "Inter-American Telecommunication Commission"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
@@ -1567,8 +1543,8 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing should be based on the consent of the data subject</p>",
-        "original_lang": "<p>(Principle 1)</p><p>The United Nations System Organizations should process personal data in a fair manner, in accordance with their mandates and governing instruments and on the basis of any of the following:</p><ol><li><p><strong>the consent of the data subject</strong>;</p></li><li><p>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned;</p></li><li><p>the mandates and governing instruments of the United Nations System Organization concerned; or</p></li><li><p>any other legal basis specifically identified by the United Nations System Organization concerned.</p></li></ol>"
+        "abbreviated_lang": "<p>Consent required </p>",
+        "original_lang": "<p></p><p>(Principle 1)</p><p>The United Nations System Organizations should process personal data in a fair manner, in accordance with their mandates and governing instruments and on the basis of any of the following:</p><ol><li><p><strong>the consent of the data subject</strong>;</p></li><li><p>the best interests of the data subject, consistent with the mandates of the United Nations System Organization concerned;</p></li><li><p>the mandates and governing instruments of the United Nations System Organization concerned; or</p></li><li><p>any other legal basis specifically identified by the United Nations System Organization concerned.</p></li></ol>"
       },
       "consent_exceptions": {
         "has_data": true,
@@ -1652,7 +1628,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing must not be incompatible with the original purpose of processing</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Principle 2)</p><p>Personal data should be processed for specified purposes, which are consistent with the mandates of the United Nations System Organization concerned and take into account the balancing of relevant rights, freedoms and interests. <strong>Personal data should not be processed in ways that are incompatible with such purposes</strong>.</p>"
       },
       "minimization": {
@@ -1750,10 +1726,6 @@
     "website": {
       "url": "https://www.unsystem.org/privacy-principles",
       "name": "Principles on Personal Data Protection and Privacy"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
@@ -1779,7 +1751,7 @@
       "sensitive_personal_data": {
         "has_data": true,
         "abbreviated_lang": "<ul><li><p>race or ethnicity</p></li><li><p>political, religious, or philosophical beliefs</p></li><li><p>trade union membership</p></li><li><p>genetic or biometric data used for identification</p></li><li><p>health</p></li><li><p>sex life or sexual orientation</p></li></ul>",
-        "original_lang": "<p>(Section 2)</p><p>Sensitive Personal Data: those that refer to the intimate sphere of their holder, or which undue use may originate discrimination or involve a serious risk thereto. In an illustrative way, personal data that may reveal aspects such as <strong>racial or ethnic origin; beliefs or religious, philosophical and moral convictions; union affiliation; political opinions; information regarding health, life, sexual preference or orientations, genetic data or biometric data</strong> aimed at identifying the person in an unequivocal way.</p><p>(Section 9)</p><p>As a general rule, the person responsible may not treat sensitive personal data, except under the following assumptions: </p><p>a. That they are strictly necessary for the exercise and compliance with the powers and obligations expressly provided in the rules that regulate their actions. </p><p>b. They comply with a legal mandate. </p><p>c. They have holder’s express written consent. </p><p>d. They are necessary for national security, public security, public order, public health reasons, or for the safekeeping of the rights and freedoms of third parties. </p><p>National legislation of the Ibero-American States applicable to the matter may establish exceptions, additional guarantees and conditions, in order to ensure due treatment of sensitive personal data, in accordance with its internal law</p>"
+        "original_lang": "<p>(Section 2)</p><p>Sensitive Personal Data: those that refer to the intimate sphere of their holder, or which undue use may originate discrimination or involve a serious risk thereto. In an illustrative way, personal data that may reveal aspects such as <strong>racial or ethnic origin; beliefs or religious, philosophical and moral convictions; union affiliation; political opinions; information regarding health, life, sexual preference or orientations, genetic data or biometric data</strong> aimed at identifying the person in an unequivocal way.</p>"
       },
       "data_controller_definition": {
         "has_data": false,
@@ -1818,7 +1790,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing legitimate if the subject grants consent for one or several specific purposes</p>",
+        "abbreviated_lang": "<p>Consent required</p>",
         "original_lang": "<p>(Principle 11) </p><p>As a general rule, the person responsible may only treat personal data, under the following assumptions:</p><ol><li><p><strong>Holder grants its consent</strong> for one or several specific purposes</p></li></ol>"
       },
       "consent_exceptions": {
@@ -1868,7 +1840,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers must establish simple, agile, efficient and free mechanisms for a subject to withdraw consent</p>",
+        "abbreviated_lang": "Right to withdraw consent",
         "original_lang": "<p>(Principle 12)</p><p><strong>Whenever consent is required for the treatment of personal data, holder may revoke it at any time</strong>, for which the person responsible shall establish simple, agile, efficient and free mechanisms.</p>"
       },
       "right_to_challenge_denials": {
@@ -1878,7 +1850,7 @@
       },
       "portability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers must:</p><ul><li><p>Provide access to personal data in machine-readable format</p></li><li><p>Allow subject to transmit data to other controllers</p></li><li><p>Transmit data directly to another controller where technically feasible</p></li></ul>",
+        "abbreviated_lang": "Right to portability of personal data",
         "original_lang": "<p>(Principle 30) </p><p>In the case of personal data by telephone or automated means, <strong>holder shall have the right to obtain a copy of the personal data that it had provided to the person responsible, or that are subject to treatment, in a structured electronic format, of common use and mechanical reading, that allows it to keep using them and transfer them to another person responsible</strong>, in case it requires so. </p><p>Holder may request that its personal data are transferred directly from person responsible to person responsible when technically possible. </p><p>The right to portability of personal data shall not affect negatively the rights and freedoms of others. </p><p>Without prejudice to holder’s rights, the right to portability of personal data shall not be admissible in the case of inferred, derived, created or generated information, or information obtained from the analysis or treatment performed by the person responsible, based on the personal data provided by holder, such as personal data that had been subject to a personalization, recommendation, categorization or profile creation process.</p>"
       },
       "automated_processing": {
@@ -1903,7 +1875,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Data must not be processed for purposes other than those that gave rise to the original treatment</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Principle 17)</p><p>The person responsible <strong>may not treat the personal data in its possession for purposes other than those that gave rise to the original treatment </strong>thereof, unless any of the causes that enable a new treatment of data according to the legitimation principle occurs.</p>"
       },
       "minimization": {
@@ -1963,7 +1935,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection and privacy by design required",
+        "abbreviated_lang": "Data protection by design required",
         "original_lang": "(Principle 38) \n\nThe person responsible shall apply, from the design, in the determination of the treatment means of personal data, during and before the collection of personal data, preventive measures of various natures that allow effectively applying the principles, rights and other obligations provided in the applicable national legislation of the Ibero-American State. \n\nThe person responsible shall guarantee that its programs, services, computing systems or platforms, electronic applications or any other technology that implies a treatment of personal data, comply by default or adapt to the principles, rights and other obligations provided in the applicable national legislation of the Ibero-American State. Specifically, with the purpose that only a minimum of personal data is subject to treatment, and that the accessibility thereof is limited, without holder’s intervention, to an undetermined number of persons"
       },
       "security": {
@@ -2001,10 +1973,6 @@
     "website": {
       "url": "http://www.redipd.es/index-iden-idphp.php",
       "name": "RIPD Home Page"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
@@ -2069,7 +2037,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing should be carried out on the basis of consent of the data subject</p>",
+        "abbreviated_lang": "<p>Consent required</p>",
         "original_lang": "<p>(Article 5)</p><p>Each Party shall provide that data <strong>processing can be carried out on the basis of the free, specific, informed and unambiguous consent of the data subject</strong> or of some other legitimate basis laid down by law.</p>"
       },
       "consent_exceptions": {
@@ -2119,7 +2087,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers must facilitate subjects' right to withdraw consent</p>",
+        "abbreviated_lang": "<p>Right to withdraw consent</p>",
         "original_lang": "<p>(Explanatory Report)</p><p>The data subject has <strong>the right to withdraw the consent he or she gave at any time </strong>(which is to be distinguished from the separate right to object to processing). This will not affect the lawfulness of the data processing that occurred before the data controller has received his or her withdrawal of consent but does not allow continued processing of data, unless justified by some other legitimate basis laid down by law.</p>"
       },
       "right_to_challenge_denials": {
@@ -2129,7 +2097,7 @@
       },
       "portability": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers should:</p><ul><li><p>provide tools to enable subjects to transfer data to another provider</p></li></ul>",
+        "abbreviated_lang": "<p>Right to data portability tools</p>",
         "original_lang": "<p>(Explanatory Report)</p><p><strong>There should also be easy-to-use tools to enable data subjects to take their data to another provider</strong> of their choice or keep the data themselves (data portability tools).</p>"
       },
       "automated_processing": {
@@ -2154,7 +2122,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Data must not be processed in a way incompatible with the original purpose of collection</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Article 5)</p><p>Personal data undergoing processing shall be: ... collected for explicit, specified and legitimate purposes and <strong>not processed in a way incompatible with those purposes</strong>; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes is, subject to appropriate safeguards, compatible with those purposes;</p><p>(Explanatory Report)</p><p>Personal data must also have been collected for explicit, specified and legitimate purposes, and the processing of that particular data must serve those purposes, or at least not be incompatible with them. The reference to specified \"purposes\" indicates that it is not permitted to process data for undefined, imprecise or vague purposes. What is considered a legitimate purpose depends on the circumstances as the objective is to ensure that a balancing of all rights, freedoms and interests at stake is made in each instance; the right to the protection of personal data on the one hand, and the protection of other rights on the other hand, as, for example, between the interests of the data subject and the interests of the controller or of society.</p><p>The concept of compatible use should not hamper the transparency, legal certainty, predictability or fairness of the processing. Personal data should not be further processed in a way that the data subject might consider unexpected, inappropriate or otherwise objectionable. In order to ascertain whether a purpose of further processing is compatible with the purpose for which the personal data is initially collected, the controller, after having met all the requirements for the lawfulness of the original processing, should take into account, inter alia, any link between those purposes and the purposes of the intended further processing; the context in which the personal data has been collected, in particular the reasonable expectations of data subjects based on their relationship with the controller as to its further use; the nature of the personal data; the consequences of the intended further processing for data subjects; and the existence of appropriate safeguards in both the original and intended further processing operations.</p>"
       },
       "minimization": {
@@ -2204,7 +2172,7 @@
       },
       "cross_border_transfers": {
         "has_data": true,
-        "abbreviated_lang": "<p>Authorized for third countries/organizations with equivalent protections, or when subject gives consent</p>",
+        "abbreviated_lang": "<p>Authorized for third countries/organizations with equivalent protections</p>",
         "original_lang": "<p>(Article 14)</p><p>When the recipient is subject to the jurisdiction of a State or international organisation which is not Party to this Convention, the transfer of personal data <strong>may only take place where an appropriate level of protection based on the provisions of this Convention is secured</strong>.</p><p>An appropriate level of protection can be secured by:</p><ol><li><p class=\"MsoListParagraph\">the law of that State or international organisation, including the applicable international treaties or agreements; or</p></li><li><p class=\"MsoListParagraph\">ad hoc or approved standardised safeguards provided by legally-binding and enforceable instruments adopted and implemented by the persons involved in the transfer and further processing.</p></li></ol><p>Notwithstanding the provisions of the previous paragraphs, each Party may provide that the transfer of personal data may take place if:</p><ol><li><p class=\"MsoListParagraph\">the data subject has given explicit, specific and free consent, after being informed of risks arising in the absence of appropriate safeguards; or</p></li><li><p class=\"MsoListParagraph\">the specific interests of the data subject require it in the particular case; or</p></li><li><p class=\"MsoListParagraphCxSpFirst\">prevailing legitimate interests, in particular important public interests, are provided for by law and such transfer constitutes a necessary and proportionate measure in a democratic society; or</p></li><li><p class=\"MsoListParagraphCxSpLast\">it constitutes a necessary and proportionate measure in a democratic society for freedom of expression.</p></li></ol><p>(Explanatory Report)</p><p>Paragraphs 2 and 3 apply to all forms of appropriate protection, whether provided by law or by standardised safeguards. The law must include the relevant elements of data protection as set out in this Convention. The level of protection should be assessed for each transfer or category of transfers. Various elements of the transfer should be examined such as: the type of data; the purposes and duration of processing for which the data are transferred; the respect of the rule of law by the country of final destination; the general and sectoral legal rules applicable in the State or organisation in question; and the professional and security rules which apply there. </p><p>The content of the ad hoc or standardised safeguards must include the relevant elements of data protection. Moreover, the contractual terms could be such, for example, that the data subject is provided with a contact person on the staff of the person responsible for the data transfers, whose responsibility it is to ensure compliance with the substantive standards of protection. The data subject would be free to contact this person at any time and at no cost in relation to the data processing or transfers and, where applicable, obtain assistance in exercising his or her rights. </p><p>The assessment as to whether the level of protection is appropriate must take into account the principles of the Convention, the extent to which they are met in the recipient State or organisation – in so far as they are relevant for the specific case of transfer – and how the data subject is able to defend his or her interests where there is non-compliance. The enforceability of data subjects’ rights and the provision of effective administrative and judicial redress for the data subjects whose personal data are being transferred should be taken into consideration in the assessment. Similarly, the assessment can be made for a whole State or organisation thereby permitting all data transfers to such a destination.</p>"
       },
       "accountability": {
@@ -2214,7 +2182,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection by design and default required",
+        "abbreviated_lang": "Data protection by design required",
         "original_lang": "(Article 10)\n\nEach Party shall provide that controllers and, where applicable, processors, examine the likely impact of intended data processing on the rights and fundamental freedoms of data subjects prior to the commencement of such processing, and shall design the data processing in such a manner  as to prevent or minimise the risk of interference with those rights and fundamental freedoms.\n\nEach Party shall provide that controllers, and, where applicable, processors, implement technical and organisational measures which take into account the implications of the right to the protection of personal data at all stages of the data processing.\n\n(Explanatory Report)\n\nParagraph 2 clarifies that before carrying out a data processing activity, the controller will have to examine its potential impact on the rights and fundamental freedoms of the data subjects. This examination can be done without excessive formalities. It will also have to consider respect for the proportionality principle on the basis of a comprehensive overview of the intended processing. In some circumstances, where a processor is involved in addition to the controller, the processor will also have to examine the risks. IT systems developers, including security professionals, or designers, together with users and legal experts could assist in examining the risks.\n\nParagraph 3 specifies that in order to better guarantee an effective level of protection, controllers, and, where applicable, processors, should ensure that data protection requirements are integrated as early as possible, that is, ideally at the stage of architecture and system design, in data processing operations through technical and organisational measures (data protection by design). This implementation of data protection requirements should be achieved not only as regards the technology used for processing the data, but also the related work and management processes. Easy-to-use functionalities that facilitate compliance with applicable law should be put in place. For example, secure online access to one’s own data should be offered to data subjects where possible and relevant. There should also be easy-to-use tools to enable data subjects to take their data to another provider of their choice or keep the data themselves (data portability tools). When setting up the technical requirements for default settings, controllers and processors should choose privacy-friendly standard configurations so that the usage of applications and software does not infringe the rights of the data subjects (data protection by default), notably to avoid processing more data than necessary to achieve the legitimate purpose. For example, social networks should be configured by default so as to share posts or pictures only with restricted and chosen circles and not with the whole internet."
       },
       "security": {
@@ -2252,15 +2220,11 @@
     "website": {
       "url": "https://www.coe.int/en/web/data-protection",
       "name": "Council of Europe Data Protection website"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   },
   {
     "name": "ICDPPC International Standards on the Protection of Personal Data and Privacy",
-    "url": "http://privacyconference2011.org/htmls/adoptedResolutions/2009_Madrid/2009_M1.pdf",
+    "url": "https://icdppc.org/wp-content/uploads/2015/02/The-Madrid-Resolution.pdf",
     "year": "2009",
     "categories": {
       "data_controller": {
@@ -2320,7 +2284,7 @@
       },
       "consent_requirement": {
         "has_data": true,
-        "abbreviated_lang": "<p>Processing legitimate after obtaining the consent of the data subject</p>",
+        "abbreviated_lang": "<p>Consent required </p>",
         "original_lang": "<p>(Principle 12) </p><p>As a general rule, personal data may only be processed in one of the following situations:</p><ol><li><p>After obtaining the <strong>free, unambiguous and informed consent of the data subject</strong></p></li></ol>"
       },
       "consent_exceptions": {
@@ -2370,7 +2334,7 @@
       },
       "right_to_withdraw_consent": {
         "has_data": true,
-        "abbreviated_lang": "<p>Controllers must establish simple, fast, and efficient procedures for a subject to withdraw consent</p>",
+        "abbreviated_lang": "<p>Right to withdraw consent</p>",
         "original_lang": "<p>(Principle 12)</p><p>The responsible person shall provide simple, fast and efficient procedures that <strong>allow data subjects to withdraw their consent at any time </strong>and that shall not entail undue delay or cost, nor any gain whatsoever for the responsible person.</p>"
       },
       "right_to_challenge_denials": {
@@ -2405,7 +2369,7 @@
       },
       "use_limitation": {
         "has_data": true,
-        "abbreviated_lang": "<p>Data must not be processed for purposes incompatible with the original purpose of collection</p>",
+        "abbreviated_lang": "<p>Processing must be compatible with original purpose</p>",
         "original_lang": "<p>(Principle 7)</p><p>The processing of personal data should be limited to the fulfilment of the specific, explicit and legitimate purposes of the responsible person.</p><p>The responsible person <strong>should not carry out any processing that is non-compatible with the purposes for which personal data were collected</strong>, unless he has the unambiguous consent of the data subject.</p>"
       },
       "minimization": {
@@ -2465,7 +2429,7 @@
       },
       "privacy_by_design": {
         "has_data": true,
-        "abbreviated_lang": "Data protection and privacy by design encouraged",
+        "abbreviated_lang": "Data protection by design encouraged",
         "original_lang": "(Principle 22)\n\nStates should encourage the adaptation of information systems and/or technologies for the processing of personal data to the applicable laws on the protection of privacy with regard to the processing of personal data, particularly at the time of deciding on their technical specifications and on the development and implementation thereof."
       },
       "security": {
@@ -2503,10 +2467,6 @@
     "website": {
       "url": "https://icdppc.org/",
       "name": "ICDPPC Home Page"
-    },
-    "Members": {
-      "description": "",
-      "list": ""
     }
   }
 ]
