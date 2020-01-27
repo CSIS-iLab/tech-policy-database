@@ -239,7 +239,7 @@
     "also_known_as": "General Data Protection Regulation",
     "members": {
       "description": "Binding for European Union Member States",
-      "list": "<p><strong>List One</strong></p><ul><li><p>Hungary</p></li><li><p>Germany</p></li><li><p>Belize</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Spain</p></li><li><p>France</p></li><li><p>Uruguay</p></li></ul>"
+      "list": "<p>Austria</p><p>Belgium</p><p>Bulgaria</p><p>Croatia</p><p>Cyprus</p><p>Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom</p><p><strong>List Two</strong></p><ul><li><p>Spain</p></li><li><p>France</p></li><li><p>Uruguay</p></li></ul>"
     },
     "website": {
       "url": "https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en",
