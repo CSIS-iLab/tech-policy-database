@@ -15,11 +15,15 @@ const Introduction = () => {
     }
   }
 
+  const createMarkup = (lang) => {
+    return { __html: lang }
+  }
+
   return (
     <section className="intro container--inner">
       <div className="intro__program">{program}</div>
       <h1 className="intro__subject">{subject}</h1>
-      <div className="intro__description">{intro_paragraph}</div>
+      <div className="intro__description"dangerouslySetInnerHTML={createMarkup(intro_paragraph)}></div>
       <nav>
         <ul className="intro__nav">
           <li className="intro__nav-item">
