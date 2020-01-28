@@ -2224,7 +2224,7 @@
   },
   {
     "name": "ICDPPC International Standards on the Protection of Personal Data and Privacy",
-    "url": "https://icdppc.org/wp-content/uploads/2015/02/The-Madrid-Resolution.pdf",
+    "url": "https://www.dataprotectionauthority.be/sites/privacycommission/files/documents/international_standards_madrid_2009.pdf",
     "year": "2009",
     "categories": {
       "data_controller": {
@@ -2461,8 +2461,8 @@
     "organization": "International Conference of Data Protection and Privacy Commissioners",
     "also_known_as": "Madrid Resolution",
     "members": {
-      "description": "Voluntary for data protection authorities from 21 nations and the EU",
-      "list": "<p><strong>List One</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li></ul><p><strong>List Two</strong></p><ul><li><p>Member 1</p></li><li><p>Member 2</p></li><li><p>Member 3</p></li></ul>"
+      "description": "Voluntary for 21 Nations and the EU",
+      "list": "<ul><li><p>Andorra</p></li><li><p>Argentina</p></li><li><p>Burkina-Faso </p></li><li><p>Canada</p></li><li><p>Cyprus </p></li><li><p>Czech Republic </p></li><li><p>Estonia </p></li><li><p>European Union</p></li><li><p>Finland</p></li><li><p>France</p></li><li><p>Germany </p></li><li><p>Greece </p></li><li><p>Ireland </p></li><li><p>Italy</p></li><li><p>Lithuania </p></li><li><p>Malta </p></li><li><p>Netherlands</p></li><li><p>New Zealand</p></li><li><p>Slovenia</p></li><li><p>Spain</p></li><li><p>Switzerland </p></li><li><p>United Kingdom </p></li></ul>"
     },
     "website": {
       "url": "https://icdppc.org/",
