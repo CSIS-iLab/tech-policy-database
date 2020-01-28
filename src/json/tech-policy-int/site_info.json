@@ -1,10 +1,10 @@
 {
-  "intro_paragraph": "This table provides a resource for researchers and policymakers involved in the creation of data governance frameworks at the national and international level. We have selected ten of the most influential data governance frameworks proposed internationally, and have mapped each one to their positions across thirty different definitions and principles.",
+  "intro_paragraph": "<p>This table provides a resource for researchers and policymakers involved in the creation of data governance frameworks at the national and international level. We have selected ten of the most influential data governance frameworks proposed internationally, and have mapped each one to their positions across thirty different definitions and principles.</p><p>Read more about <a href='https://www.csis.org/analysis/data-governance-principles-global-digital-economy'>Data Governance Principles for the Global Digital Economy</a> at CSIS.org.</p>",
   "methodology": "We identified ten international data governance frameworks that are shaping the global data governance debate and broke them down based on how they define and address key data governance principles. We attempted to include a range of agreements representative of multiple regions as well as multiple philosophical approaches to the issues involved. The table breaks out key principles driving current policy conversations, and which highlight importance differences in approach between the various frameworks.",
   "program_description": "<a href='https://www.csis.org/programs/technology-policy-program'>The CSIS Technology Policy Program</a> conducts research on the social, economic, and security challenges created by disruptive technologies to inform effective policy.",
   "download_file": {
     "url": "https://docs.google.com/spreadsheets/d/1e5BqA8d2Daq2w3kXNPiew9bcZYIFo97JQVjqIiejL_c/edit?usp=sharing",
-    "description": "Access this information in a Google sheet here"
+    "description": ""
   },
   "social_media": {
     "facebook": "",
