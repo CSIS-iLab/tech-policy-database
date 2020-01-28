@@ -46,6 +46,10 @@
     @include breakpoint('large') {
       margin-bottom: 0;
     }
+
+    a {
+      color: #66a5d2;;
+    }
   }
 
   nav {
