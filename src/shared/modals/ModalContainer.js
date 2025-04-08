@@ -19,10 +19,6 @@ const ModalContainer = () => {
     }
   }, [filterModalStatus, langModalStatus, frameModalStatus]);
 
-  // const disableScroll = useCallback(() => {
-  //   document.body.style.overflow = 'hidden';
-  // }, []);
-
   // disables tooltip when modal is opened
   const disableToolTip = useCallback(() => {
     let headerCells = document.getElementsByClassName('header-cell__title')
