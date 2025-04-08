@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useCallback } from 'react'
 import CollectionsItem from './CollectionsItem'
 import Icon from '../../site-config/Icon'
 
@@ -24,7 +24,7 @@ const CollectionsFilter = (props) => {
     filtersAreVisible = 'modal-collections__btn--active'
   }
 
-  const handleClickOutside = (e) => {
+  const handleClickOutside = useCallback((e) => {
     let collections = document.querySelector('.modal-collections__list')
     let button = document.querySelector('.modal-collections__btn')
     if (e.target === button || collections.contains(e.target)) {
@@ -33,7 +33,7 @@ const CollectionsFilter = (props) => {
     }
     // outside click
     setCollectionsMenu(!collectionsMenu)
-  }
+  }, [collectionsMenu, setCollectionsMenu])
 
   useEffect(() => {
     if (collectionsMenu) {
@@ -45,7 +45,7 @@ const CollectionsFilter = (props) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [collectionsMenu])
+  }, [handleClickOutside, collectionsMenu])
 
   return (
     <React.Fragment>

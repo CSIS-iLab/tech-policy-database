@@ -89,7 +89,7 @@ const MainContainer = () => {
     if (allRows.length > 0 && siteInfo.program) {
       setIsLoaded(true)
     }
-  }, [allRows, siteInfo])
+  }, [setIsLoaded, allRows, siteInfo])
 
   return (
     <div className="site-content">

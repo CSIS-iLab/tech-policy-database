@@ -36,7 +36,7 @@ const FilterModal = () => {
     if (checkedCollections.length === 0) {
       setDisplayedRows(allRows.map((row) => row[0][0]))
     }
-  }, [checkedCollections])
+  }, [allRows, checkedCollections])
 
   // Sets initial focus to filterModal upon opening
   useEffect(() => {
